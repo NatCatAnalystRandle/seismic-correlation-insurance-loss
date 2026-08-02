@@ -1,0 +1,21 @@
+# Raw USGS seismic hazard model
+data/raw/usgs_nshm_conus_2018/
+
+# Generated event catalogs and large calculation files
+data/processed/event_catalogs/
+*.hdf5
+*.h5
+*.parquet
+
+# Python and Jupyter temporary files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Official USGS calculation software downloaded by Notebook 2
+/tools/usgs_nshmp/*.zip
+/tools/usgs_nshmp/nshmp-haz-*/
+/data/interim/usgs_rupture_rate_exports/
+/data/processed/usgs_rupture_rates/
+# Local enriched NSI exposure inventory
+data/raw/exposure/seaside_nsi/*.xlsx
