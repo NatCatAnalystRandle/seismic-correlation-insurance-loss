@@ -7,16 +7,26 @@ data/processed/event_catalogs/
 *.h5
 *.parquet
 
-# Python and Jupyter temporary files
+# Python environments, caches, and Jupyter temporary files
+.venv/
+venv/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Local environment and credential files
+.env
+.env.*
+!.env.example
 
 # Official USGS calculation software downloaded by Notebook 2
 /tools/usgs_nshmp/*.zip
 /tools/usgs_nshmp/nshmp-haz-*/
 /data/interim/usgs_rupture_rate_exports/
 /data/processed/usgs_rupture_rates/
+
 # Local enriched NSI exposure inventory
 data/raw/exposure/seaside_nsi/*.xlsx
 
@@ -26,19 +36,32 @@ data/metadata/**/inputs/
 data/metadata/**/chunk_validation/
 data/metadata/**/chunk_rupture_indices/
 
-# Generated logs and API inspection files
-data/metadata/**/*.log
+# Generated logs, API inspection files, and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
 data/metadata/nshmp_haz_2_6_5_api/
 data/metadata/nshmp_haz_build_logs/
 data/metadata/*_api.txt
 data/metadata/*_inspection.txt
 
 # Keep generated catastrophe-model outputs local
-# The selected README PNGs are already tracked and will remain tracked
+# Selected README PNGs that are already tracked remain tracked.
 data/processed/**
 
-# Java build and runtime artifacts
+# Java and Gradle build/runtime artifacts
 **/*.class
+**/build/
+**/.gradle/
 tools/**/classes/
 tools/**/*_classes/
 tools/**/*_arguments.txt
+
+# Editor and operating-system artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -105,21 +105,21 @@ The annual event catalog is intentionally long so that low-frequency, high-sever
 
 The loss flow reconciles exactly within numerical tolerance:
 
-\[
+$$
 \text{Ground-up AAL}
 =
 \text{Gross insured AAL}
 +
 \text{Uninsured AAL}
-\]
+$$
 
-\[
+$$
 \text{Gross insured AAL}
 =
 \text{Ceded AAL}
 +
 \text{Net retained AAL}
-\]
+$$
 
 Additional baseline results:
 
@@ -201,9 +201,9 @@ The current policy terms are synthetic and are used to demonstrate a transparent
 | Annual aggregate cap | None |
 | Reinstatement restriction | None |
 
-For occurrence gross insured loss \(L\), the ceded recovery is:
+For occurrence gross insured loss $L$, the ceded recovery is:
 
-\[
+$$
 L_{\mathrm{ceded}}
 =
 \min
@@ -211,20 +211,20 @@ L_{\mathrm{ceded}}
 \max(L-A,0),
 U
 \right]
-\]
+$$
 
 where:
 
-- \(A\) is the attachment;
-- \(U\) is the occurrence-layer limit.
+- $A$ is the attachment;
+- $U$ is the occurrence-layer limit.
 
 Net retained loss is:
 
-\[
+$$
 L_{\mathrm{retained}}
 =
 L-L_{\mathrm{ceded}}
-\]
+$$
 
 ---
 
@@ -238,7 +238,7 @@ The damage model represents three repair-cost components:
 
 Each component is simulated using damage-state fragilities and component-specific repair-cost ratios.
 
-The baseline implementation uses a direct-\(SA(0.4)\) approximation to connect the simulated spectral acceleration to the HAZUS-style fragility framework. The original source values and transformation assumptions are retained in the project metadata for auditability.
+The baseline implementation uses a direct-$SA(0.4)$ approximation to connect the simulated spectral acceleration to the HAZUS-style fragility framework. The original source values and transformation assumptions are retained in the project metadata for auditability.
 
 The project currently models building repair loss only. It does not yet include:
 
@@ -258,13 +258,13 @@ The project produces the following catastrophe-risk measures.
 
 ### Average annual loss
 
-\[
+$$
 \mathrm{AAL}
 =
 \frac{\sum_{y=1}^{N} L_y}{N}
-\]
+$$
 
-where \(L_y\) is the annual loss in catalog year \(y\), and \(N\) is the total number of simulated years.
+where $L_y$ is the annual loss in catalog year $y$, and $N$ is the total number of simulated years.
 
 ### Aggregate exceedance probability
 
@@ -296,13 +296,13 @@ Return periods of 200,000 years and longer are retained only as thin-tail diagno
 
 | Notebook | Purpose |
 |---|---|
-| `01_download_and_inspect_usgs_nshm2018.ipynb` | Download, verify, inventory, and inspect the USGS NSHM 2018 model |
-| `02_extract_usgs_rupture_rates.ipynb` | Expand source and magnitude-frequency definitions into rupture-level annual rates |
-| `03_generate_annual_event_catalog.ipynb` | Generate the full annual stochastic event catalog |
-| `04_generate_ground_motion_fields.ipynb` | Simulate source-appropriate ground motions for every occurrence and building |
-| `05_calculate_ground_up_losses.ipynb` | Simulate damage states and calculate structural, nonstructural, and total ground-up losses |
-| `06_apply_insurance_terms.ipynb` | Apply insurance terms, reinsurance terms, and calculate insured risk metrics |
-| `07_baseline_results_and_validation.ipynb` | Validate all handoffs and produce final tables, exceedance curves, and project figures |
+| [`01_download_and_inspect_usgs_nshm2018.ipynb`](01_download_and_inspect_usgs_nshm2018.ipynb) | Download, verify, inventory, and inspect the USGS NSHM 2018 model |
+| [`02_extract_usgs_rupture_rates.ipynb`](02_extract_usgs_rupture_rates.ipynb) | Expand source and magnitude-frequency definitions into rupture-level annual rates |
+| [`03_generate_annual_event_catalog.ipynb`](03_generate_annual_event_catalog.ipynb) | Generate the full annual stochastic event catalog |
+| [`04_generate_ground_motion_fields.ipynb`](04_generate_ground_motion_fields.ipynb) | Simulate source-appropriate ground motions for every occurrence and building |
+| [`05_calculate_ground_up_losses.ipynb`](05_calculate_ground_up_losses.ipynb) | Simulate damage states and calculate structural, nonstructural, and total ground-up losses |
+| [`06_apply_insurance_terms.ipynb`](06_apply_insurance_terms.ipynb) | Apply insurance terms, reinsurance terms, and calculate insured risk metrics |
+| [`07_baseline_results_and_validation.ipynb`](07_baseline_results_and_validation.ipynb) | Validate all handoffs and produce final tables, exceedance curves, and project figures |
 
 ---
 
@@ -358,28 +358,41 @@ Across the workflow, validations covered:
 - source-level reconciliation;
 - file integrity and output hashes.
 
+### Repository validation milestone
+
+Scientific validation inside the notebooks is separate from repository-level validation. The final public-repository milestone checks file structure, notebook integrity, documentation links, selected figures, dependency coverage, Java source requirements, Git exclusions, tracked file sizes, machine-specific paths, obvious credentials, and clean Git status.
+
+Run the automated checks with:
+
+```powershell
+python tools\validate_repository.py --profile runtime
+```
+
+The current audit findings are recorded in [`docs/REPOSITORY_AUDIT_FINDINGS.md`](docs/REPOSITORY_AUDIT_FINDINGS.md), and the complete manual and fresh-clone checks are documented in [`docs/REPOSITORY_VALIDATION_CHECKLIST.md`](docs/REPOSITORY_VALIDATION_CHECKLIST.md).
+
 ---
 
 ## Selected outputs
 
-The final reporting notebook produces:
+Four compact PNG figures are retained in the public repository so the principal Phase 1 results render directly on GitHub.
 
-- AAL loss-flow figures;
-- portfolio and catalog overview;
-- occurrence XoL response figure;
-- AEP PML comparison;
-- OEP PML comparison;
-- risk-transfer shares by return period;
-- ground-up component contribution figure;
-- source contribution figure;
-- source-specific insurance and reinsurance shares;
-- full AEP exceedance curves;
-- full OEP exceedance curves;
-- largest-occurrence loss comparison;
-- executive summary table;
-- key-findings table;
-- final results digest;
-- complete output manifest.
+### Annual average loss flow
+
+![Baseline annual average loss flow](data/processed/notebook_7_baseline_results_validation/plots/baseline_aal_loss_flow.png)
+
+### Full AEP exceedance curves
+
+![Baseline full AEP exceedance curves](data/processed/notebook_7_baseline_results_validation/plots/baseline_full_aep_exceedance_curves.png)
+
+### Full OEP exceedance curves
+
+![Baseline full OEP exceedance curves](data/processed/notebook_7_baseline_results_validation/plots/baseline_full_oep_exceedance_curves.png)
+
+### Source contributions to annual average loss
+
+![Baseline source contributions to annual average loss](data/processed/notebook_7_baseline_results_validation/plots/baseline_source_aal_contributions.png)
+
+The final reporting notebook also produces portfolio and catalog summaries, occurrence XoL response figures, headline AEP and OEP PML comparisons, risk-transfer summaries, component contributions, source-specific insurance and reinsurance shares, largest-occurrence comparisons, executive tables, key findings, and output manifests.
 
 Final reporting outputs are written under:
 
@@ -438,12 +451,23 @@ seismic-correlation-insurance-loss/
 ├── data/
 │   ├── metadata/
 │   ├── processed/
-│   └── raw/
+│   ├── raw/
+│   └── reference/
+├── docs/
+│   ├── REPOSITORY_AUDIT_FINDINGS.md
+│   └── REPOSITORY_VALIDATION_CHECKLIST.md
+├── tools/
+│   ├── parker_gmm_inspection/
+│   ├── usgs_rupture_rate_exporter/
+│   └── validate_repository.py
+├── .gitattributes
+├── .gitignore
 ├── README.md
-└── .gitignore
+├── requirements.txt
+└── SETUP.md
 ```
 
-Large files under `data/raw/` and selected generated datasets under `data/processed/` are excluded from Git.
+Large raw inputs, generated datasets, downloaded USGS Java source, compiled classes, build folders, logs, temporary files, virtual environments, and machine-specific artifacts are excluded from Git.
 
 ---
 
@@ -451,9 +475,17 @@ Large files under `data/raw/` and selected generated datasets under `data/proces
 
 ### Requirements
 
-The notebooks require a Python environment with the scientific Python stack and a Java environment compatible with the USGS `nshmp-lib` workflow used for rupture retrieval and model interpretation.
+The tested notebook runtime is Python 3.12.3. Notebook 2 requires JDK 11 and uses the Gradle 7.3.1 wrapper from the pinned `nshmp-haz 2.6.5` source archive.
 
-The exact environment file will be added as part of the repository-cleanup stage.
+Install the Python environment from [`requirements.txt`](requirements.txt) and follow the complete instructions in [`SETUP.md`](SETUP.md).
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python tools\validate_repository.py --profile runtime
+```
 
 ### Execution order
 
@@ -478,7 +510,7 @@ Current limitations include:
 1. no spatial correlation among within-event site residuals;
 2. one demonstration portfolio in Seaside, Oregon;
 3. synthetic insurance and reinsurance terms;
-4. direct-\(SA(0.4)\) fragility approximations;
+4. direct-$SA(0.4)$ fragility approximations;
 5. repair-cost loss only;
 6. no contents or business-interruption loss;
 7. no demand surge or claims inflation;
