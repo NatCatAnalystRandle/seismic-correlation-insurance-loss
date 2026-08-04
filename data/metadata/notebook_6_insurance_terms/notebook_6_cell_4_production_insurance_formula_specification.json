@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-08-03T05:33:19.305988+00:00",
+  "currency": "USD",
+  "dollar_year": 2022,
+  "equations": {
+    "coinsurance_absorbed_loss": "limited_loss * (1 - coinsurance_share)",
+    "deductible_absorbed_loss": "min(eligible_ground_up_loss, deductible_amount)",
+    "eligible_ground_up_loss": "policy_covered ? ground_up_loss * covered_loss_share : 0",
+    "gross_insured_loss": "limited_loss * coinsurance_share",
+    "limited_loss": "min(loss_after_deductible, policy_limit_amount)",
+    "loss_after_deductible": "max(eligible_ground_up_loss - deductible_amount, 0)",
+    "loss_conservation": "ground_up_loss = gross_insured_loss + uninsured_loss",
+    "policy_limit_absorbed_loss": "max(loss_after_deductible - policy_limit_amount, 0)",
+    "uncovered_ground_up_loss": "ground_up_loss - eligible_ground_up_loss",
+    "uninsured_decomposition": "uninsured_loss = uncovered_ground_up_loss + deductible_absorbed_loss + policy_limit_absorbed_loss + coinsurance_absorbed_loss",
+    "uninsured_loss": "ground_up_loss - gross_insured_loss"
+  },
+  "important_scope_notes": [
+    "Production insurance calculations use sampled occurrence-building losses.",
+    "Analytical expected ground-up losses are not passed through nonlinear policy terms.",
+    "The baseline policy is synthetic and is not observed Seaside insurance data.",
+    "Reinsurance terms are not applied in Cell 4."
+  ],
+  "input_loss_basis": "sampled total building repair ground-up loss from Notebook 5 Cell 11",
+  "pipeline_version": "notebook6_cell4_full_gross_insured_loss_v1",
+  "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+  "policy_scenario_name": "Full building coverage with 10% replacement-value deductible",
+  "upstream_cell3_formula_sha256": "506964f8c592a82b9a29eccc5d2469e3a27a45c4daf2e90a7cc45699dc803dc5"
+}

@@ -1,0 +1,4 @@
+geometry_branch,branch_weight,weight_sum_check
+bottom,0.3,1.0
+middle,0.5,1.0
+top,0.2,1.0

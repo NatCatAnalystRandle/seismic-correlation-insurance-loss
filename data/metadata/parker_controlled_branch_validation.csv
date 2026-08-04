@@ -1,0 +1,11 @@
+check,passes
+Both controlled scenarios were evaluated,True
+Both selected Parker GMMs were evaluated,True
+All requested IMTs were evaluated,True
+Eight scenario-IMT combinations were returned,True
+Every logic-tree branch has positive weight,True
+Branch weights sum to one for every prediction,True
+All logarithmic means are finite,True
+All median ground motions are positive,True
+All total sigmas are finite and positive,True
+PGA and PSA medians use acceleration units,True

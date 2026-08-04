@@ -1,0 +1,59 @@
+{
+  "all_critical_checks_passed": true,
+  "completed_at_utc": "2026-08-03T04:48:28.231223+00:00",
+  "controlled_validation": {
+    "actual_control_rows": 14,
+    "maximum_actual_decomposition_error_2022_usd": 2.9103830456733704e-11,
+    "maximum_actual_gross_equation_error_2022_usd": 0.0,
+    "maximum_actual_uninsured_equation_error_2022_usd": 0.0,
+    "maximum_stress_decomposition_error_2022_usd": 1.862645149230957e-09,
+    "maximum_stress_gross_equation_error_2022_usd": 0.0,
+    "maximum_stress_uninsured_equation_error_2022_usd": 0.0,
+    "monotonicity_grid_rows": 1251,
+    "stress_case_rows": 33
+  },
+  "next_cell": "Cell 4: apply validated building policy terms to all 4,996,100 occurrence-building ground-up loss rows using restartable chunks.",
+  "outputs": {
+    "actual_controls": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_controlled_insurance_terms\\controlled_actual_policy_loss_rows.csv",
+      "rows": 14,
+      "sha256": "34ebf8f1206c441665670ecb82a9f6d9c3fc8e60924d159c399d7d0f002fe099"
+    },
+    "formula_specification": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_3_insurance_loss_formula_specification.json",
+      "sha256": "506964f8c592a82b9a29eccc5d2469e3a27a45c4daf2e90a7cc45699dc803dc5"
+    },
+    "monotonicity_grid": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_controlled_insurance_terms\\controlled_policy_monotonicity_grid.csv",
+      "rows": 1251,
+      "sha256": "98037a6d0761136e471695f3f4dbc675927b403875caef322e07135906d2e135"
+    },
+    "stress_cases": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_controlled_insurance_terms\\controlled_policy_formula_stress_cases.csv",
+      "rows": 33,
+      "sha256": "94763f5ecd96eaa4ff990f9002cc5d4e23dafc5ca11ae6243b618500a76e07ae"
+    },
+    "validation": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_3_validation.csv",
+      "sha256": "f243cc09ab3ef15840575327d28337c64e0e2c0f215ab883b0511a4fbdfa6b3c"
+    }
+  },
+  "pipeline_version": "notebook6_cell3_controlled_policy_loss_validation_v1",
+  "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+  "production_scan": {
+    "maximum_ground_up_loss_ratio": 1.0000000000000002,
+    "maximum_loss_cap_error_2022_usd": 4.656612873077393e-10,
+    "minimum_ground_up_loss_ratio": 0.0,
+    "rows": 4996100,
+    "source_types": [
+      "INTERFACE",
+      "SLAB"
+    ]
+  },
+  "validation": {
+    "checks": 47,
+    "critical_checks": 47,
+    "critical_failures": [],
+    "warnings": []
+  }
+}

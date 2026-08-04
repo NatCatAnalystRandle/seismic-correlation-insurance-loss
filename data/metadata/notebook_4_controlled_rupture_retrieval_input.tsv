@@ -1,0 +1,4 @@
+case_id	event_id	rupture_id	tree_id	branch_index	rupture_set_id	source_index	source_id	source_name	source_type	rupture_index	magnitude	raw_annual_rate	top_depth_km	width_km	centroid_longitude	centroid_latitude	centroid_depth_km	test_site_id	test_site_longitude	test_site_latitude
+interface_with_catalog_centroid	EVT_00000001	ff36c8c176c0929711a982c1	3199	13	3172	0	3172	Cascadia (full, top)	INTERFACE	1	8.72	0.0006327	5.091845789473684	85.0	-125.26684506684153	45.06951187159024	11.059411725958665	W2_0001	-123.9220712	45.991445762
+interface_missing_catalog_centroid	EVT_00000004	49283c0b1304034206982cfb	3199	1	3160	0	3160	Cascadia (unsegmented, 1-2-3, bottom)	INTERFACE	1022	8.4	6.66441670347842e-07	5.0	145.0				W2_0001	-123.9220712	45.991445762
+oregon_intraslab	EVT_00000002	f0fd5c1a0da521278eb8cbb0	8231	0	8211	641	8211	PointSourceFinite: -123.700, 45.300	SLAB	5	7.05	6.076026690392923e-07	42.0	8.0	-123.7	45.3	42.0	W2_0001	-123.9220712	45.991445762

@@ -1,0 +1,18 @@
+check,passes
+Configuration and metadata catalog years match,True
+Configuration and metadata master seeds match,True
+Reproduced event count matches saved catalog,True
+Per-rupture Poisson counts reproduce exactly,True
+Event identifiers and rupture assignments reproduce,True
+Event years and deterministic seeds reproduce,True
+Within-year event times reproduce,True
+Continuous event times reproduce within float64 CSV precision,True
+Saved continuous event times are internally consistent,True
+Nonempty catalog years reproduce,True
+Annual event counts reproduce,True
+Event catalog checksum matches metadata,True
+Annual-count checksum matches metadata,True
+Rupture-count checksum matches metadata,True
+Event identifiers remain unique,True
+Between-event seeds remain unique,True
+Within-event seeds remain unique,True

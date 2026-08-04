@@ -1,0 +1,12 @@
+metric,value
+portfolio_name,Seaside W2 commercial portfolio
+building_count,470
+structural_type,W2
+site_class,CD
+assigned_vs30_mps,365.0
+vs30_assignment,"Representative value, not measured"
+minimum_longitude,-123.9549694
+maximum_longitude,-123.8906807
+minimum_latitude,45.971414721
+maximum_latitude,46.017119801
+unique_periods,1

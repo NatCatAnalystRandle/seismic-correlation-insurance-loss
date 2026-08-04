@@ -1,0 +1,16 @@
+check,observed,expected,passes
+"Exactly 3,927 unique ruptures",3927,3927,True
+Exactly 470 unique sites,470,470,True
+All chunk markers valid,8,8,True
+Final distance row count,1845690,1845690,True
+One audit row per rupture,3927,3927,True
+No audit retrieval errors,0,0,True
+Expected rupture IDs,3927,3927,True
+Expected site IDs,470,470,True
+Every rupture has 470 rows,"min=470, max=470",470,True
+"Every site has 3,927 rows","min=3927, max=3927",3927,True
+No distance errors,0,0,True
+Rjb finite and nonnegative,0,0,True
+Rrup finite and nonnegative,0,0,True
+Rrup never below Rjb,0,0,True
+Cell 15 reproduces all Cell 14 controlled distances,3,3,True

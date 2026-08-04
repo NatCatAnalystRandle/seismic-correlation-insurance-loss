@@ -19,3 +19,16 @@ __pycache__/
 /data/processed/usgs_rupture_rates/
 # Local enriched NSI exposure inventory
 data/raw/exposure/seaside_nsi/*.xlsx
+
+# Temporary and restartable metadata work directories
+data/metadata/**/*_work/
+data/metadata/**/inputs/
+data/metadata/**/chunk_validation/
+data/metadata/**/chunk_rupture_indices/
+
+# Generated logs and API inspection files
+data/metadata/**/*.log
+data/metadata/nshmp_haz_2_6_5_api/
+data/metadata/nshmp_haz_build_logs/
+data/metadata/*_api.txt
+data/metadata/*_inspection.txt

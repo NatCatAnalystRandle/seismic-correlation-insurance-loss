@@ -1,0 +1,40 @@
+check_id,severity,passed,detail
+cell5_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_5_damage_loss\notebook_5_cell_5_summary.json
+cell5_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_5_damage_loss\notebook_5_cell_5_validation.csv
+notebook4_handoff_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_4_final_handoff\notebook_5_input_handoff.json
+cell5_critical_checks_passed,critical,True,critical_failures=0
+declared_catalog_duration_positive,critical,True,years=2000000
+return_periods_supported_by_catalog,critical,True,maximum_return_period=2000000; catalog_years=2000000
+cell5_event_loss_hash_matches,critical,True,expected=5095c829ed9860bc659a579e54e960ddefa08f67ef5cea374c043200f6abaf53; actual=5095c829ed9860bc659a579e54e960ddefa08f67ef5cea374c043200f6abaf53
+event_loss_schema_complete,critical,True,missing=[]
+event_summary_occurrence_count_matches,critical,True,rows=10630; expected=10630; unique=10630
+catalog_year_labels_within_declared_duration,critical,True,minimum=185; maximum=1999745
+event_losses_finite_and_nonnegative,critical,True,sampled and analytical expected occurrence losses checked
+annual_series_contains_all_catalog_years,critical,True,rows=2000000; first=1; last=2000000
+event_counts_reconcile,critical,True,annual_sum=10630; expected=10630
+occupied_year_count_matches_handoff,critical,True,actual=10593; expected=10593
+zero_event_year_count_matches_handoff,critical,True,actual=1989407; expected=1989407
+multiple_event_year_count_matches_handoff,critical,True,actual=36; expected=36
+maximum_events_per_year_matches_handoff,critical,True,actual=3; expected=3
+aep_not_less_than_oep,critical,True,checked sampled and analytical expected annual losses
+single_and_zero_event_years_have_equal_aep_oep,critical,True,years_checked=1999964
+sampled_annual_total_matches_event_total,critical,True,annual=34251934804.595013; event=34251934804.595016
+expected_annual_total_matches_event_total,critical,True,annual=34276094714.657127; event=34276094714.657112
+sampled_aal_matches_cell5,critical,True,cell6=17125.967402298; cell5=17125.967402298
+expected_aal_matches_cell5,critical,True,cell6=17138.047357329; cell5=17138.047357329
+sampled_aep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+sampled_oep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+analytical_expected_aep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+analytical_expected_oep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+sampled_aep_pml_not_less_than_sampled_oep_pml,critical,True,checked all requested return periods
+expected_aep_pml_not_less_than_expected_oep_pml,critical,True,checked all requested return periods
+source_sampled_aal_reconciles,critical,True,source_sum=17125.967402298; portfolio=17125.967402298
+source_expected_aal_reconciles,critical,True,source_sum=17138.047357329; portfolio=17138.047357329
+annual_series_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_risk\structural_annual_loss_series.csv.gz
+ep_curve_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_risk\structural_exceedance_probability_curve.csv.gz
+pml_table_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_risk\structural_pml_table.csv
+risk_metrics_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_risk\structural_risk_metrics.csv
+source_aal_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_risk\structural_source_aal_summary.csv
+ep_plot_png_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_risk\plots\structural_aep_oep_curve.png
+ep_plot_pdf_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_risk\plots\structural_aep_oep_curve.pdf
+extreme_return_period_tail_support_documented,warning,False,"thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; threshold_rank=20"

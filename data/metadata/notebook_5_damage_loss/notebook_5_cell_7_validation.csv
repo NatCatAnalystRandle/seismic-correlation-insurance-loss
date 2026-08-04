@@ -1,0 +1,46 @@
+check_id,severity,passed,detail
+cell1_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell1_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+cell2_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell2_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+source_inventory_columns_present,critical,True,missing=[]
+nonstructural_drift_source_columns_present,critical,True,missing=[]
+nonstructural_drift_source_has_16_rows,critical,True,rows=16
+nonstructural_drift_source_is_w2,critical,True,types=['W2']
+nonstructural_drift_design_levels_complete,critical,True,"levels=['HighCode', 'LowCode', 'ModerateCode', 'PreCode']"
+nonstructural_drift_damage_states_complete,critical,True,"states=['Complete', 'Extensive', 'Moderate', 'Slight']"
+nonstructural_drift_design_state_pairs_unique,critical,True,duplicates=0
+nonstructural_drift_source_unit_expected,critical,True,units=['in']
+nonstructural_drift_source_medians_positive_complete,critical,True,missing=0; nonpositive=0
+nonstructural_drift_source_betas_positive_complete,critical,True,missing=0; nonpositive=0
+nonstructural_drift_source_medians_strictly_ordered,critical,True,"by_design_level={'HighCode': True, 'LowCode': True, 'ModerateCode': True, 'PreCode': True}"
+nonstructural_acceleration_source_columns_present,critical,True,missing=[]
+nonstructural_acceleration_source_has_16_rows,critical,True,rows=16
+nonstructural_acceleration_source_is_w2,critical,True,types=['W2']
+nonstructural_acceleration_design_levels_complete,critical,True,"levels=['HighCode', 'LowCode', 'ModerateCode', 'PreCode']"
+nonstructural_acceleration_damage_states_complete,critical,True,"states=['Complete', 'Extensive', 'Moderate', 'Slight']"
+nonstructural_acceleration_design_state_pairs_unique,critical,True,duplicates=0
+nonstructural_acceleration_source_unit_expected,critical,True,units=['g']
+nonstructural_acceleration_source_medians_positive_complete,critical,True,missing=0; nonpositive=0
+nonstructural_acceleration_source_betas_positive_complete,critical,True,missing=0; nonpositive=0
+nonstructural_acceleration_source_medians_strictly_ordered,critical,True,"by_design_level={'HighCode': True, 'LowCode': True, 'ModerateCode': True, 'PreCode': True}"
+production_period_is_0p4_seconds,critical,True,period_s=0.4
+gravity_constant_matches_cell2,critical,True,gravity_in_s2=386.08858267716533
+drift_sd_to_sa_conversion_reconstructs_source,critical,True,maximum_absolute_error_in=1.776e-15
+acceleration_identity_mapping_exact,critical,True,maximum_absolute_error_g=0.000e+00
+drift_beta_unchanged,critical,True,production beta equals source beta exactly
+acceleration_beta_unchanged,critical,True,production beta equals source beta exactly
+direct_im_approximation_documented,informational,True,Both nonstructural components use documented direct-SA0P4 approximations. Neither table is presented as the full HAZUS capacity-spectrum method.
+design_assignment_columns_present,critical,True,missing=[]
+design_assignment_rows_match_cell2,critical,True,rows=470; expected=470
+design_assignment_site_ids_unique,critical,True,duplicates=0
+design_assignment_all_w2,critical,True,types=['W2']
+design_assignment_levels_covered_by_fragilities,critical,True,"levels=['LowCode', 'PreCode']"
+design_assignments_match_structural_cell2_sites,critical,True,design_sites=470; structural_sites=470
+building_nonstructural_assignments_complete,critical,True,missing_parameter_cells=0
+building_nonstructural_assignment_rows_match_portfolio,critical,True,rows=470; portfolio=470
+building_nonstructural_site_ids_unique,critical,True,duplicates=0
+building_nsd_medians_strictly_ordered,critical,True,Slight < Moderate < Extensive < Complete for every building
+building_nsa_medians_strictly_ordered,critical,True,Slight < Moderate < Extensive < Complete for every building
+building_nonstructural_betas_positive,critical,True,all drift-sensitive and acceleration-sensitive beta values are positive
+building_nonstructural_medians_positive,critical,True,all direct-SA0P4 medians are positive

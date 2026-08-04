@@ -1,0 +1,7 @@
+check,passes
+Every event_id is unique,True
+Every Notebook 2 rupture_id is unique,True
+Every catalog rupture_id exists in Notebook 2,True
+Every distinct catalog rupture joins to exactly one master row,True
+Source and rupture metadata agree after the join,True
+Repeated rupture occurrences exist in the catalog,True

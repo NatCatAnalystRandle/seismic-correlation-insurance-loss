@@ -1,0 +1,60 @@
+check_id,severity,passed,detail
+cell1_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_1_summary.json
+cell2_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_2_summary.json
+cell3_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_3_summary.json
+cell4_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_4_summary.json
+cell5_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_5_summary.json
+cell6_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_6_summary.json
+cell7_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_7_summary.json
+cell1_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_1_validation.csv
+cell2_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_2_validation.csv
+cell3_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_3_validation.csv
+cell4_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_4_validation.csv
+cell5_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_5_validation.csv
+cell6_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_6_validation.csv
+cell7_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_7_validation.csv
+cell1_summary_reports_critical_success,critical,True,pipeline_version=notebook6_cell1_validate_inputs_v1
+cell2_summary_reports_critical_success,critical,True,pipeline_version=notebook6_cell2_baseline_policy_terms_v1
+cell3_summary_reports_critical_success,critical,True,pipeline_version=notebook6_cell3_controlled_policy_loss_validation_v1
+cell4_summary_reports_critical_success,critical,True,pipeline_version=notebook6_cell4_full_gross_insured_loss_v1
+cell5_summary_reports_critical_success,critical,True,pipeline_version=notebook6_cell5_annual_insured_risk_metrics_v1
+cell6_summary_reports_critical_success,critical,True,pipeline_version=notebook6_cell6_baseline_occurrence_xol_layer_v1
+cell7_summary_reports_critical_success,critical,True,pipeline_version=notebook6_cell7_annual_reinsurance_risk_metrics_v2
+cell1_has_no_critical_failures,critical,True,critical_checks=57; critical_failures=0
+cell1_has_no_unexpected_warnings,critical,True,unexpected_warning_ids=[]
+cell2_has_no_critical_failures,critical,True,critical_checks=34; critical_failures=0
+cell2_has_no_unexpected_warnings,critical,True,unexpected_warning_ids=[]
+cell3_has_no_critical_failures,critical,True,critical_checks=47; critical_failures=0
+cell3_has_no_unexpected_warnings,critical,True,unexpected_warning_ids=[]
+cell4_has_no_critical_failures,critical,True,critical_checks=53; critical_failures=0
+cell4_has_no_unexpected_warnings,critical,True,unexpected_warning_ids=[]
+cell5_has_no_critical_failures,critical,True,critical_checks=72; critical_failures=0
+cell5_has_no_unexpected_warnings,critical,True,unexpected_warning_ids=[]
+cell6_has_no_critical_failures,critical,True,critical_checks=63; critical_failures=0
+cell6_has_no_unexpected_warnings,critical,True,unexpected_warning_ids=[]
+cell7_has_no_critical_failures,critical,True,critical_checks=97; critical_failures=0
+cell7_has_no_unexpected_warnings,critical,True,unexpected_warning_ids=[]
+policy_scenario_consistent_across_cells,critical,True,policy_scenario_id=baseline_full_coverage_10pct_deductible_v1
+reinsurance_scenario_consistent_across_cells,critical,True,layer_scenario_id=baseline_occurrence_xol_500yr_to_2500yr_oep_v1
+ground_up_aal_conserves_to_gross_and_uninsured,critical,True,difference=0.000000
+gross_aal_conserves_to_ceded_and_retained,critical,True,difference=0.000000
+risk_aals_nonnegative,critical,True,ground_up=195922.450030; gross=122979.559967; uninsured=72942.890063; ceded=63676.597327; retained=59302.962640
+risk_aal_ordering_is_consistent,critical,True,"gross<=ground_up and ceded,retained<=gross"
+cell5_pml_schema_complete,critical,True,missing=[]
+cell7_pml_schema_complete,critical,True,missing=[]
+gross_insured_aep_pml_reconciles_between_cells5_and7,critical,True,maximum_difference=0.000000
+gross_insured_oep_pml_reconciles_between_cells5_and7,critical,True,maximum_difference=0.000000
+pml_return_periods_match_between_insurance_and_reinsurance,critical,True,cell5_count=17; cell7_count=17; merged_count=17
+headline_return_periods_complete,critical,True,"headline_return_periods=[100, 250, 500, 1000, 2500, 5000, 10000]"
+all_manifest_files_exist,critical,True,missing=[]
+all_manifest_files_nonempty,critical,True,empty=[]
+manifest_hashes_complete,critical,True,manifest_rows=23
+loss_flow_rows_complete,critical,True,"loss_measures=['ground_up', 'uninsured', 'gross_insured', 'ceded', 'net_retained']"
+portfolio_and_catalog_counts_positive,critical,True,catalog_years=2000000; occurrences=10630; buildings=470; replacement_value=384236604.70
+extreme_return_period_tail_support_carried_forward,warning,False,"thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; interpret_as_diagnostics_not_headline_metrics"
+loss_flow_output_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_handoff\notebook_6_baseline_loss_flow_summary.csv
+pml_comparison_output_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_handoff\notebook_6_baseline_pml_comparison.csv
+headline_pml_output_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_handoff\notebook_6_baseline_headline_pml_table.csv
+assumptions_output_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_handoff\notebook_6_baseline_model_assumptions.csv
+output_manifest_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_handoff\notebook_6_baseline_output_manifest.csv
+final_handoff_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_final_handoff.json

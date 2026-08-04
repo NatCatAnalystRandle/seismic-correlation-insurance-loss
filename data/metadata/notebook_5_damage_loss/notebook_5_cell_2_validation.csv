@@ -1,0 +1,29 @@
+check_id,severity,passed,detail
+cell1_summary_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_5_damage_loss\notebook_5_cell_1_summary.json
+cell1_validation_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_5_damage_loss\notebook_5_cell_1_validation.csv
+cell1_w2_source_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_damage_loss_parameters\notebook_5_w2_source_fragility_inventory.csv
+cell1_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell1_has_no_unresolved_checks,critical,True,unresolved_rows=0
+portfolio_required_columns_present,critical,True,missing=[]
+portfolio_hash_matches_cell1,critical,True,calculated=686623ec6793546004533f6a188897100208863f2627b63644115c98f291eb71; cell1=686623ec6793546004533f6a188897100208863f2627b63644115c98f291eb71
+portfolio_row_count_matches_cell1,critical,True,rows=470; expected=470
+site_ids_nonblank,critical,True,blank=0
+site_ids_unique,critical,True,duplicates=0
+all_buildings_are_w2,critical,True,types=['W2']
+year_built_numeric_complete,critical,True,missing=0
+year_built_plausible,critical,True,min=1951; max=1992; current_year=2026
+all_design_levels_assigned,critical,True,"levels=['LowCode', 'PreCode']"
+structural_source_has_16_rows,critical,True,rows=16
+structural_source_design_levels_complete,critical,True,"levels=['HighCode', 'LowCode', 'ModerateCode', 'PreCode']"
+structural_source_damage_states_complete,critical,True,"states=['Complete', 'Extensive', 'Moderate', 'Slight']"
+structural_source_is_w2,critical,True,types=['W2']
+structural_source_is_spectral_displacement_inches,critical,True,demand=['spectral_displacement']; units=['in']
+structural_source_parameters_positive,critical,True,source medians and betas must be finite and positive
+period_is_exact_sa0p4,critical,True,period_s=0.4
+direct_sa0p4_medians_strictly_ordered,critical,True,"by_design_level={'PreCode': True, 'LowCode': True, 'ModerateCode': True, 'HighCode': True}"
+sd_sa_conversion_reconstructs_source,critical,True,maximum_absolute_error_in=3.553e-15
+beta_unchanged_by_constant_conversion,critical,True,direct beta equals source beta exactly
+building_assignments_complete,critical,True,missing_parameter_cells=0
+building_assignment_rows_match_portfolio,critical,True,rows=470; portfolio=470
+building_assignment_site_ids_unique,critical,True,duplicates=0
+building_medians_strictly_ordered,critical,True,Slight < Moderate < Extensive < Complete for every building

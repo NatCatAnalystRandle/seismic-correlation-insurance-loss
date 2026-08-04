@@ -1,0 +1,40 @@
+{
+  "software_name": "nshmp-haz",
+  "software_tag": "2.6.5",
+  "software_commit_prefix": "8015c808",
+  "resolved_full_commit": "8015c808f638fd8610fbf670227c621e6f804a43",
+  "source_archive_sha256": "8d53428484b6c7d1a438f25f071ae5cec9d17638de5d24e1f504a503f61b63ff",
+  "source_directory": "tools\\usgs_nshmp\\nshmp-haz-2.6.5\\nshmp-haz-2.6.5",
+  "build_gradle_path": "tools\\usgs_nshmp\\nshmp-haz-2.6.5\\nshmp-haz-2.6.5\\build.gradle",
+  "gradle_wrapper_path": "tools\\usgs_nshmp\\nshmp-haz-2.6.5\\nshmp-haz-2.6.5\\gradlew.bat",
+  "gradle_version": "7.3.1",
+  "java_major_version": 11,
+  "javac_major_version": 11,
+  "build_command": "gradlew.bat --no-daemon --console=plain clean jar --stacktrace",
+  "build_started_at_utc": "2026-07-30T00:24:56.959571+00:00",
+  "build_finished_at_utc": "2026-07-30T00:27:08.104562+00:00",
+  "build_duration_seconds": 131.144991,
+  "build_return_code": 0,
+  "build_successful_message_found": true,
+  "compiled_class_directory": "tools\\usgs_nshmp\\nshmp-haz-2.6.5\\nshmp-haz-2.6.5\\build\\classes\\java\\main",
+  "compiled_class_count": 235,
+  "generated_jar_count": 1,
+  "generated_jars": [
+    {
+      "jar_name": "nshmp-haz-thin.jar",
+      "relative_path": "tools/usgs_nshmp/nshmp-haz-2.6.5/nshmp-haz-2.6.5/build/libs/nshmp-haz-thin.jar",
+      "size_bytes": 423433,
+      "size_mb": 0.40381717681884766,
+      "sha256": "93822a39b8eb87f85e52d443de3bd60b8ec49b5fa42739a2edda683d6889b1b0",
+      "is_valid_zip": true,
+      "zip_integrity_passes": true,
+      "entry_count": 302,
+      "class_count": 235,
+      "contains_manifest": true
+    }
+  ],
+  "version_log_path": "data\\metadata\\nshmp_haz_build_logs\\nshmp_haz_2_6_5_gradle_version.log",
+  "tasks_log_path": "data\\metadata\\nshmp_haz_build_logs\\nshmp_haz_2_6_5_gradle_tasks.log",
+  "build_log_path": "data\\metadata\\nshmp_haz_build_logs\\nshmp_haz_2_6_5_jar_build.log",
+  "jar_manifest_path": "data\\metadata\\nshmp_haz_2_6_5_jar_manifest.csv"
+}

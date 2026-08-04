@@ -1,0 +1,153 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "exhausting_occurrences": 800,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "triggering_occurrences": 4005,
+    "years_with_ceded_loss": 3999,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T20:31:53.536859+00:00",
+  "next_cell": "Cell 8: finalize the Notebook 6 baseline insurance and reinsurance handoff, create compact portfolio risk tables, and prepare outputs for the final results and documentation notebook.",
+  "outputs": {
+    "aep_plot_pdf": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\plots\\baseline_reinsurance_aep_comparison.pdf",
+    "aep_plot_png": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\plots\\baseline_reinsurance_aep_comparison.png",
+    "annual_loss_series": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\baseline_reinsurance_annual_loss_series.csv.gz",
+      "rows": 2000000,
+      "sha256": "42844b3d93221fe354dc2f399cf8a9fa461b610cb564a48c9fd4b6d7b723cd31"
+    },
+    "exceedance_probability_curve": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\baseline_reinsurance_exceedance_probability_curve.csv.gz",
+      "rows": 40682,
+      "sha256": "c2edf2f63777ea35e21fc33d048db09271c814081cfc560708d90b0052f53329"
+    },
+    "occurrence_reinsurance_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\baseline_reinsurance_occurrence_loss.csv.gz",
+      "rows": 10630,
+      "sha256": "8d7109f684f8f722e4e0d8df0b9499c2129c27fa50d4852f738ba81d0d3821e6"
+    },
+    "oep_plot_pdf": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\plots\\baseline_reinsurance_oep_comparison.pdf",
+    "oep_plot_png": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\plots\\baseline_reinsurance_oep_comparison.png",
+    "pml_table": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\baseline_reinsurance_pml_table.csv",
+      "rows": 17,
+      "sha256": "6f9c00cf12649123f4cea0d7cfb4413b377840192b2f64ef9e5cdd1285c7e4cf"
+    },
+    "recovery_by_return_period": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\baseline_reinsurance_recovery_by_return_period.csv",
+      "rows": 17,
+      "sha256": "041627a1f994288db8cf9c322acd4f67881808ee0d3b49faf859966540110d8c"
+    },
+    "recovery_plot_pdf": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\plots\\baseline_reinsurance_recovery_by_return_period.pdf",
+    "recovery_plot_png": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\plots\\baseline_reinsurance_recovery_by_return_period.png",
+    "risk_metrics": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\baseline_reinsurance_risk_metrics.csv",
+      "rows": 6,
+      "sha256": "3bd2db9884daf4eed9a0e143a3b6bc12b45667a31891c4ac1fbae5412a4e3aba"
+    },
+    "source_aal_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_reinsurance_risk\\baseline_reinsurance_source_aal_summary.csv",
+      "rows": 2,
+      "sha256": "e296e558e01ca051037d028a8d4ff7874b0e8c91772089067dea14e731707011"
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_7_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_7_validation.csv"
+  },
+  "pipeline_version": "notebook6_cell7_annual_reinsurance_risk_metrics_v2",
+  "pml_method": {
+    "definition": "For return period R, sort all declared annual losses in descending order and select rank ceil(N/R), where N is the declared catalog duration.",
+    "layer_limit_utilization_interpretation": {
+      "aep": "Annual aggregate ceded AEP PML divided by one participated occurrence layer limit. This may exceed one when multiple occurrences recover in the same year because the baseline has no annual aggregate cap or reinstatement constraint.",
+      "maximum_annual_triggering_occurrences": 2,
+      "oep": "Ceded OEP PML divided by the participated occurrence layer limit. This is bounded between zero and one."
+    },
+    "return_periods_years": [
+      50,
+      100,
+      200,
+      250,
+      500,
+      1000,
+      2000,
+      2500,
+      5000,
+      10000,
+      20000,
+      50000,
+      100000,
+      200000,
+      500000,
+      1000000,
+      2000000
+    ],
+    "tail_support_warning_rank": 20,
+    "thin_tail_return_periods": [
+      200000,
+      500000,
+      1000000,
+      2000000
+    ]
+  },
+  "portfolio": {
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "reinsurance_scenario": {
+    "annual_aggregate_limit_2022_usd": null,
+    "attachment_2022_usd": 18811083.54014544,
+    "contract_type": "occurrence excess of loss",
+    "exhaustion_2022_usd": 80649066.85506359,
+    "layer_scenario_id": "baseline_occurrence_xol_500yr_to_2500yr_oep_v1",
+    "layer_scenario_name": "Synthetic baseline occurrence excess-of-loss layer spanning the empirical 500-year to 2,500-year gross-insured OEP PML",
+    "limit_2022_usd": 61837983.314918146,
+    "reinstatement_assumption": "No annual aggregate cap or reinstatement constraint is modeled in the baseline. Each catalog occurrence is evaluated independently.",
+    "reinsurer_participation": 1.0,
+    "subject_loss": "occurrence-level gross insured building repair loss"
+  },
+  "risk_metrics": {
+    "ceded_aal_2022_usd": 63676.597327266056,
+    "ceded_share_of_gross_insured_aal": 0.5177819577837386,
+    "gross_insured_aal_2022_usd": 122979.55996732853,
+    "maximum_ceded_aep_2022_usd": 90413665.12193382,
+    "maximum_ceded_oep_2022_usd": 61837983.314918146,
+    "maximum_gross_insured_aep_2022_usd": 244325807.3326858,
+    "maximum_gross_insured_oep_2022_usd": 244325807.3326858,
+    "maximum_net_retained_aep_2022_usd": 182487824.01776767,
+    "maximum_net_retained_oep_2022_usd": 182487824.01776767,
+    "net_retained_aal_2022_usd": 59302.96264006242,
+    "net_retained_share_of_gross_insured_aal": 0.4822180422162609
+  },
+  "source_files": {
+    "cell4_event_loss_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_loss\\baseline_gross_insured_loss_event_summary.csv.gz",
+    "cell4_event_loss_sha256": "2d57f67f3e842efbc30283f8f09e038f3f1052c8040a323127ea9c52851b00e7",
+    "cell5_annual_series_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\baseline_insurance_annual_loss_series.csv.gz",
+    "cell5_annual_series_sha256": "92e6aa6694433c4b4823d38854445fe1f83fea3ff63338a716b630fb55e544d4",
+    "cell5_pml_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\baseline_insurance_pml_table.csv",
+    "cell5_pml_sha256": "c39f7263a7eb80be57677ed56cdad30a47b8b47e8722660f95614c42162c1ce1",
+    "cell6_controlled_cases_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_reinsurance_parameters\\controlled_occurrence_xol_validation_cases.csv",
+    "cell6_controlled_cases_sha256": "b4d4fc97fb2dd395bb97bce3ee8ed2c8aff6fed917dca80783d9f737e582245c",
+    "cell6_layer_terms_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_reinsurance_parameters\\baseline_occurrence_xol_layer_terms.csv",
+    "cell6_layer_terms_sha256": "0ffeff76dafcbd4668e3dcb1d32c3cbf09506c29a8a2e282882c336d67e64992",
+    "cell6_source_diagnostics_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_reinsurance_parameters\\baseline_occurrence_xol_source_diagnostics.csv",
+    "cell6_source_diagnostics_sha256": "e28d95e0133ab96c4fd2365ac83b3a2232ef5095662aaba3543c9c755499e88e"
+  },
+  "underlying_policy_scenario": {
+    "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+    "policy_scenario_name": "Full building coverage with 10% replacement-value deductible"
+  },
+  "validation": {
+    "critical_checks": 97,
+    "critical_failures": [],
+    "warnings": [
+      {
+        "check_id": "extreme_return_period_tail_support_documented",
+        "detail": "thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; threshold_rank=20",
+        "passed": false,
+        "severity": "warning"
+      }
+    ]
+  }
+}

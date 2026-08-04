@@ -1,0 +1,26 @@
+{
+  "nshmp_haz_tag": "2.6.5",
+  "nshmp_haz_commit": "8015c808",
+  "runtime_classpath_entries": 161,
+  "runtime_jar_count": 159,
+  "project_jar_count": 1,
+  "nshmp_lib_jars": [
+    "C:\\Users\\USER\\.gradle\\caches\\modules-2\\files-2.1\\ghsc\\nshmp-lib\\1.7.3\\8bfb8fabae65995ba989c8b87b1741e11035e608\\nshmp-lib-1.7.3.jar"
+  ],
+  "hazard_model_classes": [
+    "gov.usgs.earthquake.nshmp.model.HazardModel"
+  ],
+  "classes_inspected": [
+    "gov.usgs.earthquake.nshmp.model.HazardModel",
+    "gov.usgs.earthquake.nshmp.model.SourceTree",
+    "gov.usgs.earthquake.nshmp.model.RuptureSet",
+    "gov.usgs.earthquake.nshmp.model.Rupture",
+    "gov.usgs.earthquake.nshmp.model.SourceType",
+    "software.amazon.awssdk.services.ssm.model.SourceType",
+    "gov.usgs.earthquake.nshmp.model.InterfaceSource"
+  ],
+  "runtime_manifest": "data\\metadata\\nshmp_haz_2_6_5_runtime_classpath.csv",
+  "class_inventory": "data\\metadata\\nshmp_haz_2_6_5_model_class_inventory.csv",
+  "api_summary": "data\\metadata\\nshmp_haz_2_6_5_api_summary.csv",
+  "created_at_utc": "2026-07-30T00:34:41.251464+00:00"
+}

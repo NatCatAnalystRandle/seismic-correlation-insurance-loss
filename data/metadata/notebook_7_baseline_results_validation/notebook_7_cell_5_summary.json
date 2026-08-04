@@ -1,0 +1,41 @@
+{
+  "cell": 5,
+  "status": "complete",
+  "declared_catalog_years": 2000000,
+  "catalog_occurrences": 10630,
+  "exceedance_curve_rows": 80286,
+  "largest_occurrence": {
+    "occurrence_id": "Y742164|EVT_00003999",
+    "catalog_year": 742164,
+    "source_type": "INTERFACE",
+    "magnitude": 9.34,
+    "ground_up_loss_2022_usd": 282749467.80267936,
+    "gross_insured_loss_2022_usd": 244325807.3326858,
+    "ceded_loss_2022_usd": 61837983.31491815,
+    "net_retained_loss_2022_usd": 182487824.01776767
+  },
+  "largest_annual_aggregate_loss": {
+    "catalog_year": 742164,
+    "event_count": 1,
+    "ground_up_aep_2022_usd": 282749467.80267936,
+    "gross_insured_aep_2022_usd": 244325807.3326858,
+    "ceded_aep_2022_usd": 61837983.31491815,
+    "net_retained_aep_2022_usd": 182487824.01776767
+  },
+  "reinsurance_layer": {
+    "attachment_2022_usd": 18811083.54014544,
+    "limit_2022_usd": 61837983.314918146,
+    "exhaustion_2022_usd": 80649066.85506359
+  },
+  "figure_files": 6,
+  "critical_validation_checks": 94,
+  "critical_failures": [],
+  "warnings_requiring_review": [],
+  "outputs": {
+    "full_exceedance_curves": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_full_exceedance_curves.csv.gz",
+    "largest_occurrence_losses": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_largest_occurrence_losses.csv",
+    "largest_annual_losses": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_largest_annual_losses.csv",
+    "figure_manifest": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_cell_5_figure_manifest.csv",
+    "validation": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_cell_5_validation.csv"
+  }
+}

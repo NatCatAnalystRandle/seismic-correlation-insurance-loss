@@ -1,0 +1,4 @@
+source_group_id,rupture_set_name,rupture_set_id,feature_id,spatial_pdf,mfd_tree_name,rate_branch_id,rate_branch_weight,rate_tree_value,mfd_branch_id,mfd_branch_weight,mfd_type,b_parameter,minimum_magnitude,maximum_magnitude,magnitude_increment
+mfd-hi,OR Intraslab,8212,8210,pdf-or.csv,or-wa-slab-mfd-hi,R1,1.0,10.801015830699988,M1,0.9,GR,0.8,7.2,7.5,0.1
+mfd-hi,OR Intraslab,8212,8210,pdf-or.csv,or-wa-slab-mfd-hi,R1,1.0,10.801015830699988,M2,0.1,GR,0.8,7.2,8.0,0.1
+mfd-lo,OR Intraslab,8211,8210,pdf-or.csv,or-slab-mfd-lo,R1,1.0,0.1443214369750003,M1,1.0,GR,0.4,6.5,7.2,0.1

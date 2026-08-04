@@ -1,0 +1,21 @@
+class_name,api_line
+gov.usgs.earthquake.nshmp.gmm.GroundMotionModel,public abstract gov.usgs.earthquake.nshmp.tree.LogicTree<gov.usgs.earthquake.nshmp.gmm.GroundMotion> calc(gov.usgs.earthquake.nshmp.gmm.GmmInput);
+gov.usgs.earthquake.nshmp.gmm.GroundMotionModel,"public default gov.usgs.earthquake.nshmp.tree.LogicTree<gov.usgs.earthquake.nshmp.gmm.GroundMotion> dampedCalc(gov.usgs.earthquake.nshmp.gmm.GmmInput, gov.usgs.earthquake.nshmp.gmm.Gmm$Type, double);"
+gov.usgs.earthquake.nshmp.gmm.GroundMotion,public abstract double mean();
+gov.usgs.earthquake.nshmp.gmm.GroundMotion,public abstract double sigma();
+gov.usgs.earthquake.nshmp.tree.LogicTree,public interface gov.usgs.earthquake.nshmp.tree.LogicTree<T> extends java.util.List<gov.usgs.earthquake.nshmp.tree.Branch<T>> {
+gov.usgs.earthquake.nshmp.tree.LogicTree,public abstract gov.usgs.earthquake.nshmp.tree.Branch<T> sample(double);
+gov.usgs.earthquake.nshmp.tree.LogicTree,public abstract java.util.List<gov.usgs.earthquake.nshmp.tree.Branch<T>> sample(double[]);
+gov.usgs.earthquake.nshmp.tree.LogicTree,public static <E extends java.lang.Enum<E>> gov.usgs.earthquake.nshmp.tree.LogicTree$EnumValueBuilder<E> enumValueBuilder(java.lang.String);
+gov.usgs.earthquake.nshmp.tree.LogicTree,public static gov.usgs.earthquake.nshmp.tree.LogicTree$StringValueBuilder stringValueBuilder(java.lang.String);
+gov.usgs.earthquake.nshmp.tree.LogicTree$Builder,java.util.List<gov.usgs.earthquake.nshmp.tree.Branch<T>> branches;
+gov.usgs.earthquake.nshmp.tree.LogicTree$Builder,double[] cumulativeWeights;
+gov.usgs.earthquake.nshmp.tree.LogicTree$Builder,"public gov.usgs.earthquake.nshmp.tree.LogicTree$Builder<T> addBranch(java.lang.String, T, double);"
+gov.usgs.earthquake.nshmp.tree.LogicTree$Builder,public gov.usgs.earthquake.nshmp.tree.LogicTree<T> build();
+gov.usgs.earthquake.nshmp.tree.LogicTree$Builder,private static <T> double[] weightArray(java.util.List<gov.usgs.earthquake.nshmp.tree.Branch<T>>);
+gov.usgs.earthquake.nshmp.tree.Branch,"Compiled from ""Branch.java"""
+gov.usgs.earthquake.nshmp.tree.Branch,public interface gov.usgs.earthquake.nshmp.tree.Branch<T> {
+gov.usgs.earthquake.nshmp.tree.Branch,public abstract T value();
+gov.usgs.earthquake.nshmp.tree.Branch,public abstract double weight();
+gov.usgs.earthquake.nshmp.tree.Branch,public static <T> java.lang.String toString(gov.usgs.earthquake.nshmp.tree.Branch<T>);
+gov.usgs.earthquake.nshmp.gmm.GmmInput$Constraints,public java.util.Optional<?> get(gov.usgs.earthquake.nshmp.gmm.GmmInput$Field);

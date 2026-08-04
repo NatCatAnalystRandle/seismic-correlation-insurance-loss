@@ -1,0 +1,90 @@
+relative_path,top_level_group,file_name,extension,size_kb,subduction_category
+subduction/interface/Cascadia/README.md,subduction,README.md,.md,3.1171875,Cascadia interface
+subduction/interface/Cascadia/bottom/full-rupture/rupture-set.json,subduction,rupture-set.json,.json,0.1201171875,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/section-1/rupture-set.json,subduction,rupture-set.json,.json,0.095703125,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/section-4/rupture-set.json,subduction,rupture-set.json,.json,0.095703125,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/sections-1-2-3/rupture-set.json,subduction,rupture-set.json,.json,0.13671875,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/sections-1-2/rupture-set.json,subduction,rupture-set.json,.json,0.126953125,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/source-group.json,subduction,source-group.json,.json,0.203125,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/source-tree.json,subduction,source-tree.json,.json,0.1025390625,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/sections-1-2-3-4/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1357421875,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/sections-1-2-3-4/source-group.json,subduction,source-group.json,.json,0.0498046875,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/sections-1-2-3/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1279296875,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/sections-1-2-3/source-group.json,subduction,source-group.json,.json,0.0478515625,Cascadia interface
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/source-tree.json,subduction,source-tree.json,.json,0.1142578125,Cascadia interface
+subduction/interface/Cascadia/bottom/source-group.json,subduction,source-group.json,.json,0.072265625,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 1 (Mendocino - Cape Blanco, bottom).geojson",subduction,"Cascadia 1 (Mendocino - Cape Blanco, bottom).geojson",.geojson,0.6181640625,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 1 (Mendocino - Cape Blanco, middle).geojson",subduction,"Cascadia 1 (Mendocino - Cape Blanco, middle).geojson",.geojson,0.6337890625,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 1 (Mendocino - Cape Blanco, top).geojson",subduction,"Cascadia 1 (Mendocino - Cape Blanco, top).geojson",.geojson,0.630859375,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 2 (Cape Blanco - Heceta Bank, bottom).geojson",subduction,"Cascadia 2 (Cape Blanco - Heceta Bank, bottom).geojson",.geojson,0.515625,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 2 (Cape Blanco - Heceta Bank, middle).geojson",subduction,"Cascadia 2 (Cape Blanco - Heceta Bank, middle).geojson",.geojson,0.515625,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 2 (Cape Blanco - Heceta Bank, top).geojson",subduction,"Cascadia 2 (Cape Blanco - Heceta Bank, top).geojson",.geojson,0.5126953125,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 3 (Heceta Bank - Nehalem Bank, bottom).geojson",subduction,"Cascadia 3 (Heceta Bank - Nehalem Bank, bottom).geojson",.geojson,0.470703125,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 3 (Heceta Bank - Nehalem Bank, middle).geojson",subduction,"Cascadia 3 (Heceta Bank - Nehalem Bank, middle).geojson",.geojson,0.470703125,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 3 (Heceta Bank - Nehalem Bank, top).geojson",subduction,"Cascadia 3 (Heceta Bank - Nehalem Bank, top).geojson",.geojson,0.4677734375,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 4 (Nehalem Bank - Vancouver Island, bottom).geojson",subduction,"Cascadia 4 (Nehalem Bank - Vancouver Island, bottom).geojson",.geojson,0.9609375,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 4 (Nehalem Bank - Vancouver Island, middle).geojson",subduction,"Cascadia 4 (Nehalem Bank - Vancouver Island, middle).geojson",.geojson,0.9609375,Cascadia interface
+"subduction/interface/Cascadia/features/Cascadia 4 (Nehalem Bank - Vancouver Island, top).geojson",subduction,"Cascadia 4 (Nehalem Bank - Vancouver Island, top).geojson",.geojson,0.9580078125,Cascadia interface
+subduction/interface/Cascadia/features/README.md,subduction,README.md,.md,1.2666015625,Cascadia interface
+subduction/interface/Cascadia/mfd-map.json,subduction,mfd-map.json,.json,5.0478515625,Cascadia interface
+subduction/interface/Cascadia/middle/full-rupture/rupture-set.json,subduction,rupture-set.json,.json,0.1201171875,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/segmented/section-1/rupture-set.json,subduction,rupture-set.json,.json,0.095703125,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/segmented/section-4/rupture-set.json,subduction,rupture-set.json,.json,0.095703125,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/segmented/sections-1-2-3/rupture-set.json,subduction,rupture-set.json,.json,0.13671875,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/segmented/sections-1-2/rupture-set.json,subduction,rupture-set.json,.json,0.126953125,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/segmented/source-group.json,subduction,source-group.json,.json,0.203125,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/source-tree.json,subduction,source-tree.json,.json,0.1025390625,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/sections-1-2-3-4/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1357421875,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/sections-1-2-3-4/source-group.json,subduction,source-group.json,.json,0.05078125,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/sections-1-2-3/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1279296875,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/sections-1-2-3/source-group.json,subduction,source-group.json,.json,0.0478515625,Cascadia interface
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/source-tree.json,subduction,source-tree.json,.json,0.1142578125,Cascadia interface
+subduction/interface/Cascadia/middle/source-group.json,subduction,source-group.json,.json,0.072265625,Cascadia interface
+subduction/interface/Cascadia/source-tree.json,subduction,source-tree.json,.json,0.1376953125,Cascadia interface
+subduction/interface/Cascadia/top/full-rupture/rupture-set.json,subduction,rupture-set.json,.json,0.1142578125,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/segmented/section-1/rupture-set.json,subduction,rupture-set.json,.json,0.08984375,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/segmented/section-4/rupture-set.json,subduction,rupture-set.json,.json,0.08984375,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/segmented/sections-1-2-3/rupture-set.json,subduction,rupture-set.json,.json,0.130859375,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/segmented/sections-1-2/rupture-set.json,subduction,rupture-set.json,.json,0.12109375,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/segmented/source-group.json,subduction,source-group.json,.json,0.203125,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/source-tree.json,subduction,source-tree.json,.json,0.1025390625,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/sections-1-2-3-4/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1328125,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/sections-1-2-3-4/source-group.json,subduction,source-group.json,.json,0.0498046875,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/sections-1-2-3/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.125,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/sections-1-2-3/source-group.json,subduction,source-group.json,.json,0.0478515625,Cascadia interface
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/source-tree.json,subduction,source-tree.json,.json,0.1142578125,Cascadia interface
+subduction/interface/Cascadia/top/source-group.json,subduction,source-group.json,.json,0.072265625,Cascadia interface
+subduction/interface/Cascadia/tree-info.json,subduction,tree-info.json,.json,0.0537109375,Cascadia interface
+subduction/interface/gmm-config.json,subduction,gmm-config.json,.json,0.0283203125,General interface configuration
+subduction/interface/gmm-tree.json,subduction,gmm-tree.json,.json,0.1708984375,General interface configuration
+subduction/interface/interface-config.json,subduction,interface-config.json,.json,0.1103515625,General interface configuration
+subduction/interface/map-region.geojson,subduction,map-region.geojson,.geojson,0.2744140625,General interface configuration
+subduction/interface/mfd-config.json,subduction,mfd-config.json,.json,0.11328125,General interface configuration
+subduction/slab/CA/single-branch/rate-tree.json,subduction,rate-tree.json,.json,0.0771484375,California intraslab
+subduction/slab/CA/single-branch/rupture-sets.json,subduction,rupture-sets.json,.json,0.1328125,California intraslab
+subduction/slab/CA/source-group.json,subduction,source-group.json,.json,0.037109375,California intraslab
+subduction/slab/CA/tree-info.json,subduction,tree-info.json,.json,0.0576171875,California intraslab
+subduction/slab/OR/mfd-hi/rate-tree.json,subduction,rate-tree.json,.json,0.078125,Oregon intraslab
+subduction/slab/OR/mfd-hi/rupture-sets.json,subduction,rupture-sets.json,.json,0.142578125,Oregon intraslab
+subduction/slab/OR/mfd-lo/rate-tree.json,subduction,rate-tree.json,.json,0.078125,Oregon intraslab
+subduction/slab/OR/mfd-lo/rupture-sets.json,subduction,rupture-sets.json,.json,0.1396484375,Oregon intraslab
+subduction/slab/OR/source-group.json,subduction,source-group.json,.json,0.0576171875,Oregon intraslab
+subduction/slab/OR/tree-info.json,subduction,tree-info.json,.json,0.0537109375,Oregon intraslab
+subduction/slab/README.md,subduction,README.md,.md,2.0146484375,General slab configuration
+subduction/slab/WA/mfd-hi/rate-tree.json,subduction,rate-tree.json,.json,0.0771484375,Washington intraslab
+subduction/slab/WA/mfd-hi/rupture-sets.json,subduction,rupture-sets.json,.json,0.142578125,Washington intraslab
+subduction/slab/WA/mfd-lo/rate-tree.json,subduction,rate-tree.json,.json,0.076171875,Washington intraslab
+subduction/slab/WA/mfd-lo/rupture-sets.json,subduction,rupture-sets.json,.json,0.1396484375,Washington intraslab
+subduction/slab/WA/source-group.json,subduction,source-group.json,.json,0.0576171875,Washington intraslab
+subduction/slab/WA/tree-info.json,subduction,tree-info.json,.json,0.0576171875,Washington intraslab
+subduction/slab/features/ca.geojson,subduction,ca.geojson,.geojson,0.3251953125,General slab configuration
+subduction/slab/features/or.geojson,subduction,or.geojson,.geojson,0.2919921875,General slab configuration
+subduction/slab/features/wa.geojson,subduction,wa.geojson,.geojson,0.2919921875,General slab configuration
+subduction/slab/gmm-config.json,subduction,gmm-config.json,.json,0.02734375,General slab configuration
+subduction/slab/gmm-tree.json,subduction,gmm-tree.json,.json,0.1015625,General slab configuration
+subduction/slab/grid-data/pdf-ca.csv,subduction,pdf-ca.csv,.csv,85.591796875,General slab configuration
+subduction/slab/grid-data/pdf-or.csv,subduction,pdf-or.csv,.csv,30.484375,General slab configuration
+subduction/slab/grid-data/pdf-wa.csv,subduction,pdf-wa.csv,.csv,92.419921875,General slab configuration
+subduction/slab/map-region.geojson,subduction,map-region.geojson,.geojson,0.26953125,General slab configuration
+subduction/slab/mfd-map.json,subduction,mfd-map.json,.json,1.1484375,General slab configuration
+subduction/slab/slab-config.json,subduction,slab-config.json,.json,0.1923828125,General slab configuration

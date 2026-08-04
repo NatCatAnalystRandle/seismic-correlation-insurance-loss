@@ -1,0 +1,194 @@
+{
+  "aleatory_model": {
+    "between_event": "One occurrence-level residual per IMT shared by all 470 sites.",
+    "cross_imt_rho": 0.7321409900247263,
+    "equation": "ln(IM) = mu_epi_off + tau*eta + phi*epsilon",
+    "random_stream_reuse": "The event and site seeds in the event residual ledger are frozen for future independent-versus-spatially-correlated comparisons.",
+    "spatial_correlation": "not applied in the Phase 1 baseline",
+    "within_event": "Conditionally independent across different sites in the Phase 1 baseline; PGA and SA0P4 are cross-correlated at the same site."
+  },
+  "annual_catalog": {
+    "annual_event_occurrence_rate": 0.005315,
+    "declared_duration_years": 2000000,
+    "duration_candidates": [
+      {
+        "provenance": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\03_generate_annual_event_catalog.ipynb -> CATALOG_YEARS",
+        "years": 2000000
+      },
+      {
+        "provenance": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\annual_event_catalog_config.json -> catalog_years",
+        "years": 2000000
+      },
+      {
+        "provenance": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\annual_event_catalog_metadata.json -> catalog_years",
+        "years": 2000000
+      }
+    ],
+    "duration_provenance": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\03_generate_annual_event_catalog.ipynb -> CATALOG_YEARS",
+    "maximum_events_in_one_year": 3,
+    "maximum_occupied_year_label": 1999745,
+    "mean_interevent_time_years": 188.1467544684854,
+    "minimum_occupied_year_label": 185,
+    "multiple_event_years": 36,
+    "occupied_year_count_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_handoff\\notebook_4_occupied_year_event_counts.csv.gz",
+    "occupied_year_count_sha256": "82416e4584aab7416a8f7a65cebb4296335f7783e306dfd936abc23080977e04",
+    "occupied_year_event_count_frequency": {
+      "1": 10557,
+      "2": 35,
+      "3": 1
+    },
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\annual_event_catalog\\annual_event_catalog.csv",
+    "sha256": "e4725a57eab466348aa263d79b8f8bcc923f9542fb5507af279fece41c121f37",
+    "source_occurrence_counts": {
+      "INTERFACE": 6680,
+      "SLAB": 3950
+    },
+    "zero_event_years": 1989407,
+    "zero_year_rule": "Notebook 5 annual loss tables must use the declared duration as the denominator and must explicitly include all zero-event years as zero annual loss. Do not use only occupied years."
+  },
+  "artifact_inventory": {
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_handoff\\notebook_4_artifact_inventory.csv",
+    "sha256": "f43505ef84f8564953c9ce617a595a9fc1f02b7421a32b89bc8fbad36018c491"
+  },
+  "created_at_utc": "2026-08-02T20:44:14.176991+00:00",
+  "ground_motion_model": {
+    "baseline_branch_rule": "Use epi-off for the Phase 1 baseline. Epi-lo and epi-hi are alternative epistemic sensitivity branches and must not be mixed as additive earthquake occurrences.",
+    "imts": [
+      "PGA",
+      "SA0P4"
+    ],
+    "interface_gmm": "PSBAH_20_CASCADIA_INTERFACE",
+    "period_resolution": "exact USGS SA0P4; no interpolation",
+    "primary_epistemic_branch": "epi-off",
+    "retained_epistemic_branches": [
+      "epi-lo",
+      "epi-off",
+      "epi-hi"
+    ],
+    "slab_gmm": "PSBAH_20_CASCADIA_SLAB"
+  },
+  "modeling_boundaries": [
+    "This handoff represents the Phase 1 no-spatial-correlation baseline.",
+    "The same annual event catalog must be reused for later correlation cases.",
+    "The same occurrence and latent site random streams must be reused where possible.",
+    "Catalog logic-tree alternatives must not be treated as additive sources unless the USGS model defines them as additive.",
+    "Source-scale factors must remain separate from epistemic branch weights.",
+    "Annual loss statistics must include zero-event years."
+  ],
+  "next_notebook": "05_calculate_ground_up_losses.ipynb",
+  "next_task": "Join occurrence-site SA0P4 fields to the Seaside W2 exposure and validated vulnerability/fragility assumptions, sample damage and ground-up loss, then aggregate event and annual losses while retaining all zero-event years.",
+  "notebook4_complete": true,
+  "notebook4_pipeline_version": "notebook4_cell20_final_handoff_v1",
+  "notebook5_primary_input": {
+    "available_columns": [
+      "catalog_year",
+      "catalog_event_id",
+      "occurrence_ordinal",
+      "occurrence_id",
+      "rupture_ordinal",
+      "rupture_template_event_id",
+      "rupture_id",
+      "source_type",
+      "gmm_name",
+      "magnitude",
+      "site_ordinal",
+      "site_id",
+      "site_longitude",
+      "site_latitude",
+      "r_rup_km",
+      "vs30_mps",
+      "period_s",
+      "cross_imt_rho",
+      "eta_pga",
+      "epsilon_pga",
+      "pga_epi_off_mean_ln_g",
+      "pga_tau_ln",
+      "pga_phi_ln",
+      "pga_between_event_shift_ln",
+      "pga_within_event_shift_ln",
+      "pga_simulated_ln_g",
+      "pga_simulated_g",
+      "eta_sa0p4",
+      "epsilon_sa0p4",
+      "sa0p4_epi_off_mean_ln_g",
+      "sa0p4_tau_ln",
+      "sa0p4_phi_ln",
+      "sa0p4_between_event_shift_ln",
+      "sa0p4_within_event_shift_ln",
+      "sa0p4_simulated_ln_g",
+      "sa0p4_simulated_g"
+    ],
+    "magnitude_column": "magnitude",
+    "occurrence_key": "occurrence_id",
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_full_baseline_fields\\full_baseline_ground_motion_fields.csv.gz",
+    "pga_use_note": "PGA is retained for diagnostics or damage components explicitly parameterized by PGA. Do not assign a component to PGA unless the selected vulnerability or fragility model requires it.",
+    "row_granularity": "one event occurrence and one Seaside W2 site",
+    "rows": 4996100,
+    "rupture_key": "rupture_id",
+    "sha256": "5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b",
+    "site_key": "site_id",
+    "source_column": "source_type",
+    "structural_damage_im_column": "sa0p4_simulated_g",
+    "structural_damage_im_period_s": 0.4,
+    "supporting_pga_column": "pga_simulated_g",
+    "year_column": "catalog_year"
+  },
+  "portfolio": {
+    "name": "Seaside W2 commercial portfolio",
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\exposure_portfolio\\seaside_w2_portfolio_gmm_ready.csv",
+    "period_s": 0.4,
+    "sha256": "686623ec6793546004533f6a188897100208863f2627b63644115c98f291eb71",
+    "sites": 470,
+    "structural_type": "W2",
+    "vs30_note": "The Notebook 4 portfolio uses the portfolio vs30_mps field; the accepted summaries identify the 365 m/s values as inferred rather than site-specific measurements."
+  },
+  "schema_version": "notebook5_input_handoff_v1",
+  "supporting_inputs": {
+    "bulk_gmm_parameters": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_bulk_parker_gmm\\bulk_parker_gmm_parameters.csv.gz",
+      "sha256": "ecc75c1220f655f11001fc653e9e56a99361057e14f930dbf7235e3261a4b4f0"
+    },
+    "event_residual_ledger": {
+      "available_columns": [
+        "catalog_year",
+        "catalog_event_id",
+        "occurrence_ordinal",
+        "occurrence_id",
+        "rupture_ordinal",
+        "rupture_template_event_id",
+        "rupture_id",
+        "source_type",
+        "gmm_name",
+        "event_seed_hex",
+        "site_seed_hex",
+        "z_event_latent_1",
+        "z_event_latent_2",
+        "eta_pga",
+        "eta_sa0p4",
+        "cross_imt_rho"
+      ],
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_full_baseline_fields\\full_event_residual_ledger.csv.gz",
+      "sha256": "f89f1983edf935cd53383e3042790a9889b16269eb71eda58605f5454c2e75a4"
+    },
+    "occurrence_index": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_19_event_occurrence_index.csv.gz",
+      "sha256": "02da94690b52515e6d8f2d0679a05481ff415c2531d3bb8d691417818eefaf9f"
+    },
+    "production_random_specification": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_19_random_stream_specification.json",
+      "sha256": "909a0e03f48c01ea546d7ca396d6332696637331e3c96e224ce9dbfbe3b752c6"
+    },
+    "site_order": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_18_site_order.csv",
+      "sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100"
+    }
+  },
+  "validation": {
+    "all_checks_passed": true,
+    "checks": 27,
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_validation.csv",
+    "sha256": "6b12756050a6639de110c34682dbb168a5a986f0a7b47d81b6217236395cb590"
+  }
+}

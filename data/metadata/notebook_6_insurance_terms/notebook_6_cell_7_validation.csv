@@ -1,0 +1,99 @@
+check_id,severity,passed,detail
+required_input_exists_notebook_6_cell_4_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_4_validation.csv
+required_input_exists_notebook_6_cell_4_summary,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_4_summary.json
+required_input_exists_notebook_6_cell_5_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_5_validation.csv
+required_input_exists_notebook_6_cell_5_summary,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_5_summary.json
+required_input_exists_notebook_6_cell_6_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_6_validation.csv
+required_input_exists_notebook_6_cell_6_summary,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_6_summary.json
+cell4_critical_validation_passed,critical,True,critical_failures=0
+cell5_critical_validation_passed,critical,True,critical_failures=0
+cell6_critical_validation_passed,critical,True,critical_failures=0
+cell4_has_no_unresolved_warnings,critical,True,warning_ids=[]
+cell5_warnings_are_expected,critical,True,warning_ids=['extreme_return_period_tail_support_documented']; unexpected=[]
+cell6_has_no_unresolved_warnings,critical,True,warning_ids=[]
+cell4_summary_declares_success,critical,True,all_critical_checks_passed=True
+cell5_summary_declares_success,critical,True,all_critical_checks_passed=True
+cell6_summary_declares_success,critical,True,all_critical_checks_passed=True
+policy_scenarios_match_across_cells,critical,True,cell4=baseline_full_coverage_10pct_deductible_v1; cell5=baseline_full_coverage_10pct_deductible_v1; cell6=baseline_full_coverage_10pct_deductible_v1
+layer_terms_positive_and_ordered,critical,True,attachment=18811083.540145; limit=61837983.314918; exhaustion=80649066.855064
+reinsurer_participation_bounded,critical,True,participation=1.000000
+baseline_has_no_annual_aggregate_limit,critical,True,annual_aggregate_limit=None
+return_periods_supported_by_catalog,critical,True,"return_periods=[50, 100, 200, 250, 500, 1000, 2000, 2500, 5000, 10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000]; catalog_years=2000000"
+cell4_event_loss_hash_matches,critical,True,expected=2d57f67f3e842efbc30283f8f09e038f3f1052c8040a323127ea9c52851b00e7; actual=2d57f67f3e842efbc30283f8f09e038f3f1052c8040a323127ea9c52851b00e7
+cell5_annual_series_hash_matches,critical,True,expected=92e6aa6694433c4b4823d38854445fe1f83fea3ff63338a716b630fb55e544d4; actual=92e6aa6694433c4b4823d38854445fe1f83fea3ff63338a716b630fb55e544d4
+cell5_pml_hash_matches,critical,True,expected=c39f7263a7eb80be57677ed56cdad30a47b8b47e8722660f95614c42162c1ce1; actual=c39f7263a7eb80be57677ed56cdad30a47b8b47e8722660f95614c42162c1ce1
+cell6_layer_terms_hash_matches,critical,True,expected=0ffeff76dafcbd4668e3dcb1d32c3cbf09506c29a8a2e282882c336d67e64992; actual=0ffeff76dafcbd4668e3dcb1d32c3cbf09506c29a8a2e282882c336d67e64992
+cell6_controlled_cases_hash_matches,critical,True,expected=b4d4fc97fb2dd395bb97bce3ee8ed2c8aff6fed917dca80783d9f737e582245c; actual=b4d4fc97fb2dd395bb97bce3ee8ed2c8aff6fed917dca80783d9f737e582245c
+cell6_source_diagnostics_hash_matches,critical,True,expected=e28d95e0133ab96c4fd2365ac83b3a2232ef5095662aaba3543c9c755499e88e; actual=e28d95e0133ab96c4fd2365ac83b3a2232ef5095662aaba3543c9c755499e88e
+layer_terms_schema_complete,critical,True,rows=1; missing=[]
+layer_terms_table_matches_summary,critical,True,"layer scenario, policy scenario, attachment, limit, exhaustion, and participation checked"
+event_loss_schema_complete,critical,True,missing=[]
+occurrence_count_and_keys_match,critical,True,rows=10630; expected=10630; unique_occurrences=10630
+catalog_years_within_declared_range,critical,True,minimum=185; maximum=1999745
+occurrence_losses_finite_and_nonnegative,critical,True,"gross, layer, ceded, and retained occurrence losses checked"
+ceded_not_above_participating_limit,critical,True,maximum_ceded=61837983.314918; participating_limit=61837983.314918
+ceded_and_retained_not_above_gross,critical,True,maximum_ceded_minus_gross=0.000e+00; maximum_retained_minus_gross=0.000e+00
+occurrence_gross_equals_ceded_plus_retained,critical,True,maximum_error=0.000e+00
+below_attachment_occurrences_have_zero_ceded,critical,True,occurrences_checked=6625
+exhausting_occurrences_have_full_participating_limit,critical,True,occurrences_checked=800
+triggering_occurrence_count_matches_cell6,critical,True,cell7=4005; cell6=4005
+exhausting_occurrence_count_matches_cell6,critical,True,cell7=800; cell6=800
+occurrence_gross_total_matches_cell6,critical,True,cell7=245959119934.656921; cell6=245959119934.656921
+occurrence_ceded_total_matches_cell6,critical,True,cell7=127353194654.532135; cell6=127353194654.532135
+occurrence_net_retained_total_matches_cell6,critical,True,cell7=118605925280.124817; cell6=118605925280.124817
+cell6_actual_control_cases_reproduced,critical,True,rows=8; maximum_error=2.980e-08
+cell5_annual_series_schema_complete,critical,True,missing=[]
+annual_series_contains_all_catalog_years,critical,True,rows=2000000; first=1; last=2000000
+event_counts_reproduce_cell5,critical,True,maximum_difference=0
+gross_aep_reproduces_cell5,critical,True,maximum_difference=2.980e-08
+gross_oep_reproduces_cell5,critical,True,maximum_difference=2.980e-08
+occupied_year_count_matches_cell5,critical,True,cell7=10593; cell5=10593
+multiple_event_year_count_matches_cell5,critical,True,cell7=36; cell5=36
+zero_event_year_count_matches_cell5,critical,True,cell7=1989407; cell5=1989407
+annual_aep_gross_equals_ceded_plus_retained,critical,True,maximum_error=2.980e-08
+annual_oep_gross_equals_ceded_plus_retained,critical,True,maximum_error=2.980e-08
+gross_insured_aep_not_less_than_oep,critical,True,minimum_difference=0.000000
+gross_insured_single_and_zero_event_years_have_equal_aep_oep,critical,True,years_checked=1999964
+ceded_aep_not_less_than_oep,critical,True,minimum_difference=0.000000
+ceded_single_and_zero_event_years_have_equal_aep_oep,critical,True,years_checked=1999964
+net_retained_aep_not_less_than_oep,critical,True,minimum_difference=0.000000
+net_retained_single_and_zero_event_years_have_equal_aep_oep,critical,True,years_checked=1999964
+annual_ceded_and_retained_not_above_gross,critical,True,AEP and OEP annual vectors checked
+annual_gross_total_matches_occurrence_total,critical,True,annual=245959119934.657074; occurrence=245959119934.656921
+annual_ceded_total_matches_occurrence_total,critical,True,annual=127353194654.532104; occurrence=127353194654.532135
+annual_net_retained_total_matches_occurrence_total,critical,True,annual=118605925280.124832; occurrence=118605925280.124817
+gross_aal_matches_cell5,critical,True,cell7=122979.559967329; cell5=122979.559967329
+ceded_aal_matches_cell6,critical,True,cell7=63676.597327266; cell6=63676.597327266
+net_retained_aal_matches_cell6,critical,True,cell7=59302.962640062; cell6=59302.962640062
+aal_gross_equals_ceded_plus_retained,critical,True,gross=122979.559967329; ceded=63676.597327266; retained=59302.962640062
+gross_insured_aep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+gross_insured_oep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+ceded_aep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+ceded_oep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+net_retained_aep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+net_retained_oep_pml_nondecreasing_with_return_period,critical,True,minimum_difference=0.000000
+gross_insured_aep_pml_not_less_than_oep_pml,critical,True,checked all return periods
+ceded_aep_pml_not_less_than_oep_pml,critical,True,checked all return periods
+net_retained_aep_pml_not_less_than_oep_pml,critical,True,checked all return periods
+aep_ceded_and_retained_pml_not_above_gross,critical,True,checked all return periods
+aep_reinsurance_shares_and_utilization_bounded,critical,True,"ceded_share_range=(0.000000, 0.765811); retained_share_range=(0.000000, 1.000000); utilization_range=(0.000000, 1.462106); utilization_upper_bound=2.000000; interpretation=annual aggregate ceded PML divided by one participated occurrence layer limit; values may exceed 1 when multiple occurrences recover in the same year because the baseline has no annual aggregate cap or reinstatement constraint"
+oep_ceded_and_retained_pml_not_above_gross,critical,True,checked all return periods
+oep_reinsurance_shares_and_utilization_bounded,critical,True,"ceded_share_range=(0.000000, 0.766754); retained_share_range=(0.000000, 1.000000); utilization_range=(0.000000, 1.000000); utilization_upper_bound=1.000000; interpretation=maximum single-occurrence ceded PML divided by the participated occurrence layer limit"
+gross_insured_pml_reproduces_cell5,critical,True,maximum_aep_difference=0.000e+00; maximum_oep_difference=0.000e+00
+oep_pml_reinsurance_formula_reproduced,critical,True,maximum_ceded_error=0.000e+00; maximum_retained_error=3.725e-09
+source_diagnostics_reproduce_cell6,critical,True,rows=2; maximum_error=1.526e-05
+source_aal_reconciles_to_portfolio,critical,True,gross_source_sum=122979.559967328; ceded_source_sum=63676.597327266; retained_source_sum=59302.962640062
+occurrence_loss_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\baseline_reinsurance_occurrence_loss.csv.gz
+annual_series_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\baseline_reinsurance_annual_loss_series.csv.gz
+ep_curve_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\baseline_reinsurance_exceedance_probability_curve.csv.gz
+pml_table_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\baseline_reinsurance_pml_table.csv
+risk_metrics_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\baseline_reinsurance_risk_metrics.csv
+source_aal_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\baseline_reinsurance_source_aal_summary.csv
+recovery_table_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\baseline_reinsurance_recovery_by_return_period.csv
+aep_plot_png_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\plots\baseline_reinsurance_aep_comparison.png
+aep_plot_pdf_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\plots\baseline_reinsurance_aep_comparison.pdf
+oep_plot_png_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\plots\baseline_reinsurance_oep_comparison.png
+oep_plot_pdf_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\plots\baseline_reinsurance_oep_comparison.pdf
+recovery_plot_png_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\plots\baseline_reinsurance_recovery_by_return_period.png
+recovery_plot_pdf_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_reinsurance_risk\plots\baseline_reinsurance_recovery_by_return_period.pdf
+extreme_return_period_tail_support_documented,warning,False,"thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; threshold_rank=20"

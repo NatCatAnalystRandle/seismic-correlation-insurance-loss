@@ -1,0 +1,22 @@
+{
+  "notebook": "03_generate_annual_event_catalog.ipynb",
+  "catalog_name": "baseline_mean_rate_catalog_2m_years",
+  "catalog_years": 2000000,
+  "master_seed": 20260729,
+  "occurrence_model": "Independent Poisson occurrence counts for each rupture using its branch-weighted annual rate",
+  "calendar_assignment": "Uniform discrete year and uniform time within each year",
+  "zero_year_storage": "Empty years are represented implicitly",
+  "common_catalog_rule": "The same event catalog must be reused for all later ground-motion dependence cases",
+  "rupture_rows": 23416,
+  "total_annual_rate": 0.0052232214574573325,
+  "expected_event_count": 10446.442914914665,
+  "expected_nonempty_years": 10419.208310609607,
+  "expected_multi_event_years": 27.187228112790507,
+  "cascadia_rate_file": "data\\processed\\usgs_rupture_rates\\cascadia_interface_rupture_rates.csv",
+  "cascadia_rate_sha256": "9993f4f5bc302c78f8644faf982b852b59bbd588da5682dd5a76b9dcd493ab82",
+  "oregon_rate_file": "data\\processed\\usgs_rupture_rates\\oregon_intraslab_rupture_rates.csv",
+  "oregon_rate_sha256": "34064af142857331e3745cb0ff5794df15fcc92c0bf14cc62b8b459ff90e2ab1",
+  "event_catalog_output": "data\\processed\\annual_event_catalog\\annual_event_catalog.csv",
+  "annual_count_output": "data\\processed\\annual_event_catalog\\annual_event_counts.csv",
+  "created_at_utc": "2026-07-30T02:00:22.471882+00:00"
+}

@@ -1,0 +1,95 @@
+check_id,severity,passed,detail
+cell1_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+cell2_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+cell3_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+cell4_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+notebook6_cell5_summary_declares_success,critical,True,all_critical_checks_passed=True
+notebook6_cell7_summary_declares_success,critical,True,all_critical_checks_passed=True
+insurance_exceedance_curve_hash_matches_source_summary,critical,True,expected=301543df17ca0594254f5b368a3acdae4ee3d48de95174ab43766e3eb8882f29; actual=301543df17ca0594254f5b368a3acdae4ee3d48de95174ab43766e3eb8882f29
+insurance_exceedance_curve_row_count_matches_source_summary,critical,True,expected=55946; actual=55946
+insurance_exceedance_curve_file_nonempty,critical,True,size_bytes=1323882; rows=55946
+reinsurance_exceedance_curve_hash_matches_source_summary,critical,True,expected=c2edf2f63777ea35e21fc33d048db09271c814081cfc560708d90b0052f53329; actual=c2edf2f63777ea35e21fc33d048db09271c814081cfc560708d90b0052f53329
+reinsurance_exceedance_curve_row_count_matches_source_summary,critical,True,expected=40682; actual=40682
+reinsurance_exceedance_curve_file_nonempty,critical,True,size_bytes=890665; rows=40682
+reinsurance_occurrence_loss_hash_matches_source_summary,critical,True,expected=8d7109f684f8f722e4e0d8df0b9499c2129c27fa50d4852f738ba81d0d3821e6; actual=8d7109f684f8f722e4e0d8df0b9499c2129c27fa50d4852f738ba81d0d3821e6
+reinsurance_occurrence_loss_row_count_matches_source_summary,critical,True,expected=10630; actual=10630
+reinsurance_occurrence_loss_file_nonempty,critical,True,size_bytes=1333671; rows=10630
+reinsurance_annual_loss_series_hash_matches_source_summary,critical,True,expected=42844b3d93221fe354dc2f399cf8a9fa461b610cb564a48c9fd4b6d7b723cd31; actual=42844b3d93221fe354dc2f399cf8a9fa461b610cb564a48c9fd4b6d7b723cd31
+reinsurance_annual_loss_series_row_count_matches_source_summary,critical,True,expected=2000000; actual=2000000
+reinsurance_annual_loss_series_file_nonempty,critical,True,size_bytes=5741065; rows=2000000
+insurance_curve_schema_complete,critical,True,missing=[]
+reinsurance_curve_schema_complete,critical,True,missing=[]
+occurrence_loss_schema_complete,critical,True,missing=[]
+annual_loss_schema_complete,critical,True,missing=[]
+insurance_curve_measures_expected,critical,True,"actual=['gross_insured', 'ground_up', 'uninsured']"
+reinsurance_curve_measures_expected,critical,True,"actual=['ceded', 'gross_insured', 'net_retained']"
+curve_types_expected,critical,True,"insurance=['AEP', 'OEP']; reinsurance=['AEP', 'OEP']"
+gross_insured_curves_reconcile_between_cells,critical,True,rows=16342; unmatched=0; maximum_loss_difference=2.980e-08; maximum_probability_difference=0.000e+00
+combined_curve_measure_type_pairs_complete,critical,True,"actual=[('ceded', 'AEP'), ('ceded', 'OEP'), ('gross_insured', 'AEP'), ('gross_insured', 'OEP'), ('ground_up', 'AEP'), ('ground_up', 'OEP'), ('net_retained', 'AEP'), ('net_retained', 'OEP'), ('uninsured', 'AEP'), ('uninsured', 'OEP')]"
+combined_curve_keys_unique,critical,True,duplicate_rows=0
+ground_up_aep_ranks_contiguous,critical,True,rows=9901; final_rank=9901
+ground_up_aep_probability_equation,critical,True,maximum_error=0.000e+00
+ground_up_aep_return_period_equation,critical,True,maximum_error=2.910e-11
+ground_up_aep_losses_positive_finite_and_ordered,critical,True,minimum_loss=114.546372; maximum_increase=0.000000
+ground_up_oep_ranks_contiguous,critical,True,rows=9901; final_rank=9901
+ground_up_oep_probability_equation,critical,True,maximum_error=0.000e+00
+ground_up_oep_return_period_equation,critical,True,maximum_error=2.910e-11
+ground_up_oep_losses_positive_finite_and_ordered,critical,True,minimum_loss=114.546372; maximum_increase=0.000000
+gross_insured_aep_ranks_contiguous,critical,True,rows=8171; final_rank=8171
+gross_insured_aep_probability_equation,critical,True,maximum_error=0.000e+00
+gross_insured_aep_return_period_equation,critical,True,maximum_error=2.910e-11
+gross_insured_aep_losses_positive_finite_and_ordered,critical,True,minimum_loss=977.206314; maximum_increase=0.000000
+gross_insured_oep_ranks_contiguous,critical,True,rows=8171; final_rank=8171
+gross_insured_oep_probability_equation,critical,True,maximum_error=0.000e+00
+gross_insured_oep_return_period_equation,critical,True,maximum_error=2.910e-11
+gross_insured_oep_losses_positive_finite_and_ordered,critical,True,minimum_loss=977.206314; maximum_increase=0.000000
+uninsured_aep_ranks_contiguous,critical,True,rows=9901; final_rank=9901
+uninsured_aep_probability_equation,critical,True,maximum_error=0.000e+00
+uninsured_aep_return_period_equation,critical,True,maximum_error=2.910e-11
+uninsured_aep_losses_positive_finite_and_ordered,critical,True,minimum_loss=114.546372; maximum_increase=0.000000
+uninsured_oep_ranks_contiguous,critical,True,rows=9901; final_rank=9901
+uninsured_oep_probability_equation,critical,True,maximum_error=0.000e+00
+uninsured_oep_return_period_equation,critical,True,maximum_error=2.910e-11
+uninsured_oep_losses_positive_finite_and_ordered,critical,True,minimum_loss=114.546372; maximum_increase=0.000000
+ceded_aep_ranks_contiguous,critical,True,rows=3999; final_rank=3999
+ceded_aep_probability_equation,critical,True,maximum_error=0.000e+00
+ceded_aep_return_period_equation,critical,True,maximum_error=2.910e-11
+ceded_aep_losses_positive_finite_and_ordered,critical,True,minimum_loss=14015.523467; maximum_increase=0.000000
+ceded_oep_ranks_contiguous,critical,True,rows=3999; final_rank=3999
+ceded_oep_probability_equation,critical,True,maximum_error=0.000e+00
+ceded_oep_return_period_equation,critical,True,maximum_error=2.910e-11
+ceded_oep_losses_positive_finite_and_ordered,critical,True,minimum_loss=14015.523467; maximum_increase=0.000000
+net_retained_aep_ranks_contiguous,critical,True,rows=8171; final_rank=8171
+net_retained_aep_probability_equation,critical,True,maximum_error=0.000e+00
+net_retained_aep_return_period_equation,critical,True,maximum_error=2.910e-11
+net_retained_aep_losses_positive_finite_and_ordered,critical,True,minimum_loss=977.206314; maximum_increase=0.000000
+net_retained_oep_ranks_contiguous,critical,True,rows=8171; final_rank=8171
+net_retained_oep_probability_equation,critical,True,maximum_error=0.000e+00
+net_retained_oep_return_period_equation,critical,True,maximum_error=2.910e-11
+net_retained_oep_losses_positive_finite_and_ordered,critical,True,minimum_loss=977.206314; maximum_increase=0.000000
+ground_up_aep_curve_not_below_oep_curve,critical,True,ranks_compared=9901; minimum_difference=0.000000
+gross_insured_aep_curve_not_below_oep_curve,critical,True,ranks_compared=8171; minimum_difference=0.000000
+uninsured_aep_curve_not_below_oep_curve,critical,True,ranks_compared=9901; minimum_difference=0.000000
+ceded_aep_curve_not_below_oep_curve,critical,True,ranks_compared=3999; minimum_difference=0.000000
+net_retained_aep_curve_not_below_oep_curve,critical,True,ranks_compared=8171; minimum_difference=0.000000
+occurrence_count_and_ids_match_summary,critical,True,rows=10630; expected=10630; unique=10630
+occurrence_losses_finite_and_nonnegative,critical,True,minimum_loss=0.000000
+occurrence_ground_up_loss_conservation,critical,True,maximum_error=8.196e-08
+occurrence_reinsurance_loss_conservation,critical,True,maximum_error=2.980e-08
+largest_events_sorted_descending,critical,True,rows=20
+largest_events_rows_expected,critical,True,actual=20; expected=20
+largest_event_equals_maximum_occurrence_ground_up_loss,critical,True,top=282749467.802679; maximum=282749467.802679
+annual_series_declared_year_count_matches,critical,True,"rows=2000000; expected=2000000; range=(1, 2000000)"
+annual_losses_finite_and_nonnegative,critical,True,minimum_loss=0.000000
+annual_ground_up_loss_conservation,critical,True,maximum_error=1.118e-07
+annual_reinsurance_loss_conservation,critical,True,maximum_error=5.960e-08
+largest_annual_years_sorted_descending,critical,True,rows=20
+largest_annual_year_equals_maximum_aep_loss,critical,True,top=282749467.802679; maximum=282749467.802679
+largest_occurrence_matches_maximum_ground_up_oep,critical,True,occurrence=282749467.802679; annual_oep=282749467.802679
+combined_full_curve_output_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_full_exceedance_curves.csv.gz
+largest_events_output_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_largest_occurrence_losses.csv
+largest_years_output_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_largest_annual_losses.csv
+figure_manifest_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_cell_5_figure_manifest.csv
+all_figure_files_exist,critical,True,figure_files=6
+all_figure_files_have_minimum_size,critical,True,minimum_size_bytes=19537
+figure_hashes_complete,critical,True,files=6

@@ -1,0 +1,24 @@
+check_id,severity,passed,detail
+cell1_validation_has_no_critical_failures,critical,True,Notebook 7 Cell 1 validation contains no failed critical checks.
+headline_metrics_schema_complete,critical,True,"columns=['metric_group', 'metric', 'value', 'unit', 'description']"
+loss_flow_schema_complete,critical,True,"columns=['stage_order', 'loss_measure', 'description', 'aal_2022_usd', 'share_of_ground_up_aal', 'share_of_gross_insured_aal', 'maximum_aep_loss_2022_usd', 'maximum_oep_loss_2022_usd']"
+model_assumptions_schema_complete,critical,True,"columns=['assumption_group', 'parameter', 'value', 'unit', 'basis']"
+loss_flow_measures_and_order_expected,critical,True,"actual=['ground_up', 'uninsured', 'gross_insured', 'ceded', 'net_retained']"
+loss_flow_rows_unique,critical,True,duplicate_rows=0
+required_headline_metrics_present,critical,True,missing_metrics=[]
+aal_insurance_loss_flow_reconciles,critical,True,difference_2022_usd=0.000000
+aal_reinsurance_loss_flow_reconciles,critical,True,difference_2022_usd=0.000000
+xol_attachment_limit_exhaustion_reconcile,critical,True,difference_2022_usd=0.000000
+headline_shares_bounded,critical,True,insurance_recovery_share=0.62769509; ceded_share=0.51778196; deductible_share=0.10000000
+catalog_counts_logically_ordered,critical,True,multiple_event_years=36; occupied_years=10593; catalog_years=2000000
+headline_counts_positive,critical,True,portfolio_buildings=470; catalog_occurrences=10630; catalog_years=2000000
+headline_monetary_values_nonnegative,critical,True,All headline monetary values are nonnegative.
+loss_flow_matches_headline_metrics,critical,True,maximum_difference_2022_usd=0.000000
+overview_table_written,critical,True,rows=12; path=C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_overview_table.csv
+risk_transfer_table_written,critical,True,rows=5; path=C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_risk_transfer_summary.csv
+all_figures_created,critical,True,missing=[]
+all_figures_nontrivial_size,critical,True,"sizes={'baseline_aal_loss_flow.png': 100036, 'baseline_aal_loss_flow.pdf': 16988, 'baseline_portfolio_catalog_overview.png': 166364, 'baseline_portfolio_catalog_overview.pdf': 27272, 'baseline_occurrence_xol_response.png': 175239, 'baseline_occurrence_xol_response.pdf': 15983}"
+figure_manifest_complete,critical,True,rows=6
+xol_response_conserves_gross_loss,critical,True,maximum_difference_2022_usd=0.000000e+00
+xol_ceded_response_bounded_by_limit,critical,True,"ceded_range=(0.000000, 61837983.314918)"
+overview_values_match_cell1_summary,critical,True,Cell 2 headline AAL values match the Cell 1 summary.

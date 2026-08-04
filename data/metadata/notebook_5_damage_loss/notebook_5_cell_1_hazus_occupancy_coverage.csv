@@ -1,0 +1,7 @@
+occ_type,covered_by_structural_repair,covered_by_nsd_repair,covered_by_nsa_repair,covered_by_replacement,all_required_tables_covered
+COM1,True,True,True,True,True
+COM4,True,True,True,True,True
+COM5,True,True,True,True,True
+COM6,True,True,True,True,True
+COM7,True,True,True,True,True
+IND6,True,True,True,True,True

@@ -1,0 +1,100 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "occurrences": 10630,
+    "rows": 4996100,
+    "sites": 470,
+    "zero_event_years_rule": "Preliminary AAL uses all declared catalog years. Cell 12 creates the complete annual loss series and explicitly inserts zero-event years."
+  },
+  "completed_at_utc": "2026-08-03T04:08:20.871730+00:00",
+  "component_shares": {
+    "nonstructural_acceleration_sensitive": {
+      "analytical_expected_share": 0.7625827486441487,
+      "sampled_share": 0.7625265571040197
+    },
+    "nonstructural_drift_sensitive": {
+      "analytical_expected_share": 0.15008987789157854,
+      "sampled_share": 0.1500614724982551
+    },
+    "structural": {
+      "analytical_expected_share": 0.08732737346427279,
+      "sampled_share": 0.08741197039772518
+    }
+  },
+  "critical_checks": 26,
+  "critical_failures": [],
+  "loss_equations": {
+    "analytical_expected_total": "expected total ground-up loss = expected structural loss + expected NSD loss + expected NSA loss",
+    "repair_ratio_bound": "structural + NSD + NSA repair ratios remain between 0 and 1 because the three Complete-state component ratios reconcile to total replacement",
+    "sampled_total": "sampled total ground-up loss = sampled structural loss + sampled NSD loss + sampled NSA loss"
+  },
+  "next_cell": "Cell 12: construct the complete annual total ground-up loss series, insert all zero-event years, and calculate total ground-up AAL, OEP, AEP, and PML.",
+  "outputs": {
+    "chunk_manifest": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_11_chunk_manifest.csv",
+    "component_reconciliation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_11_component_reconciliation.csv",
+    "event_total_ground_up_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_loss\\total_ground_up_loss_event_summary.csv.gz",
+      "rows": 10630,
+      "sha256": "462b7aee012969d752f7d09f4b61587066f06a3206c0d8618839924482956538",
+      "size_bytes": 2145536
+    },
+    "full_total_ground_up_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_loss\\full_total_ground_up_loss.csv.gz",
+      "row_granularity": "one annual-catalog occurrence and one portfolio building",
+      "rows": 4996100,
+      "sha256": "afc451e7418b65f7836d0d6174602325afcc7b29a85ef8cf46b883222c256b64",
+      "size_bytes": 775582394
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_11_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_11_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell11_total_ground_up_loss_v1",
+  "portfolio_valuation": {
+    "buildings": 470,
+    "total_replacement_value_2022_usd": 384236604.6999352
+  },
+  "production": {
+    "analytical_expected_nsa_loss_total_2022_usd": 299314607589.6131,
+    "analytical_expected_nsd_loss_total_2022_usd": 58910450025.47539,
+    "analytical_expected_preliminary_aal_2022_usd": 196250.5761648728,
+    "analytical_expected_structural_loss_total_2022_usd": 34276094714.657116,
+    "analytical_expected_total_ground_up_loss_2022_usd": 392501152329.7456,
+    "chunks": 43,
+    "maximum_expected_total_ground_up_repair_ratio": 0.979418605066566,
+    "maximum_sampled_total_ground_up_repair_ratio": 1.0,
+    "occurrences": 10630,
+    "relative_sampled_expected_difference": 0.0016719753949007538,
+    "rows": 4996100,
+    "sampled_nsa_loss_total_2022_usd": 298792142561.9628,
+    "sampled_nsd_loss_total_2022_usd": 58800822694.022255,
+    "sampled_preliminary_aal_2022_usd": 195922.45003029003,
+    "sampled_structural_loss_total_2022_usd": 34251934804.59501,
+    "sampled_total_ground_up_loss_2022_usd": 391844900060.5801,
+    "source_sampled_loss_totals_2022_usd": {
+      "INTERFACE": 355026702118.5993,
+      "SLAB": 36818197941.98074
+    }
+  },
+  "scope": {
+    "currency": "USD",
+    "dollar_year": 2022,
+    "included_loss_components": [
+      "structural repair",
+      "drift-sensitive nonstructural repair",
+      "acceleration-sensitive nonstructural repair"
+    ],
+    "not_included": [
+      "contents loss",
+      "business interruption",
+      "insurance policy terms",
+      "reinsurance terms"
+    ]
+  },
+  "validation_tolerances": {
+    "aggregate_reconciliation_usd": 0.01,
+    "rationale": "Row-level equations retain a micro-dollar tolerance. Aggregate reconciliations allow one cent for floating-point summation-order differences across nearly five million rows.",
+    "row_equation_usd": 1e-06
+  },
+  "warnings": []
+}

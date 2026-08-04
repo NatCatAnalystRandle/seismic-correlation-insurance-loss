@@ -1,0 +1,148 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T00:18:43.169885+00:00",
+  "critical_checks": 25,
+  "critical_failures": [],
+  "fragility_interpretation": {
+    "direct_sa0p4_structural_table_generated": false,
+    "next_required_transformation": "Convert the accepted W2 structural spectral-displacement medians to equivalent direct SA0P4 medians at T=0.40 s, retain the source betas, and validate the transformation before sampling damage.",
+    "nsa_source_demand": "spectral_acceleration",
+    "nsa_source_unit": "g",
+    "nsd_source_demand": "spectral_displacement",
+    "nsd_source_unit": "in",
+    "structural_source_demand": "spectral_displacement",
+    "structural_source_unit": "in"
+  },
+  "hazus_reference_files": [
+    {
+      "filename": "HAZUS_Structure_Replacement_Costs.xlsx",
+      "modified_at_utc": "2025-06-14T20:52:06+00:00",
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\replacement_costs\\HAZUS_Structure_Replacement_Costs.xlsx",
+      "role": "general_replacement_costs",
+      "sha256": "a45ff8e93fcae96da82893c1afd5b41d20c27e82a33ffa15400241590b3bec4f",
+      "size_bytes": 9956
+    },
+    {
+      "filename": "HAZUS_Nonstructural_Acceleration_Sensitive_Fragility.xlsx",
+      "modified_at_utc": "2025-12-17T00:14:59+00:00",
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\fragility\\HAZUS_Nonstructural_Acceleration_Sensitive_Fragility.xlsx",
+      "role": "nsa_fragility",
+      "sha256": "4d8f88c74d9895fab0502143e73f274a96d4f880cbe76dd9541eca06fd16b8a5",
+      "size_bytes": 17697
+    },
+    {
+      "filename": "HAZUS_Acceleration_Sensitive_Nonstructural_Repair_Costs.xlsx",
+      "modified_at_utc": "2025-12-17T00:31:43+00:00",
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\repair_cost_ratios\\HAZUS_Acceleration_Sensitive_Nonstructural_Repair_Costs.xlsx",
+      "role": "nsa_repair_ratios",
+      "sha256": "cc7f4f76c6660c6c05e373e0c7b6f3aac657c6bda116c336084e29eb17442ce3",
+      "size_bytes": 10200
+    },
+    {
+      "filename": "HAZUS_Nonstructural_Drift_Sensitive_Fragility.xlsx",
+      "modified_at_utc": "2025-11-12T21:51:16+00:00",
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\fragility\\HAZUS_Nonstructural_Drift_Sensitive_Fragility.xlsx",
+      "role": "nsd_fragility",
+      "sha256": "139e1539de56c45df8648c6a4327112c5711bd3abb36b0ac248d38f2239ecc79",
+      "size_bytes": 18851
+    },
+    {
+      "filename": "HAZUS_Drift_Sensitive_Nonstructural_Repair_Costs.xlsx",
+      "modified_at_utc": "2026-08-03T00:17:31.373115+00:00",
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\repair_cost_ratios\\HAZUS_Drift_Sensitive_Nonstructural_Repair_Costs.xlsx",
+      "role": "nsd_repair_ratios",
+      "sha256": "f234de52b4b86a352cf5476c415766eaef63d6e951f0cd4b5e9d788596c42219",
+      "size_bytes": 10276
+    },
+    {
+      "filename": "HAZUS_RES1_Replacement_Costs.xlsx",
+      "modified_at_utc": "2025-06-14T20:52:00+00:00",
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\replacement_costs\\HAZUS_RES1_Replacement_Costs.xlsx",
+      "role": "res1_replacement_costs",
+      "sha256": "7e186d3a8fb2e7b0d017b1c7e5cefa51c67132edddcfbbf2e81edb744e524e17",
+      "size_bytes": 9388
+    },
+    {
+      "filename": "HAZUS_W2_Structural_Fragility.xlsx",
+      "modified_at_utc": "2025-11-12T21:51:19+00:00",
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\fragility\\HAZUS_W2_Structural_Fragility.xlsx",
+      "role": "structural_fragility",
+      "sha256": "dd33a6905e385293609b8aeced46e23dfbdccc121d48cb053995a7034f775117",
+      "size_bytes": 19360
+    },
+    {
+      "filename": "HAZUS_Structural_Repair_Cost_Ratios.xlsx",
+      "modified_at_utc": "2026-08-03T00:16:11.375485+00:00",
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\repair_cost_ratios\\HAZUS_Structural_Repair_Cost_Ratios.xlsx",
+      "role": "structural_repair_ratios",
+      "sha256": "9c339e9042984892e8bc9a500efa970075649b4c95d1f408d6805f662f6a85dc",
+      "size_bytes": 10394
+    }
+  ],
+  "next_cell": "Cell 2: assign a documented seismic design level to every W2 building and create the validated direct-SA0P4 structural fragility parameter table.",
+  "notebook4_complete": true,
+  "notebook4_handoff_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_handoff\\notebook_5_input_handoff.json",
+  "outputs": {
+    "component_audit": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_1_complete_cost_component_audit.csv",
+    "fragility_inventory": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_1_fragility_inventory.csv",
+    "occupancy_coverage": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_1_hazus_occupancy_coverage.csv",
+    "portfolio_occupancy_counts": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_1_portfolio_occupancy_counts.csv",
+    "portfolio_schema": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_1_portfolio_schema.csv",
+    "reference_inventory": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_1_reference_inventory.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_1_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_1_validation.csv",
+    "w2_source_fragility": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\notebook_5_w2_source_fragility_inventory.csv"
+  },
+  "pipeline_version": "notebook5_cell1_input_validation_v1",
+  "portfolio": {
+    "maximum_year_built": 1992.0,
+    "minimum_year_built": 1951.0,
+    "occupancy_types": [
+      "COM1",
+      "COM4",
+      "COM5",
+      "COM6",
+      "COM7",
+      "IND6"
+    ],
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\exposure_portfolio\\seaside_w2_portfolio_gmm_ready.csv",
+    "resolved_columns": {
+      "floor_area_sqft": "sqft",
+      "occupancy": "occtype",
+      "period_s": null,
+      "structural_type": "struct_typ",
+      "vs30_mps": "vs30_mps",
+      "year_built": "med_yr_blt"
+    },
+    "rows": 470,
+    "sha256": "686623ec6793546004533f6a188897100208863f2627b63644115c98f291eb71",
+    "site_key": "site_id",
+    "structural_types": [
+      "W2"
+    ],
+    "total_floor_area_sqft": 2010565.761457
+  },
+  "primary_ground_motion_fields": {
+    "hash_recalculated_in_cell1": true,
+    "hash_verified": true,
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_full_baseline_fields\\full_baseline_ground_motion_fields.csv.gz",
+    "period_s": 0.4,
+    "rows_from_handoff": 4996100,
+    "sha256": "5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b",
+    "structural_damage_im_column": "sa0p4_simulated_g"
+  },
+  "project_root": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss",
+  "replacement_costs": {
+    "dollar_year": 2022,
+    "general_cost_column": "Structure Replacement Cost ($/ft\u00b2)",
+    "general_rows": 33,
+    "res1_rows": 16
+  },
+  "warnings": []
+}

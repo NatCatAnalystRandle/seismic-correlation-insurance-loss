@@ -1,0 +1,28 @@
+check_id,severity,passed,detail
+cell_5_critical_validation_passed,critical,True,critical_failures=0
+cell_10_critical_validation_passed,critical,True,critical_failures=0
+cell_5_and_cell_10_catalog_dimensions_match,critical,True,mismatches={}
+declared_catalog_years_positive,critical,True,years=2000000
+expected_row_identity,critical,True,rows=4996100; occurrences=10630; sites=470
+cell_5_manifest_schema_complete,critical,True,missing=[]
+cell_10_manifest_schema_complete,critical,True,missing=[]
+cell_5_manifest_chunk_count_matches_expected,critical,True,manifest=43; expected=43
+cell_10_manifest_chunk_count_matches_expected,critical,True,manifest=43; expected=43
+cell_5_and_cell_10_chunk_boundaries_match,critical,True,chunks=43
+cell_5_and_cell_10_portfolio_values_match,critical,True,cell5=384236604.699935; cell10=384236604.699935
+all_production_rows_processed,critical,True,processed=4996100; expected=4996100; unseen=0
+all_catalog_occurrences_processed,critical,True,processed=10630; expected=10630
+every_occurrence_has_complete_portfolio,critical,True,minimum=470; maximum=470
+every_building_has_all_occurrences,critical,True,minimum=10630; maximum=10630
+event_summary_has_one_row_per_occurrence,critical,True,rows=10630; expected=10630
+event_summary_portfolios_are_complete,critical,True,minimum=470; maximum=470
+component_totals_reconcile_with_prior_cells,critical,True,sampled_max_error=6.104e-05; expected_max_error=6.104e-05; tolerance=0.01 USD
+event_and_building_sampled_totals_reconcile,critical,True,difference=6.104e-05; tolerance=0.01 USD
+event_and_building_expected_totals_reconcile,critical,True,difference=0.000e+00; tolerance=0.01 USD
+maximum_sampled_total_loss_equation_error_small,critical,True,maximum_error=5.588e-09
+maximum_expected_total_loss_equation_error_small,critical,True,maximum_error=7.916e-09
+maximum_component_sum_error_small,critical,True,maximum_error=3.725e-09
+maximum_total_repair_ratios_bounded,critical,True,sampled=1.000000; expected=0.979419
+sampled_and_expected_total_losses_reconcile_statistically,warning,True,relative_difference=0.167198%; warning_threshold=5.00%
+full_total_ground_up_loss_file_exists,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_total_ground_up_loss\full_total_ground_up_loss.csv.gz
+event_total_ground_up_loss_file_exists,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_total_ground_up_loss\total_ground_up_loss_event_summary.csv.gz

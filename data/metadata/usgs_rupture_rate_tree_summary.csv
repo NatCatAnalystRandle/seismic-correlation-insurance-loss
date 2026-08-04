@@ -1,0 +1,3 @@
+target_group,official_loaded_rupture_sets,official_source_count,official_rupture_count,official_rupture_set_weight_sum,official_raw_rate_sum,official_weighted_rate_sum,csv_loaded_rupture_sets,csv_rupture_set_weight_sum,loaded_rupture_set_counts_match,rupture_set_weight_sums_match
+cascadia_interface,21,21,11101.0,3.6068,0.017699999612747302,0.0033067999559951286,21,3.6068,True,True
+oregon_intraslab,2,1642,12315.0,2.0,0.0019164215014620945,0.0019164215014620945,2,2.0,True,True

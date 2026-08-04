@@ -1,0 +1,175 @@
+{
+  "all_critical_checks_passed": true,
+  "completed_at_utc": "2026-08-03T02:37:47.360540+00:00",
+  "control_reproduction": {
+    "maximum_numeric_difference": 1.1102230246251565e-16,
+    "rows": 12,
+    "sampled_states_exact": {
+      "nsa": true,
+      "nsd": true
+    }
+  },
+  "critical_checks": 53,
+  "critical_failures": [],
+  "damage_model": {
+    "components": {
+      "nsa": {
+        "label": "nonstructural_acceleration_sensitive",
+        "maximum_probability_sum_error": 4.440892098500626e-16,
+        "minimum_raw_probability": 7.585613621283687e-54,
+        "random_stream_namespace": "notebook5_nonstructural_acceleration_damage_v1",
+        "sampled_state_rule": "inverse categorical CDF using one deterministic occurrence-site uniform"
+      },
+      "nsd": {
+        "label": "nonstructural_drift_sensitive",
+        "maximum_probability_sum_error": 4.440892098500626e-16,
+        "minimum_raw_probability": -7.896152194907222e-14,
+        "random_stream_namespace": "notebook5_nonstructural_drift_damage_v1",
+        "sampled_state_rule": "inverse categorical CDF using one deterministic occurrence-site uniform"
+      }
+    },
+    "conditional_component_dependence": "Separate deterministic damage streams conditional on SA0P4.",
+    "equation": "P(DS>=k|Sa)=Phi((ln(Sa)-ln(theta_k))/beta_k)",
+    "period_s": 0.4,
+    "production_im": "sa0p4_simulated_g",
+    "states": [
+      "None",
+      "Slight",
+      "Moderate",
+      "Extensive",
+      "Complete"
+    ]
+  },
+  "input_ground_motion_fields": {
+    "im_column": "sa0p4_simulated_g",
+    "occurrences": 10630,
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_full_baseline_fields\\full_baseline_ground_motion_fields.csv.gz",
+    "period_s": 0.4,
+    "rows": 4996100,
+    "sha256": "5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b",
+    "sites": 470
+  },
+  "next_cell": "Cell 10: assign HAZUS occupancy-specific drift-sensitive and acceleration-sensitive repair-cost ratios, then calculate sampled and analytical expected nonstructural ground-up losses for every occurrence-building row.",
+  "outputs": {
+    "chunk_manifest": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_9_chunk_manifest.csv",
+    "event_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_nonstructural_damage\\nonstructural_damage_event_summary.csv.gz",
+      "rows": 10630,
+      "sha256": "ec89b10e9c9107a56e70d44632589168a6760c04012f1b4bccfc942edd7a5f04",
+      "size_bytes": 2310956
+    },
+    "full_nonstructural_damage_states": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_nonstructural_damage\\full_nonstructural_damage_states.csv.gz",
+      "row_granularity": "one annual-catalog occurrence and one portfolio building",
+      "rows": 4996100,
+      "sha256": "b8a800990c577b0323af9a311e95974d604788d96e49acdb8ce6f54a600c6516",
+      "size_bytes": 795182875
+    },
+    "random_stream_specification": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_9_random_stream_specification.json",
+    "state_totals": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_9_nonstructural_damage_state_totals.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_9_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_9_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell9_full_nonstructural_damage_v1",
+  "production": {
+    "chunks": 43,
+    "design_level_row_counts": {
+      "LowCode": 1307490,
+      "PreCode": 3688610
+    },
+    "occurrences": 10630,
+    "occurrences_per_chunk": 250,
+    "rows": 4996100,
+    "sites": 470,
+    "source_row_counts": {
+      "INTERFACE": 3139600,
+      "SLAB": 1856500
+    }
+  },
+  "state_totals": {
+    "nsa": {
+      "Complete": {
+        "analytical_expected_proportion": 0.09578506371775276,
+        "analytical_expected_rows": 478551.7568402646,
+        "sampled_proportion": 0.09560337062909069,
+        "sampled_rows": 477644
+      },
+      "Extensive": {
+        "analytical_expected_proportion": 0.12090928986133982,
+        "analytical_expected_rows": 604074.9030762399,
+        "sampled_proportion": 0.12086587538279858,
+        "sampled_rows": 603858
+      },
+      "Moderate": {
+        "analytical_expected_proportion": 0.1566925015179678,
+        "analytical_expected_rows": 782851.4068339189,
+        "sampled_proportion": 0.15672544584776124,
+        "sampled_rows": 783016
+      },
+      "None": {
+        "analytical_expected_proportion": 0.47346902430255183,
+        "analytical_expected_rows": 2365498.5923179793,
+        "sampled_proportion": 0.4737247052701107,
+        "sampled_rows": 2366776
+      },
+      "Slight": {
+        "analytical_expected_proportion": 0.1531441206003878,
+        "analytical_expected_rows": 765123.3409315974,
+        "sampled_proportion": 0.15308060287023878,
+        "sampled_rows": 764806
+      }
+    },
+    "nsd": {
+      "Complete": {
+        "analytical_expected_proportion": 0.016663244274880924,
+        "analytical_expected_rows": 83251.23472173259,
+        "sampled_proportion": 0.016651988551069835,
+        "sampled_rows": 83195
+      },
+      "Extensive": {
+        "analytical_expected_proportion": 0.026474166580417728,
+        "analytical_expected_rows": 132267.583652425,
+        "sampled_proportion": 0.026396189027441404,
+        "sampled_rows": 131878
+      },
+      "Moderate": {
+        "analytical_expected_proportion": 0.1353872107775236,
+        "analytical_expected_rows": 676408.0437655856,
+        "sampled_proportion": 0.13559576469646323,
+        "sampled_rows": 677450
+      },
+      "None": {
+        "analytical_expected_proportion": 0.6904831561787296,
+        "analytical_expected_rows": 3449722.896584551,
+        "sampled_proportion": 0.6904275334761114,
+        "sampled_rows": 3449445
+      },
+      "Slight": {
+        "analytical_expected_proportion": 0.13099222218844808,
+        "analytical_expected_rows": 654450.2412757055,
+        "sampled_proportion": 0.13092852424891416,
+        "sampled_rows": 654132
+      }
+    }
+  },
+  "uniform_diagnostics": {
+    "correlation_tolerance": 0.0022369405545017537,
+    "nsa": {
+      "mean": 0.4996451525773631,
+      "target_mean": 0.5,
+      "target_variance": 0.08333333333333333,
+      "variance": 0.08338366458444396
+    },
+    "nsd": {
+      "mean": 0.4999499071586716,
+      "target_mean": 0.5,
+      "target_variance": 0.08333333333333333,
+      "variance": 0.08338273687639317
+    },
+    "nsd_nsa_correlation": -8.602661438431914e-05,
+    "sampled_expected_proportion_tolerance": 0.002,
+    "uniform_mean_tolerance": 0.001,
+    "uniform_variance_tolerance": 0.0005
+  },
+  "warnings": []
+}

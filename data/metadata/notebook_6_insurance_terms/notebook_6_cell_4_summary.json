@@ -1,0 +1,80 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "buildings": 470,
+    "declared_duration_years": 2000000,
+    "occurrences": 10630,
+    "rows": 4996100
+  },
+  "completed_at_utc": "2026-08-03T05:45:08.959325+00:00",
+  "next_cell": "Cell 5: construct complete annual gross-insured and uninsured loss series, insert zero-event years, and calculate insured AAL, OEP, AEP, and PML.",
+  "outputs": {
+    "chunk_manifest": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_4_chunk_manifest.csv",
+    "event_insured_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_loss\\baseline_gross_insured_loss_event_summary.csv.gz",
+      "rows": 10630,
+      "sha256": "2d57f67f3e842efbc30283f8f09e038f3f1052c8040a323127ea9c52851b00e7",
+      "size_bytes": 1140975
+    },
+    "formula_specification": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_4_production_insurance_formula_specification.json",
+    "full_building_insured_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_loss\\full_baseline_gross_insured_loss.csv.gz",
+      "row_granularity": "one annual-catalog occurrence and one portfolio building",
+      "rows": 4996100,
+      "sha256": "2081e04955efb56fa3743dcb217cf351de186ef49315e60a318dc6400afee86a",
+      "size_bytes": 970996957
+    },
+    "loss_reconciliation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_4_loss_reconciliation.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_4_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_4_validation.csv"
+  },
+  "pipeline_version": "notebook6_cell4_full_gross_insured_loss_v1",
+  "policy_scenario": {
+    "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+    "policy_scenario_name": "Full building coverage with 10% replacement-value deductible"
+  },
+  "portfolio": {
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "production": {
+    "chunks": 43,
+    "coinsurance_absorbed_loss_total_2022_usd": 0.0,
+    "deductible_absorbed_loss_total_2022_usd": 145885780125.9232,
+    "eligible_ground_up_loss_total_2022_usd": 391844900060.5801,
+    "gross_insured_loss_total_2022_usd": 245959119934.65695,
+    "gross_insured_preliminary_aal_2022_usd": 122979.55996732847,
+    "ground_up_aal_2022_usd": 195922.45003029003,
+    "ground_up_loss_total_2022_usd": 391844900060.5801,
+    "insurance_recovery_share_of_ground_up_loss": 0.6276950903192338,
+    "loss_after_deductible_total_2022_usd": 245959119934.65695,
+    "maximum_cell3_control_difference_2022_usd": 0.0,
+    "maximum_gross_insured_loss_ratio_to_replacement": 0.9000000000000002,
+    "maximum_ground_up_loss_ratio_to_replacement": 1.0000000000000002,
+    "maximum_occurrence_gross_insured_loss_2022_usd": 244325807.3326858,
+    "maximum_occurrence_ground_up_loss_2022_usd": 282749467.80267936,
+    "maximum_occurrence_uninsured_loss_2022_usd": 38423660.469993524,
+    "maximum_row_equation_error_2022_usd": 1.862645149230957e-09,
+    "policy_limit_absorbed_loss_total_2022_usd": 0.0,
+    "rows_fully_absorbed_by_deductible": 1752298,
+    "rows_hitting_policy_limit": 0,
+    "rows_with_gross_insured_loss": 1164640,
+    "rows_with_ground_up_loss": 2916938,
+    "source_totals_2022_usd": {
+      "INTERFACE|gross_insured": 228341579371.59924,
+      "INTERFACE|ground_up": 355026702118.5993,
+      "INTERFACE|uninsured": 126685122747.0001,
+      "SLAB|gross_insured": 17617540563.05768,
+      "SLAB|ground_up": 36818197941.98074,
+      "SLAB|uninsured": 19200657378.923077
+    },
+    "uncovered_ground_up_loss_total_2022_usd": 0.0,
+    "uninsured_loss_total_2022_usd": 145885780125.9232,
+    "uninsured_preliminary_aal_2022_usd": 72942.8900629616,
+    "uninsured_share_of_ground_up_loss": 0.37230490968076635
+  },
+  "validation": {
+    "critical_checks": 53,
+    "critical_failures": [],
+    "warnings": []
+  }
+}

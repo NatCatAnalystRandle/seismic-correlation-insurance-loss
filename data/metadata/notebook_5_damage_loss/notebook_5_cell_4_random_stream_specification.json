@@ -1,0 +1,14 @@
+{
+  "chunk_size_invariant": true,
+  "hash_function": "SHA-256",
+  "key_fields": [
+    "occurrence_id",
+    "site_id"
+  ],
+  "key_format": "namespace|occurrence_id|site_id",
+  "namespace": "notebook5_structural_damage_v1",
+  "reuse_rule": "Reuse the same occurrence-site structural damage uniform for the future spatially correlated ground-motion case.",
+  "row_order_invariant": true,
+  "uniform_construction": "(unsigned_big_endian_first_8_bytes + 0.5) / 2^64",
+  "uniform_interval": "strictly between 0 and 1"
+}

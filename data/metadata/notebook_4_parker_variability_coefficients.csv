@@ -1,0 +1,3 @@
+coefficient_label,period_s,tau_ln,phi21_variance,phi22_variance,phi2v_variance_adjustment
+PGA,0.0,0.48,0.396,0.565,-0.18
+SA0P4,0.4,0.492,0.433,0.556,-0.19

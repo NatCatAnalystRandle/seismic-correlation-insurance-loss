@@ -1,0 +1,13 @@
+geometry_branch,logic_tree_level,branch_id,branch_weight
+bottom,segmented versus unsegmented,segmented,0.5
+bottom,segmented versus unsegmented,unsegmented,0.5
+bottom,unsegmented rupture extent,sections-1-2-3,0.75
+bottom,unsegmented rupture extent,sections-1-2-3-4,0.25
+middle,segmented versus unsegmented,segmented,0.5
+middle,segmented versus unsegmented,unsegmented,0.5
+middle,unsegmented rupture extent,sections-1-2-3,0.75
+middle,unsegmented rupture extent,sections-1-2-3-4,0.25
+top,segmented versus unsegmented,segmented,0.5
+top,segmented versus unsegmented,unsegmented,0.5
+top,unsegmented rupture extent,sections-1-2-3,0.75
+top,unsegmented rupture extent,sections-1-2-3-4,0.25

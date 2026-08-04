@@ -1,0 +1,132 @@
+{
+  "aleatory_model": {
+    "between_event": "one residual per event occurrence and IMT, shared across all 470 sites",
+    "epistemic_branch": "epi-off only; epi-lo and epi-hi remain sensitivity branches and are not mixed into occurrence sampling",
+    "equation": "ln(IM) = mu_epi_off + tau*eta + phi*epsilon",
+    "spatial_correlation": "not applied in Phase 1 controlled baseline",
+    "within_event": "independent across sites; cross-correlated between PGA and SA0P4 at the same site"
+  },
+  "all_checks_passed": true,
+  "base_random_seed": 20260731,
+  "completed_at_utc": "2026-07-31T19:13:50.559484+00:00",
+  "control_realizations_per_rupture": 128,
+  "control_rupture_summary": [
+    {
+      "control_case_id": "interface_nearest",
+      "magnitude": 9.34,
+      "maximum_r_rup_km": 28.13600008880052,
+      "minimum_r_rup_km": 27.340780041153,
+      "raw_annual_rate": 0.0006327,
+      "rupture_id": "b18dfe7bfe65277b6a076d34",
+      "rupture_ordinal": 10,
+      "sites": 470,
+      "source_type": "INTERFACE"
+    },
+    {
+      "control_case_id": "interface_farthest",
+      "magnitude": 8.0,
+      "maximum_r_rup_km": 476.1904605431525,
+      "minimum_r_rup_km": 471.0649487858768,
+      "raw_annual_rate": 6.06796098330002e-07,
+      "rupture_id": "bab384c6cea3b2009490c76f",
+      "rupture_ordinal": 2661,
+      "sites": 470,
+      "source_type": "INTERFACE"
+    },
+    {
+      "control_case_id": "slab_nearest",
+      "magnitude": 6.95,
+      "maximum_r_rup_km": 42.689221121964735,
+      "minimum_r_rup_km": 42.236140922200725,
+      "raw_annual_rate": 2.4587967569970624e-07,
+      "rupture_id": "eaa77b4f070744b7840995fa",
+      "rupture_ordinal": 243,
+      "sites": 470,
+      "source_type": "SLAB"
+    },
+    {
+      "control_case_id": "slab_farthest",
+      "magnitude": 6.55,
+      "maximum_r_rup_km": 453.437208993704,
+      "minimum_r_rup_km": 448.4816635047636,
+      "raw_annual_rate": 1.2350597648701897e-07,
+      "rupture_id": "5b4716623f6f6ed3059baf7e",
+      "rupture_ordinal": 190,
+      "sites": 470,
+      "source_type": "SLAB"
+    }
+  ],
+  "controlled_field_rows": 240640,
+  "controlled_occurrences": 512,
+  "controlled_ruptures": 4,
+  "cross_imt_model": {
+    "doi": "10.1193/1.2857544",
+    "empirical_event_rho": 0.6922878963114195,
+    "empirical_within_event_rho": 0.7318327801335508,
+    "model": "Baker and Jayaram (2008)",
+    "pga_proxy_period_s": 0.01,
+    "sa_period_s": 0.4,
+    "target_rho": 0.7321409900247263
+  },
+  "future_spatial_extension": {
+    "method": "Apply future spatial transforms to z_site_latent_1 and z_site_latent_2 before cross-IMT combination.",
+    "same_between_event_streams": true,
+    "same_event_catalog": true,
+    "same_latent_site_streams": true
+  },
+  "next_step": "Apply the validated identifier-based simulator to every occurrence in the Notebook 3 annual event catalog, joining occurrence rupture_id to the Cell 17 epi-off parameters and preserving occurrence-level seeds.",
+  "numeric_ranges": {
+    "pga_simulated_g": {
+      "maximum": 16.42680992114879,
+      "minimum": 3.9682370158909435e-05
+    },
+    "sa0p4_simulated_g": {
+      "maximum": 28.95558515908867,
+      "minimum": 0.0001159256646425
+    }
+  },
+  "outputs": {
+    "chunk_manifest_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_18_chunk_manifest.csv",
+    "chunk_manifest_sha256": "b0677fa8268d3f92b837c4e52d2c2ba76d9c883a371fdcac6b2c946053947878",
+    "controlled_fields_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_controlled_baseline_fields\\controlled_baseline_ground_motion_fields.csv.gz",
+    "controlled_fields_sha256": "2beb850d00199289c6e92f30f598e26b6c3a17a61cedea592769b1188c93f1ae",
+    "controlled_fields_size_bytes": 38663419,
+    "event_residual_ledger_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_controlled_baseline_fields\\controlled_event_residual_ledger.csv.gz",
+    "event_residual_ledger_sha256": "b2c78442ce0c67fe4a71b828f824e509760cd5fd0ba1581bb9f42fb39b06eb29",
+    "event_residual_ledger_size_bytes": 47729,
+    "validation_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_18_controlled_field_validation.csv",
+    "validation_sha256": "0ca86bc42d3e6278b01a6fcedb2e3b94b3ed3567142668845dc330addefac19d"
+  },
+  "period_s": 0.4,
+  "pipeline_version": "notebook4_cell18_controlled_baseline_fields_v1",
+  "portfolio": "Seaside W2 commercial portfolio",
+  "primary_baseline_branch": "epi-off",
+  "random_generator": "numpy.random.PCG64DXSM",
+  "random_specification_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_18_random_stream_specification.json",
+  "random_specification_sha256": "e1fa8fb81c8827d7e63b0cc52bf3b95336542477aad8acd8e9c4decf49bfafcf",
+  "sites": 470,
+  "source_files": {
+    "cell16_summary_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_16_controlled_gmm_summary.json",
+    "cell16_summary_sha256": "137d0f740dc7ef86ce785e493f71a3e952562f0e668160705b306549444516c8",
+    "cell16_validation_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_16_controlled_gmm_validation.csv",
+    "cell16_validation_sha256": "d60f1ba129471fdac8b5b0ca54c2c3c41367df73827476f5546745672b90fc22",
+    "cell17_output_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_bulk_parker_gmm\\bulk_parker_gmm_parameters.csv.gz",
+    "cell17_output_sha256": "ecc75c1220f655f11001fc653e9e56a99361057e14f930dbf7235e3261a4b4f0",
+    "cell17_summary_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_bulk_parker_gmm_summary.json",
+    "cell17_summary_sha256": "699f42a29f4d388b5c898796ae7236618d646c2f6209275c5f3325eec4daf930",
+    "cell17_validation_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_bulk_parker_gmm_validation.csv",
+    "cell17_validation_sha256": "e945365dea1cd9ea027a54d5ff1865b02fdc553b34ebc5bc9f0fa30d14147c85",
+    "control_template_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_18_control_rupture_gmm_templates.csv.gz",
+    "control_template_sha256": "172008d6132857f0265b8cb07ed9bf39db61d083478f7a0f5bbca794feb6778b",
+    "site_order_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_18_site_order.csv",
+    "site_order_sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100"
+  },
+  "validation_checks": 50,
+  "validation_diagnostics": {
+    "maximum_abs_cross_site_latent_correlation": 0.09403358881028684,
+    "maximum_abs_event_site_mean_correlation": 0.016208839379444263,
+    "maximum_pga_reconstruction_error": 3.552713678800501e-15,
+    "maximum_sa0p4_reconstruction_error": 2.6645352591003757e-15,
+    "maximum_seed_reproduction_difference": 4.440892098500626e-16
+  }
+}

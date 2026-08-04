@@ -1,0 +1,111 @@
+{
+  "all_critical_checks_passed": true,
+  "completed_at_utc": "2026-08-03T01:25:43.572716+00:00",
+  "control_reproduction": {
+    "maximum_numeric_difference": 2.220446049250313e-16,
+    "rows": 12,
+    "sampled_states_exact": true
+  },
+  "critical_checks": 38,
+  "critical_failures": [],
+  "damage_model": {
+    "equation": "P(DS>=k|Sa)=Phi((ln(Sa)-ln(theta_k))/beta_k)",
+    "maximum_probability_sum_error": 4.440892098500626e-16,
+    "minimum_raw_probability": -2.0873745683000535e-15,
+    "random_stream_namespace": "notebook5_structural_damage_v1",
+    "sampled_state_rule": "inverse categorical CDF using one deterministic occurrence-site uniform",
+    "states": [
+      "None",
+      "Slight",
+      "Moderate",
+      "Extensive",
+      "Complete"
+    ],
+    "structural_type": "W2"
+  },
+  "input_ground_motion_fields": {
+    "occurrences": 10630,
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_full_baseline_fields\\full_baseline_ground_motion_fields.csv.gz",
+    "period_s": 0.4,
+    "rows": 4996100,
+    "sha256": "5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b",
+    "sites": 470,
+    "structural_im_column": "sa0p4_simulated_g"
+  },
+  "next_cell": "Cell 5: assign HAZUS occupancy-specific replacement values and structural repair-cost ratios, then calculate sampled and analytical expected structural ground-up loss for every occurrence-building row.",
+  "outputs": {
+    "chunk_manifest": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_4_chunk_manifest.csv",
+    "event_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_damage\\structural_damage_event_summary.csv.gz",
+      "rows": 10630,
+      "sha256": "58d282403ce097812ce4b916cdba61685f1e3a26fffe7f251abd808ed40daaae",
+      "size_bytes": 1443885
+    },
+    "full_structural_damage_states": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_damage\\full_structural_damage_states.csv.gz",
+      "row_granularity": "one annual-catalog occurrence and one portfolio building",
+      "rows": 4996100,
+      "sha256": "870e630690ff657391aa62f94c7cfc584fa57a2b36c14e9c696d098305ddb508",
+      "size_bytes": 450525087
+    },
+    "random_stream_specification": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_4_random_stream_specification.json",
+    "state_totals": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_4_structural_damage_state_totals.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_4_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_4_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell4_full_structural_damage_v1",
+  "production": {
+    "chunks": 43,
+    "design_level_row_counts": {
+      "LowCode": 1307490,
+      "PreCode": 3688610
+    },
+    "occurrences": 10630,
+    "occurrences_per_chunk": 250,
+    "rows": 4996100,
+    "sites": 470,
+    "source_row_counts": {
+      "INTERFACE": 3139600,
+      "SLAB": 1856500
+    }
+  },
+  "state_totals": {
+    "Complete": {
+      "analytical_expected_proportion": 0.010466510328314482,
+      "analytical_expected_rows": 52291.73225129198,
+      "sampled_proportion": 0.010445947839314665,
+      "sampled_rows": 52189
+    },
+    "Extensive": {
+      "analytical_expected_proportion": 0.028252387783882477,
+      "analytical_expected_rows": 141151.75460705525,
+      "sampled_proportion": 0.028344708872920878,
+      "sampled_rows": 141613
+    },
+    "Moderate": {
+      "analytical_expected_proportion": 0.12902443736811117,
+      "analytical_expected_rows": 644618.9915348202,
+      "sampled_proportion": 0.12893977302295792,
+      "sampled_rows": 644196
+    },
+    "None": {
+      "analytical_expected_proportion": 0.6586430336629291,
+      "analytical_expected_rows": 3290646.46048336,
+      "sampled_proportion": 0.6585788915353976,
+      "sampled_rows": 3290326
+    },
+    "Slight": {
+      "analytical_expected_proportion": 0.17361363085676285,
+      "analytical_expected_rows": 867391.0611234729,
+      "sampled_proportion": 0.17369067872940894,
+      "sampled_rows": 867776
+    }
+  },
+  "uniform_diagnostics": {
+    "mean": 0.5000248573403292,
+    "target_mean": 0.5,
+    "target_variance": 0.08333333333333333,
+    "variance": 0.08339232166437266
+  },
+  "warnings": []
+}

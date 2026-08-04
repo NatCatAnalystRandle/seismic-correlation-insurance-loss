@@ -1,0 +1,31 @@
+category,check,observed,expected,passes,note
+Cell 15 dependency,All Cell 15 final checks passed,15,15,True,
+Coverage,Authoritative distance row count,1845690,1845690,True,
+Coverage,Four source-distance controls selected,4,4,True,
+Coverage,Control source types,"['INTERFACE', 'SLAB']","['INTERFACE', 'SLAB']",True,
+Coverage,Control distance roles,"['farthest', 'nearest']","['farthest', 'nearest']",True,
+Inputs,Vs30 values within USGS range,365 to 365,150 to 2000 m/s,True,portfolio column: vs30_mps
+Inputs,Requested periods positive,0.4 to 0.4,> 0 s,True,portfolio column: Period_for_spectral_acceleration
+Inputs,Each requested period resolved to exact or bracketed IMTs,1,1,True,
+USGS GMM,No Java calculation errors,0,0,True,
+Epistemic branches,Every exact calculation returned three branches,8,8,True,
+Epistemic branches,Every exact calculation returned epi-lo/off/hi,8,8,True,
+Epistemic branches,Branch weights sum to one,0.0,<= 1e-12,True,
+Epistemic branches,Branch weights finite and positive,24,24,True,
+Epistemic branches,Branch means ordered low < off < high,True,True,True,
+Numerical outputs,Means finite,24,24,True,
+Numerical outputs,Medians finite and positive,24,24,True,
+Numerical outputs,USGS total sigma finite and positive,24,24,True,
+Numerical outputs,Tau finite and positive,24,24,True,
+Numerical outputs,Phi finite and positive,24,24,True,
+Numerical outputs,Reconstructed sigma finite and positive,24,24,True,
+Numerical outputs,Median equals exp(mean),1.1102230246251565e-16,<= 1e-14,True,
+Aleatory variability,Published Parker coefficients reproduce pinned USGS total sigma,0.0,<= 5e-12,True,"sigma = sqrt(tau^2 + phi^2), using Parker's ergodic total within-event phi."
+Aleatory variability,Total sigma is identical across epistemic branches,0.0,<= 5e-12,True,
+Aleatory variability,Tau and phi are identical across epistemic branches,0.0,<= 5e-12,True,
+Requested outputs,Requested output row count,24,24,True,Four cases × PGA and site-period SA × three epistemic branches.
+Requested outputs,Requested medians finite and positive,24,24,True,
+Requested outputs,"Requested tau, phi, and sigma finite and positive",24,24,True,
+Period interpolation,Log-period interpolation weights are strictly between zero and one,True,True,True,No requested period required interpolation.
+Depth handling,Perturbing supplied slab zHyp does not change Parker means,0.0,<= 5e-12,True,Confirms the pinned slab implementation derives its mean depth from zTor.
+Depth handling,Perturbing supplied slab zHyp does not change Parker sigma,0.0,<= 5e-12,True,

@@ -1,0 +1,34 @@
+{
+  "cell": 4,
+  "status": "complete",
+  "ground_up_aal_2022_usd": 195922.4500302902,
+  "analytical_expected_ground_up_aal_2022_usd": 196250.57616487285,
+  "components": 3,
+  "source_types": 2,
+  "largest_sampled_aal_component": {
+    "component": "nonstructural_acceleration_sensitive",
+    "aal_2022_usd": 149396.0712809814,
+    "share_of_ground_up_aal": 0.7625265571040196
+  },
+  "largest_ground_up_source": {
+    "source_type": "INTERFACE",
+    "aal_2022_usd": 177513.3510592997,
+    "share_of_ground_up_aal": 0.9060388486967961
+  },
+  "largest_ceded_source": {
+    "source_type": "INTERFACE",
+    "aal_2022_usd": 60803.37642557991,
+    "share_of_ceded_aal": 0.9548779139858994
+  },
+  "figure_files": 6,
+  "critical_validation_checks": 52,
+  "critical_failures": [],
+  "warnings_requiring_review": [],
+  "outputs": {
+    "component_contributions": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_ground_up_component_contributions.csv",
+    "source_contributions": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_source_contributions.csv",
+    "source_risk_transfer_shares": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_source_risk_transfer_shares.csv",
+    "figure_manifest": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_cell_4_figure_manifest.csv",
+    "validation": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_cell_4_validation.csv"
+  }
+}

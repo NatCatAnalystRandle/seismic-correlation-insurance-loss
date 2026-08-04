@@ -1,0 +1,79 @@
+{
+  "all_critical_checks_passed": true,
+  "building_fragility_assignments": {
+    "buildings": 470,
+    "design_levels": [
+      "PreCode",
+      "LowCode"
+    ],
+    "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_building_fragility_assignments.csv",
+    "sha256": "6fa57de96d941af5d89995f530690187f0e657f83b38d31225b4ffd94fb15fc5",
+    "structural_type": "W2"
+  },
+  "completed_at_utc": "2026-08-03T01:04:09.581035+00:00",
+  "controlled_selection": {
+    "intensity_levels": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "rows": 12,
+    "selection_method": "Order-independent modular occurrence-site preselection followed by SHA-256 priority and nearest sample q10, q50, and q90 SA0P4 rows.",
+    "selection_modulus": 10007,
+    "selection_threshold": 50,
+    "source_types": [
+      "INTERFACE",
+      "SLAB"
+    ]
+  },
+  "critical_checks": 39,
+  "critical_failures": [],
+  "damage_model": {
+    "equation": "P(DS>=k|Sa)=Phi((ln(Sa)-ln(theta_k))/beta_k)",
+    "mutually_exclusive_states": [
+      "None",
+      "Slight",
+      "Moderate",
+      "Extensive",
+      "Complete"
+    ],
+    "probability_cleanup": "Only numerical values within 1e-12 of zero are clipped before renormalization; materially negative probabilities stop the cell.",
+    "random_stream_namespace": "notebook5_structural_damage_v1"
+  },
+  "ground_motion_fields": {
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_full_baseline_fields\\full_baseline_ground_motion_fields.csv.gz",
+    "period_s": 0.4,
+    "rows": 4996100,
+    "sha256_from_cell1": "5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b",
+    "source_row_counts": {
+      "INTERFACE": 3139600,
+      "SLAB": 1856500
+    },
+    "structural_im_column": "sa0p4_simulated_g"
+  },
+  "monte_carlo_validation": {
+    "cases": 6,
+    "maximum_state_probability_error": 0.007188642410178692,
+    "replicates_per_case": 20000,
+    "tolerance": 0.015
+  },
+  "next_cell": "Cell 4: apply the validated structural fragility, deterministic occurrence-site uniform, and categorical sampling algorithm to all 4,996,100 annual-catalog occurrence-building rows.",
+  "outputs": {
+    "controlled_damage": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_structural_damage\\controlled_structural_damage_rows.csv",
+    "monte_carlo": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_structural_damage\\controlled_structural_damage_monte_carlo_validation.csv",
+    "probability_grid": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_structural_damage\\controlled_structural_damage_probability_grid.csv.gz",
+    "random_stream_specification": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_3_structural_damage_random_stream.json",
+    "selection_audit": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_3_control_selection_audit.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_3_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_3_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell3_controlled_structural_damage_v1",
+  "uniform_diagnostics": {
+    "ks_pvalue": 0.7553541399071177,
+    "ks_statistic": 0.004255694189082115,
+    "mean": 0.5011624691243362,
+    "sample_size": 24941,
+    "variance": 0.08326388499719771
+  },
+  "warnings": []
+}

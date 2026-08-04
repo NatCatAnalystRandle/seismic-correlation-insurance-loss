@@ -1,0 +1,15 @@
+class_name,api_line
+gov.usgs.earthquake.nshmp.model.RuptureSet,public abstract java.lang.String name();
+gov.usgs.earthquake.nshmp.model.RuptureSet,public abstract int id();
+gov.usgs.earthquake.nshmp.model.RuptureSet,public abstract gov.usgs.earthquake.nshmp.model.SourceType type();
+gov.usgs.earthquake.nshmp.model.RuptureSet,public abstract double weight();
+gov.usgs.earthquake.nshmp.fault.surface.RuptureSurface,public abstract double strike();
+gov.usgs.earthquake.nshmp.fault.surface.RuptureSurface,public abstract double dip();
+gov.usgs.earthquake.nshmp.fault.surface.RuptureSurface,public abstract double length();
+gov.usgs.earthquake.nshmp.fault.surface.RuptureSurface,public abstract double width();
+gov.usgs.earthquake.nshmp.fault.surface.RuptureSurface,public abstract double depth();
+gov.usgs.earthquake.nshmp.fault.surface.RuptureSurface,public abstract gov.usgs.earthquake.nshmp.geo.Location centroid();
+gov.usgs.earthquake.nshmp.fault.surface.RuptureSurface,public abstract gov.usgs.earthquake.nshmp.model.Distance distanceTo(gov.usgs.earthquake.nshmp.geo.Location);
+gov.usgs.earthquake.nshmp.tree.Branch,public abstract java.lang.String id();
+gov.usgs.earthquake.nshmp.tree.Branch,public abstract T value();
+gov.usgs.earthquake.nshmp.tree.Branch,public abstract double weight();

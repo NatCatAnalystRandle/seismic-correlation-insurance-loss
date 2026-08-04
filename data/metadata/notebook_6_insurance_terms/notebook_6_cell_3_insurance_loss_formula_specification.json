@@ -1,0 +1,32 @@
+{
+  "analytical_expected_loss_note": "The policy function is nonlinear. Applying deductibles or limits to Notebook 5 analytical expected ground-up loss would not equal expected insured payout. Production insurance calculations therefore use sampled occurrence-building ground-up losses only.",
+  "baseline_simplification": "With 100% take-up, 100% covered loss share, full coinsurance, and a replacement-value limit, production gross insured loss equals max(ground_up_loss - deductible, 0). The limit cannot bind because Notebook 5 caps building ground-up loss at replacement value.",
+  "created_at_utc": "2026-08-03T04:48:28.217813+00:00",
+  "currency": "USD",
+  "dollar_year": 2022,
+  "equations": {
+    "coinsurance_absorbed_loss": "limited_loss * (1 - coinsurance_share)",
+    "deductible_absorbed_loss": "min(eligible_loss, deductible_amount)",
+    "eligible_loss": "policy_covered ? ground_up_loss * covered_loss_share : 0",
+    "gross_insured_loss": "limited_loss * coinsurance_share",
+    "limited_loss": "min(loss_after_deductible, policy_limit_amount)",
+    "loss_after_deductible": "max(eligible_loss - deductible_amount, 0)",
+    "policy_limit_absorbed_loss": "max(loss_after_deductible - policy_limit_amount, 0)",
+    "uncovered_loss": "ground_up_loss - eligible_loss",
+    "uninsured_decomposition": "uncovered_loss + deductible_absorbed_loss + policy_limit_absorbed_loss + coinsurance_absorbed_loss",
+    "uninsured_loss": "ground_up_loss - gross_insured_loss"
+  },
+  "input_loss": "sampled total building ground-up repair loss",
+  "pipeline_version": "notebook6_cell3_controlled_policy_loss_validation_v1",
+  "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+  "stress_test_note": "Stress cases above 100% of replacement value are mathematical equation tests used to activate the policy-limit branch. They are not production ground-up losses.",
+  "upstream_cell2_terms": {
+    "coinsurance_share": 1.0,
+    "covered_loss_share": 1.0,
+    "deductible_application": "per building per occurrence",
+    "deductible_percent_of_replacement_value": 0.1,
+    "policy_limit_application": "per building per occurrence",
+    "policy_limit_percent_of_replacement_value": 1.0,
+    "policy_take_up_share": 1.0
+  }
+}

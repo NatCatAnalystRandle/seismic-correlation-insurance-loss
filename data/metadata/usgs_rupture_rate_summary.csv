@@ -1,0 +1,3 @@
+target_group,rupture_rows,source_trees,rupture_sets,sources,minimum_magnitude,maximum_magnitude,raw_rate_sum,weighted_rate_sum,unique_rakes,source_types
+cascadia_interface,11101,1,21,21,8.0,9.34,0.017699999612747416,0.003306799955995199,1,INTERFACE
+oregon_intraslab,12315,1,2,1642,6.55,7.95,0.0019164215014621337,0.0019164215014621337,1,SLAB

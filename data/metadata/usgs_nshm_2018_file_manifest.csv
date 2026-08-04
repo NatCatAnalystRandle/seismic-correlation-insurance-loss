@@ -1,0 +1,896 @@
+relative_path,top_level_group,file_name,extension,size_kb
+CODE_OF_CONDUCT.md,CODE_OF_CONDUCT.md,CODE_OF_CONDUCT.md,.md,0.2548828125
+CONTRIBUTING.md,CONTRIBUTING.md,CONTRIBUTING.md,.md,0.6806640625
+DISCLAIMER.md,DISCLAIMER.md,DISCLAIMER.md,.md,0.6083984375
+LICENSE.md,LICENSE.md,LICENSE.md,.md,1.5810546875
+README.md,README.md,README.md,.md,1.947265625
+active-crust/fault/AZ/Algodones.geojson,active-crust,Algodones.geojson,.geojson,0.97265625
+active-crust/fault/AZ/Aubrey.geojson,active-crust,Aubrey.geojson,.geojson,1.203125
+active-crust/fault/AZ/Big Chino - Little Chino.geojson,active-crust,Big Chino - Little Chino.geojson,.geojson,1.7978515625
+active-crust/fault/AZ/Dutchman Draw.geojson,active-crust,Dutchman Draw.geojson,.geojson,0.8369140625
+active-crust/fault/AZ/Hurricane (center).geojson,active-crust,Hurricane (center).geojson,.geojson,1.607421875
+active-crust/fault/AZ/Hurricane (south).geojson,active-crust,Hurricane (south).geojson,.geojson,1.3876953125
+active-crust/fault/AZ/Sevier - Toroweap (south).geojson,active-crust,Sevier - Toroweap (south).geojson,.geojson,1.91796875
+active-crust/fault/CA/README.md,active-crust,README.md,.md,0.6044921875
+active-crust/fault/CA/ucerf3/fault-model-3.1/rupture-set.json,active-crust,rupture-set.json,.json,0.0517578125
+active-crust/fault/CA/ucerf3/fault-model-3.1/ruptures.csv,active-crust,ruptures.csv,.csv,25761.576171875
+active-crust/fault/CA/ucerf3/fault-model-3.1/sections.geojson,active-crust,sections.geojson,.geojson,1329.9326171875
+active-crust/fault/CA/ucerf3/fault-model-3.2/rupture-set.json,active-crust,rupture-set.json,.json,0.0517578125
+active-crust/fault/CA/ucerf3/fault-model-3.2/ruptures.csv,active-crust,ruptures.csv,.csv,31663.513671875
+active-crust/fault/CA/ucerf3/fault-model-3.2/sections.geojson,active-crust,sections.geojson,.geojson,1358.7197265625
+active-crust/fault/CA/ucerf3/source-tree.json,active-crust,source-tree.json,.json,0.1123046875
+active-crust/fault/CA/ucerf3/tree-info.json,active-crust,tree-info.json,.json,0.048828125
+active-crust/fault/CO/Gore Range Frontal.geojson,active-crust,Gore Range Frontal.geojson,.geojson,1.06640625
+active-crust/fault/CO/Sangre de Cristo (north).geojson,active-crust,Sangre de Cristo (north).geojson,.geojson,2.884765625
+active-crust/fault/CO/Sawatch (south).geojson,active-crust,Sawatch (south).geojson,.geojson,1.1572265625
+active-crust/fault/CO/Williams Fork Mountains.geojson,active-crust,Williams Fork Mountains.geojson,.geojson,0.9892578125
+active-crust/fault/ID/Beaverhead.geojson,active-crust,Beaverhead.geojson,.geojson,1.9736328125
+active-crust/fault/ID/Big Flat - Jakes Creek.geojson,active-crust,Big Flat - Jakes Creek.geojson,.geojson,0.8134765625
+active-crust/fault/ID/Cuddy Mountain - Lick Creek.geojson,active-crust,Cuddy Mountain - Lick Creek.geojson,.geojson,0.8154296875
+active-crust/fault/ID/Eastern Bear Lake.geojson,active-crust,Eastern Bear Lake.geojson,.geojson,1.4580078125
+active-crust/fault/ID/Lemhi.geojson,active-crust,Lemhi.geojson,.geojson,1.87890625
+active-crust/fault/ID/Lost River.geojson,active-crust,Lost River.geojson,.geojson,2.0693359375
+active-crust/fault/ID/Rush Peak.geojson,active-crust,Rush Peak.geojson,.geojson,0.888671875
+active-crust/fault/ID/Sawtooth.geojson,active-crust,Sawtooth.geojson,.geojson,1.3251953125
+active-crust/fault/ID/Squaw Creek/README.md,active-crust,README.md,.md,0.0908203125
+active-crust/fault/ID/Squaw Creek/features/Squaw Creek.geojson,active-crust,Squaw Creek.geojson,.geojson,0.505859375
+active-crust/fault/ID/Squaw Creek/full-rupture/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.07421875
+active-crust/fault/ID/Squaw Creek/full-rupture/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/ID/Squaw Creek/full-rupture/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1123046875
+active-crust/fault/ID/Squaw Creek/full-rupture/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1123046875
+active-crust/fault/ID/Squaw Creek/mfd-map.json,active-crust,mfd-map.json,.json,0.9462890625
+active-crust/fault/ID/Squaw Creek/partial-rupture/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0771484375
+active-crust/fault/ID/Squaw Creek/partial-rupture/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/ID/Squaw Creek/partial-rupture/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.115234375
+active-crust/fault/ID/Squaw Creek/partial-rupture/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.115234375
+active-crust/fault/ID/Squaw Creek/source-tree.json,active-crust,source-tree.json,.json,0.11328125
+active-crust/fault/ID/Squaw Creek/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/MT/Blacktail.geojson,active-crust,Blacktail.geojson,.geojson,0.9462890625
+active-crust/fault/MT/Canyon Ferry.geojson,active-crust,Canyon Ferry.geojson,.geojson,1.0927734375
+active-crust/fault/MT/Centennial.geojson,active-crust,Centennial.geojson,.geojson,1.1591796875
+active-crust/fault/MT/Emigrant/README.md,active-crust,README.md,.md,0.087890625
+active-crust/fault/MT/Emigrant/features/Emigrant.geojson,active-crust,Emigrant.geojson,.geojson,0.91015625
+active-crust/fault/MT/Emigrant/full-rupture/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.068359375
+active-crust/fault/MT/Emigrant/full-rupture/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/MT/Emigrant/full-rupture/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1064453125
+active-crust/fault/MT/Emigrant/full-rupture/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1064453125
+active-crust/fault/MT/Emigrant/mfd-map.json,active-crust,mfd-map.json,.json,0.943359375
+active-crust/fault/MT/Emigrant/partial-rupture/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0712890625
+active-crust/fault/MT/Emigrant/partial-rupture/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/MT/Emigrant/partial-rupture/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.109375
+active-crust/fault/MT/Emigrant/partial-rupture/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.109375
+active-crust/fault/MT/Emigrant/source-tree.json,active-crust,source-tree.json,.json,0.11328125
+active-crust/fault/MT/Emigrant/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/MT/Georgia Gulch.geojson,active-crust,Georgia Gulch.geojson,.geojson,0.837890625
+active-crust/fault/MT/Hebgen - Red Canyon.geojson,active-crust,Hebgen - Red Canyon.geojson,.geojson,1.0703125
+active-crust/fault/MT/Helena Valley.geojson,active-crust,Helena Valley.geojson,.geojson,0.7978515625
+active-crust/fault/MT/Jocko.geojson,active-crust,Jocko.geojson,.geojson,0.80078125
+active-crust/fault/MT/Madison.geojson,active-crust,Madison.geojson,.geojson,1.9423828125
+active-crust/fault/MT/Mission.geojson,active-crust,Mission.geojson,.geojson,1.3779296875
+active-crust/fault/MT/Red Rock Hills.geojson,active-crust,Red Rock Hills.geojson,.geojson,0.77734375
+active-crust/fault/MT/Red Rock.geojson,active-crust,Red Rock.geojson,.geojson,1.029296875
+active-crust/fault/MT/Sweetwater.geojson,active-crust,Sweetwater.geojson,.geojson,0.7470703125
+active-crust/fault/MT/Thompson Valley.geojson,active-crust,Thompson Valley.geojson,.geojson,0.7548828125
+active-crust/fault/NM/Alamogordo.geojson,active-crust,Alamogordo.geojson,.geojson,2.0302734375
+active-crust/fault/NM/Black Mesa.geojson,active-crust,Black Mesa.geojson,.geojson,0.8310546875
+active-crust/fault/NM/Caballo.geojson,active-crust,Caballo.geojson,.geojson,0.744140625
+active-crust/fault/NM/Calabacillas.geojson,active-crust,Calabacillas.geojson,.geojson,0.8603515625
+active-crust/fault/NM/Canones.geojson,active-crust,Canones.geojson,.geojson,0.9140625
+active-crust/fault/NM/County Dump.geojson,active-crust,County Dump.geojson,.geojson,0.8583984375
+active-crust/fault/NM/East Paradise.geojson,active-crust,East Paradise.geojson,.geojson,0.783203125
+active-crust/fault/NM/Embudo.geojson,active-crust,Embudo.geojson,.geojson,0.927734375
+active-crust/fault/NM/Gallina.geojson,active-crust,Gallina.geojson,.geojson,1.00390625
+active-crust/fault/NM/Hubbell Spring.geojson,active-crust,Hubbell Spring.geojson,.geojson,1.177734375
+active-crust/fault/NM/Jemez - San Ysidro.geojson,active-crust,Jemez - San Ysidro.geojson,.geojson,1.181640625
+active-crust/fault/NM/La Bajada.geojson,active-crust,La Bajada.geojson,.geojson,1.0361328125
+active-crust/fault/NM/La Canada del Amagre.geojson,active-crust,La Canada del Amagre.geojson,.geojson,0.818359375
+active-crust/fault/NM/La Jencia.geojson,active-crust,La Jencia.geojson,.geojson,1.0625
+active-crust/fault/NM/Lobato Mesa.geojson,active-crust,Lobato Mesa.geojson,.geojson,0.7763671875
+active-crust/fault/NM/Nacimiento.geojson,active-crust,Nacimiento.geojson,.geojson,1.326171875
+active-crust/fault/NM/Nambe.geojson,active-crust,Nambe.geojson,.geojson,1.0302734375
+active-crust/fault/NM/Organ Mountains.geojson,active-crust,Organ Mountains.geojson,.geojson,1.009765625
+active-crust/fault/NM/Pajarito.geojson,active-crust,Pajarito.geojson,.geojson,1.1533203125
+active-crust/fault/NM/Picuris - Pecos.geojson,active-crust,Picuris - Pecos.geojson,.geojson,1.234375
+active-crust/fault/NM/Pojoaque.geojson,active-crust,Pojoaque.geojson,.geojson,0.9716796875
+active-crust/fault/NM/Puye.geojson,active-crust,Puye.geojson,.geojson,0.912109375
+active-crust/fault/NM/San Andres Mountains.geojson,active-crust,San Andres Mountains.geojson,.geojson,2.2421875
+active-crust/fault/NM/San Felipe.geojson,active-crust,San Felipe.geojson,.geojson,1.142578125
+active-crust/fault/NM/San Francisco.geojson,active-crust,San Francisco.geojson,.geojson,0.982421875
+active-crust/fault/NM/Sangre de Cristo (south).geojson,active-crust,Sangre de Cristo (south).geojson,.geojson,1.8486328125
+active-crust/fault/NM/Sawyer Canyon.geojson,active-crust,Sawyer Canyon.geojson,.geojson,0.8115234375
+active-crust/fault/NM/Socorro Canyon.geojson,active-crust,Socorro Canyon.geojson,.geojson,0.861328125
+active-crust/fault/NM/Tijeras - Canoncito.geojson,active-crust,Tijeras - Canoncito.geojson,.geojson,1.1708984375
+active-crust/fault/NM/Zia.geojson,active-crust,Zia.geojson,.geojson,0.8828125
+active-crust/fault/NV/Antelope Range - Kingsley Mountains.geojson,active-crust,Antelope Range - Kingsley Mountains.geojson,.geojson,1.40625
+active-crust/fault/NV/Bare Mountain.geojson,active-crust,Bare Mountain.geojson,.geojson,0.9228515625
+active-crust/fault/NV/Battle Mountain.geojson,active-crust,Battle Mountain.geojson,.geojson,0.8369140625
+active-crust/fault/NV/Benton Spring (south).geojson,active-crust,Benton Spring (south).geojson,.geojson,1.330078125
+active-crust/fault/NV/Beowawe.geojson,active-crust,Beowawe.geojson,.geojson,0.9130859375
+active-crust/fault/NV/Bettles Well - Petrified Springs.geojson,active-crust,Bettles Well - Petrified Springs.geojson,.geojson,1.220703125
+active-crust/fault/NV/Black Hills.geojson,active-crust,Black Hills.geojson,.geojson,0.7783203125
+active-crust/fault/NV/Black Rock.geojson,active-crust,Black Rock.geojson,.geojson,1.818359375
+active-crust/fault/NV/Bloody Run Hills.geojson,active-crust,Bloody Run Hills.geojson,.geojson,0.9814453125
+active-crust/fault/NV/Bonham Ranch.geojson,active-crust,Bonham Ranch.geojson,.geojson,1.1806640625
+active-crust/fault/NV/Buena Vista Valley.geojson,active-crust,Buena Vista Valley.geojson,.geojson,1.388671875
+active-crust/fault/NV/Buffalo Creek.geojson,active-crust,Buffalo Creek.geojson,.geojson,0.888671875
+active-crust/fault/NV/Buffalo Mountain.geojson,active-crust,Buffalo Mountain.geojson,.geojson,0.8369140625
+active-crust/fault/NV/Buffalo Valley.geojson,active-crust,Buffalo Valley.geojson,.geojson,0.99609375
+active-crust/fault/NV/Butte Mountains.geojson,active-crust,Butte Mountains.geojson,.geojson,1.2734375
+active-crust/fault/NV/California Wash.geojson,active-crust,California Wash.geojson,.geojson,1.0400390625
+active-crust/fault/NV/Carico Lake Valley.geojson,active-crust,Carico Lake Valley.geojson,.geojson,1.0693359375
+active-crust/fault/NV/Carson City/Carson City.geojson,active-crust,Carson City.geojson,.geojson,0.8349609375
+active-crust/fault/NV/Carson City/source-tree.json,active-crust,source-tree.json,.json,0.10546875
+active-crust/fault/NV/Carson City/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/NV/Carson Range - Kings Canyon/Carson Range - Kings Canyon.geojson,active-crust,Carson Range - Kings Canyon.geojson,.geojson,1.5322265625
+active-crust/fault/NV/Carson Range - Kings Canyon/source-tree.json,active-crust,source-tree.json,.json,0.12109375
+active-crust/fault/NV/Carson Range - Kings Canyon/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/NV/Carson Range/Carson Range.geojson,active-crust,Carson Range.geojson,.geojson,1.28515625
+active-crust/fault/NV/Carson Range/source-tree.json,active-crust,source-tree.json,.json,0.1064453125
+active-crust/fault/NV/Carson Range/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/NV/Clan Alpine.geojson,active-crust,Clan Alpine.geojson,.geojson,1.0341796875
+active-crust/fault/NV/Coaldale 1.geojson,active-crust,Coaldale 1.geojson,.geojson,0.7294921875
+active-crust/fault/NV/Coaldale 2.geojson,active-crust,Coaldale 2.geojson,.geojson,0.6455078125
+active-crust/fault/NV/Cortez Mountains.geojson,active-crust,Cortez Mountains.geojson,.geojson,1.4130859375
+active-crust/fault/NV/Coyote Spring.geojson,active-crust,Coyote Spring.geojson,.geojson,0.8994140625
+active-crust/fault/NV/Crescent Dunes.geojson,active-crust,Crescent Dunes.geojson,.geojson,1.095703125
+active-crust/fault/NV/Desatoya Mountains.geojson,active-crust,Desatoya Mountains.geojson,.geojson,0.984375
+active-crust/fault/NV/Diamond Mountains.geojson,active-crust,Diamond Mountains.geojson,.geojson,1.44921875
+active-crust/fault/NV/Diamond Valley.geojson,active-crust,Diamond Valley.geojson,.geojson,0.86328125
+active-crust/fault/NV/Dixie Valley.geojson,active-crust,Dixie Valley.geojson,.geojson,2.1767578125
+active-crust/fault/NV/Dry Lake.geojson,active-crust,Dry Lake.geojson,.geojson,1.4150390625
+active-crust/fault/NV/Dry Valley - Smoke Creek Ranch.geojson,active-crust,Dry Valley - Smoke Creek Ranch.geojson,.geojson,1.0546875
+active-crust/fault/NV/Duck Flat.geojson,active-crust,Duck Flat.geojson,.geojson,0.8046875
+active-crust/fault/NV/Dunn Glenn.geojson,active-crust,Dunn Glenn.geojson,.geojson,0.8916015625
+active-crust/fault/NV/Eastern Bilk Creek Mountains.geojson,active-crust,Eastern Bilk Creek Mountains.geojson,.geojson,1.021484375
+active-crust/fault/NV/Eastern Edwards Creek Valley.geojson,active-crust,Eastern Edwards Creek Valley.geojson,.geojson,1.1337890625
+active-crust/fault/NV/Eastern Granite Range.geojson,active-crust,Eastern Granite Range.geojson,.geojson,0.9287109375
+active-crust/fault/NV/Eastern Independence Valley.geojson,active-crust,Eastern Independence Valley.geojson,.geojson,1.138671875
+active-crust/fault/NV/Eastern Monitor Range/BIRD/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/NV/Eastern Monitor Range/GEO/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0791015625
+active-crust/fault/NV/Eastern Monitor Range/GEO/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/NV/Eastern Monitor Range/GEO/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1171875
+active-crust/fault/NV/Eastern Monitor Range/GEO/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1171875
+active-crust/fault/NV/Eastern Monitor Range/README.md,active-crust,README.md,.md,0.2001953125
+active-crust/fault/NV/Eastern Monitor Range/ZENG/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.080078125
+active-crust/fault/NV/Eastern Monitor Range/ZENG/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/NV/Eastern Monitor Range/ZENG/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/NV/Eastern Monitor Range/ZENG/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/NV/Eastern Monitor Range/features/Eastern Monitor Range.geojson,active-crust,Eastern Monitor Range.geojson,.geojson,1.271484375
+active-crust/fault/NV/Eastern Monitor Range/mfd-map.json,active-crust,mfd-map.json,.json,0.9296875
+active-crust/fault/NV/Eastern Monitor Range/source-tree.json,active-crust,source-tree.json,.json,0.1337890625
+active-crust/fault/NV/Eastern Monitor Range/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/NV/Eastern Osgood Mountains (Piedmont).geojson,active-crust,Eastern Osgood Mountains (Piedmont).geojson,.geojson,0.9453125
+active-crust/fault/NV/Eastern Osgood Mountains.geojson,active-crust,Eastern Osgood Mountains.geojson,.geojson,0.841796875
+active-crust/fault/NV/Eastern Pine Forest Range.geojson,active-crust,Eastern Pine Forest Range.geojson,.geojson,0.7900390625
+active-crust/fault/NV/Eastern Pyramid Lake.geojson,active-crust,Eastern Pyramid Lake.geojson,.geojson,0.9580078125
+active-crust/fault/NV/Eastern Tuscarora Mountains.geojson,active-crust,Eastern Tuscarora Mountains.geojson,.geojson,1.107421875
+active-crust/fault/NV/Edna Mountain.geojson,active-crust,Edna Mountain.geojson,.geojson,0.9775390625
+active-crust/fault/NV/Eglington.geojson,active-crust,Eglington.geojson,.geojson,0.8408203125
+active-crust/fault/NV/Emigrant Peak.geojson,active-crust,Emigrant Peak.geojson,.geojson,1.126953125
+active-crust/fault/NV/Eugene Mountains.geojson,active-crust,Eugene Mountains.geojson,.geojson,0.810546875
+active-crust/fault/NV/Excelsior Mountains (unnamed).geojson,active-crust,Excelsior Mountains (unnamed).geojson,.geojson,0.837890625
+active-crust/fault/NV/Fairview.geojson,active-crust,Fairview.geojson,.geojson,1.1025390625
+active-crust/fault/NV/Fox Range.geojson,active-crust,Fox Range.geojson,.geojson,1.1201171875
+active-crust/fault/NV/Freds Mountain.geojson,active-crust,Freds Mountain.geojson,.geojson,0.978515625
+active-crust/fault/NV/Frenchman Mountain.geojson,active-crust,Frenchman Mountain.geojson,.geojson,0.923828125
+active-crust/fault/NV/Golden Gate.geojson,active-crust,Golden Gate.geojson,.geojson,0.8037109375
+active-crust/fault/NV/Granite Springs Valley.geojson,active-crust,Granite Springs Valley.geojson,.geojson,1.1591796875
+active-crust/fault/NV/Grass Valley.geojson,active-crust,Grass Valley.geojson,.geojson,1.3544921875
+active-crust/fault/NV/Hiko.geojson,active-crust,Hiko.geojson,.geojson,0.798828125
+active-crust/fault/NV/Hoppin Peaks.geojson,active-crust,Hoppin Peaks.geojson,.geojson,1.3056640625
+active-crust/fault/NV/Hot Springs.geojson,active-crust,Hot Springs.geojson,.geojson,0.818359375
+active-crust/fault/NV/Huntoon Valley.geojson,active-crust,Huntoon Valley.geojson,.geojson,0.8212890625
+active-crust/fault/NV/Independence Valley.geojson,active-crust,Independence Valley.geojson,.geojson,1.126953125
+active-crust/fault/NV/Indian Head.geojson,active-crust,Indian Head.geojson,.geojson,0.7978515625
+active-crust/fault/NV/Indian Hill/Indian Hill.geojson,active-crust,Indian Hill.geojson,.geojson,0.833984375
+active-crust/fault/NV/Indian Hill/source-tree.json,active-crust,source-tree.json,.json,0.10546875
+active-crust/fault/NV/Indian Hill/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/NV/Ione Valley.geojson,active-crust,Ione Valley.geojson,.geojson,1.3798828125
+active-crust/fault/NV/Jackson Mountains.geojson,active-crust,Jackson Mountains.geojson,.geojson,1.328125
+active-crust/fault/NV/Jakes Valley.geojson,active-crust,Jakes Valley.geojson,.geojson,1.0029296875
+active-crust/fault/NV/Jersey Valley.geojson,active-crust,Jersey Valley.geojson,.geojson,1.0087890625
+active-crust/fault/NV/Kane Spring Wash.geojson,active-crust,Kane Spring Wash.geojson,.geojson,1.0556640625
+active-crust/fault/NV/Kawich Range - Hot Creek Range.geojson,active-crust,Kawich Range - Hot Creek Range.geojson,.geojson,1.91796875
+active-crust/fault/NV/Kings Canyon/Kings Canyon.geojson,active-crust,Kings Canyon.geojson,.geojson,0.8876953125
+active-crust/fault/NV/Kings Canyon/source-tree.json,active-crust,source-tree.json,.json,0.1064453125
+active-crust/fault/NV/Kings Canyon/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/NV/Little Fish Lake Valley.geojson,active-crust,Little Fish Lake Valley.geojson,.geojson,1.2490234375
+active-crust/fault/NV/Little Valley/Little Valley.geojson,active-crust,Little Valley.geojson,.geojson,0.86328125
+active-crust/fault/NV/Little Valley/source-tree.json,active-crust,source-tree.json,.json,0.107421875
+active-crust/fault/NV/Little Valley/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/NV/Lone Mountain.geojson,active-crust,Lone Mountain.geojson,.geojson,1.2451171875
+active-crust/fault/NV/Marys Mountain.geojson,active-crust,Marys Mountain.geojson,.geojson,0.92578125
+active-crust/fault/NV/McGee Mountain.geojson,active-crust,McGee Mountain.geojson,.geojson,0.947265625
+active-crust/fault/NV/Middlegate.geojson,active-crust,Middlegate.geojson,.geojson,0.9462890625
+active-crust/fault/NV/Montana Mountains - Desert Valley.geojson,active-crust,Montana Mountains - Desert Valley.geojson,.geojson,1.86328125
+active-crust/fault/NV/Monte Cristo Valley.geojson,active-crust,Monte Cristo Valley.geojson,.geojson,0.9765625
+active-crust/fault/NV/Mount Irish Range.geojson,active-crust,Mount Irish Range.geojson,.geojson,0.8154296875
+active-crust/fault/NV/Mount Rose.geojson,active-crust,Mount Rose.geojson,.geojson,1.1513671875
+active-crust/fault/NV/Nightingale Mountains.geojson,active-crust,Nightingale Mountains.geojson,.geojson,1.0439453125
+active-crust/fault/NV/Northern Butte Valley.geojson,active-crust,Northern Butte Valley.geojson,.geojson,0.8740234375
+active-crust/fault/NV/Northern Huntington Valley.geojson,active-crust,Northern Huntington Valley.geojson,.geojson,0.9296875
+active-crust/fault/NV/Northern Roberts Mountains.geojson,active-crust,Northern Roberts Mountains.geojson,.geojson,0.9052734375
+active-crust/fault/NV/Northern Simpson Park Mountains.geojson,active-crust,Northern Simpson Park Mountains.geojson,.geojson,0.8857421875
+active-crust/fault/NV/Paradise Range.geojson,active-crust,Paradise Range.geojson,.geojson,1.12109375
+active-crust/fault/NV/Peavine Peak.geojson,active-crust,Peavine Peak.geojson,.geojson,0.8642578125
+active-crust/fault/NV/Penoyer.geojson,active-crust,Penoyer.geojson,.geojson,1.14453125
+active-crust/fault/NV/Petersen Mountain (east).geojson,active-crust,Petersen Mountain (east).geojson,.geojson,0.9072265625
+active-crust/fault/NV/Petersen Mountain (west).geojson,active-crust,Petersen Mountain (west).geojson,.geojson,0.9873046875
+active-crust/fault/NV/Pleasant Valley.geojson,active-crust,Pleasant Valley.geojson,.geojson,1.2685546875
+active-crust/fault/NV/Pyramid Lake.geojson,active-crust,Pyramid Lake.geojson,.geojson,1.025390625
+active-crust/fault/NV/Railroad Valley.geojson,active-crust,Railroad Valley.geojson,.geojson,2.388671875
+active-crust/fault/NV/Rainbow Mountain.geojson,active-crust,Rainbow Mountain.geojson,.geojson,1.0263671875
+active-crust/fault/NV/Rattlesnake Flat.geojson,active-crust,Rattlesnake Flat.geojson,.geojson,0.6796875
+active-crust/fault/NV/Ruby Mountains (north).geojson,active-crust,Ruby Mountains (north).geojson,.geojson,1.162109375
+active-crust/fault/NV/Ruby Mountains (south).geojson,active-crust,Ruby Mountains (south).geojson,.geojson,1.3115234375
+active-crust/fault/NV/Ruby Valley.geojson,active-crust,Ruby Valley.geojson,.geojson,1.470703125
+active-crust/fault/NV/San Emidio.geojson,active-crust,San Emidio.geojson,.geojson,1.0634765625
+active-crust/fault/NV/Sand Springs Range.geojson,active-crust,Sand Springs Range.geojson,.geojson,1.087890625
+active-crust/fault/NV/Schell Creek Range.geojson,active-crust,Schell Creek Range.geojson,.geojson,1.73046875
+active-crust/fault/NV/Selenite Range.geojson,active-crust,Selenite Range.geojson,.geojson,0.86328125
+active-crust/fault/NV/Seven Troughs Range.geojson,active-crust,Seven Troughs Range.geojson,.geojson,1.1025390625
+active-crust/fault/NV/Sheep Basin.geojson,active-crust,Sheep Basin.geojson,.geojson,0.833984375
+active-crust/fault/NV/Sheep Creek Range.geojson,active-crust,Sheep Creek Range.geojson,.geojson,1.0966796875
+active-crust/fault/NV/Shoshone Range.geojson,active-crust,Shoshone Range.geojson,.geojson,1.595703125
+active-crust/fault/NV/Simpson Park Mountains.geojson,active-crust,Simpson Park Mountains.geojson,.geojson,1.2763671875
+active-crust/fault/NV/Singatse Range.geojson,active-crust,Singatse Range.geojson,.geojson,1.21484375
+active-crust/fault/NV/Smith Valley.geojson,active-crust,Smith Valley.geojson,.geojson,1.826171875
+active-crust/fault/NV/Southwest Reese River Valley.geojson,active-crust,Southwest Reese River Valley.geojson,.geojson,1.626953125
+active-crust/fault/NV/Spanish Springs Peak.geojson,active-crust,Spanish Springs Peak.geojson,.geojson,0.7177734375
+active-crust/fault/NV/Spanish Springs Valley.geojson,active-crust,Spanish Springs Valley.geojson,.geojson,0.9560546875
+active-crust/fault/NV/Spruce Mountain Ridge.geojson,active-crust,Spruce Mountain Ridge.geojson,.geojson,1.130859375
+active-crust/fault/NV/Teels Marsh (unnamed).geojson,active-crust,Teels Marsh (unnamed).geojson,.geojson,0.9765625
+active-crust/fault/NV/The Lava Beds.geojson,active-crust,The Lava Beds.geojson,.geojson,0.9794921875
+active-crust/fault/NV/Toiyabe Range.geojson,active-crust,Toiyabe Range.geojson,.geojson,2.0087890625
+active-crust/fault/NV/Warm Springs Valley.geojson,active-crust,Warm Springs Valley.geojson,.geojson,0.8896484375
+active-crust/fault/NV/Wassuk Range.geojson,active-crust,Wassuk Range.geojson,.geojson,2.1064453125
+active-crust/fault/NV/West Gate.geojson,active-crust,West Gate.geojson,.geojson,1.060546875
+active-crust/fault/NV/West Spring Mountains.geojson,active-crust,West Spring Mountains.geojson,.geojson,1.189453125
+active-crust/fault/NV/Western Diamond Mountains.geojson,active-crust,Western Diamond Mountains.geojson,.geojson,1.22265625
+active-crust/fault/NV/Western Granite Range.geojson,active-crust,Western Granite Range.geojson,.geojson,1.10546875
+active-crust/fault/NV/Western Humboldt Range.geojson,active-crust,Western Humboldt Range.geojson,.geojson,1.5693359375
+active-crust/fault/NV/Western Smoke Creek Desert.geojson,active-crust,Western Smoke Creek Desert.geojson,.geojson,0.8466796875
+active-crust/fault/NV/Western Toiyabe Range.geojson,active-crust,Western Toiyabe Range.geojson,.geojson,1.87109375
+active-crust/fault/NV/White River Valley.geojson,active-crust,White River Valley.geojson,.geojson,1.677734375
+active-crust/fault/OR/Abert Rim.geojson,active-crust,Abert Rim.geojson,.geojson,1.064453125
+active-crust/fault/OR/Alvin Canyon/Alvin Canyon.geojson,active-crust,Alvin Canyon.geojson,.geojson,0.6787109375
+active-crust/fault/OR/Alvin Canyon/source-tree.json,active-crust,source-tree.json,.json,0.1064453125
+active-crust/fault/OR/Alvin Canyon/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/OR/Battle Rock.geojson,active-crust,Battle Rock.geojson,.geojson,0.8603515625
+active-crust/fault/OR/Beaver Creek.geojson,active-crust,Beaver Creek.geojson,.geojson,0.8896484375
+active-crust/fault/OR/Bolton.geojson,active-crust,Bolton.geojson,.geojson,0.833984375
+active-crust/fault/OR/Cape Blanco Anticline/Cape Blanco Anticline.geojson,active-crust,Cape Blanco Anticline.geojson,.geojson,0.724609375
+active-crust/fault/OR/Cape Blanco Anticline/source-tree.json,active-crust,source-tree.json,.json,0.11328125
+active-crust/fault/OR/Cape Blanco Anticline/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/OR/Chemult Graben (east).geojson,active-crust,Chemult Graben (east).geojson,.geojson,1.103515625
+active-crust/fault/OR/Chemult Graben (west).geojson,active-crust,Chemult Graben (west).geojson,.geojson,1.04296875
+active-crust/fault/OR/Coquille Anticline.geojson,active-crust,Coquille Anticline.geojson,.geojson,0.896484375
+active-crust/fault/OR/Cottonwood Mountain.geojson,active-crust,Cottonwood Mountain.geojson,.geojson,0.9267578125
+active-crust/fault/OR/Daisy Bank/Daisy Bank.geojson,active-crust,Daisy Bank.geojson,.geojson,0.8212890625
+active-crust/fault/OR/Daisy Bank/source-tree.json,active-crust,source-tree.json,.json,0.1044921875
+active-crust/fault/OR/Daisy Bank/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/OR/Gales Creek.geojson,active-crust,Gales Creek.geojson,.geojson,0.765625
+active-crust/fault/OR/Grant Butte.geojson,active-crust,Grant Butte.geojson,.geojson,0.734375
+active-crust/fault/OR/Happy Camp.geojson,active-crust,Happy Camp.geojson,.geojson,0.7724609375
+active-crust/fault/OR/Helvetia.geojson,active-crust,Helvetia.geojson,.geojson,0.748046875
+active-crust/fault/OR/Juniper Mountain.geojson,active-crust,Juniper Mountain.geojson,.geojson,0.8662109375
+active-crust/fault/OR/Klamath Graben (east).geojson,active-crust,Klamath Graben (east).geojson,.geojson,1.193359375
+active-crust/fault/OR/Klamath Graben (west).geojson,active-crust,Klamath Graben (west).geojson,.geojson,1.0478515625
+active-crust/fault/OR/Lacamas Lake.geojson,active-crust,Lacamas Lake.geojson,.geojson,0.6640625
+active-crust/fault/OR/Metolius.geojson,active-crust,Metolius.geojson,.geojson,1.0888671875
+active-crust/fault/OR/Mount Angel.geojson,active-crust,Mount Angel.geojson,.geojson,0.8037109375
+active-crust/fault/OR/Mount Hood.geojson,active-crust,Mount Hood.geojson,.geojson,0.8369140625
+active-crust/fault/OR/Newberg.geojson,active-crust,Newberg.geojson,.geojson,0.8173828125
+active-crust/fault/OR/Paulina Marsh.geojson,active-crust,Paulina Marsh.geojson,.geojson,0.8388671875
+active-crust/fault/OR/Pine Valley Graben (Brownlee).geojson,active-crust,Pine Valley Graben (Brownlee).geojson,.geojson,0.9521484375
+active-crust/fault/OR/Pine Valley Graben (Halfway - Posey Valley).geojson,active-crust,Pine Valley Graben (Halfway - Posey Valley).geojson,.geojson,1.0546875
+active-crust/fault/OR/Portland Hills.geojson,active-crust,Portland Hills.geojson,.geojson,0.9775390625
+active-crust/fault/OR/Sandy River.geojson,active-crust,Sandy River.geojson,.geojson,0.6240234375
+active-crust/fault/OR/Santa Rosa Range.geojson,active-crust,Santa Rosa Range.geojson,.geojson,2.349609375
+active-crust/fault/OR/Sky Lakes.geojson,active-crust,Sky Lakes.geojson,.geojson,1.00390625
+active-crust/fault/OR/South Slough.geojson,active-crust,South Slough.geojson,.geojson,0.779296875
+active-crust/fault/OR/Southeast Newberry.geojson,active-crust,Southeast Newberry.geojson,.geojson,1.0703125
+active-crust/fault/OR/Steens.geojson,active-crust,Steens.geojson,.geojson,2.162109375
+active-crust/fault/OR/Stonewall Anticline.geojson,active-crust,Stonewall Anticline.geojson,.geojson,0.8056640625
+active-crust/fault/OR/Tule Springs Rims.geojson,active-crust,Tule Springs Rims.geojson,.geojson,0.896484375
+active-crust/fault/OR/Turner - Mill Creek.geojson,active-crust,Turner - Mill Creek.geojson,.geojson,0.8388671875
+active-crust/fault/OR/Waldport.geojson,active-crust,Waldport.geojson,.geojson,0.7978515625
+active-crust/fault/OR/Wallowa.geojson,active-crust,Wallowa.geojson,.geojson,0.9453125
+active-crust/fault/OR/Warner Valley (east).geojson,active-crust,Warner Valley (east).geojson,.geojson,1.59375
+active-crust/fault/OR/Warner Valley (west).geojson,active-crust,Warner Valley (west).geojson,.geojson,1.0439453125
+active-crust/fault/OR/Wecoma/Wecoma.geojson,active-crust,Wecoma.geojson,.geojson,0.814453125
+active-crust/fault/OR/Wecoma/source-tree.json,active-crust,source-tree.json,.json,0.1005859375
+active-crust/fault/OR/Wecoma/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/OR/Whaleshead.geojson,active-crust,Whaleshead.geojson,.geojson,0.9697265625
+active-crust/fault/OR/Winter Rim.geojson,active-crust,Winter Rim.geojson,.geojson,1.2080078125
+active-crust/fault/OR/Yaquina/Yaquina.geojson,active-crust,Yaquina.geojson,.geojson,0.56640625
+active-crust/fault/OR/Yaquina/source-tree.json,active-crust,source-tree.json,.json,0.099609375
+active-crust/fault/OR/Yaquina/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/OR/mfd-map.json,active-crust,mfd-map.json,.json,0.337890625
+active-crust/fault/README.md,active-crust,README.md,.md,1.01171875
+active-crust/fault/TX/Acala.geojson,active-crust,Acala.geojson,.geojson,0.71484375
+active-crust/fault/TX/Amargosa.geojson,active-crust,Amargosa.geojson,.geojson,1.3818359375
+active-crust/fault/TX/Arroyo Diablo.geojson,active-crust,Arroyo Diablo.geojson,.geojson,0.7548828125
+active-crust/fault/TX/Caballo/README.md,active-crust,README.md,.md,0.109375
+active-crust/fault/TX/Caballo/features/Caballo.geojson,active-crust,Caballo.geojson,.geojson,0.5029296875
+active-crust/fault/TX/Caballo/geodetic/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0703125
+active-crust/fault/TX/Caballo/geodetic/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/TX/Caballo/geodetic/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1083984375
+active-crust/fault/TX/Caballo/geodetic/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1083984375
+active-crust/fault/TX/Caballo/geologic/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0703125
+active-crust/fault/TX/Caballo/geologic/scaled/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/TX/Caballo/geologic/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1083984375
+active-crust/fault/TX/Caballo/geologic/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1083984375
+active-crust/fault/TX/Caballo/geologic/source-group.json,active-crust,source-group.json,.json,0.048828125
+active-crust/fault/TX/Caballo/mfd-map.json,active-crust,mfd-map.json,.json,0.9580078125
+active-crust/fault/TX/Caballo/source-tree.json,active-crust,source-tree.json,.json,0.0986328125
+active-crust/fault/TX/Caballo/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/TX/Campo Grande.geojson,active-crust,Campo Grande.geojson,.geojson,0.9208984375
+active-crust/fault/TX/East Baylor Mountain - Carizzo Mountain.geojson,active-crust,East Baylor Mountain - Carizzo Mountain.geojson,.geojson,0.9453125
+active-crust/fault/TX/East Franklin Mountains.geojson,active-crust,East Franklin Mountains.geojson,.geojson,1.2158203125
+active-crust/fault/TX/East Sierra Diablo.geojson,active-crust,East Sierra Diablo.geojson,.geojson,0.982421875
+active-crust/fault/TX/West Delaware Mountains.geojson,active-crust,West Delaware Mountains.geojson,.geojson,0.9326171875
+active-crust/fault/TX/West Eagle Mountains - Red Hills.geojson,active-crust,West Eagle Mountains - Red Hills.geojson,.geojson,0.8505859375
+active-crust/fault/TX/West Indio Mountains.geojson,active-crust,West Indio Mountains.geojson,.geojson,0.873046875
+active-crust/fault/TX/West Lobo Valley.geojson,active-crust,West Lobo Valley.geojson,.geojson,1.1298828125
+active-crust/fault/UT/East Cache.geojson,active-crust,East Cache.geojson,.geojson,1.36328125
+active-crust/fault/UT/Great Salt Lake (Antelope Island).geojson,active-crust,Great Salt Lake (Antelope Island).geojson,.geojson,1.0302734375
+active-crust/fault/UT/Great Salt Lake (Fremont Island).geojson,active-crust,Great Salt Lake (Fremont Island).geojson,.geojson,1.0029296875
+active-crust/fault/UT/Great Salt Lake (Promontory).geojson,active-crust,Great Salt Lake (Promontory).geojson,.geojson,1.05859375
+active-crust/fault/UT/Hansel Valley.geojson,active-crust,Hansel Valley.geojson,.geojson,0.8955078125
+active-crust/fault/UT/Hurricane (north).geojson,active-crust,Hurricane (north).geojson,.geojson,1.0390625
+active-crust/fault/UT/Joes Valley.geojson,active-crust,Joes Valley.geojson,.geojson,0.9423828125
+active-crust/fault/UT/Morgan.geojson,active-crust,Morgan.geojson,.geojson,0.828125
+active-crust/fault/UT/North Promontory.geojson,active-crust,North Promontory.geojson,.geojson,0.8935546875
+active-crust/fault/UT/Oquirrh - Southern Oquirrh Mountains.geojson,active-crust,Oquirrh - Southern Oquirrh Mountains.geojson,.geojson,1.2333984375
+active-crust/fault/UT/Paragonah.geojson,active-crust,Paragonah.geojson,.geojson,0.8896484375
+active-crust/fault/UT/Sevier - Toroweap (north).geojson,active-crust,Sevier - Toroweap (north).geojson,.geojson,1.40625
+active-crust/fault/UT/Stansbury.geojson,active-crust,Stansbury.geojson,.geojson,1.0
+active-crust/fault/UT/Strawberry.geojson,active-crust,Strawberry.geojson,.geojson,1.09375
+active-crust/fault/UT/Wasatch/README.md,active-crust,README.md,.md,5.2509765625
+active-crust/fault/UT/Wasatch/features/Wasatch (Brigham City).geojson,active-crust,Wasatch (Brigham City).geojson,.geojson,0.755859375
+active-crust/fault/UT/Wasatch/features/Wasatch (Levan).geojson,active-crust,Wasatch (Levan).geojson,.geojson,0.7421875
+active-crust/fault/UT/Wasatch/features/Wasatch (Nephi).geojson,active-crust,Wasatch (Nephi).geojson,.geojson,0.80859375
+active-crust/fault/UT/Wasatch/features/Wasatch (Provo).geojson,active-crust,Wasatch (Provo).geojson,.geojson,1.4208984375
+"active-crust/fault/UT/Wasatch/features/Wasatch (Salt Lake City, connected).geojson",active-crust,"Wasatch (Salt Lake City, connected).geojson",.geojson,6.451171875
+"active-crust/fault/UT/Wasatch/features/Wasatch (Salt Lake City, geodetic).geojson",active-crust,"Wasatch (Salt Lake City, geodetic).geojson",.geojson,1.0859375
+"active-crust/fault/UT/Wasatch/features/Wasatch (Salt Lake City, geologic).geojson",active-crust,"Wasatch (Salt Lake City, geologic).geojson",.geojson,6.04296875
+"active-crust/fault/UT/Wasatch/features/Wasatch (Salt Lake City, north).geojson",active-crust,"Wasatch (Salt Lake City, north).geojson",.geojson,2.4951171875
+"active-crust/fault/UT/Wasatch/features/Wasatch (Salt Lake City, south).geojson",active-crust,"Wasatch (Salt Lake City, south).geojson",.geojson,5.7763671875
+"active-crust/fault/UT/Wasatch/features/Wasatch (Salt Lake City, tear).geojson",active-crust,"Wasatch (Salt Lake City, tear).geojson",.geojson,0.9912109375
+active-crust/fault/UT/Wasatch/features/Wasatch (Weber).geojson,active-crust,Wasatch (Weber).geojson,.geojson,1.388671875
+active-crust/fault/UT/Wasatch/features/Wasatch (all).geojson,active-crust,Wasatch (all).geojson,.geojson,4.3525390625
+active-crust/fault/UT/Wasatch/mfd-map.json,active-crust,mfd-map.json,.json,7.2158203125
+active-crust/fault/UT/Wasatch/segmented/Brigham City/full-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.09375
+active-crust/fault/UT/Wasatch/segmented/Brigham City/full-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Brigham City/full-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1318359375
+active-crust/fault/UT/Wasatch/segmented/Brigham City/full-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1318359375
+active-crust/fault/UT/Wasatch/segmented/Brigham City/full-rupture/source-group.json,active-crust,source-group.json,.json,0.05078125
+active-crust/fault/UT/Wasatch/segmented/Brigham City/partial-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0966796875
+active-crust/fault/UT/Wasatch/segmented/Brigham City/partial-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Brigham City/partial-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.134765625
+active-crust/fault/UT/Wasatch/segmented/Brigham City/partial-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.134765625
+active-crust/fault/UT/Wasatch/segmented/Brigham City/partial-rupture/source-group.json,active-crust,source-group.json,.json,0.0498046875
+active-crust/fault/UT/Wasatch/segmented/Brigham City/source-tree.json,active-crust,source-tree.json,.json,0.109375
+active-crust/fault/UT/Wasatch/segmented/Levan/full-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.080078125
+active-crust/fault/UT/Wasatch/segmented/Levan/full-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Levan/full-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/UT/Wasatch/segmented/Levan/full-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/UT/Wasatch/segmented/Levan/full-rupture/source-group.json,active-crust,source-group.json,.json,0.05078125
+active-crust/fault/UT/Wasatch/segmented/Levan/partial-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0830078125
+active-crust/fault/UT/Wasatch/segmented/Levan/partial-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Levan/partial-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.12109375
+active-crust/fault/UT/Wasatch/segmented/Levan/partial-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.12109375
+active-crust/fault/UT/Wasatch/segmented/Levan/partial-rupture/source-group.json,active-crust,source-group.json,.json,0.0498046875
+active-crust/fault/UT/Wasatch/segmented/Levan/source-tree.json,active-crust,source-tree.json,.json,0.109375
+active-crust/fault/UT/Wasatch/segmented/Nephi/full-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.080078125
+active-crust/fault/UT/Wasatch/segmented/Nephi/full-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Nephi/full-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/UT/Wasatch/segmented/Nephi/full-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/UT/Wasatch/segmented/Nephi/full-rupture/source-group.json,active-crust,source-group.json,.json,0.05078125
+active-crust/fault/UT/Wasatch/segmented/Nephi/partial-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0830078125
+active-crust/fault/UT/Wasatch/segmented/Nephi/partial-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Nephi/partial-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.12109375
+active-crust/fault/UT/Wasatch/segmented/Nephi/partial-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.12109375
+active-crust/fault/UT/Wasatch/segmented/Nephi/partial-rupture/source-group.json,active-crust,source-group.json,.json,0.0498046875
+active-crust/fault/UT/Wasatch/segmented/Nephi/source-tree.json,active-crust,source-tree.json,.json,0.109375
+active-crust/fault/UT/Wasatch/segmented/Provo/full-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.080078125
+active-crust/fault/UT/Wasatch/segmented/Provo/full-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Provo/full-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/UT/Wasatch/segmented/Provo/full-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/UT/Wasatch/segmented/Provo/full-rupture/source-group.json,active-crust,source-group.json,.json,0.05078125
+active-crust/fault/UT/Wasatch/segmented/Provo/partial-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0830078125
+active-crust/fault/UT/Wasatch/segmented/Provo/partial-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Provo/partial-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.12109375
+active-crust/fault/UT/Wasatch/segmented/Provo/partial-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.12109375
+active-crust/fault/UT/Wasatch/segmented/Provo/partial-rupture/source-group.json,active-crust,source-group.json,.json,0.0498046875
+active-crust/fault/UT/Wasatch/segmented/Provo/source-tree.json,active-crust,source-tree.json,.json,0.109375
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geodetic/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.10546875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geodetic/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geodetic/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1435546875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geodetic/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1435546875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/cluster/scaled/--δ--/cluster-set.json,active-crust,cluster-set.json,.json,0.453125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/cluster/scaled/mfd-config.json,active-crust,mfd-config.json,.json,0.111328125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/cluster/scaled/rate-tree.json,active-crust,rate-tree.json,.json,0.0673828125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/cluster/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/cluster/scaled/δ+15°/cluster-set.json,active-crust,cluster-set.json,.json,0.552734375
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/cluster/scaled/δ-15°/cluster-set.json,active-crust,cluster-set.json,.json,0.552734375
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/cluster/source-group.json,active-crust,source-group.json,.json,0.0517578125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/connected/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.1025390625
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/connected/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/connected/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1298828125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/connected/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.140625
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/connected/source-group.json,active-crust,source-group.json,.json,0.0517578125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/geologic/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.10546875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/geologic/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/geologic/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1435546875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/geologic/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1435546875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/geologic/source-tree.json,active-crust,source-tree.json,.json,0.158203125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.0986328125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/full-rupture/source-group.json,active-crust,source-group.json,.json,0.05078125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/geodetic/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0986328125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/geodetic/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/geodetic/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.13671875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/geodetic/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.13671875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/geologic/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0986328125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/geologic/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/geologic/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.13671875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/geologic/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.13671875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.0986328125
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/partial-rupture/source-group.json,active-crust,source-group.json,.json,0.0498046875
+active-crust/fault/UT/Wasatch/segmented/Salt Lake City/source-tree.json,active-crust,source-tree.json,.json,0.109375
+active-crust/fault/UT/Wasatch/segmented/Weber/full-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.080078125
+active-crust/fault/UT/Wasatch/segmented/Weber/full-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Weber/full-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/UT/Wasatch/segmented/Weber/full-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1181640625
+active-crust/fault/UT/Wasatch/segmented/Weber/full-rupture/source-group.json,active-crust,source-group.json,.json,0.05078125
+active-crust/fault/UT/Wasatch/segmented/Weber/partial-rupture/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0830078125
+active-crust/fault/UT/Wasatch/segmented/Weber/partial-rupture/scaled/source-tree.json,active-crust,source-tree.json,.json,0.142578125
+active-crust/fault/UT/Wasatch/segmented/Weber/partial-rupture/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.12109375
+active-crust/fault/UT/Wasatch/segmented/Weber/partial-rupture/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.12109375
+active-crust/fault/UT/Wasatch/segmented/Weber/partial-rupture/source-group.json,active-crust,source-group.json,.json,0.0498046875
+active-crust/fault/UT/Wasatch/segmented/Weber/source-tree.json,active-crust,source-tree.json,.json,0.109375
+active-crust/fault/UT/Wasatch/segmented/source-group.json,active-crust,source-group.json,.json,0.1767578125
+active-crust/fault/UT/Wasatch/source-tree.json,active-crust,source-tree.json,.json,0.1025390625
+active-crust/fault/UT/Wasatch/tree-info.json,active-crust,tree-info.json,.json,0.0478515625
+active-crust/fault/UT/Wasatch/unsegmented/scaled/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0712890625
+active-crust/fault/UT/Wasatch/unsegmented/scaled/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/UT/Wasatch/unsegmented/scaled/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.109375
+active-crust/fault/UT/Wasatch/unsegmented/scaled/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.109375
+active-crust/fault/UT/Wasatch/unsegmented/source-group.json,active-crust,source-group.json,.json,0.0498046875
+active-crust/fault/UT/West Cache (Clarkston).geojson,active-crust,West Cache (Clarkston).geojson,.geojson,1.2958984375
+active-crust/fault/UT/West Cache (Junction Hills).geojson,active-crust,West Cache (Junction Hills).geojson,.geojson,1.1044921875
+active-crust/fault/UT/West Cache (Wellsville).geojson,active-crust,West Cache (Wellsville).geojson,.geojson,0.873046875
+active-crust/fault/UT/West Valley/--δ--/geodetic/rupture-set.json,active-crust,rupture-set.json,.json,0.0927734375
+active-crust/fault/UT/West Valley/--δ--/geologic/source-tree.json,active-crust,source-tree.json,.json,0.15234375
+active-crust/fault/UT/West Valley/--δ--/geologic/wasatch-35/rupture-set.json,active-crust,rupture-set.json,.json,0.1357421875
+active-crust/fault/UT/West Valley/--δ--/geologic/wasatch-50/rupture-set.json,active-crust,rupture-set.json,.json,0.1357421875
+active-crust/fault/UT/West Valley/--δ--/geologic/wasatch-65/rupture-set.json,active-crust,rupture-set.json,.json,0.1328125
+active-crust/fault/UT/West Valley/--δ--/source-tree.json,active-crust,source-tree.json,.json,0.0986328125
+active-crust/fault/UT/West Valley/README.md,active-crust,README.md,.md,0.4697265625
+active-crust/fault/UT/West Valley/features/West Valley.geojson,active-crust,West Valley.geojson,.geojson,0.564453125
+active-crust/fault/UT/West Valley/mfd-map.json,active-crust,mfd-map.json,.json,0.5556640625
+active-crust/fault/UT/West Valley/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/UT/West Valley/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/UT/West Valley/δ+15°/geodetic/rupture-set.json,active-crust,rupture-set.json,.json,0.130859375
+active-crust/fault/UT/West Valley/δ+15°/geologic/source-tree.json,active-crust,source-tree.json,.json,0.15234375
+active-crust/fault/UT/West Valley/δ+15°/geologic/wasatch-35/rupture-set.json,active-crust,rupture-set.json,.json,0.15234375
+active-crust/fault/UT/West Valley/δ+15°/geologic/wasatch-50/rupture-set.json,active-crust,rupture-set.json,.json,0.15234375
+active-crust/fault/UT/West Valley/δ+15°/geologic/wasatch-65/rupture-set.json,active-crust,rupture-set.json,.json,0.1513671875
+active-crust/fault/UT/West Valley/δ+15°/source-tree.json,active-crust,source-tree.json,.json,0.0986328125
+active-crust/fault/UT/West Valley/δ-15°/geodetic/rupture-set.json,active-crust,rupture-set.json,.json,0.130859375
+active-crust/fault/UT/West Valley/δ-15°/geologic/source-tree.json,active-crust,source-tree.json,.json,0.15234375
+active-crust/fault/UT/West Valley/δ-15°/geologic/wasatch-35/rupture-set.json,active-crust,rupture-set.json,.json,0.15234375
+active-crust/fault/UT/West Valley/δ-15°/geologic/wasatch-50/rupture-set.json,active-crust,rupture-set.json,.json,0.1533203125
+active-crust/fault/UT/West Valley/δ-15°/geologic/wasatch-65/rupture-set.json,active-crust,rupture-set.json,.json,0.150390625
+active-crust/fault/UT/West Valley/δ-15°/source-tree.json,active-crust,source-tree.json,.json,0.0986328125
+active-crust/fault/WA/Boulder Creek - Kendall Scarp.geojson,active-crust,Boulder Creek - Kendall Scarp.geojson,.geojson,0.8564453125
+active-crust/fault/WA/Devils Mountain.geojson,active-crust,Devils Mountain.geojson,.geojson,1.37109375
+active-crust/fault/WA/Hite.geojson,active-crust,Hite.geojson,.geojson,0.9716796875
+active-crust/fault/WA/Horse Heaven Hills.geojson,active-crust,Horse Heaven Hills.geojson,.geojson,0.95703125
+active-crust/fault/WA/Lake Creek - Boundary Creek.geojson,active-crust,Lake Creek - Boundary Creek.geojson,.geojson,0.904296875
+active-crust/fault/WA/Mill Creek.geojson,active-crust,Mill Creek.geojson,.geojson,0.9990234375
+active-crust/fault/WA/Rattlesnake - Wallula.geojson,active-crust,Rattlesnake - Wallula.geojson,.geojson,1.1201171875
+active-crust/fault/WA/Saddle Mountains/README.md,active-crust,README.md,.md,0.396484375
+active-crust/fault/WA/Saddle Mountains/Saddle Mountains (Holocene).geojson,active-crust,Saddle Mountains (Holocene).geojson,.geojson,1.3349609375
+active-crust/fault/WA/Saddle Mountains/Saddle Mountains (long-term).geojson,active-crust,Saddle Mountains (long-term).geojson,.geojson,1.333984375
+active-crust/fault/WA/Saddle Mountains/source-tree.json,active-crust,source-tree.json,.json,0.154296875
+active-crust/fault/WA/Saddle Mountains/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/WA/Seattle/Seattle (middle).geojson,active-crust,Seattle (middle).geojson,.geojson,1.060546875
+active-crust/fault/WA/Seattle/Seattle (north).geojson,active-crust,Seattle (north).geojson,.geojson,1.14453125
+active-crust/fault/WA/Seattle/Seattle (south).geojson,active-crust,Seattle (south).geojson,.geojson,1.1181640625
+active-crust/fault/WA/Seattle/mfd-config.json,active-crust,mfd-config.json,.json,0.310546875
+active-crust/fault/WA/Southern Whidbey Island/README.md,active-crust,README.md,.md,2.126953125
+active-crust/fault/WA/Southern Whidbey Island/middle/Southern Whidbey Island (middle).geojson,active-crust,Southern Whidbey Island (middle).geojson,.geojson,3.2626953125
+"active-crust/fault/WA/Southern Whidbey Island/middle/Southern Whidbey Island (middle, extended).geojson",active-crust,"Southern Whidbey Island (middle, extended).geojson",.geojson,1.16796875
+active-crust/fault/WA/Southern Whidbey Island/middle/source-tree.json,active-crust,source-tree.json,.json,0.1708984375
+active-crust/fault/WA/Southern Whidbey Island/middle/tree-info.json,active-crust,tree-info.json,.json,0.0615234375
+active-crust/fault/WA/Southern Whidbey Island/north/Southern Whidbey Island (north).geojson,active-crust,Southern Whidbey Island (north).geojson,.geojson,2.9833984375
+"active-crust/fault/WA/Southern Whidbey Island/north/Southern Whidbey Island (north, extended).geojson",active-crust,"Southern Whidbey Island (north, extended).geojson",.geojson,1.197265625
+active-crust/fault/WA/Southern Whidbey Island/north/source-tree.json,active-crust,source-tree.json,.json,0.1689453125
+active-crust/fault/WA/Southern Whidbey Island/north/tree-info.json,active-crust,tree-info.json,.json,0.060546875
+active-crust/fault/WA/Southern Whidbey Island/south/Southern Whidbey Island (south).geojson,active-crust,Southern Whidbey Island (south).geojson,.geojson,3.0400390625
+"active-crust/fault/WA/Southern Whidbey Island/south/Southern Whidbey Island (south, extended).geojson",active-crust,"Southern Whidbey Island (south, extended).geojson",.geojson,1.279296875
+active-crust/fault/WA/Southern Whidbey Island/south/source-tree.json,active-crust,source-tree.json,.json,0.1689453125
+active-crust/fault/WA/Southern Whidbey Island/south/tree-info.json,active-crust,tree-info.json,.json,0.060546875
+active-crust/fault/WA/Strawberry Point.geojson,active-crust,Strawberry Point.geojson,.geojson,0.76953125
+active-crust/fault/WA/Tacoma.geojson,active-crust,Tacoma.geojson,.geojson,1.1142578125
+active-crust/fault/WA/Utsalady Point.geojson,active-crust,Utsalady Point.geojson,.geojson,0.794921875
+active-crust/fault/WA/mfd-map.json,active-crust,mfd-map.json,.json,0.337890625
+active-crust/fault/WY/Bear River.geojson,active-crust,Bear River.geojson,.geojson,1.1298828125
+active-crust/fault/WY/Eagle Bay.geojson,active-crust,Eagle Bay.geojson,.geojson,0.8857421875
+active-crust/fault/WY/East Mount Sheridan.geojson,active-crust,East Mount Sheridan.geojson,.geojson,0.8701171875
+active-crust/fault/WY/Grand Valley.geojson,active-crust,Grand Valley.geojson,.geojson,1.0068359375
+active-crust/fault/WY/Greys River.geojson,active-crust,Greys River.geojson,.geojson,1.0068359375
+active-crust/fault/WY/Hoback.geojson,active-crust,Hoback.geojson,.geojson,0.8583984375
+active-crust/fault/WY/Rock Creek.geojson,active-crust,Rock Creek.geojson,.geojson,0.9462890625
+active-crust/fault/WY/Teton/README.md,active-crust,README.md,.md,0.0849609375
+active-crust/fault/WY/Teton/features/Teton.geojson,active-crust,Teton.geojson,.geojson,0.845703125
+active-crust/fault/WY/Teton/full-rupture/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0625
+active-crust/fault/WY/Teton/full-rupture/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/WY/Teton/full-rupture/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1005859375
+active-crust/fault/WY/Teton/full-rupture/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.1005859375
+active-crust/fault/WY/Teton/mfd-map.json,active-crust,mfd-map.json,.json,0.931640625
+active-crust/fault/WY/Teton/partial-rupture/--δ--/rupture-set.json,active-crust,rupture-set.json,.json,0.0654296875
+active-crust/fault/WY/Teton/partial-rupture/source-tree.json,active-crust,source-tree.json,.json,0.140625
+active-crust/fault/WY/Teton/partial-rupture/δ+15°/rupture-set.json,active-crust,rupture-set.json,.json,0.103515625
+active-crust/fault/WY/Teton/partial-rupture/δ-15°/rupture-set.json,active-crust,rupture-set.json,.json,0.103515625
+active-crust/fault/WY/Teton/source-tree.json,active-crust,source-tree.json,.json,0.11328125
+active-crust/fault/WY/Teton/tree-info.json,active-crust,tree-info.json,.json,0.0166015625
+active-crust/fault/WY/Upper Yellowstone Valley.geojson,active-crust,Upper Yellowstone Valley.geojson,.geojson,0.8759765625
+active-crust/fault/fault-config.json,active-crust,fault-config.json,.json,0.3115234375
+active-crust/fault/mfd-config.json,active-crust,mfd-config.json,.json,0.3095703125
+active-crust/fault/mfd-map.json,active-crust,mfd-map.json,.json,0.341796875
+active-crust/fault/rate-tree.json,active-crust,rate-tree.json,.json,0.1337890625
+active-crust/gmm-config.json,active-crust,gmm-config.json,.json,0.02734375
+active-crust/gmm-tree.json,active-crust,gmm-tree.json,.json,0.173828125
+active-crust/grid/README.md,active-crust,README.md,.md,1.458984375
+active-crust/grid/compressional/mfd-map.json,active-crust,mfd-map.json,.json,1.212890625
+active-crust/grid/compressional/puget-lowland/no-puget/adaptive/rate-tree.json,active-crust,rate-tree.json,.json,0.078125
+active-crust/grid/compressional/puget-lowland/no-puget/adaptive/rupture-sets.json,active-crust,rupture-sets.json,.json,0.18359375
+active-crust/grid/compressional/puget-lowland/no-puget/fixed/rate-tree.json,active-crust,rate-tree.json,.json,0.0771484375
+active-crust/grid/compressional/puget-lowland/no-puget/fixed/rupture-sets.json,active-crust,rupture-sets.json,.json,0.177734375
+active-crust/grid/compressional/puget-lowland/no-puget/source-tree.json,active-crust,source-tree.json,.json,0.095703125
+active-crust/grid/compressional/puget-lowland/puget/grid-config.json,active-crust,grid-config.json,.json,0.6435546875
+active-crust/grid/compressional/puget-lowland/puget/rate-tree.json,active-crust,rate-tree.json,.json,0.0771484375
+active-crust/grid/compressional/puget-lowland/puget/rupture-sets.json,active-crust,rupture-sets.json,.json,0.171875
+active-crust/grid/compressional/puget-lowland/source-group.json,active-crust,source-group.json,.json,0.05859375
+active-crust/grid/compressional/source-tree.json,active-crust,source-tree.json,.json,0.1123046875
+active-crust/grid/compressional/tree-info.json,active-crust,tree-info.json,.json,0.0576171875
+active-crust/grid/compressional/washington-oregon/adaptive/rate-tree.json,active-crust,rate-tree.json,.json,0.078125
+active-crust/grid/compressional/washington-oregon/adaptive/rupture-sets.json,active-crust,rupture-sets.json,.json,0.177734375
+active-crust/grid/compressional/washington-oregon/fixed/rate-tree.json,active-crust,rate-tree.json,.json,0.0771484375
+active-crust/grid/compressional/washington-oregon/fixed/rupture-sets.json,active-crust,rupture-sets.json,.json,0.171875
+active-crust/grid/compressional/washington-oregon/source-tree.json,active-crust,source-tree.json,.json,0.095703125
+active-crust/grid/extensional/adaptive/rate-tree.json,active-crust,rate-tree.json,.json,0.076171875
+active-crust/grid/extensional/adaptive/rupture-sets.json,active-crust,rupture-sets.json,.json,0.16015625
+active-crust/grid/extensional/fixed/rate-tree.json,active-crust,rate-tree.json,.json,0.0771484375
+active-crust/grid/extensional/fixed/rupture-sets.json,active-crust,rupture-sets.json,.json,0.154296875
+active-crust/grid/extensional/grid-config.json,active-crust,grid-config.json,.json,0.6416015625
+active-crust/grid/extensional/mfd-map.json,active-crust,mfd-map.json,.json,0.6064453125
+active-crust/grid/extensional/source-tree.json,active-crust,source-tree.json,.json,0.095703125
+active-crust/grid/extensional/tree-info.json,active-crust,tree-info.json,.json,0.0556640625
+active-crust/grid/features/extensional.geojson,active-crust,extensional.geojson,.geojson,0.3017578125
+active-crust/grid/features/no-puget.geojson,active-crust,no-puget.geojson,.geojson,0.314453125
+active-crust/grid/features/puget.geojson,active-crust,puget.geojson,.geojson,0.3427734375
+active-crust/grid/features/ucerf3.geojson,active-crust,ucerf3.geojson,.geojson,0.3193359375
+active-crust/grid/features/washington-oregon.geojson,active-crust,washington-oregon.geojson,.geojson,0.3115234375
+active-crust/grid/grid-config.json,active-crust,grid-config.json,.json,0.642578125
+active-crust/grid/grid-data/pdf-cmp-no-puget-adaptive.csv,active-crust,pdf-cmp-no-puget-adaptive.csv,.csv,2346.2041015625
+active-crust/grid/grid-data/pdf-cmp-no-puget-fixed.csv,active-crust,pdf-cmp-no-puget-fixed.csv,.csv,430.2919921875
+active-crust/grid/grid-data/pdf-cmp-puget.csv,active-crust,pdf-cmp-puget.csv,.csv,241.4169921875
+active-crust/grid/grid-data/pdf-cmp-wa-or-adaptive.csv,active-crust,pdf-cmp-wa-or-adaptive.csv,.csv,2346.2041015625
+active-crust/grid/grid-data/pdf-cmp-wa-or-fixed.csv,active-crust,pdf-cmp-wa-or-fixed.csv,.csv,430.4912109375
+active-crust/grid/grid-data/pdf-ext-adaptive.csv,active-crust,pdf-ext-adaptive.csv,.csv,2346.2041015625
+active-crust/grid/grid-data/pdf-ext-fixed.csv,active-crust,pdf-ext-fixed.csv,.csv,1105.5712890625
+active-crust/grid/grid-data/ucerf3-fm-3.1.csv,active-crust,ucerf3-fm-3.1.csv,.csv,2069.1689453125
+active-crust/grid/grid-data/ucerf3-fm-3.2.csv,active-crust,ucerf3-fm-3.2.csv,.csv,2067.501953125
+active-crust/grid/ucerf3/fault-model-3.1/rupture-sets.json,active-crust,rupture-sets.json,.json,0.150390625
+active-crust/grid/ucerf3/fault-model-3.2/rupture-sets.json,active-crust,rupture-sets.json,.json,0.150390625
+active-crust/grid/ucerf3/mfd-map.json,active-crust,mfd-map.json,.json,0.3466796875
+active-crust/grid/ucerf3/source-tree.json,active-crust,source-tree.json,.json,0.1123046875
+active-crust/grid/ucerf3/tree-info.json,active-crust,tree-info.json,.json,0.05078125
+active-crust/map-region.geojson,active-crust,map-region.geojson,.geojson,0.2666015625
+active-crust/zone/README.md,active-crust,README.md,.md,1.013671875
+active-crust/zone/neokinema/nv-ca/scaled/neokinema-nv-ca.csv,active-crust,neokinema-nv-ca.csv,.csv,13.1376953125
+active-crust/zone/neokinema/nv-ca/scaled/neokinema-nv-ca.geojson,active-crust,neokinema-nv-ca.geojson,.geojson,0.818359375
+active-crust/zone/neokinema/nv-ca/source-group.json,active-crust,source-group.json,.json,0.0478515625
+active-crust/zone/neokinema/nv-ca/tree-info.json,active-crust,tree-info.json,.json,0.052734375
+active-crust/zone/neokinema/wa-or/scaled/neokinema-wa-or.csv,active-crust,neokinema-wa-or.csv,.csv,1.5439453125
+active-crust/zone/neokinema/wa-or/scaled/neokinema-wa-or.geojson,active-crust,neokinema-wa-or.geojson,.geojson,0.6533203125
+active-crust/zone/neokinema/wa-or/source-group.json,active-crust,source-group.json,.json,0.0478515625
+active-crust/zone/neokinema/wa-or/tree-info.json,active-crust,tree-info.json,.json,0.052734375
+active-crust/zone/neokinema/zone-config.json,active-crust,zone-config.json,.json,0.5947265625
+active-crust/zone/ucerf2/shear-2/shear-2.csv,active-crust,shear-2.csv,.csv,0.9697265625
+active-crust/zone/ucerf2/shear-2/shear-2.geojson,active-crust,shear-2.geojson,.geojson,0.6767578125
+active-crust/zone/ucerf2/shear-3/shear-3.csv,active-crust,shear-3.csv,.csv,0.2041015625
+active-crust/zone/ucerf2/shear-3/shear-3.geojson,active-crust,shear-3.geojson,.geojson,0.603515625
+active-crust/zone/ucerf2/shear-4/shear-4.csv,active-crust,shear-4.csv,.csv,4.4970703125
+active-crust/zone/ucerf2/shear-4/shear-4.geojson,active-crust,shear-4.geojson,.geojson,0.7236328125
+active-crust/zone/zone-config.json,active-crust,zone-config.json,.json,0.6064453125
+calc-config.json,calc-config.json,calc-config.json,.json,0.087890625
+code.json,code.json,code.json,.json,2.6572265625
+map.geojson,map.geojson,map.geojson,.geojson,2.7578125
+model-info.json,model-info.json,model-info.json,.json,0.3076171875
+site-data/basin/bay-area.csv,site-data,bay-area.csv,.csv,247.931640625
+site-data/basin/bay-area.geojson,site-data,bay-area.geojson,.geojson,0.8330078125
+site-data/basin/los-angeles.csv,site-data,los-angeles.csv,.csv,422.2373046875
+site-data/basin/los-angeles.geojson,site-data,los-angeles.geojson,.geojson,0.564453125
+site-data/basin/puget-lowland.csv,site-data,puget-lowland.csv,.csv,438.48828125
+site-data/basin/puget-lowland.geojson,site-data,puget-lowland.geojson,.geojson,0.6962890625
+site-data/basin/wasatch-front.csv,site-data,wasatch-front.csv,.csv,237.26171875
+site-data/basin/wasatch-front.geojson,site-data,wasatch-front.geojson,.geojson,0.4169921875
+sites.csv,sites.csv,sites.csv,.csv,7.03125
+sites.geojson,sites.geojson,sites.geojson,.geojson,34.8837890625
+stable-crust/fault/CO/Cheraw/README.md,stable-crust,README.md,.md,1.5458984375
+stable-crust/fault/CO/Cheraw/features/Cheraw (SSCn).geojson,stable-crust,Cheraw (SSCn).geojson,.geojson,0.5078125
+"stable-crust/fault/CO/Cheraw/features/Cheraw (SSCn, GR).geojson",stable-crust,"Cheraw (SSCn, GR).geojson",.geojson,0.5078125
+stable-crust/fault/CO/Cheraw/features/Cheraw.geojson,stable-crust,Cheraw.geojson,.geojson,0.5419921875
+stable-crust/fault/CO/Cheraw/features/README.md,stable-crust,README.md,.md,1.2353515625
+stable-crust/fault/CO/Cheraw/features/notes.md,stable-crust,notes.md,.md,1.0009765625
+stable-crust/fault/CO/Cheraw/source-tree.json,stable-crust,source-tree.json,.json,0.0908203125
+stable-crust/fault/CO/Cheraw/sscn/mfd-config.json,stable-crust,mfd-config.json,.json,0.15625
+stable-crust/fault/CO/Cheraw/sscn/recurrence-rate/rate-tree.json,stable-crust,rate-tree.json,.json,0.2041015625
+stable-crust/fault/CO/Cheraw/sscn/recurrence-rate/rupture-set.json,stable-crust,rupture-set.json,.json,0.404296875
+stable-crust/fault/CO/Cheraw/sscn/slip-rate/full-rupture/rupture-set.json,stable-crust,rupture-set.json,.json,0.478515625
+stable-crust/fault/CO/Cheraw/sscn/slip-rate/partial-rupture/rupture-set.json,stable-crust,rupture-set.json,.json,0.326171875
+stable-crust/fault/CO/Cheraw/sscn/slip-rate/source-tree.json,stable-crust,source-tree.json,.json,0.11328125
+stable-crust/fault/CO/Cheraw/sscn/source-tree.json,stable-crust,source-tree.json,.json,0.1064453125
+stable-crust/fault/CO/Cheraw/tree-info.json,stable-crust,tree-info.json,.json,0.0166015625
+stable-crust/fault/CO/Cheraw/usgs/rupture-set.json,stable-crust,rupture-set.json,.json,0.4677734375
+stable-crust/fault/MO/New Madrid/README.md,stable-crust,README.md,.md,3.96875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - SSCn (Blytheville, north).geojson",stable-crust,"New Madrid - SSCn (Blytheville, north).geojson",.geojson,0.3720703125
+"stable-crust/fault/MO/New Madrid/features/New Madrid - SSCn (Blytheville, south).geojson",stable-crust,"New Madrid - SSCn (Blytheville, south).geojson",.geojson,0.3720703125
+stable-crust/fault/MO/New Madrid/features/New Madrid - SSCn (Bootheel).geojson,stable-crust,New Madrid - SSCn (Bootheel).geojson,.geojson,0.41796875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - SSCn (Reelfoot, center).geojson",stable-crust,"New Madrid - SSCn (Reelfoot, center).geojson",.geojson,0.455078125
+"stable-crust/fault/MO/New Madrid/features/New Madrid - SSCn (Reelfoot, east).geojson",stable-crust,"New Madrid - SSCn (Reelfoot, east).geojson",.geojson,0.369140625
+"stable-crust/fault/MO/New Madrid/features/New Madrid - SSCn (Reelfoot, west).geojson",stable-crust,"New Madrid - SSCn (Reelfoot, west).geojson",.geojson,0.369140625
+stable-crust/fault/MO/New Madrid/features/New Madrid - SSCn (north).geojson,stable-crust,New Madrid - SSCn (north).geojson,.geojson,0.359375
+"stable-crust/fault/MO/New Madrid/features/New Madrid - SSCn (north, extension).geojson",stable-crust,"New Madrid - SSCn (north, extension).geojson",.geojson,0.3974609375
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (center, center).geojson",stable-crust,"New Madrid - USGS (center, center).geojson",.geojson,0.388671875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (center, north).geojson",stable-crust,"New Madrid - USGS (center, north).geojson",.geojson,0.38671875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (center, south).geojson",stable-crust,"New Madrid - USGS (center, south).geojson",.geojson,0.38671875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (east, center).geojson",stable-crust,"New Madrid - USGS (east, center).geojson",.geojson,0.3857421875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (east, north).geojson",stable-crust,"New Madrid - USGS (east, north).geojson",.geojson,0.38671875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (east, south).geojson",stable-crust,"New Madrid - USGS (east, south).geojson",.geojson,0.384765625
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (mid-east, center).geojson",stable-crust,"New Madrid - USGS (mid-east, center).geojson",.geojson,0.392578125
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (mid-east, north).geojson",stable-crust,"New Madrid - USGS (mid-east, north).geojson",.geojson,0.388671875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (mid-east, south).geojson",stable-crust,"New Madrid - USGS (mid-east, south).geojson",.geojson,0.388671875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (mid-west, center).geojson",stable-crust,"New Madrid - USGS (mid-west, center).geojson",.geojson,0.365234375
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (mid-west, north).geojson",stable-crust,"New Madrid - USGS (mid-west, north).geojson",.geojson,0.388671875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (mid-west, south).geojson",stable-crust,"New Madrid - USGS (mid-west, south).geojson",.geojson,0.388671875
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (west, center).geojson",stable-crust,"New Madrid - USGS (west, center).geojson",.geojson,0.3583984375
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (west, north).geojson",stable-crust,"New Madrid - USGS (west, north).geojson",.geojson,0.384765625
+"stable-crust/fault/MO/New Madrid/features/New Madrid - USGS (west, south).geojson",stable-crust,"New Madrid - USGS (west, south).geojson",.geojson,0.384765625
+stable-crust/fault/MO/New Madrid/features/README.md,stable-crust,README.md,.md,1.0458984375
+stable-crust/fault/MO/New Madrid/mfd-map.json,stable-crust,mfd-map.json,.json,2.201171875
+stable-crust/fault/MO/New Madrid/source-tree.json,stable-crust,source-tree.json,.json,0.0908203125
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/babfz-rftl-nmnl/cluster-set.json,stable-crust,cluster-set.json,.json,0.615234375
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/babfz-rftl-nmns/cluster-set.json,stable-crust,cluster-set.json,.json,0.5810546875
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/babfz-rfts-nmnl/cluster-set.json,stable-crust,cluster-set.json,.json,0.5751953125
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/babfz-rfts-nmns/cluster-set.json,stable-crust,cluster-set.json,.json,0.541015625
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/babl-rftl-nmnl/cluster-set.json,stable-crust,cluster-set.json,.json,0.6103515625
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/babl-rftl-nmns/cluster-set.json,stable-crust,cluster-set.json,.json,0.576171875
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/babl-rfts-nmnl/cluster-set.json,stable-crust,cluster-set.json,.json,0.5703125
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/babl-rfts-nmns/cluster-set.json,stable-crust,cluster-set.json,.json,0.5361328125
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/rate-tree.json,stable-crust,rate-tree.json,.json,0.333984375
+stable-crust/fault/MO/New Madrid/sscn/cluster-in/source-tree.json,stable-crust,source-tree.json,.json,0.4521484375
+stable-crust/fault/MO/New Madrid/sscn/cluster-out/rate-tree.json,stable-crust,rate-tree.json,.json,0.337890625
+stable-crust/fault/MO/New Madrid/sscn/cluster-out/reelfoot-extended/rupture-set.json,stable-crust,rupture-set.json,.json,0.189453125
+stable-crust/fault/MO/New Madrid/sscn/cluster-out/reelfoot-short/rupture-set.json,stable-crust,rupture-set.json,.json,0.146484375
+stable-crust/fault/MO/New Madrid/sscn/cluster-out/source-tree.json,stable-crust,source-tree.json,.json,0.11328125
+stable-crust/fault/MO/New Madrid/sscn/source-tree.json,stable-crust,source-tree.json,.json,0.1474609375
+stable-crust/fault/MO/New Madrid/tree-info.json,stable-crust,tree-info.json,.json,0.0166015625
+stable-crust/fault/MO/New Madrid/usgs/center/cluster-in/all/cluster-set.json,stable-crust,cluster-set.json,.json,0.576171875
+stable-crust/fault/MO/New Madrid/usgs/center/cluster-in/all/rate-tree.json,stable-crust,rate-tree.json,.json,0.2626953125
+stable-crust/fault/MO/New Madrid/usgs/center/cluster-in/center-south/cluster-set.json,stable-crust,cluster-set.json,.json,0.4033203125
+stable-crust/fault/MO/New Madrid/usgs/center/cluster-in/center-south/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/center/cluster-in/source-group.json,stable-crust,source-group.json,.json,0.060546875
+stable-crust/fault/MO/New Madrid/usgs/center/cluster-out/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/center/cluster-out/rupture-set.json,stable-crust,rupture-set.json,.json,0.17578125
+stable-crust/fault/MO/New Madrid/usgs/center/source-tree.json,stable-crust,source-tree.json,.json,0.103515625
+stable-crust/fault/MO/New Madrid/usgs/east/cluster-in/all/cluster-set.json,stable-crust,cluster-set.json,.json,0.568359375
+stable-crust/fault/MO/New Madrid/usgs/east/cluster-in/all/rate-tree.json,stable-crust,rate-tree.json,.json,0.2626953125
+stable-crust/fault/MO/New Madrid/usgs/east/cluster-in/center-south/cluster-set.json,stable-crust,cluster-set.json,.json,0.4287109375
+stable-crust/fault/MO/New Madrid/usgs/east/cluster-in/center-south/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/east/cluster-in/source-group.json,stable-crust,source-group.json,.json,0.060546875
+stable-crust/fault/MO/New Madrid/usgs/east/cluster-out/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/east/cluster-out/rupture-set.json,stable-crust,rupture-set.json,.json,0.173828125
+stable-crust/fault/MO/New Madrid/usgs/east/source-tree.json,stable-crust,source-tree.json,.json,0.103515625
+stable-crust/fault/MO/New Madrid/usgs/mid-east/cluster-in/all/cluster-set.json,stable-crust,cluster-set.json,.json,0.583984375
+stable-crust/fault/MO/New Madrid/usgs/mid-east/cluster-in/all/rate-tree.json,stable-crust,rate-tree.json,.json,0.2626953125
+stable-crust/fault/MO/New Madrid/usgs/mid-east/cluster-in/center-south/cluster-set.json,stable-crust,cluster-set.json,.json,0.4404296875
+stable-crust/fault/MO/New Madrid/usgs/mid-east/cluster-in/center-south/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/mid-east/cluster-in/source-group.json,stable-crust,source-group.json,.json,0.060546875
+stable-crust/fault/MO/New Madrid/usgs/mid-east/cluster-out/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/mid-east/cluster-out/rupture-set.json,stable-crust,rupture-set.json,.json,0.177734375
+stable-crust/fault/MO/New Madrid/usgs/mid-east/source-tree.json,stable-crust,source-tree.json,.json,0.103515625
+stable-crust/fault/MO/New Madrid/usgs/mid-west/cluster-in/all/cluster-set.json,stable-crust,cluster-set.json,.json,0.5791015625
+stable-crust/fault/MO/New Madrid/usgs/mid-west/cluster-in/all/rate-tree.json,stable-crust,rate-tree.json,.json,0.2626953125
+stable-crust/fault/MO/New Madrid/usgs/mid-west/cluster-in/center-south/cluster-set.json,stable-crust,cluster-set.json,.json,0.4404296875
+stable-crust/fault/MO/New Madrid/usgs/mid-west/cluster-in/center-south/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/mid-west/cluster-in/source-group.json,stable-crust,source-group.json,.json,0.060546875
+stable-crust/fault/MO/New Madrid/usgs/mid-west/cluster-out/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/mid-west/cluster-out/rupture-set.json,stable-crust,rupture-set.json,.json,0.177734375
+stable-crust/fault/MO/New Madrid/usgs/mid-west/source-tree.json,stable-crust,source-tree.json,.json,0.103515625
+stable-crust/fault/MO/New Madrid/usgs/source-tree.json,stable-crust,source-tree.json,.json,0.234375
+stable-crust/fault/MO/New Madrid/usgs/west/cluster-in/all/cluster-set.json,stable-crust,cluster-set.json,.json,0.568359375
+stable-crust/fault/MO/New Madrid/usgs/west/cluster-in/all/rate-tree.json,stable-crust,rate-tree.json,.json,0.2626953125
+stable-crust/fault/MO/New Madrid/usgs/west/cluster-in/center-south/cluster-set.json,stable-crust,cluster-set.json,.json,0.4287109375
+stable-crust/fault/MO/New Madrid/usgs/west/cluster-in/center-south/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/west/cluster-in/source-group.json,stable-crust,source-group.json,.json,0.060546875
+stable-crust/fault/MO/New Madrid/usgs/west/cluster-out/rate-tree.json,stable-crust,rate-tree.json,.json,0.2578125
+stable-crust/fault/MO/New Madrid/usgs/west/cluster-out/rupture-set.json,stable-crust,rupture-set.json,.json,0.173828125
+stable-crust/fault/MO/New Madrid/usgs/west/source-tree.json,stable-crust,source-tree.json,.json,0.103515625
+stable-crust/fault/MO/mfd-config.json,stable-crust,mfd-config.json,.json,0.11328125
+stable-crust/fault/OK/Meers/README.md,stable-crust,README.md,.md,0.7421875
+stable-crust/fault/OK/Meers/features/Meers (SSCn).geojson,stable-crust,Meers (SSCn).geojson,.geojson,0.455078125
+stable-crust/fault/OK/Meers/features/Meers.geojson,stable-crust,Meers.geojson,.geojson,0.3916015625
+stable-crust/fault/OK/Meers/features/README.md,stable-crust,README.md,.md,0.9814453125
+stable-crust/fault/OK/Meers/mfd-map.json,stable-crust,mfd-map.json,.json,0.3955078125
+stable-crust/fault/OK/Meers/source-tree.json,stable-crust,source-tree.json,.json,0.0908203125
+stable-crust/fault/OK/Meers/sscn/cluster-in/rate-tree.json,stable-crust,rate-tree.json,.json,0.330078125
+stable-crust/fault/OK/Meers/sscn/cluster-in/rupture-set.json,stable-crust,rupture-set.json,.json,0.109375
+stable-crust/fault/OK/Meers/sscn/cluster-out/rate-tree.json,stable-crust,rate-tree.json,.json,0.203125
+stable-crust/fault/OK/Meers/sscn/cluster-out/rupture-set.json,stable-crust,rupture-set.json,.json,0.109375
+stable-crust/fault/OK/Meers/sscn/mfd-config.json,stable-crust,mfd-config.json,.json,0.15625
+stable-crust/fault/OK/Meers/sscn/source-tree.json,stable-crust,source-tree.json,.json,0.103515625
+stable-crust/fault/OK/Meers/tree-info.json,stable-crust,tree-info.json,.json,0.0166015625
+stable-crust/fault/OK/Meers/usgs/rupture-set.json,stable-crust,rupture-set.json,.json,0.25390625
+stable-crust/fault/fault-config.json,stable-crust,fault-config.json,.json,0.1484375
+stable-crust/fault/mfd-config.json,stable-crust,mfd-config.json,.json,0.310546875
+stable-crust/gmm-config.json,stable-crust,gmm-config.json,.json,0.0283203125
+stable-crust/gmm-tree.json,stable-crust,gmm-tree.json,.json,0.0986328125
+stable-crust/grid/README.md,stable-crust,README.md,.md,2.5947265625
+stable-crust/grid/features/sscn-craton-1-9-10.geojson,stable-crust,sscn-craton-1-9-10.geojson,.geojson,5.462890625
+stable-crust/grid/features/sscn-default.geojson,stable-crust,sscn-default.geojson,.geojson,4.1396484375
+stable-crust/grid/features/sscn-gulf-coast-2-3.geojson,stable-crust,sscn-gulf-coast-2-3.geojson,.geojson,3.9130859375
+stable-crust/grid/features/sscn-mesozoic-4-5.geojson,stable-crust,sscn-mesozoic-4-5.geojson,.geojson,2.78515625
+stable-crust/grid/features/sscn-mesozoic-6.geojson,stable-crust,sscn-mesozoic-6.geojson,.geojson,0.734375
+stable-crust/grid/features/sscn-paleozoic-7.geojson,stable-crust,sscn-paleozoic-7.geojson,.geojson,2.2294921875
+stable-crust/grid/features/sscn-paleozoic-8.geojson,stable-crust,sscn-paleozoic-8.geojson,.geojson,1.1748046875
+stable-crust/grid/features/usgs-craton-1-3-4.geojson,stable-crust,usgs-craton-1-3-4.geojson,.geojson,8.400390625
+stable-crust/grid/features/usgs-default.geojson,stable-crust,usgs-default.geojson,.geojson,1.9970703125
+stable-crust/grid/features/usgs-extended-margin-2.geojson,stable-crust,usgs-extended-margin-2.geojson,.geojson,7.8017578125
+stable-crust/grid/grid-config.json,stable-crust,grid-config.json,.json,0.4296875
+stable-crust/grid/grid-data/pdf-adaptive.csv,stable-crust,pdf-adaptive.csv,.csv,5320.666015625
+stable-crust/grid/grid-data/pdf-fixed.csv,stable-crust,pdf-fixed.csv,.csv,3963.0986328125
+stable-crust/grid/mfd-map.json,stable-crust,mfd-map.json,.json,1.3896484375
+stable-crust/grid/source-tree.json,stable-crust,source-tree.json,.json,0.0908203125
+stable-crust/grid/sscn/adaptive/rate-tree.json,stable-crust,rate-tree.json,.json,0.0712890625
+stable-crust/grid/sscn/adaptive/rupture-sets.json,stable-crust,rupture-sets.json,.json,1.1396484375
+stable-crust/grid/sscn/fixed/rate-tree.json,stable-crust,rate-tree.json,.json,0.076171875
+stable-crust/grid/sscn/fixed/rupture-sets.json,stable-crust,rupture-sets.json,.json,1.0986328125
+stable-crust/grid/sscn/source-tree.json,stable-crust,source-tree.json,.json,0.095703125
+stable-crust/grid/tree-info.json,stable-crust,tree-info.json,.json,0.0419921875
+stable-crust/grid/usgs/adaptive/rate-tree.json,stable-crust,rate-tree.json,.json,0.0712890625
+stable-crust/grid/usgs/adaptive/rupture-sets.json,stable-crust,rupture-sets.json,.json,0.4892578125
+stable-crust/grid/usgs/fixed/rate-tree.json,stable-crust,rate-tree.json,.json,0.076171875
+stable-crust/grid/usgs/fixed/rupture-sets.json,stable-crust,rupture-sets.json,.json,0.4716796875
+stable-crust/grid/usgs/source-tree.json,stable-crust,source-tree.json,.json,0.095703125
+stable-crust/map-region.geojson,stable-crust,map-region.geojson,.geojson,0.267578125
+stable-crust/zone/AR/Marianna/README.md,stable-crust,README.md,.md,0.2216796875
+stable-crust/zone/AR/Marianna/active/marianna.csv,stable-crust,marianna.csv,.csv,0.4765625
+stable-crust/zone/AR/Marianna/active/marianna.geojson,stable-crust,marianna.geojson,.geojson,0.8671875
+stable-crust/zone/AR/Marianna/source-tree.json,stable-crust,source-tree.json,.json,0.0908203125
+stable-crust/zone/AR/Marianna/tree-info.json,stable-crust,tree-info.json,.json,0.0166015625
+stable-crust/zone/IL/Wabash/README.md,stable-crust,README.md,.md,0.0205078125
+stable-crust/zone/IL/Wabash/wabash.csv,stable-crust,wabash.csv,.csv,4.0166015625
+stable-crust/zone/IL/Wabash/wabash.geojson,stable-crust,wabash.geojson,.geojson,0.8046875
+stable-crust/zone/ME/Charlevoix/README.md,stable-crust,README.md,.md,0.123046875
+stable-crust/zone/ME/Charlevoix/charlevoix.csv,stable-crust,charlevoix.csv,.csv,1.6484375
+stable-crust/zone/ME/Charlevoix/charlevoix.geojson,stable-crust,charlevoix.geojson,.geojson,0.8701171875
+stable-crust/zone/MO/Commerce Lineament/README.md,stable-crust,README.md,.md,0.0322265625
+stable-crust/zone/MO/Commerce Lineament/commerce-lineament.csv,stable-crust,commerce-lineament.csv,.csv,0.4033203125
+stable-crust/zone/MO/Commerce Lineament/commerce-lineament.geojson,stable-crust,commerce-lineament.geojson,.geojson,1.0625
+stable-crust/zone/SC/Charleston/README.md,stable-crust,README.md,.md,0.314453125
+stable-crust/zone/SC/Charleston/local/local.csv,stable-crust,local.csv,.csv,1.1845703125
+stable-crust/zone/SC/Charleston/local/local.geojson,stable-crust,local.geojson,.geojson,0.388671875
+stable-crust/zone/SC/Charleston/mfd-map.json,stable-crust,mfd-map.json,.json,0.3955078125
+stable-crust/zone/SC/Charleston/narrow/narrow.csv,stable-crust,narrow.csv,.csv,0.427734375
+stable-crust/zone/SC/Charleston/narrow/narrow.geojson,stable-crust,narrow.geojson,.geojson,0.3916015625
+stable-crust/zone/SC/Charleston/regional/regional.csv,stable-crust,regional.csv,.csv,9.412109375
+stable-crust/zone/SC/Charleston/regional/regional.geojson,stable-crust,regional.geojson,.geojson,0.39453125
+stable-crust/zone/SC/Charleston/source-tree.json,stable-crust,source-tree.json,.json,0.1416015625
+stable-crust/zone/SC/Charleston/tree-info.json,stable-crust,tree-info.json,.json,0.0166015625
+stable-crust/zone/TN/Eastern Rift Margin (north)/README.md,stable-crust,README.md,.md,0.041015625
+stable-crust/zone/TN/Eastern Rift Margin (north)/eastern-rift-margin-n.csv,stable-crust,eastern-rift-margin-n.csv,.csv,0.134765625
+stable-crust/zone/TN/Eastern Rift Margin (north)/eastern-rift-margin-n.geojson,stable-crust,eastern-rift-margin-n.geojson,.geojson,0.8037109375
+stable-crust/zone/TN/Eastern Rift Margin (south)/README.md,stable-crust,README.md,.md,0.1181640625
+stable-crust/zone/TN/Eastern Rift Margin (south)/crittenden-co/crittenden-co.csv,stable-crust,crittenden-co.csv,.csv,0.3544921875
+stable-crust/zone/TN/Eastern Rift Margin (south)/crittenden-co/crittenden-co.geojson,stable-crust,crittenden-co.geojson,.geojson,1.0927734375
+stable-crust/zone/TN/Eastern Rift Margin (south)/mfd-map.json,stable-crust,mfd-map.json,.json,0.48046875
+stable-crust/zone/TN/Eastern Rift Margin (south)/river-picks/river-picks.csv,stable-crust,river-picks.csv,.csv,0.427734375
+stable-crust/zone/TN/Eastern Rift Margin (south)/river-picks/river-picks.geojson,stable-crust,river-picks.geojson,.geojson,0.7490234375
+stable-crust/zone/TN/Eastern Rift Margin (south)/source-tree.json,stable-crust,source-tree.json,.json,0.1064453125
+stable-crust/zone/TN/Eastern Rift Margin (south)/tree-info.json,stable-crust,tree-info.json,.json,0.0166015625
+stable-crust/zone/zone-config.json,stable-crust,zone-config.json,.json,0.4375
+subduction/interface/Cascadia/README.md,subduction,README.md,.md,3.1171875
+subduction/interface/Cascadia/bottom/full-rupture/rupture-set.json,subduction,rupture-set.json,.json,0.1201171875
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/section-1/rupture-set.json,subduction,rupture-set.json,.json,0.095703125
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/section-4/rupture-set.json,subduction,rupture-set.json,.json,0.095703125
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/sections-1-2-3/rupture-set.json,subduction,rupture-set.json,.json,0.13671875
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/sections-1-2/rupture-set.json,subduction,rupture-set.json,.json,0.126953125
+subduction/interface/Cascadia/bottom/partial-rupture/segmented/source-group.json,subduction,source-group.json,.json,0.203125
+subduction/interface/Cascadia/bottom/partial-rupture/source-tree.json,subduction,source-tree.json,.json,0.1025390625
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/sections-1-2-3-4/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1357421875
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/sections-1-2-3-4/source-group.json,subduction,source-group.json,.json,0.0498046875
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/sections-1-2-3/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1279296875
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/sections-1-2-3/source-group.json,subduction,source-group.json,.json,0.0478515625
+subduction/interface/Cascadia/bottom/partial-rupture/unsegmented/source-tree.json,subduction,source-tree.json,.json,0.1142578125
+subduction/interface/Cascadia/bottom/source-group.json,subduction,source-group.json,.json,0.072265625
+"subduction/interface/Cascadia/features/Cascadia 1 (Mendocino - Cape Blanco, bottom).geojson",subduction,"Cascadia 1 (Mendocino - Cape Blanco, bottom).geojson",.geojson,0.6181640625
+"subduction/interface/Cascadia/features/Cascadia 1 (Mendocino - Cape Blanco, middle).geojson",subduction,"Cascadia 1 (Mendocino - Cape Blanco, middle).geojson",.geojson,0.6337890625
+"subduction/interface/Cascadia/features/Cascadia 1 (Mendocino - Cape Blanco, top).geojson",subduction,"Cascadia 1 (Mendocino - Cape Blanco, top).geojson",.geojson,0.630859375
+"subduction/interface/Cascadia/features/Cascadia 2 (Cape Blanco - Heceta Bank, bottom).geojson",subduction,"Cascadia 2 (Cape Blanco - Heceta Bank, bottom).geojson",.geojson,0.515625
+"subduction/interface/Cascadia/features/Cascadia 2 (Cape Blanco - Heceta Bank, middle).geojson",subduction,"Cascadia 2 (Cape Blanco - Heceta Bank, middle).geojson",.geojson,0.515625
+"subduction/interface/Cascadia/features/Cascadia 2 (Cape Blanco - Heceta Bank, top).geojson",subduction,"Cascadia 2 (Cape Blanco - Heceta Bank, top).geojson",.geojson,0.5126953125
+"subduction/interface/Cascadia/features/Cascadia 3 (Heceta Bank - Nehalem Bank, bottom).geojson",subduction,"Cascadia 3 (Heceta Bank - Nehalem Bank, bottom).geojson",.geojson,0.470703125
+"subduction/interface/Cascadia/features/Cascadia 3 (Heceta Bank - Nehalem Bank, middle).geojson",subduction,"Cascadia 3 (Heceta Bank - Nehalem Bank, middle).geojson",.geojson,0.470703125
+"subduction/interface/Cascadia/features/Cascadia 3 (Heceta Bank - Nehalem Bank, top).geojson",subduction,"Cascadia 3 (Heceta Bank - Nehalem Bank, top).geojson",.geojson,0.4677734375
+"subduction/interface/Cascadia/features/Cascadia 4 (Nehalem Bank - Vancouver Island, bottom).geojson",subduction,"Cascadia 4 (Nehalem Bank - Vancouver Island, bottom).geojson",.geojson,0.9609375
+"subduction/interface/Cascadia/features/Cascadia 4 (Nehalem Bank - Vancouver Island, middle).geojson",subduction,"Cascadia 4 (Nehalem Bank - Vancouver Island, middle).geojson",.geojson,0.9609375
+"subduction/interface/Cascadia/features/Cascadia 4 (Nehalem Bank - Vancouver Island, top).geojson",subduction,"Cascadia 4 (Nehalem Bank - Vancouver Island, top).geojson",.geojson,0.9580078125
+subduction/interface/Cascadia/features/README.md,subduction,README.md,.md,1.2666015625
+subduction/interface/Cascadia/mfd-map.json,subduction,mfd-map.json,.json,5.0478515625
+subduction/interface/Cascadia/middle/full-rupture/rupture-set.json,subduction,rupture-set.json,.json,0.1201171875
+subduction/interface/Cascadia/middle/partial-rupture/segmented/section-1/rupture-set.json,subduction,rupture-set.json,.json,0.095703125
+subduction/interface/Cascadia/middle/partial-rupture/segmented/section-4/rupture-set.json,subduction,rupture-set.json,.json,0.095703125
+subduction/interface/Cascadia/middle/partial-rupture/segmented/sections-1-2-3/rupture-set.json,subduction,rupture-set.json,.json,0.13671875
+subduction/interface/Cascadia/middle/partial-rupture/segmented/sections-1-2/rupture-set.json,subduction,rupture-set.json,.json,0.126953125
+subduction/interface/Cascadia/middle/partial-rupture/segmented/source-group.json,subduction,source-group.json,.json,0.203125
+subduction/interface/Cascadia/middle/partial-rupture/source-tree.json,subduction,source-tree.json,.json,0.1025390625
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/sections-1-2-3-4/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1357421875
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/sections-1-2-3-4/source-group.json,subduction,source-group.json,.json,0.05078125
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/sections-1-2-3/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1279296875
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/sections-1-2-3/source-group.json,subduction,source-group.json,.json,0.0478515625
+subduction/interface/Cascadia/middle/partial-rupture/unsegmented/source-tree.json,subduction,source-tree.json,.json,0.1142578125
+subduction/interface/Cascadia/middle/source-group.json,subduction,source-group.json,.json,0.072265625
+subduction/interface/Cascadia/source-tree.json,subduction,source-tree.json,.json,0.1376953125
+subduction/interface/Cascadia/top/full-rupture/rupture-set.json,subduction,rupture-set.json,.json,0.1142578125
+subduction/interface/Cascadia/top/partial-rupture/segmented/section-1/rupture-set.json,subduction,rupture-set.json,.json,0.08984375
+subduction/interface/Cascadia/top/partial-rupture/segmented/section-4/rupture-set.json,subduction,rupture-set.json,.json,0.08984375
+subduction/interface/Cascadia/top/partial-rupture/segmented/sections-1-2-3/rupture-set.json,subduction,rupture-set.json,.json,0.130859375
+subduction/interface/Cascadia/top/partial-rupture/segmented/sections-1-2/rupture-set.json,subduction,rupture-set.json,.json,0.12109375
+subduction/interface/Cascadia/top/partial-rupture/segmented/source-group.json,subduction,source-group.json,.json,0.203125
+subduction/interface/Cascadia/top/partial-rupture/source-tree.json,subduction,source-tree.json,.json,0.1025390625
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/sections-1-2-3-4/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.1328125
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/sections-1-2-3-4/source-group.json,subduction,source-group.json,.json,0.0498046875
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/sections-1-2-3/scaled/rupture-set.json,subduction,rupture-set.json,.json,0.125
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/sections-1-2-3/source-group.json,subduction,source-group.json,.json,0.0478515625
+subduction/interface/Cascadia/top/partial-rupture/unsegmented/source-tree.json,subduction,source-tree.json,.json,0.1142578125
+subduction/interface/Cascadia/top/source-group.json,subduction,source-group.json,.json,0.072265625
+subduction/interface/Cascadia/tree-info.json,subduction,tree-info.json,.json,0.0537109375
+subduction/interface/gmm-config.json,subduction,gmm-config.json,.json,0.0283203125
+subduction/interface/gmm-tree.json,subduction,gmm-tree.json,.json,0.1708984375
+subduction/interface/interface-config.json,subduction,interface-config.json,.json,0.1103515625
+subduction/interface/map-region.geojson,subduction,map-region.geojson,.geojson,0.2744140625
+subduction/interface/mfd-config.json,subduction,mfd-config.json,.json,0.11328125
+subduction/slab/CA/single-branch/rate-tree.json,subduction,rate-tree.json,.json,0.0771484375
+subduction/slab/CA/single-branch/rupture-sets.json,subduction,rupture-sets.json,.json,0.1328125
+subduction/slab/CA/source-group.json,subduction,source-group.json,.json,0.037109375
+subduction/slab/CA/tree-info.json,subduction,tree-info.json,.json,0.0576171875
+subduction/slab/OR/mfd-hi/rate-tree.json,subduction,rate-tree.json,.json,0.078125
+subduction/slab/OR/mfd-hi/rupture-sets.json,subduction,rupture-sets.json,.json,0.142578125
+subduction/slab/OR/mfd-lo/rate-tree.json,subduction,rate-tree.json,.json,0.078125
+subduction/slab/OR/mfd-lo/rupture-sets.json,subduction,rupture-sets.json,.json,0.1396484375
+subduction/slab/OR/source-group.json,subduction,source-group.json,.json,0.0576171875
+subduction/slab/OR/tree-info.json,subduction,tree-info.json,.json,0.0537109375
+subduction/slab/README.md,subduction,README.md,.md,2.0146484375
+subduction/slab/WA/mfd-hi/rate-tree.json,subduction,rate-tree.json,.json,0.0771484375
+subduction/slab/WA/mfd-hi/rupture-sets.json,subduction,rupture-sets.json,.json,0.142578125
+subduction/slab/WA/mfd-lo/rate-tree.json,subduction,rate-tree.json,.json,0.076171875
+subduction/slab/WA/mfd-lo/rupture-sets.json,subduction,rupture-sets.json,.json,0.1396484375
+subduction/slab/WA/source-group.json,subduction,source-group.json,.json,0.0576171875
+subduction/slab/WA/tree-info.json,subduction,tree-info.json,.json,0.0576171875
+subduction/slab/features/ca.geojson,subduction,ca.geojson,.geojson,0.3251953125
+subduction/slab/features/or.geojson,subduction,or.geojson,.geojson,0.2919921875
+subduction/slab/features/wa.geojson,subduction,wa.geojson,.geojson,0.2919921875
+subduction/slab/gmm-config.json,subduction,gmm-config.json,.json,0.02734375
+subduction/slab/gmm-tree.json,subduction,gmm-tree.json,.json,0.1015625
+subduction/slab/grid-data/pdf-ca.csv,subduction,pdf-ca.csv,.csv,85.591796875
+subduction/slab/grid-data/pdf-or.csv,subduction,pdf-or.csv,.csv,30.484375
+subduction/slab/grid-data/pdf-wa.csv,subduction,pdf-wa.csv,.csv,92.419921875
+subduction/slab/map-region.geojson,subduction,map-region.geojson,.geojson,0.26953125
+subduction/slab/mfd-map.json,subduction,mfd-map.json,.json,1.1484375
+subduction/slab/slab-config.json,subduction,slab-config.json,.json,0.1923828125

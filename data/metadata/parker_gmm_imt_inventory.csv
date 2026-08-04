@@ -1,0 +1,323 @@
+gmm_name,gmm_label,implementation_class,imt_name
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,PGA
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,PGV
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P01
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P02
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P03
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P05
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P075
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P1
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P15
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P2
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P25
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P3
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P4
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P5
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA0P75
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA10P0
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA1P0
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA1P5
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA2P0
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA3P0
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA4P0
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA5P0
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,SA7P5
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,PGA
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,PGV
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P01
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P02
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P03
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P05
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P075
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P1
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P15
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P2
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P25
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P3
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P4
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P5
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA0P75
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA10P0
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA1P0
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA1P5
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA2P0
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA3P0
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA4P0
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA5P0
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,SA7P5
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,PGA
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,PGV
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P01
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P02
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P03
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P05
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P075
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P1
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P15
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P2
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P25
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P3
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P4
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P5
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA0P75
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA10P0
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA1P0
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA1P5
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA2P0
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA3P0
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA4P0
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA5P0
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,SA7P5
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,PGA
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,PGV
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P01
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P02
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P03
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P05
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P075
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P1
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P15
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P2
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P25
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P3
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P4
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P5
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA0P75
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA10P0
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA1P0
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA1P5
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA2P0
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA3P0
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA4P0
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA5P0
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,SA7P5
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,PGA
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,PGV
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P01
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P02
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P03
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P05
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P075
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P1
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P15
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P2
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P25
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P3
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P4
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P5
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA0P75
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA10P0
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA1P0
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA1P5
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA2P0
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA3P0
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA4P0
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA5P0
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,SA7P5
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,PGA
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,PGV
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P01
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P02
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P03
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P05
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P075
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P1
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P15
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P2
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P25
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P3
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P4
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P5
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA0P75
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA10P0
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA1P0
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA1P5
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA2P0
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA3P0
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA4P0
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA5P0
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,SA7P5
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,PGA
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,PGV
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P01
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P02
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P03
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P05
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P075
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P1
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P15
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P2
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P25
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P3
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P4
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P5
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA0P75
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA10P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA1P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA1P5
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA2P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA3P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA4P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA5P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,SA7P5
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,PGA
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,PGV
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P01
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P02
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P03
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P05
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P075
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P1
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P15
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P2
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P25
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P3
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P4
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P5
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA0P75
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA10P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA1P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA1P5
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA2P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA3P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA4P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA5P0
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,SA7P5
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,PGA
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,PGV
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P01
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P02
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P03
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P05
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P075
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P1
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P15
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P2
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P25
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P3
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P4
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P5
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA0P75
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA10P0
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA1P0
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA1P5
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA2P0
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA3P0
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA4P0
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA5P0
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,SA7P5
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,PGA
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,PGV
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P01
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P02
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P03
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P05
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P075
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P1
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P15
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P2
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P25
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P3
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P4
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P5
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA0P75
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA10P0
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA1P0
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA1P5
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA2P0
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA3P0
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA4P0
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA5P0
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,SA7P5
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,PGA
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,PGV
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P01
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P02
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P03
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P05
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P075
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P1
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P15
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P2
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P25
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P3
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P4
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P5
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA0P75
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA10P0
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA1P0
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA1P5
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA2P0
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA3P0
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA4P0
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA5P0
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,SA7P5
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,PGA
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,PGV
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P01
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P02
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P03
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P05
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P075
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P1
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P15
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P2
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P25
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P3
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P4
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P5
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA0P75
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA10P0
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA1P0
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA1P5
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA2P0
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA3P0
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA4P0
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA5P0
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,SA7P5
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,PGA
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,PGV
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P01
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P02
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P03
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P05
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P075
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P1
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P15
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P2
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P25
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P3
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P4
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P5
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA0P75
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA10P0
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA1P0
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA1P5
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA2P0
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA3P0
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA4P0
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA5P0
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,SA7P5
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,PGA
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,PGV
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P01
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P02
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P03
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P05
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P075
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P1
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P15
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P2
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P25
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P3
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P4
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P5
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA0P75
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA10P0
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA1P0
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA1P5
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA2P0
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA3P0
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA4P0
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA5P0
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,SA7P5

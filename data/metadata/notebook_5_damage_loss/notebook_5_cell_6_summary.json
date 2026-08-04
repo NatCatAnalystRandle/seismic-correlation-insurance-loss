@@ -1,0 +1,106 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "maximum_events_in_one_year": 3,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T01:51:51.404075+00:00",
+  "critical_checks": 38,
+  "critical_failures": [],
+  "next_cell": "Cell 7: finalize the structural-only Notebook 5 baseline or begin the separate nonstructural damage and repair-loss extension before insurance terms.",
+  "outputs": {
+    "annual_loss_series": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_risk\\structural_annual_loss_series.csv.gz",
+      "rows": 2000000,
+      "sha256": "9c9833d9d93bd0b0475abf61894e2f6bdd48cb035cdc9dda8c95c8a3b43a0af4"
+    },
+    "exceedance_probability_curve": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_risk\\structural_exceedance_probability_curve.csv.gz",
+      "rows": 40416,
+      "sha256": "1d613a9e6021afc6f6935471d185b331dca72d368d9dba2e29be43bd42ca505e"
+    },
+    "plot_pdf": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_risk\\plots\\structural_aep_oep_curve.pdf",
+    "plot_png": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_risk\\plots\\structural_aep_oep_curve.png",
+    "pml_table": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_risk\\structural_pml_table.csv",
+      "rows": 16,
+      "sha256": "5203e0275fb4ae1e5fe8ac6762d4e582411460b52e8bee09a15ff4c77cccad97"
+    },
+    "risk_metrics": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_risk\\structural_risk_metrics.csv",
+      "rows": 4,
+      "sha256": "bc81d7ad8f49d0e45ad92502598b9efb30ed59dd55440dbee9e9cc64c5d948c4"
+    },
+    "source_aal_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_risk\\structural_source_aal_summary.csv",
+      "rows": 2,
+      "sha256": "7167b7eb1440d6d2535e3ca5e875559aea85d27fb9c1074aa4bd126cedc55ffd"
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_6_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_6_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell6_structural_annual_risk_metrics_v1",
+  "pml_method": {
+    "definition": "For return period R, sort all declared annual losses in descending order and select rank ceil(N/R), where N is the declared catalog duration.",
+    "return_periods_years": [
+      50,
+      100,
+      200,
+      250,
+      500,
+      1000,
+      2000,
+      5000,
+      10000,
+      20000,
+      50000,
+      100000,
+      200000,
+      500000,
+      1000000,
+      2000000
+    ],
+    "tail_support_warning_rank": 20,
+    "thin_tail_return_periods": [
+      200000,
+      500000,
+      1000000,
+      2000000
+    ]
+  },
+  "risk_metrics": {
+    "analytical_expected_structural_aal_2022_usd": 17138.047357328564,
+    "maximum_sampled_annual_aggregate_loss_2022_usd": 39425004.612541474,
+    "maximum_sampled_annual_occurrence_loss_2022_usd": 39425004.612541474,
+    "sampled_positive_aep_years": 9615,
+    "sampled_positive_oep_years": 9615,
+    "sampled_structural_aal_2022_usd": 17125.967402297505
+  },
+  "scope": {
+    "analytical_expected_curves_use": "reconciliation diagnostic based on conditional expected structural loss; not a replacement for the sampled annual loss distribution",
+    "currency": "USD",
+    "dollar_year": 2022,
+    "loss_component": "structural repair only",
+    "official_ep_basis": "sampled structural damage states and sampled structural losses"
+  },
+  "source_files": {
+    "cell5_event_loss_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_loss\\structural_ground_up_loss_event_summary.csv.gz",
+    "cell5_event_loss_sha256": "5095c829ed9860bc659a579e54e960ddefa08f67ef5cea374c043200f6abaf53",
+    "cell5_summary_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_5_summary.json",
+    "cell5_summary_sha256": "5e9632ed85b251716a82ecd222f0762bf10eb62d4528c6a4f58c61764f19fc83",
+    "notebook4_handoff_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_handoff\\notebook_5_input_handoff.json",
+    "notebook4_handoff_sha256": "4279d11616dd3b9307a71d732946b5e5ec0d3cc4dc5b3461653fee49ba6f0b6b"
+  },
+  "warnings": [
+    {
+      "check_id": "extreme_return_period_tail_support_documented",
+      "detail": "thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; threshold_rank=20",
+      "passed": false,
+      "severity": "warning"
+    }
+  ]
+}

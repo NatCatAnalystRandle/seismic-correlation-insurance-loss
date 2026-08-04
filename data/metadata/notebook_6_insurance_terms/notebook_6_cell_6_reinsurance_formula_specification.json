@@ -1,0 +1,38 @@
+{
+  "annual_aggregate_limit": null,
+  "contract_type": "occurrence excess of loss",
+  "currency": "USD",
+  "dollar_year": 2022,
+  "equations": {
+    "ceded_loss": "reinsurer_participation * layer_loss_before_participation",
+    "conservation": "gross_insured_loss = ceded_loss + net_retained_loss",
+    "layer_loss_before_participation": "min(max(gross_insured_occurrence_loss - attachment, 0), limit)",
+    "net_retained_loss": "gross_insured_occurrence_loss - ceded_loss"
+  },
+  "excluded_from_baseline": [
+    "reinsurance premium",
+    "brokerage and commissions",
+    "reinstatement premium",
+    "annual aggregate deductible",
+    "annual aggregate limit",
+    "hours-clause event grouping",
+    "claims development and settlement timing"
+  ],
+  "layer_scenario_id": "baseline_occurrence_xol_500yr_to_2500yr_oep_v1",
+  "layer_selection": {
+    "attachment_2022_usd": 18811083.54014544,
+    "attachment_basis": "gross insured OEP PML",
+    "attachment_return_period_years": 500,
+    "attachment_supporting_descending_rank": 4000,
+    "exhaustion_2022_usd": 80649066.85506359,
+    "exhaustion_basis": "gross insured OEP PML",
+    "exhaustion_return_period_years": 2500,
+    "exhaustion_supporting_descending_rank": 800,
+    "limit_2022_usd": 61837983.314918146,
+    "reinsurer_participation": 1.0
+  },
+  "pipeline_version": "notebook6_cell6_baseline_occurrence_xol_layer_v1",
+  "reinstatement_assumption": "No annual aggregate cap or reinstatement constraint is modeled in the baseline. Each catalog occurrence is evaluated independently.",
+  "subject_loss": "occurrence-level gross insured building repair loss",
+  "underlying_policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1"
+}

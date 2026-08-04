@@ -1,0 +1,18 @@
+check,expected,actual,passes
+Exporter completed successfully,True,True,True
+Both target groups were exported,"['cascadia_interface', 'oregon_intraslab']","['cascadia_interface', 'oregon_intraslab']",True
+Exported rupture table is not empty,> 0,23416,True
+Rupture identifiers are complete,0,0,True
+Rupture identifiers are unique,0,0,True
+Core numeric values are finite,True,True,True
+Raw annual rates are positive,True,True,True
+Weighted annual rates are positive,True,True,True
+"Rupture-set weights are in (0, 1]",True,True,True
+Weighted rate equals raw rate times rupture-set weight,True,True,True
+Branch and rupture-set weights agree,True,True,True
+Cascadia rupture sets,21,21,True
+Oregon loaded rupture sets,2,2,True
+Each Oregon model combination contains 821 grid sources,821,[821],True
+Java rupture count matches CSV,23416,23416,True
+Java Cascadia count matches CSV,11101,11101,True
+Java Oregon count matches CSV,12315,12315,True

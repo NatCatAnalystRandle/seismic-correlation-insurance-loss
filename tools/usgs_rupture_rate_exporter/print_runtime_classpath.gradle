@@ -1,0 +1,13 @@
+gradle.projectsEvaluated {
+    def project = gradle.rootProject
+
+    if (project.plugins.hasPlugin("java")) {
+        project.tasks.register("printRuntimeClasspathForNotebook") {
+            doLast {
+                project.sourceSets.main.runtimeClasspath.files.each { file ->
+                    println "RUNTIME_CP\t${file.absolutePath}"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+check_id,severity,passed,detail
+cell1_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+cell2_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+cell3_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+component_aal_hash_matches_source_summary,critical,True,expected=0e5ebf2a17fda9f7c99cebe51208fbc1b824c18f85642021475f3c72a855bd1d; actual=0e5ebf2a17fda9f7c99cebe51208fbc1b824c18f85642021475f3c72a855bd1d
+component_aal_row_count_matches_source_summary,critical,True,expected=3; actual=3
+component_aal_file_nonempty,critical,True,size_bytes=618; rows=3
+notebook5_source_aal_hash_matches_source_summary,critical,True,expected=a103d8f318b3841e70a5c973454c2dd8539d04aad5bae5f35579d66c622e1efa; actual=a103d8f318b3841e70a5c973454c2dd8539d04aad5bae5f35579d66c622e1efa
+notebook5_source_aal_row_count_matches_source_summary,critical,True,expected=2; actual=2
+notebook5_source_aal_file_nonempty,critical,True,size_bytes=722; rows=2
+insurance_source_aal_hash_matches_source_summary,critical,True,expected=094cb3192f36e49363133ab679a200ac994f4ab85b60eafe3fec0326046a9173; actual=094cb3192f36e49363133ab679a200ac994f4ab85b60eafe3fec0326046a9173
+insurance_source_aal_row_count_matches_source_summary,critical,True,expected=2; actual=2
+insurance_source_aal_file_nonempty,critical,True,size_bytes=651; rows=2
+reinsurance_source_aal_hash_matches_source_summary,critical,True,expected=e296e558e01ca051037d028a8d4ff7874b0e8c91772089067dea14e731707011; actual=e296e558e01ca051037d028a8d4ff7874b0e8c91772089067dea14e731707011
+reinsurance_source_aal_row_count_matches_source_summary,critical,True,expected=2; actual=2
+reinsurance_source_aal_file_nonempty,critical,True,size_bytes=725; rows=2
+headline_metrics_schema_complete,critical,True,missing=[]
+component_aal_schema_complete,critical,True,missing=[]
+notebook5_source_schema_complete,critical,True,missing=[]
+insurance_source_schema_complete,critical,True,missing=[]
+reinsurance_source_schema_complete,critical,True,missing=[]
+ground_up_components_exact,critical,True,"actual=['structural', 'nonstructural_drift_sensitive', 'nonstructural_acceleration_sensitive']"
+ground_up_component_rows_unique,critical,True,duplicate_rows=0
+component_values_finite,critical,True,nonfinite_values=0
+component_aal_values_nonnegative,critical,True,sampled_min=17125.967402298; expected_min=17138.047357329
+component_sampled_shares_sum_to_one,critical,True,sum=1.000000000000
+component_expected_shares_sum_to_one,critical,True,sum=1.000000000000
+component_shares_bounded,critical,True,"sampled_range=(0.087412, 0.762527); expected_range=(0.087327, 0.762583)"
+component_sampled_aal_reconciles_to_headline,critical,True,component_sum=195922.450030290; headline=195922.450030290
+component_expected_aal_reconciles_to_notebook5,critical,True,component_sum=196250.576164873; notebook5=196250.576164873
+source_types_match_across_risk_stages,critical,True,"notebook5=['INTERFACE', 'SLAB']; insurance=['INTERFACE', 'SLAB']; reinsurance=['INTERFACE', 'SLAB']"
+two_source_types_represented,critical,True,"source_types=['INTERFACE', 'SLAB']"
+source_occurrence_counts_match_across_tables,critical,True,"[{'source_type': 'INTERFACE', 'occurrences_notebook5': 6680, 'occurrences_insurance': 6680, 'occurrences_reinsurance': 6680}, {'source_type': 'SLAB', 'occurrences_notebook5': 3950, 'occurrences_insurance': 3950, 'occurrences_reinsurance': 3950}]"
+source_ground_up_values_match_notebook5_and_insurance,critical,True,maximum_difference=0.000000000
+source_gross_values_match_insurance_and_reinsurance,critical,True,maximum_difference=0.000000000
+source_ground_up_loss_flow_reconciles,critical,True,maximum_difference=0.000000000
+source_gross_loss_flow_reconciles,critical,True,maximum_difference=0.000000000
+source_ground_up_aal_2022_usd_reconciles_to_headline,critical,True,source_sum=195922.450030290; headline=195922.450030290
+source_gross_insured_aal_2022_usd_reconciles_to_headline,critical,True,source_sum=122979.559967328; headline=122979.559967329
+source_uninsured_aal_2022_usd_reconciles_to_headline,critical,True,source_sum=72942.890062962; headline=72942.890062962
+source_ceded_aal_2022_usd_reconciles_to_headline,critical,True,source_sum=63676.597327266; headline=63676.597327266
+source_net_retained_aal_2022_usd_reconciles_to_headline,critical,True,source_sum=59302.962640062; headline=59302.962640062
+source_aal_values_finite_nonnegative,critical,True,minimum_value=2873.220901686; nonfinite=0
+source_shares_bounded,critical,True,minimum_share=0.004810127; maximum_share=0.954877914
+source_stage_shares_sum_to_one,critical,True,"{'ground_up_source_share': 0.9999999999999993, 'gross_insured_source_share': 0.9999999999999996, 'uninsured_source_share': 1.0, 'ceded_source_share': 1.0000000000000002, 'net_retained_source_share': 0.9999999999999998}"
+component_reporting_table_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_ground_up_component_contributions.csv
+source_reporting_table_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_source_contributions.csv
+source_share_reporting_table_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_source_risk_transfer_shares.csv
+figure_manifest_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_cell_4_figure_manifest.csv
+all_figure_files_exist,critical,True,figure_files=6
+all_figure_files_have_minimum_size,critical,True,minimum_size_bytes=17298
+figure_hashes_complete,critical,True,files=6
+reporting_table_rows_expected,critical,True,components=3; sources=2; source_share_rows=3

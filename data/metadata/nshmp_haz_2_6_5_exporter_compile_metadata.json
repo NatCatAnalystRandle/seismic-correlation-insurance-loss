@@ -1,0 +1,13 @@
+{
+  "exporter_class": "RuptureRateExporter",
+  "java_source": "tools\\usgs_rupture_rate_exporter\\src\\RuptureRateExporter.java",
+  "compiled_class": "tools\\usgs_rupture_rate_exporter\\classes\\RuptureRateExporter.class",
+  "source_sha256": "fbbb047e3108915b13144ddb98c0db287604ce5710a51eee0f09982afa417cec",
+  "class_sha256": "a40b579dabde29d56eb8693733a7a43bfcccd587bf5aebe63e49defaffffcbf7",
+  "runtime_classpath_entries": 161,
+  "javac_path": "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.32.9-hotspot\\bin\\javac.EXE",
+  "compile_return_code": 0,
+  "compile_started_at_utc": "2026-07-30T01:16:19.127833+00:00",
+  "compile_finished_at_utc": "2026-07-30T01:16:39.305141+00:00",
+  "compile_log": "data\\metadata\\nshmp_haz_2_6_5_exporter_compile.log"
+}

@@ -1,0 +1,9 @@
+check,passes
+Portfolio still contains 470 W2 buildings,True
+Every building has a finite oscillator period,True
+Every building period maps to a Parker IMT,True
+Every mapped IMT is supported by the interface model,True
+Every mapped IMT is supported by the slab model,True
+No period interpolation is required,True
+The W2 period maps to SA0P4,True
+PGA is supported by both Parker models,True

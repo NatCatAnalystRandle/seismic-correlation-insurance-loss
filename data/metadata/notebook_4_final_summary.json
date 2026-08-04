@@ -1,0 +1,32 @@
+{
+  "all_checks_passed": true,
+  "annual_event_occurrence_rate": 0.005315,
+  "catalog_duration_provenance": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\03_generate_annual_event_catalog.ipynb -> CATALOG_YEARS",
+  "catalog_duration_years": 2000000,
+  "catalog_occurrences": 10630,
+  "completed_at_utc": "2026-08-02T20:44:18.793920+00:00",
+  "field_rows": 4996100,
+  "mean_interevent_time_years": 188.1467544684854,
+  "multiple_event_years": 36,
+  "next_notebook": "05_calculate_ground_up_losses.ipynb",
+  "notebook4_complete": true,
+  "occupied_years": 10593,
+  "outputs": {
+    "artifact_inventory_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_handoff\\notebook_4_artifact_inventory.csv",
+    "artifact_inventory_sha256": "f43505ef84f8564953c9ce617a595a9fc1f02b7421a32b89bc8fbad36018c491",
+    "final_validation_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_validation.csv",
+    "final_validation_sha256": "6b12756050a6639de110c34682dbb168a5a986f0a7b47d81b6217236395cb590",
+    "notebook5_handoff_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_handoff\\notebook_5_input_handoff.json",
+    "notebook5_handoff_sha256": "4279d11616dd3b9307a71d732946b5e5ec0d3cc4dc5b3461653fee49ba6f0b6b",
+    "occupied_year_counts_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_handoff\\notebook_4_occupied_year_event_counts.csv.gz",
+    "occupied_year_counts_sha256": "82416e4584aab7416a8f7a65cebb4296335f7783e306dfd936abc23080977e04"
+  },
+  "phase1_spatial_model": "conditionally independent across sites",
+  "pipeline_version": "notebook4_cell20_final_handoff_v1",
+  "primary_branch": "epi-off",
+  "primary_damage_im": "SA0P4",
+  "primary_damage_im_column": "sa0p4_simulated_g",
+  "sites": 470,
+  "validation_checks": 27,
+  "zero_event_years": 1989407
+}

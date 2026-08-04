@@ -1,0 +1,28 @@
+category,check,observed,expected,passes,note
+Prerequisites,CELL15 summary reports all checks passed,True,True,True,
+Prerequisites,CELL15 validation file has no failures,15/15,15/15,True,
+Prerequisites,CELL16 summary reports all checks passed,True,True,True,
+Prerequisites,CELL16 validation file has no failures,30/30,30/30,True,
+Prerequisites,CELL17 summary reports all checks passed,True,True,True,
+Prerequisites,CELL17 validation file has no failures,21/21,21/21,True,
+Prerequisites,CELL18 summary reports all checks passed,True,True,True,
+Prerequisites,CELL18 validation file has no failures,50/50,50/50,True,
+Prerequisites,CELL19 summary reports all checks passed,True,True,True,
+Prerequisites,CELL19 validation file has no failures,27/27,27/27,True,
+Geometry,Cell 15 rupture count,3927,3927,True,
+Geometry,Cell 15 site count,470,470,True,
+Geometry,Cell 15 distance rows,1845690,1845690,True,
+GMM,Cell 17 period is exact SA0P4,0.4,0.4,True,
+GMM,Cell 17 primary branch is epi-off,epi-off,epi-off,True,
+GMM,Cell 17 rupture-site parameter rows,1845690,1845690,True,
+Catalog,Occurrence-index row count agrees with Cell 19,10630,10630,True,
+Catalog,Occupied-year count agrees with Cell 19,10593,10593,True,
+Catalog,Declared duration is at least the largest occupied year,2000000,>= 1999745,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\03_generate_annual_event_catalog.ipynb -> CATALOG_YEARS
+Catalog,Zero-event-year count is nonnegative,1989407,>= 0,True,
+Catalog,Occupied plus zero-event years equals duration,2000000,2000000,True,
+Fields,Cell 19 field-row count equals occurrences times sites,4996100,4996100,True,
+Fields,Cell 19 baseline remains spatially independent,conditionally independent across sites,conditionally independent across sites,True,
+Handoff schema,Full field file has required Notebook 5 columns,8,8,True,"Required: catalog_year, magnitude, occurrence_id, pga_simulated_g, rupture_id, sa0p4_simulated_g, site_id, source_type"
+Handoff schema,Event ledger preserves reproducible random-stream columns,7,7,True,"Required: catalog_year, eta_pga, eta_sa0p4, event_seed_hex, occurrence_id, rupture_id, site_seed_hex"
+Integrity,All inventoried artifacts exist,12,12,True,
+Integrity,All inventoried artifact hashes match,12,12,True,

@@ -1,0 +1,2 @@
+building_period_sec,parker_imt_name,parker_period_sec,requires_interpolation,interface_model_supports_imt,slab_model_supports_imt
+0.4,SA0P4,0.4,False,True,True

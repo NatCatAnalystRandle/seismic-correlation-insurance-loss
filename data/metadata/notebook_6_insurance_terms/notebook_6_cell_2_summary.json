@@ -1,0 +1,63 @@
+{
+  "all_critical_checks_passed": true,
+  "created_at_utc": "2026-08-03T04:41:36.326376+00:00",
+  "outputs": {
+    "assumption_registry": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_insurance_parameters\\notebook_6_baseline_policy_assumptions.csv",
+      "rows": 5,
+      "sha256": "32827e3da0d419bda252cc3a033191c603b4ae5ae2b345df3981316f456e8860"
+    },
+    "formula_specification": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_2_policy_formula_specification.json",
+      "sha256": "5c8cd5e08c463646b919329fb45723a4b2ae2d85deca169b813048312783a47d"
+    },
+    "policy_terms": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_insurance_parameters\\seaside_w2_baseline_policy_terms.csv",
+      "rows": 470,
+      "sha256": "1af92add99ba6b326f282f4a0e333b9825aeb3d7ec9ed507994b6e0691232f54"
+    },
+    "validation": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_2_validation.csv",
+      "sha256": "1f4fd598a1de534bba47edba70298b6b8369094da104d09e1e11b9d898d5df19"
+    }
+  },
+  "pipeline_version": "notebook6_cell2_baseline_policy_terms_v1",
+  "policy_scenario": {
+    "assumption_source": "synthetic_project_baseline",
+    "coinsurance_share": 1.0,
+    "covered_loss_share": 1.0,
+    "deductible_percent_of_replacement_value": 0.1,
+    "policy_limit_percent_of_replacement_value": 1.0,
+    "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+    "policy_scenario_name": "Full building coverage with 10% replacement-value deductible",
+    "policy_take_up_share": 1.0
+  },
+  "portfolio": {
+    "aggregate_building_deductible_2022_usd": 38423660.469993524,
+    "aggregate_policy_limit_2022_usd": 384236604.69993526,
+    "buildings": 470,
+    "design_levels": [
+      "LowCode",
+      "PreCode"
+    ],
+    "insured_value_2022_usd": 384236604.69993526,
+    "maximum_building_deductible_2022_usd": 2086270.1500000001,
+    "maximum_building_policy_limit_2022_usd": 20862701.5,
+    "minimum_building_deductible_2022_usd": 3199.4107316140003,
+    "minimum_building_policy_limit_2022_usd": 31994.10731614,
+    "occupancy_classes": [
+      "COM1",
+      "COM4",
+      "COM5",
+      "COM6",
+      "COM7",
+      "IND6"
+    ],
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "validation": {
+    "checks": 34,
+    "critical_failures": 0,
+    "warnings_requiring_review": 0
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "all_checks_passed": true,
+  "catalog": {
+    "declared_catalog_years": null,
+    "declared_catalog_years_provenance": "not located",
+    "maximum_event_year": 1999745,
+    "maximum_events_in_observed_event_year": 3,
+    "minimum_event_year": 185,
+    "minimum_events_in_observed_event_year": 1,
+    "observed_event_years": 10593,
+    "occurrences": 10630,
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\annual_event_catalog\\annual_event_catalog.csv",
+    "sha256": "e4725a57eab466348aa263d79b8f8bcc923f9542fb5507af279fece41c121f37",
+    "source_occurrence_counts": {
+      "INTERFACE": 6680,
+      "SLAB": 3950
+    },
+    "year_column": "simulation_year",
+    "zero_event_year_note": "The occurrence and field files contain rows only for actual event occurrences. Later annual loss aggregation must restore every zero-event year using the Notebook 3 declared catalog duration."
+  },
+  "completed_at_utc": "2026-08-02T18:33:24.807081+00:00",
+  "cross_imt_rho": 0.7321409900247263,
+  "diagnostics": {
+    "epsilon_pga_mean": 3.194256525212673e-05,
+    "epsilon_pga_std": 1.0003077273902699,
+    "epsilon_sa0p4_mean": 2.7290804283142742e-05,
+    "epsilon_sa0p4_std": 0.9999625170907663,
+    "eta_pga_mean": -0.010044983277481635,
+    "eta_pga_std": 1.0005782815829363,
+    "eta_sa0p4_mean": -0.008709807075438898,
+    "eta_sa0p4_std": 1.0049819030720721,
+    "event_cross_imt_rho": 0.7316604034650459,
+    "maximum_abs_selected_cross_site_rho": 0.02102549247371613,
+    "maximum_pga_equation_error": 3.552713678800501e-15,
+    "maximum_sa0p4_equation_error": 3.552713678800501e-15,
+    "maximum_seed_reproduction_difference": 2.220446049250313e-16,
+    "site_cross_imt_rho": 0.732007450441025
+  },
+  "field_rows": 4996100,
+  "next_step": "Finalize Notebook 4 with compact event/site field diagnostics and a downstream handoff table, then use SA0P4 and PGA in Notebook 5 for damage and ground-up loss calculations.",
+  "numeric_ranges": {
+    "pga_simulated_g": {
+      "maximum": 21.518539683364825,
+      "minimum": 2.9761868384578125e-05
+    },
+    "sa0p4_simulated_g": {
+      "maximum": 33.22844416486826,
+      "minimum": 7.168819128916221e-05
+    }
+  },
+  "outputs": {
+    "chunk_manifest_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_19_chunk_manifest.csv",
+    "chunk_manifest_sha256": "c3e9308f1bdf8d6da28a8c0c74c72c91b144efa9bd4ccdf801a70db109227806",
+    "event_residual_ledger_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_full_baseline_fields\\full_event_residual_ledger.csv.gz",
+    "event_residual_ledger_sha256": "f89f1983edf935cd53383e3042790a9889b16269eb71eda58605f5454c2e75a4",
+    "event_residual_ledger_size_bytes": 1196453,
+    "full_fields_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_full_baseline_fields\\full_baseline_ground_motion_fields.csv.gz",
+    "full_fields_sha256": "5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b",
+    "full_fields_size_bytes": 715682721,
+    "occurrence_index_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_19_event_occurrence_index.csv.gz",
+    "occurrence_index_sha256": "02da94690b52515e6d8f2d0679a05481ff415c2531d3bb8d691417818eefaf9f",
+    "validation_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_19_full_field_validation.csv",
+    "validation_sha256": "b431f88c477593dc8990c9ec52d53ebcaf0dc5874b2a1f1d80d03ab85c875c21"
+  },
+  "period_resolution": "exact USGS SA0P4; no interpolation",
+  "period_s": 0.4,
+  "pipeline_version": "notebook4_cell19_full_baseline_fields_v2",
+  "portfolio": "Seaside W2 commercial portfolio",
+  "primary_baseline_branch": "epi-off",
+  "random_streams": {
+    "base_random_seed": 20260731,
+    "future_spatial_reuse": "Regenerate site latent vectors from each occurrence's site_seed_hex and the frozen Cell 18 site order.",
+    "generator": "numpy.random.PCG64DXSM",
+    "specification_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_19_random_stream_specification.json",
+    "specification_sha256": "909a0e03f48c01ea546d7ca396d6332696637331e3c96e224ce9dbfbe3b752c6"
+  },
+  "sites": 470,
+  "source_files": {
+    "cell17_manifest_sha256": "ae2f82a9f9ef5d7e94a2f798a5dd69e3c28909db3f37d85071caaee8cf8711d8",
+    "cell17_output_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_4_bulk_parker_gmm\\bulk_parker_gmm_parameters.csv.gz",
+    "cell17_output_sha256": "ecc75c1220f655f11001fc653e9e56a99361057e14f930dbf7235e3261a4b4f0",
+    "cell17_summary_sha256": "699f42a29f4d388b5c898796ae7236618d646c2f6209275c5f3325eec4daf930",
+    "cell17_validation_sha256": "e945365dea1cd9ea027a54d5ff1865b02fdc553b34ebc5bc9f0fa30d14147c85",
+    "cell18_random_specification_sha256": "e1fa8fb81c8827d7e63b0cc52bf3b95336542477aad8acd8e9c4decf49bfafcf",
+    "cell18_site_order_sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100",
+    "cell18_summary_sha256": "c886832a870b5a3ddace8f44129640dee55d101ad5675d32ae75e045206798dd",
+    "cell18_validation_sha256": "0ca86bc42d3e6278b01a6fcedb2e3b94b3ed3567142668845dc330addefac19d"
+  },
+  "spatial_residual_model": "conditionally independent across sites"
+}

@@ -1,0 +1,39 @@
+check_id,severity,passed,detail
+cell1_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell1_has_no_unresolved_checks,critical,True,unresolved=0
+cell2_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell2_has_no_unresolved_checks,critical,True,unresolved=0
+cell3_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell3_has_no_unresolved_checks,critical,True,unresolved=0
+ground_motion_field_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_4_full_baseline_fields\full_baseline_ground_motion_fields.csv.gz
+structural_im_is_sa0p4,critical,True,column=sa0p4_simulated_g
+period_is_exact_sa0p4,critical,True,period_s=0.4
+portfolio_has_470_sites,critical,True,sites=470
+field_rows_divisible_by_sites,critical,True,rows=4996100; sites=470
+ground_motion_hash_matches_cell1,critical,True,calculated=5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b; recorded=5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b
+building_assignment_columns_present,critical,True,missing=[]
+building_assignment_hash_matches_cell3,critical,True,Cell 4 building assignments must match the file validated in Cell 3.
+building_assignment_rows_match_sites,critical,True,rows=470; expected=470
+building_site_ids_unique,critical,True,duplicates=0
+all_buildings_are_w2,critical,True,types=['W2']
+ground_motion_columns_present,critical,True,missing=[]
+cell3_controls_reproduced_once,critical,True,"cell3=12; compared=12; merge={'both': 12, 'left_only': 0, 'right_only': 0}"
+cell3_control_numeric_values_reproduced,critical,True,maximum_absolute_difference=2.220e-16
+cell3_control_sampled_states_reproduced,critical,True,Cell 4 must exactly reproduce the 12 Cell 3 sampled states.
+production_rows_complete,critical,True,processed=4996100; expected=4996100
+all_occurrence_site_pairs_present_once,critical,True,missing_pairs=0
+every_occurrence_has_all_sites,critical,True,minimum=470; maximum=470; expected=470
+every_site_has_all_occurrences,critical,True,minimum=10630; maximum=10630; expected=10630
+unique_occurrences_complete,critical,True,observed=10630; expected=10630
+event_summary_has_one_row_per_occurrence,critical,True,rows=10630; unique=10630
+event_summary_building_counts_are_470,critical,True,minimum=470; maximum=470
+sampled_state_counts_sum_to_rows,critical,True,sum=4996100; expected=4996100
+expected_state_counts_sum_to_rows,critical,True,sum=4996100.000000; expected=4996100
+production_uniform_mean_reasonable,critical,True,mean=0.50002486
+production_uniform_variance_reasonable,critical,True,variance=0.08339232; target=0.08333333
+sampled_state_proportions_match_expected_probabilities,critical,True,maximum_absolute_difference=0.000092; tolerance=0.002000
+source_row_counts_match_cell3,critical,True,"observed={'INTERFACE': 3139600, 'SLAB': 1856500}; expected={'INTERFACE': 3139600, 'SLAB': 1856500}"
+probability_sum_error_small,critical,True,maximum_error=4.441e-16
+minimum_raw_probability_within_roundoff,critical,True,minimum=-2.087e-15
+final_damage_file_exists,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_damage\full_structural_damage_states.csv.gz; bytes=450525087
+final_event_summary_exists,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_damage\structural_damage_event_summary.csv.gz; bytes=1443885

@@ -1,0 +1,126 @@
+{
+  "aal_2022_usd": {
+    "ceded": 63676.597327266056,
+    "gross_insured": 122979.55996732853,
+    "ground_up": 195922.4500302902,
+    "net_retained": 59302.96264006242,
+    "uninsured": 72942.89006296158
+  },
+  "aal_shares": {
+    "ceded_share_of_gross_insured": 0.5177819577837386,
+    "insurance_recovery_share_of_ground_up": 0.6276950903192335,
+    "net_retained_share_of_gross_insured": 0.4822180422162609,
+    "uninsured_share_of_ground_up": 0.372304909680766
+  },
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T23:58:36.353435+00:00",
+  "headline_return_periods_years": [
+    100,
+    250,
+    500,
+    1000,
+    2500,
+    5000,
+    10000
+  ],
+  "maximum_annual_losses_2022_usd": {
+    "ceded_aep": 90413665.12193382,
+    "ceded_oep": 61837983.314918146,
+    "gross_insured_aep": 244325807.3326858,
+    "gross_insured_oep": 244325807.3326858,
+    "ground_up_aep": 282749467.80267936,
+    "ground_up_oep": 282749467.80267936,
+    "net_retained_aep": 182487824.01776767,
+    "net_retained_oep": 182487824.01776767
+  },
+  "next_stage": "Create portfolio, AAL, exceedance-curve, PML, and reinsurance figures from the validated reporting tables.",
+  "pipeline_version": "notebook7_cell1_validate_baseline_handoffs_v2",
+  "policy_scenario": {
+    "assumption_source": "synthetic_project_baseline",
+    "coinsurance_share": 1.0,
+    "covered_loss_share": 1.0,
+    "deductible_percent_of_replacement_value": 0.1,
+    "policy_limit_percent_of_replacement_value": 1.0,
+    "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+    "policy_scenario_name": "Full building coverage with 10% replacement-value deductible",
+    "policy_take_up_share": 1.0
+  },
+  "portfolio": {
+    "buildings": 470,
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "project": {
+    "currency": "USD",
+    "dollar_year": 2022,
+    "name": "seismic-correlation-insurance-loss",
+    "notebook": "07_baseline_results_and_validation.ipynb",
+    "phase": "phase_1_no_spatial_correlation_baseline",
+    "scope": "validated baseline results and reporting dataset assembly"
+  },
+  "reinsurance_scenario": {
+    "annual_aggregate_limit_2022_usd": null,
+    "attachment_2022_usd": 18811083.54014544,
+    "contract_type": "occurrence excess of loss",
+    "exhaustion_2022_usd": 80649066.85506359,
+    "layer_scenario_id": "baseline_occurrence_xol_500yr_to_2500yr_oep_v1",
+    "layer_scenario_name": "Synthetic baseline occurrence excess-of-loss layer spanning the empirical 500-year to 2,500-year gross-insured OEP PML",
+    "limit_2022_usd": 61837983.314918146,
+    "reinstatement_assumption": "No annual aggregate cap or reinstatement constraint is modeled in the baseline. Each catalog occurrence is evaluated independently.",
+    "reinsurer_participation": 1.0,
+    "subject_loss": "occurrence-level gross insured building repair loss"
+  },
+  "reporting_outputs": {
+    "headline_metrics": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_headline_metrics.csv",
+      "rows": 21,
+      "sha256": "5de51bb772451c00ced1eeb30e4e8ee958be822ff567b6061e6de5915c72fa11"
+    },
+    "headline_pml": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_headline_pml.csv",
+      "rows": 7,
+      "sha256": "fac6c22f7426768c460fb3b5ca8c156bb4a54d2b011690faab9e7b24209c50e7"
+    },
+    "input_manifest": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_input_manifest.csv",
+      "rows": 23,
+      "sha256": "55261a590412a5a6ef80ac88963113a2d8d0cd361f1d90846585a00f459d1255"
+    },
+    "loss_flow": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_loss_flow.csv",
+      "rows": 5,
+      "sha256": "2e9c84df7be6a9b444fa6d04051dd8ce825de4531ae368a959e8dad162b2ccce"
+    },
+    "model_assumptions": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_model_assumptions.csv",
+      "rows": 13,
+      "sha256": "f97713b67d525aa29385db6defc49a392a081438002e76a6961ba2e29768360c"
+    }
+  },
+  "source_handoffs": {
+    "notebook_5_cell_12_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_12_summary.json",
+      "sha256": "4e7fe109dd0aeeb6b75d7e07504152c38ddb6ba45131587e67b745c0dbc1b125"
+    },
+    "notebook_6_cell_8_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_8_summary.json",
+      "sha256": "5154274ef647863ab67c3595b19b1d1d63f155aacc105338973ab2472ee4f209"
+    },
+    "notebook_6_final_handoff": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_final_handoff.json",
+      "sha256": "61b932de1be9da39f05e40dd47941bcfb57e85be12645a8dd8fa33d946e2466e"
+    }
+  },
+  "status": "complete",
+  "thin_tail_return_periods_years": [
+    200000,
+    500000,
+    1000000,
+    2000000
+  ]
+}

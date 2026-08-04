@@ -1,0 +1,54 @@
+check_id,severity,passed,detail
+required_input_exists_notebook_6_cell_1_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_1_validation.csv
+required_input_exists_notebook_6_input_handoff,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_input_handoff.json
+required_input_exists_notebook_6_cell_2_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_2_validation.csv
+required_input_exists_notebook_6_cell_2_summary,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_2_summary.json
+required_input_exists_notebook_6_cell_2_policy_formula_specification,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_2_policy_formula_specification.json
+required_input_exists_notebook_6_cell_3_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_3_validation.csv
+required_input_exists_notebook_6_cell_3_summary,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_3_summary.json
+required_input_exists_notebook_6_cell_3_insurance_loss_formula_specification,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_3_insurance_loss_formula_specification.json
+required_input_exists_seaside_w2_baseline_policy_terms,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_insurance_parameters\seaside_w2_baseline_policy_terms.csv
+required_input_exists_controlled_actual_policy_loss_rows,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_controlled_insurance_terms\controlled_actual_policy_loss_rows.csv
+required_input_exists_notebook_5_cell_11_chunk_manifest,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_5_damage_loss\notebook_5_cell_11_chunk_manifest.csv
+cell1_critical_validation_passed,critical,True,critical_failures=0
+cell1_has_no_unresolved_warnings,critical,True,warnings=0
+cell2_critical_validation_passed,critical,True,critical_failures=0
+cell2_has_no_unresolved_warnings,critical,True,warnings=0
+cell3_critical_validation_passed,critical,True,critical_failures=0
+cell3_has_no_unresolved_warnings,critical,True,warnings=0
+cell1_handoff_declares_success,critical,True,all_critical_checks_passed=True
+cell2_summary_declares_success,critical,True,all_critical_checks_passed=True
+cell3_summary_declares_success,critical,True,all_critical_checks_passed=True
+policy_terms_schema_complete,critical,True,missing=[]
+policy_site_ordinals_unique,critical,True,duplicates=0
+policy_site_ids_unique,critical,True,duplicates=0
+exactly_one_policy_scenario,critical,True,scenario_ids=['baseline_full_coverage_10pct_deductible_v1']
+policy_terms_hash_matches_cell2_summary,critical,True,actual=1af92add99ba6b326f282f4a0e333b9825aeb3d7ec9ed507994b6e0691232f54; recorded=1af92add99ba6b326f282f4a0e333b9825aeb3d7ec9ed507994b6e0691232f54
+policy_terms_cover_expected_buildings,critical,True,policy_rows=470; expected=470
+cell11_chunk_manifest_schema_complete,critical,True,missing=[]
+cell11_chunk_ids_unique,critical,True,duplicates=0
+cell11_manifest_rows_reconcile,critical,True,manifest_rows=4996100; expected=4996100
+cell11_manifest_occurrences_reconcile,critical,True,manifest_occurrences=10630; expected=10630
+cell11_manifest_occurrence_domain_spans_catalog,critical,True,minimum=0; maximum=10629; expected_minimum=0; expected_maximum=10629; chunk ranges need not be mutually contiguous because source chunks may contain nonconsecutive occurrence ordinals
+cell3_controlled_output_schema_complete,critical,True,missing=[]
+production_rows_match_cell1_handoff,critical,True,rows=4996100; expected=4996100
+all_occurrence_site_pairs_processed_once,critical,True,processed=4996100; expected=4996100
+all_occurrences_have_complete_portfolios,critical,True,minimum=470; maximum=470; expected=470
+all_buildings_appear_in_every_occurrence,critical,True,minimum=10630; maximum=10630; expected=10630
+occurrence_count_matches_handoff,critical,True,occurrences=10630; expected=10630
+ground_up_total_reconciles_with_notebook5_handoff,critical,True,calculated=391844900060.580078; recorded=391844900060.580139; difference=-6.104e-05
+gross_and_uninsured_losses_conserve_ground_up_total,critical,True,difference=-6.104e-05
+uninsured_components_reconcile_to_uninsured_total,critical,True,difference=0.000e+00
+event_and_building_totals_reconcile,critical,True,maximum_difference=6.104e-05
+all_row_level_policy_equations_reproduce,critical,True,"maximum_error=1.863e-09; errors={'eligible': 0.0, 'uncovered': 0.0, 'deductible': 0.0, 'after_deductible': 1.862645149230957e-09, 'limited': 1.862645149230957e-09, 'limit_absorbed': 0.0, 'coinsurance': 0.0, 'gross': 1.862645149230957e-09, 'uninsured': 2.3283064365386963e-10, 'uninsured_decomposition': 1.3969838619232178e-09, 'loss_conservation': 1.862645149230957e-09}"
+cell3_controlled_rows_all_reproduced,critical,True,controlled_rows=14/14; missing=0; maximum_difference=0.000e+00
+baseline_uncovered_loss_is_zero,critical,True,uncovered_total=0.000000
+baseline_policy_limit_absorbed_loss_is_zero,critical,True,limit_absorbed=0.000000; binding_rows=0
+baseline_coinsurance_absorbed_loss_is_zero,critical,True,coinsurance_absorbed=0.000000
+gross_insured_loss_not_greater_than_ground_up_loss,critical,True,gross=245959119934.656952; ground_up=391844900060.580078
+maximum_ground_up_loss_ratio_respects_physical_cap,critical,True,maximum_ratio=1.000000000000
+maximum_gross_insured_loss_ratio_respects_policy_cap,critical,True,maximum_ratio=0.900000000000
+final_building_output_exists_and_has_expected_rows,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_baseline_insured_loss\full_baseline_gross_insured_loss.csv.gz; rows=4996100
+event_output_has_one_row_per_occurrence,critical,True,rows=10630; expected=10630; duplicates=0
+chunk_manifest_complete,critical,True,chunks=43/43; rows=4996100/4996100
+insurance_recovery_and_uninsured_shares_sum_to_one,critical,True,recovery_share=0.627695090319; uninsured_share=0.372304909681

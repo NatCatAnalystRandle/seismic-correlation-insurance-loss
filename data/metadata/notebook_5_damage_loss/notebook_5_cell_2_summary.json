@@ -1,0 +1,76 @@
+{
+  "all_critical_checks_passed": true,
+  "completed_at_utc": "2026-08-03T00:34:36.137919+00:00",
+  "critical_checks": 28,
+  "critical_failures": [],
+  "design_level_assignment": {
+    "important_limitation": "Construction year is used as a portfolio-level proxy for seismic design level. The assignment does not verify permit date, adopted local code, enforcement, retrofit history, or building-specific design documents.",
+    "interval_convention": "minimum inclusive; maximum exclusive",
+    "rule_id": "oregon_hazus_year_mapping_v1",
+    "rules": [
+      {
+        "design_level": "PreCode",
+        "maximum_year_exclusive": 1979,
+        "minimum_year": null
+      },
+      {
+        "design_level": "LowCode",
+        "maximum_year_exclusive": 1995,
+        "minimum_year": 1979
+      },
+      {
+        "design_level": "ModerateCode",
+        "maximum_year_exclusive": 2003,
+        "minimum_year": 1995
+      },
+      {
+        "design_level": "HighCode",
+        "maximum_year_exclusive": null,
+        "minimum_year": 2003
+      }
+    ],
+    "source_note": "Project implementation of the Oregon Hazus seismic-design-level year mapping: PreCode before 1979, LowCode 1979-1994, ModerateCode 1995-2002, and HighCode from 2003 onward. Half-open intervals remove boundary overlap.",
+    "source_url": "https://www.fema.gov/sites/default/files/documents/fema_hazus-inventory-technical-manual-6.1.pdf"
+  },
+  "fragility_transformation": {
+    "beta_rule": "unchanged under constant multiplicative transformation",
+    "conversion_factor_g_per_in": 0.6390764220902899,
+    "equation": "Sa_g = 4*pi^2*Sd_in/(g_in_s2*T_s^2)",
+    "gravity_in_s2": 386.08858267716533,
+    "maximum_reconstruction_error_in": 3.552713678800501e-15,
+    "method_id": "fixed_period_pseudo_spectral_conversion_v1",
+    "method_note": "Equivalent direct-SA0P4 approximation. Source W2 structural fragility medians are spectral displacement in inches and are converted using Sa(g)=4*pi^2*Sd(in)/(g_in_s2*T^2) at T=0.40 s. This is not the full Hazus capacity-spectrum procedure.",
+    "period_s": 0.4,
+    "production_demand": "SA0P4",
+    "production_unit": "g",
+    "source_demand": "spectral displacement",
+    "source_inventory_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\notebook_5_w2_source_fragility_inventory.csv",
+    "source_inventory_sha256": "3be1b98735b622e98ec92f49013b170b1ec93b8c099a0991e78e1b048f792610",
+    "source_unit": "in",
+    "structural_type": "W2"
+  },
+  "next_cell": "Cell 3: calculate controlled structural damage-state exceedance and mutually exclusive probabilities from simulated SA0P4, then validate deterministic occurrence-building damage random streams before full production sampling.",
+  "outputs": {
+    "building_assignments": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_building_fragility_assignments.csv",
+    "design_level_assignments": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_design_level_assignments.csv",
+    "design_level_counts": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_2_design_level_counts.csv",
+    "design_level_rules": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\notebook_5_design_level_rules.csv",
+    "direct_fragility_long": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_direct_sa0p4_structural_fragility.csv",
+    "direct_fragility_wide": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_direct_sa0p4_structural_fragility_wide.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_2_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_2_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell2_design_levels_direct_sa0p4_v1",
+  "portfolio": {
+    "buildings": 470,
+    "design_level_counts": {
+      "LowCode": 123,
+      "PreCode": 347
+    },
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\exposure_portfolio\\seaside_w2_portfolio_gmm_ready.csv",
+    "sha256": "686623ec6793546004533f6a188897100208863f2627b63644115c98f291eb71",
+    "structural_type": "W2",
+    "year_built_source_column": "med_yr_blt"
+  },
+  "warnings": []
+}

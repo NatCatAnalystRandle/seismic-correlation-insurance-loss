@@ -1,0 +1,19 @@
+{
+  "chunk_size_invariant": true,
+  "conditional_component_dependence": "Separate deterministic component damage streams conditional on the same simulated SA0P4 demand.",
+  "hash_function": "SHA-256",
+  "key_fields": [
+    "occurrence_id",
+    "site_id"
+  ],
+  "key_format": "namespace|occurrence_id|site_id",
+  "production_nsd_nsa_uniform_correlation": -8.602661438431914e-05,
+  "reuse_rule": "Reuse the same occurrence-site component uniforms when comparing the baseline independent ground-motion case with future spatially correlated cases.",
+  "row_order_invariant": true,
+  "streams": {
+    "nonstructural_acceleration_sensitive": "notebook5_nonstructural_acceleration_damage_v1",
+    "nonstructural_drift_sensitive": "notebook5_nonstructural_drift_damage_v1"
+  },
+  "uniform_construction": "(unsigned_big_endian_first_8_bytes + 0.5) / 2^64",
+  "uniform_interval": "strictly between 0 and 1"
+}

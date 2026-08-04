@@ -1,0 +1,76 @@
+{
+  "all_critical_checks_passed": true,
+  "building_assignments": {
+    "buildings": 470,
+    "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_building_nonstructural_fragility_assignments.csv",
+    "sha256": "0504fa837e7d447485b30954d30063ad798d1cca7674842840f0d1b99a9d08d3"
+  },
+  "completed_at_utc": "2026-08-03T02:08:57.821116+00:00",
+  "controlled_rows": {
+    "design_levels": [
+      "LowCode",
+      "PreCode"
+    ],
+    "intensity_levels": [
+      "high",
+      "low",
+      "medium"
+    ],
+    "rows": 12,
+    "source": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_structural_damage\\controlled_structural_damage_rows.csv",
+    "source_sha256": "648346e589534f24ca003adc5758074344d04d893b8f2584a2fc6fd0b4ae0f1e",
+    "source_types": [
+      "INTERFACE",
+      "SLAB"
+    ]
+  },
+  "critical_checks": 79,
+  "critical_failures": [],
+  "damage_model": {
+    "components": [
+      "nonstructural_drift_sensitive",
+      "nonstructural_acceleration_sensitive"
+    ],
+    "conditional_component_dependence": "Separate deterministic damage streams conditional on SA0P4.",
+    "equation": "P(DS>=k|Sa)=Phi((ln(Sa)-ln(theta_k))/beta_k)",
+    "mutually_exclusive_states": [
+      "None",
+      "Slight",
+      "Moderate",
+      "Extensive",
+      "Complete"
+    ],
+    "period_s": 0.4,
+    "production_im": "sa0p4_simulated_g"
+  },
+  "monte_carlo_validation": {
+    "cases": 12,
+    "maximum_state_probability_error": 0.008115888807279203,
+    "replicates_per_case": 20000,
+    "tolerance": 0.015
+  },
+  "next_cell": "Cell 9: apply the validated drift-sensitive and acceleration-sensitive damage equations and deterministic component streams to all 4,996,100 occurrence-building rows using restartable production chunks.",
+  "outputs": {
+    "controlled_damage": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_nonstructural_damage\\controlled_nonstructural_damage_rows.csv",
+    "monte_carlo": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_nonstructural_damage\\controlled_nonstructural_damage_monte_carlo_validation.csv",
+    "probability_grid": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_nonstructural_damage\\controlled_nonstructural_damage_probability_grid.csv.gz",
+    "random_stream_specification": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_8_nonstructural_damage_random_streams.json",
+    "stream_correlations": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_nonstructural_damage\\controlled_nonstructural_damage_stream_correlations.csv",
+    "stream_diagnostics": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_controlled_nonstructural_damage\\controlled_nonstructural_damage_stream_diagnostics.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_8_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_8_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell8_controlled_nonstructural_damage_v1",
+  "probability_grid": {
+    "maximum_sa0p4_g": 27.608101434300526,
+    "minimum_sa0p4_g": 0.0044873475139168,
+    "points_per_component_design_level": 401,
+    "rows": 1604
+  },
+  "stream_diagnostics": {
+    "correlation_tolerance": 0.02,
+    "maximum_absolute_pairwise_correlation": 0.0070438551165433365,
+    "samples": 25000
+  },
+  "warnings": []
+}

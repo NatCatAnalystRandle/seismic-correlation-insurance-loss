@@ -1,0 +1,42 @@
+check_id,severity,passed,detail
+cell1_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell2_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell1_has_no_unresolved_checks,critical,True,unresolved=0
+cell2_has_no_unresolved_checks,critical,True,unresolved=0
+ground_motion_field_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_4_full_baseline_fields\full_baseline_ground_motion_fields.csv.gz
+structural_im_is_sa0p4,critical,True,column=sa0p4_simulated_g
+period_is_exact_sa0p4,critical,True,period_s=0.4
+building_assignment_columns_present,critical,True,missing=[]
+building_assignment_rows_match_portfolio,critical,True,rows=470; expected=470
+building_site_ids_unique,critical,True,duplicates=0
+all_buildings_are_w2,critical,True,types=['W2']
+fragility_parameters_complete,critical,True,missing=0
+represented_design_levels_match_cell2,critical,True,"levels=['PreCode', 'LowCode']"
+ground_motion_columns_present,critical,True,missing=[]
+ground_motion_row_count_matches_handoff,critical,True,rows=4996100; expected=4996100
+all_ground_motion_sites_mapped,critical,True,missing_site_rows=0
+all_sa0p4_values_positive_finite,critical,True,invalid_rows=0
+both_subduction_source_types_present,critical,True,"source_counts={'INTERFACE': 3139600, 'SLAB': 1856500}"
+candidate_pool_PreCode_INTERFACE,critical,True,candidates=5000
+candidate_pool_PreCode_SLAB,critical,True,candidates=5000
+candidate_pool_LowCode_INTERFACE,critical,True,candidates=4096
+candidate_pool_LowCode_SLAB,critical,True,candidates=2434
+controlled_row_count_complete,critical,True,rows=12; expected=12
+controlled_keys_unique,critical,True,duplicates=0
+controlled_design_source_intensity_coverage,critical,True,groups=12
+controlled_exceedance_probabilities_ordered,critical,True,maximum_positive_difference=1.450e-15
+controlled_state_probabilities_nonnegative,critical,True,minimum=0.000e+00
+controlled_state_probabilities_sum_to_one,critical,True,maximum_error=2.220e-16
+controlled_uniforms_strictly_inside_unit_interval,critical,True,min=0.072463346041; max=0.974911955933
+controlled_sampled_states_valid,critical,True,"states=[0, 1, 2]"
+deterministic_repeat_is_exact,critical,True,uniforms and states reproduce exactly
+damage_stream_is_row_order_invariant,critical,True,shuffled rows reproduce identical uniforms and states
+damage_stream_is_chunk_size_invariant,critical,True,five-row chunks reproduce identical uniforms and states
+expected_damage_state_monotonic_with_sa0p4,critical,True,"by_design_level={'LowCode': True, 'PreCode': True}"
+precode_fragility_medians_not_greater_than_lowcode,critical,True,"precode=[0.4409627312423, 1.0928206817743955, 3.3807142728576336, 8.282430430290157]; lowcode=[0.5496057229976493, 1.3676235432732204, 4.23068591423772, 10.353038037862696]"
+precode_expected_damage_not_less_than_lowcode,critical,True,minimum_expected_state_difference=2.453e-17
+individual_precode_exceedance_curve_crossing_diagnostic,warning,True,minimum_exceedance_difference=-2.195e-05
+damage_uniform_mean_reasonable,critical,True,n=24941; mean=0.501162
+damage_uniform_variance_reasonable,critical,True,variance=0.083264; target=0.083333
+damage_uniform_ks_diagnostic,warning,True,statistic=0.004256; pvalue=0.755354
+categorical_sampling_matches_analytical_probabilities,critical,True,maximum_absolute_error=0.007189; tolerance=0.015000

@@ -1,0 +1,35 @@
+check_id,severity,passed,detail
+required_input_exists_notebook_6_cell_1_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_1_validation.csv
+required_input_exists_notebook_6_cell_1_summary,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_1_summary.json
+required_input_exists_notebook_6_input_handoff,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_input_handoff.json
+required_input_exists_seaside_w2_insurance_exposure_base,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_insurance_parameters\seaside_w2_insurance_exposure_base.csv
+cell1_validation_schema_complete,critical,True,missing=[]
+cell1_critical_validation_passed,critical,True,critical_failures=0
+cell1_has_no_unresolved_warnings,critical,True,warnings=0
+cell1_summary_records_success,critical,True,all_critical_checks_passed=True
+cell1_handoff_records_success,critical,True,all_critical_checks_passed=True
+exposure_schema_complete,critical,True,missing=[]
+exposure_rows_match_portfolio,critical,True,actual=470; expected=470
+site_ordinals_unique,critical,True,duplicates=0
+site_ids_unique,critical,True,duplicates=0
+site_ordinals_complete,critical,True,minimum=0; maximum=469; rows=470
+exposure_text_fields_nonempty,critical,True,"checked=site_id,structural_type,design_level,occ_type"
+replacement_values_positive_and_finite,critical,True,minimum=31994.107316; maximum=20862701.500000
+exposure_value_reconciles_with_cell1,critical,True,calculated=384236604.699935; recorded=384236604.699935; difference=0.000e+00
+all_policy_shares_are_within_zero_and_one,critical,True,"values={'coverage_take_up': 1.0, 'covered_loss_share': 1.0, 'deductible_percent_of_replacement': 0.1, 'policy_limit_percent_of_replacement': 1.0, 'coinsurance_share': 1.0}"
+baseline_has_full_policy_take_up,critical,True,coverage_take_up=1.000000
+baseline_has_full_eligible_building_repair_coverage,critical,True,covered_loss_share=1.000000
+deductible_is_less_than_policy_limit,critical,True,deductible_percent=0.100000; limit_percent=1.000000
+policy_ids_unique,critical,True,duplicates=0
+every_building_has_policy_terms,critical,True,policy_rows=470; exposure_rows=470
+policy_numeric_terms_finite,critical,True,"checked=deductible,limit,insured_value,coinsurance,covered_loss_share"
+policy_numeric_terms_nonnegative,critical,True,minimum_deductible=3199.410732; minimum_limit=31994.107316
+insured_values_equal_replacement_values,critical,True,maximum_error=0.000e+00
+deductible_amounts_follow_assumption,critical,True,maximum_error=0.000e+00
+policy_limits_follow_assumption,critical,True,maximum_error=0.000e+00
+deductibles_are_below_limits_for_all_buildings,critical,True,minimum_margin=28794.696585; maximum_margin=18776431.350000
+coinsurance_is_full_for_baseline,critical,True,unique_values=[1.0]
+covered_loss_share_is_full_for_baseline,critical,True,unique_values=[1.0]
+portfolio_insured_value_reconciles,critical,True,insured_value=384236604.699935; replacement_value=384236604.699935
+portfolio_deductible_reconciles,critical,True,deductible=38423660.469994; expected=38423660.469994
+portfolio_policy_limit_reconciles,critical,True,limit=384236604.699935; expected=384236604.699935

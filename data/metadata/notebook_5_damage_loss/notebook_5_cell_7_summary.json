@@ -1,0 +1,69 @@
+{
+  "acceleration_sensitive": {
+    "conversion_method_id": "direct_sa0p4_identity_from_source_sa_v1",
+    "limitation": "Source spectral-acceleration medians are mapped directly to SA0P4 as a documented direct-IM approximation; not the full HAZUS capacity-spectrum procedure.",
+    "maximum_identity_error_g": 0.0,
+    "production_demand": "SA0P4",
+    "source_demand": "spectral acceleration",
+    "source_files": {
+      "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\fragility\\HAZUS_Nonstructural_Acceleration_Sensitive_Fragility.xlsx": "4d8f88c74d9895fab0502143e73f274a96d4f880cbe76dd9541eca06fd16b8a5"
+    },
+    "source_unit": "g"
+  },
+  "all_critical_checks_passed": true,
+  "completed_at_utc": "2026-08-03T02:03:29.885351+00:00",
+  "critical_checks": 44,
+  "critical_failures": [],
+  "drift_sensitive": {
+    "conversion_factor_g_per_in": 0.6390764220902899,
+    "conversion_method_id": "equivalent_direct_sa0p4_from_sd_v1",
+    "gravity_in_s2": 386.08858267716533,
+    "limitation": "Equivalent fixed-period direct-SA0P4 approximation; not the full HAZUS capacity-spectrum procedure.",
+    "maximum_reconstruction_error_in": 1.7763568394002505e-15,
+    "production_demand": "SA0P4",
+    "source_demand": "spectral displacement",
+    "source_files": {
+      "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\fragility\\HAZUS_Nonstructural_Drift_Sensitive_Fragility.xlsx": "139e1539de56c45df8648c6a4327112c5711bd3abb36b0ac248d38f2239ecc79"
+    },
+    "source_unit": "in"
+  },
+  "next_cell": "Cell 8: calculate controlled drift-sensitive and acceleration-sensitive nonstructural damage probabilities, use separate deterministic random streams, and validate categorical sampling before full production processing.",
+  "outputs": {
+    "acceleration_fragility": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\notebook_5_direct_sa0p4_nonstructural_acceleration_fragility.csv",
+    "building_assignments": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_building_nonstructural_fragility_assignments.csv",
+    "drift_fragility": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\notebook_5_direct_sa0p4_nonstructural_drift_fragility.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_7_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_7_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell7_nonstructural_fragility_parameters_v1",
+  "portfolio": {
+    "buildings": 470,
+    "design_level_counts": {
+      "LowCode": 123,
+      "PreCode": 347
+    },
+    "design_levels": [
+      "LowCode",
+      "PreCode"
+    ],
+    "occupancy_types": [
+      "COM1",
+      "COM4",
+      "COM5",
+      "COM6",
+      "COM7",
+      "IND6"
+    ],
+    "structural_type": "W2"
+  },
+  "production_demand": {
+    "im_column": "sa0p4_simulated_g",
+    "period_s": 0.4,
+    "unit": "g"
+  },
+  "source_inventory": {
+    "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\notebook_5_w2_source_fragility_inventory.csv",
+    "sha256": "3be1b98735b622e98ec92f49013b170b1ec93b8c099a0991e78e1b048f792610"
+  },
+  "warnings": []
+}

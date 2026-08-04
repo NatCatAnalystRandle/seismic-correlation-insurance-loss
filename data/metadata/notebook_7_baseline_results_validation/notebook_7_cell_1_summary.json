@@ -1,0 +1,86 @@
+{
+  "aal_2022_usd": {
+    "ceded": 63676.597327266056,
+    "gross_insured": 122979.55996732853,
+    "ground_up": 195922.4500302902,
+    "net_retained": 59302.96264006242,
+    "uninsured": 72942.89006296158
+  },
+  "aal_shares": {
+    "ceded_share_of_gross_insured": 0.5177819577837386,
+    "insurance_recovery_share_of_ground_up": 0.6276950903192335,
+    "net_retained_share_of_gross_insured": 0.4822180422162609,
+    "uninsured_share_of_ground_up": 0.372304909680766
+  },
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T23:58:36.503244+00:00",
+  "headline_return_periods_years": [
+    100,
+    250,
+    500,
+    1000,
+    2500,
+    5000,
+    10000
+  ],
+  "next_stage": "Create portfolio, AAL, exceedance-curve, PML, and reinsurance figures from the validated reporting tables.",
+  "notebook_status": "ready_for_reporting",
+  "outputs": {
+    "headline_metrics": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_headline_metrics.csv",
+      "rows": 21,
+      "sha256": "5de51bb772451c00ced1eeb30e4e8ee958be822ff567b6061e6de5915c72fa11"
+    },
+    "headline_pml": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_headline_pml.csv",
+      "rows": 7,
+      "sha256": "fac6c22f7426768c460fb3b5ca8c156bb4a54d2b011690faab9e7b24209c50e7"
+    },
+    "input_handoff": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_input_handoff.json",
+      "sha256": "f7c23a4b94acab12bdcf0582d76c27184ab970a89a627b042b7c7239b988704b"
+    },
+    "input_manifest": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_input_manifest.csv",
+      "rows": 23,
+      "sha256": "55261a590412a5a6ef80ac88963113a2d8d0cd361f1d90846585a00f459d1255"
+    },
+    "loss_flow": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_loss_flow.csv",
+      "rows": 5,
+      "sha256": "2e9c84df7be6a9b444fa6d04051dd8ce825de4531ae368a959e8dad162b2ccce"
+    },
+    "model_assumptions": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_model_assumptions.csv",
+      "rows": 13,
+      "sha256": "f97713b67d525aa29385db6defc49a392a081438002e76a6961ba2e29768360c"
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_cell_1_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_cell_1_validation.csv"
+  },
+  "pipeline_version": "notebook7_cell1_validate_baseline_handoffs_v2",
+  "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+  "portfolio": {
+    "buildings": 470,
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "reinsurance_scenario_id": "baseline_occurrence_xol_500yr_to_2500yr_oep_v1",
+  "thin_tail_return_periods_years": [
+    200000,
+    500000,
+    1000000,
+    2000000
+  ],
+  "validation": {
+    "critical_checks": 57,
+    "critical_failures": [],
+    "warnings": []
+  }
+}

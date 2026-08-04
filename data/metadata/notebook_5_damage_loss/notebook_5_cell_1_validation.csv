@@ -1,0 +1,28 @@
+check_id,severity,passed,detail
+handoff_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_4_final_handoff\notebook_5_input_handoff.json
+notebook4_complete,critical,True,notebook4_complete=True
+notebook4_validation_passed,critical,True,checks=27
+catalog_duration_positive,critical,True,years=2000000
+reference_readme_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\reference\hazus\README.md
+primary_field_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_4_full_baseline_fields\full_baseline_ground_motion_fields.csv.gz
+portfolio_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\exposure_portfolio\seaside_w2_portfolio_gmm_ready.csv
+primary_field_schema_matches_handoff,critical,True,missing_columns=[]
+primary_field_hash_matches_handoff,critical,True,actual=5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b; expected=5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b
+portfolio_hash_matches_handoff,critical,True,actual=686623ec6793546004533f6a188897100208863f2627b63644115c98f291eb71; expected=686623ec6793546004533f6a188897100208863f2627b63644115c98f291eb71
+portfolio_row_count_matches_handoff,critical,True,rows=470; expected=470
+portfolio_site_key_present,critical,True,site_key=site_id
+portfolio_site_key_complete_unique,critical,True,nulls=0; unique=True
+portfolio_structural_type_column_present,critical,True,"resolved_column=struct_typ; aliases=['struct_typ', 'structural_type', 'structure_type', 'bldg_type']"
+portfolio_occupancy_column_present,critical,True,"resolved_column=occtype; aliases=['occtype', 'occ_type', 'occupancy', 'occupancy_type']"
+portfolio_floor_area_sqft_column_present,critical,True,"resolved_column=sqft; aliases=['sqft', 'floor_area_sqft', 'area_sqft', 'building_sqft']"
+portfolio_year_built_column_present,critical,True,"resolved_column=med_yr_blt; aliases=['med_yr_blt', 'year_built', 'built_year', 'construction_year']"
+portfolio_all_w2,critical,True,values=['W2']
+portfolio_occupancy_complete,critical,True,blank_count=0
+portfolio_floor_area_positive,critical,True,missing=0; nonpositive=0
+portfolio_year_built_complete,critical,True,missing=0
+portfolio_year_built_plausible,critical,True,min=1951; max=1992
+portfolio_period_is_exact_sa0p4,informational,True,No period column in portfolio; accepted handoff period used.
+all_reference_files_resolved,critical,True,resolved=8
+w2_fragility_source_rows_complete,critical,True,rows=48; expected=48
+portfolio_occupancies_covered_by_all_hazus_tables,critical,True,uncovered=[]
+portfolio_complete_component_totals_reconcile,warning,True,portfolio_warnings=[]

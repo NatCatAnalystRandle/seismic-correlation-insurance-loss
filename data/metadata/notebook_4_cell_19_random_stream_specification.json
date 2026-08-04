@@ -1,0 +1,36 @@
+{
+  "aleatory_equation": "ln(IM_e,s) = mu_epi_off_e,s + tau_e,s*eta_e + phi_e,s*epsilon_e,s",
+  "base_random_seed": 20260731,
+  "between_event_structure": "One normalized eta per event occurrence and IMT, repeated across all 470 sites.",
+  "catalog_occurrences": 10630,
+  "catalog_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\annual_event_catalog\\annual_event_catalog.csv",
+  "catalog_sha256": "e4725a57eab466348aa263d79b8f8bcc923f9542fb5507af279fece41c121f37",
+  "catalog_year_column": "simulation_year",
+  "cell17_output_sha256": "ecc75c1220f655f11001fc653e9e56a99361057e14f930dbf7235e3261a4b4f0",
+  "cell18_random_specification_sha256": "e1fa8fb81c8827d7e63b0cc52bf3b95336542477aad8acd8e9c4decf49bfafcf",
+  "cross_imt_structure": {
+    "application": "The same normalized cross-IMT transform is applied separately to between-event and within-event latent residual pairs.",
+    "model": "Baker and Jayaram (2008) inter-period residual correlation",
+    "pga_proxy_period_s": 0.01,
+    "rho": 0.7321409900247263,
+    "sa_period_s": 0.4
+  },
+  "declared_catalog_years": null,
+  "declared_catalog_years_provenance": "not located",
+  "event_seed_parts": "base_random_seed | cell19 | occurrence_id | rupture_id | event",
+  "future_spatial_extension": "Regenerate the same two site-level latent vectors from site_seed_hex, apply the selected spatial transform to each vector, and then apply the same cross-IMT combination.",
+  "generator": "numpy.random.PCG64DXSM",
+  "latent_transform": {
+    "pga": "z1",
+    "sa0p4": "rho*z1 + sqrt(1-rho^2)*z2"
+  },
+  "occurrence_identity": "catalog_year + event_id + rupture_id",
+  "pipeline_version": "notebook4_cell19_full_baseline_fields_v2",
+  "seed_derivation": "First 128 bits of SHA-256 over pipe-delimited identifiers. Separate event-level and site-level streams are created for each catalog occurrence.",
+  "site_order_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_cell_18_site_order.csv",
+  "site_order_requirement": "The site generator emits values in Cell 18 site_ordinal order 0..469.",
+  "site_order_sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100",
+  "site_seed_parts": "base_random_seed | cell19 | occurrence_id | rupture_id | site",
+  "specification_sha256": "15d63d01ca98768141c388670e457833a845e23f98a4a2353012cb6b067cf790",
+  "within_event_spatial_structure": "Independent latent standard normals across different sites. No spatial correlation is applied in the Phase 1 baseline."
+}

@@ -1,0 +1,94 @@
+{
+  "aal_2022_usd": {
+    "ceded": 63676.597327266056,
+    "gross_insured": 122979.55996732853,
+    "ground_up": 195922.4500302902,
+    "net_retained": 59302.96264006242,
+    "uninsured": 72942.89006296158
+  },
+  "aal_shares": {
+    "ceded_share_of_gross_insured": 0.5177819577837386,
+    "insurance_recovery_share_of_ground_up": 0.6276950903192335,
+    "net_retained_share_of_gross_insured": 0.4822180422162609,
+    "uninsured_share_of_ground_up": 0.372304909680766
+  },
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T22:20:34.573463+00:00",
+  "next_stage": "Prepare the baseline results, README, technical write-up, and interview explanation before beginning the spatial-correlation extension.",
+  "notebook_status": "complete",
+  "outputs": {
+    "final_handoff": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_final_handoff.json",
+      "sha256": "61b932de1be9da39f05e40dd47941bcfb57e85be12645a8dd8fa33d946e2466e"
+    },
+    "headline_pml_table": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_handoff\\notebook_6_baseline_headline_pml_table.csv",
+      "rows": 7,
+      "sha256": "fac6c22f7426768c460fb3b5ca8c156bb4a54d2b011690faab9e7b24209c50e7"
+    },
+    "loss_flow_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_handoff\\notebook_6_baseline_loss_flow_summary.csv",
+      "rows": 5,
+      "sha256": "04e2c93f4f2865573c2f5820e79f0b9a96911ad436a7e8a5921a0431e3c5ce96"
+    },
+    "model_assumptions": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_handoff\\notebook_6_baseline_model_assumptions.csv",
+      "rows": 13,
+      "sha256": "f97713b67d525aa29385db6defc49a392a081438002e76a6961ba2e29768360c"
+    },
+    "output_manifest": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_handoff\\notebook_6_baseline_output_manifest.csv",
+      "rows": 23,
+      "sha256": "9dec11743e8ba5c5cf3556ee7484891ada49f6e100c5fe77d9474fd79caeced2"
+    },
+    "pml_comparison": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_handoff\\notebook_6_baseline_pml_comparison.csv",
+      "rows": 17,
+      "sha256": "e33fe8ab1996eaa461d4e8acbc7b3fec396b227cf0969daa8aa70bc32ac3e93c"
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_8_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_8_validation.csv"
+  },
+  "pipeline_version": "notebook6_cell8_finalize_baseline_handoff_v1",
+  "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+  "portfolio": {
+    "buildings": 470,
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "reinsurance_layer": {
+    "attachment_2022_usd": 18811083.54014544,
+    "exhaustion_2022_usd": 80649066.85506359,
+    "limit_2022_usd": 61837983.314918146,
+    "reinsurer_participation": 1.0
+  },
+  "reinsurance_scenario_id": "baseline_occurrence_xol_500yr_to_2500yr_oep_v1",
+  "tail_support": {
+    "interpretation": "Return periods with fewer than 20 supporting annual order statistics are retained as diagnostics and should not be headline results.",
+    "thin_tail_return_periods_years": [
+      200000,
+      500000,
+      1000000,
+      2000000
+    ],
+    "warning_threshold_rank": 20
+  },
+  "validation": {
+    "critical_checks": 58,
+    "critical_failures": [],
+    "warnings": [
+      {
+        "check_id": "extreme_return_period_tail_support_carried_forward",
+        "detail": "thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; interpret_as_diagnostics_not_headline_metrics",
+        "passed": false,
+        "severity": "warning"
+      }
+    ]
+  }
+}

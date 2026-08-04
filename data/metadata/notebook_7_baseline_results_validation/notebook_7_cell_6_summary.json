@@ -1,0 +1,42 @@
+{
+  "cell": 6,
+  "notebook": "07_baseline_results_and_validation.ipynb",
+  "status": "complete",
+  "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+  "reinsurance_scenario_id": "baseline_occurrence_xol_500yr_to_2500yr_oep_v1",
+  "portfolio_buildings": 470,
+  "portfolio_replacement_value_2022_usd": 384236604.69993526,
+  "catalog_years": 2000000,
+  "catalog_occurrences": 10630,
+  "aal_2022_usd": {
+    "ground_up": 195922.4500302902,
+    "gross_insured": 122979.55996732852,
+    "uninsured": 72942.89006296158,
+    "ceded": 63676.597327266056,
+    "net_retained": 59302.96264006242
+  },
+  "headline_return_periods_years": [
+    100,
+    250,
+    500,
+    1000,
+    2500,
+    5000,
+    10000
+  ],
+  "figures_validated": 24,
+  "notebook_outputs_manifested": 45,
+  "critical_validation_checks": 87,
+  "critical_failures": [],
+  "warnings_requiring_review": [],
+  "outputs": {
+    "executive_summary": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_executive_summary.csv",
+    "key_findings": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_key_findings.csv",
+    "validation_rollup": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_validation_rollup.csv",
+    "figure_manifest": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_figure_manifest.csv",
+    "output_manifest": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_output_manifest.csv",
+    "results_digest": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_results_digest.md",
+    "final_handoff": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_final_handoff.json",
+    "validation": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_cell_6_validation.csv"
+  }
+}

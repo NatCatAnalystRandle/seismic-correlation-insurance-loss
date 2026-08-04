@@ -1,0 +1,31 @@
+{
+  "aleatory_equation": "ln(IM_e,s) = mu_epi_off_e,s + tau_e,s*eta_e + phi_e,s*epsilon_e,s",
+  "base_random_seed": 20260731,
+  "between_event_structure": "One eta per event occurrence and IMT; eta is repeated exactly across all 470 sites.",
+  "cell17_output_sha256": "ecc75c1220f655f11001fc653e9e56a99361057e14f930dbf7235e3261a4b4f0",
+  "control_realizations_per_rupture": 128,
+  "control_ruptures": 4,
+  "control_template_sha256": "172008d6132857f0265b8cb07ed9bf39db61d083478f7a0f5bbca794feb6778b",
+  "cross_imt_structure": {
+    "application": "The same rho is applied separately to between-event and within-event normalized residual pairs. This follows the paper's use of a common correlation model for inter-event, intra-event, and total residuals.",
+    "doi": "10.1193/1.2857544",
+    "model": "Baker and Jayaram (2008) inter-period residual correlation",
+    "pga_proxy_period_s": 0.01,
+    "rho": 0.7321409900247263,
+    "sa_period_s": 0.4
+  },
+  "future_spatial_extension": "Retain z_site_latent_1 and z_site_latent_2. A future spatial case can apply a source/period-specific spatial transform to each latent site vector before the cross-IMT combination, preserving the same base random numbers and event catalog.",
+  "generator": "numpy.random.PCG64DXSM",
+  "latent_transform": {
+    "pga": "z1",
+    "sa0p4": "rho*z1 + sqrt(1-rho^2)*z2"
+  },
+  "occurrence_identity": "control_case_id + rupture_id + realization_index; Cell 17 event_id is retained only as rupture-template provenance and is not reused as an event-occurrence identifier.",
+  "pipeline_version": "notebook4_cell18_controlled_baseline_fields_v1",
+  "seed_derivation": "First 128 bits of SHA-256 over pipe-delimited identifiers; separate streams for event-level and site-level latent standard normals.",
+  "site_order_requirement": "The site-level generator emits values in validated site_ordinal order 0..469. The site-order CSV hash freezes this mapping.",
+  "site_order_sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100",
+  "sites": 470,
+  "specification_sha256": "7bf009e5175280f63e59e2f054b812f427aedd0edd15f54220d11ec07cfdafc4",
+  "within_event_spatial_structure": "Independent latent standard normals across sites. No spatial correlation is applied in the Phase 1 baseline."
+}

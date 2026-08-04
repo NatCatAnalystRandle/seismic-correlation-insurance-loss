@@ -1,0 +1,113 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "occurrences": 10630,
+    "rows": 4996100,
+    "sites": 470,
+    "zero_event_years_rule": "Preliminary AAL uses all declared catalog years. Full annual aggregation is performed after structural and nonstructural losses are combined."
+  },
+  "completed_at_utc": "2026-08-03T03:04:39.634971+00:00",
+  "critical_checks": 39,
+  "critical_failures": [],
+  "loss_equations": {
+    "analytical_expected_component": "expected component loss = building replacement value * sum_d[P(component DS=d|SA0P4) * component repair ratio_d]",
+    "sampled_component": "sampled component loss = building replacement value * component repair ratio for sampled component damage state",
+    "total_nonstructural": "total nonstructural loss = NSD loss + NSA loss"
+  },
+  "next_cell": "Cell 11: combine Cell 5 structural and Cell 10 nonstructural losses at the occurrence-building level, validate component reconciliation, and create total building ground-up loss and occurrence-level portfolio loss tables.",
+  "outputs": {
+    "building_value_and_nonstructural_ratio_table": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_replacement_values_and_nonstructural_ratios.csv",
+      "rows": 470,
+      "sha256": "15b274cd59c3bfac96ccec10f4187341e3df11399e0e557ba56ee0aa3c5a79de"
+    },
+    "chunk_manifest": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_10_chunk_manifest.csv",
+    "event_nonstructural_ground_up_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_nonstructural_loss\\nonstructural_ground_up_loss_event_summary.csv.gz",
+      "rows": 10630,
+      "sha256": "1146141cf07f2f4db5cd8589fecfc70320500634504e2300cfe7b5eb4da304e5",
+      "size_bytes": 964633
+    },
+    "full_nonstructural_ground_up_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_nonstructural_loss\\full_nonstructural_ground_up_loss.csv.gz",
+      "row_granularity": "one annual-catalog occurrence and one portfolio building",
+      "rows": 4996100,
+      "sha256": "6020956b13747b129836a9705acd9efad0b918c13b6638f19f62571ffe263670",
+      "size_bytes": 480256988
+    },
+    "loss_reconciliation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_10_loss_reconciliation.csv",
+    "ratio_summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_10_nonstructural_ratio_summary.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_10_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_10_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell10_nonstructural_ground_up_loss_v1",
+  "portfolio_valuation": {
+    "buildings": 470,
+    "cell5_building_value_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_replacement_values_and_structural_ratios.csv",
+    "cell5_building_value_sha256": "7668b755563b70ed637e1c53d89cb015c07b651752f774e0ccffcc2db878817f",
+    "occupancy_types": [
+      "COM1",
+      "COM4",
+      "COM5",
+      "COM6",
+      "COM7",
+      "IND6"
+    ],
+    "total_replacement_value_2022_usd": 384236604.69993526
+  },
+  "production": {
+    "analytical_expected_nsa_loss_total_2022_usd": 299314607589.61316,
+    "analytical_expected_nsd_loss_total_2022_usd": 58910450025.475395,
+    "analytical_expected_preliminary_aal_2022_usd": 179112.5288075443,
+    "analytical_expected_total_nonstructural_loss_2022_usd": 358225057615.08856,
+    "chunks": 43,
+    "maximum_expected_total_nonstructural_repair_ratio": 0.8351620227486337,
+    "maximum_sampled_total_nonstructural_repair_ratio": 0.862,
+    "occurrences": 10630,
+    "relative_sampled_expected_difference": 0.001764511849929539,
+    "rows": 4996100,
+    "sampled_nsa_loss_total_2022_usd": 298792142561.96277,
+    "sampled_nsd_loss_total_2022_usd": 58800822694.02227,
+    "sampled_preliminary_aal_2022_usd": 178796.48262799252,
+    "sampled_total_nonstructural_loss_2022_usd": 357592965255.98505,
+    "source_sampled_loss_totals_2022_usd": {
+      "INTERFACE": 323848863567.45374,
+      "SLAB": 33744101688.531555
+    }
+  },
+  "repair_ratios": {
+    "complete_component_reconciliation": "structural_complete + nsd_complete + nsa_complete = 1.0 for every building",
+    "mapping": {
+      "Complete": "DS_3 / 100",
+      "Extensive": "DS_2 / 100",
+      "Moderate": "DS_1 / 100",
+      "None": 0.0,
+      "Slight": "DS_0 / 100"
+    },
+    "nsa": {
+      "source_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\repair_cost_ratios\\HAZUS_Acceleration_Sensitive_Nonstructural_Repair_Costs.xlsx",
+      "source_sha256": "cc7f4f76c6660c6c05e373e0c7b6f3aac657c6bda116c336084e29eb17442ce3"
+    },
+    "nsd": {
+      "source_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\repair_cost_ratios\\HAZUS_Drift_Sensitive_Nonstructural_Repair_Costs.xlsx",
+      "source_sha256": "f234de52b4b86a352cf5476c415766eaef63d6e951f0cd4b5e9d788596c42219"
+    }
+  },
+  "scope": {
+    "currency": "USD",
+    "dollar_year": 2022,
+    "loss_components": [
+      "drift-sensitive nonstructural repair",
+      "acceleration-sensitive nonstructural repair"
+    ],
+    "not_included": [
+      "structural repair loss, calculated separately in Cell 5",
+      "contents loss",
+      "business interruption",
+      "insurance policy terms",
+      "reinsurance terms"
+    ]
+  },
+  "warnings": []
+}

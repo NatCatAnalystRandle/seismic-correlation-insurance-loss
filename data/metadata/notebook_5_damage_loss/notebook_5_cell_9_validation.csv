@@ -1,0 +1,54 @@
+check_id,severity,passed,detail
+cell3_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell3_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+cell7_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell7_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+cell8_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell8_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+nsd_stream_namespace_matches_cell8,critical,True,recorded=notebook5_nonstructural_drift_damage_v1; expected=notebook5_nonstructural_drift_damage_v1
+nsa_stream_namespace_matches_cell8,critical,True,recorded=notebook5_nonstructural_acceleration_damage_v1; expected=notebook5_nonstructural_acceleration_damage_v1
+nonstructural_stream_namespaces_are_distinct,critical,True,Drift-sensitive and acceleration-sensitive damage streams must be separate.
+ground_motion_field_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_4_full_baseline_fields\full_baseline_ground_motion_fields.csv.gz
+production_im_is_sa0p4,critical,True,column=sa0p4_simulated_g
+period_is_exact_sa0p4,critical,True,period_s=0.4
+portfolio_has_470_sites,critical,True,sites=470
+field_rows_divisible_by_sites,critical,True,rows=4996100; sites=470
+ground_motion_hash_matches_cell3,critical,True,calculated=5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b; recorded=5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b
+building_assignment_columns_present,critical,True,missing=[]
+building_assignment_hash_matches_cell8,critical,True,Cell 9 assignments must match the file validated in Cell 8.
+building_assignment_rows_match_sites,critical,True,rows=470; expected=470
+building_site_ids_unique,critical,True,duplicates=0
+all_buildings_are_w2,critical,True,types=['W2']
+all_building_periods_are_0p4_seconds,critical,True,periods=[0.4]
+nonstructural_parameters_complete_positive,critical,True,missing=0; nonpositive=0
+ground_motion_columns_present,critical,True,missing=[]
+cell8_controls_reproduced_once,critical,True,"cell8=12; compared=12; merge={'both': 12, 'left_only': 0, 'right_only': 0}"
+cell8_control_numeric_values_reproduced,critical,True,maximum_absolute_difference=1.110e-16
+cell8_nsd_sampled_states_reproduced,critical,True,Cell 9 must exactly reproduce the Cell 8 nsd sampled states.
+cell8_nsa_sampled_states_reproduced,critical,True,Cell 9 must exactly reproduce the Cell 8 nsa sampled states.
+production_rows_complete,critical,True,processed=4996100; expected=4996100
+all_occurrence_site_pairs_present_once,critical,True,missing_pairs=0
+every_occurrence_has_all_sites,critical,True,minimum=470; maximum=470; expected=470
+every_site_has_all_occurrences,critical,True,minimum=10630; maximum=10630; expected=10630
+unique_occurrences_complete,critical,True,observed=10630; expected=10630
+event_summary_has_one_row_per_occurrence,critical,True,rows=10630; unique=10630
+event_summary_building_counts_are_470,critical,True,minimum=470; maximum=470
+nsd_sampled_state_counts_sum_to_rows,critical,True,sum=4996100; expected=4996100
+nsd_expected_state_counts_sum_to_rows,critical,True,sum=4996100.000000; expected=4996100
+nsd_production_uniform_mean_reasonable,critical,True,mean=0.49994991; tolerance=0.00100000
+nsd_production_uniform_variance_reasonable,critical,True,variance=0.08338274; target=0.08333333; tolerance=0.00050000
+nsd_sampled_state_proportions_match_expected_probabilities,critical,True,maximum_absolute_difference=0.000209; tolerance=0.002000
+nsd_probability_sum_error_small,critical,True,maximum_error=4.441e-16
+nsd_minimum_raw_probability_within_roundoff,critical,True,minimum=-7.896e-14
+nsa_sampled_state_counts_sum_to_rows,critical,True,sum=4996100; expected=4996100
+nsa_expected_state_counts_sum_to_rows,critical,True,sum=4996100.000000; expected=4996100
+nsa_production_uniform_mean_reasonable,critical,True,mean=0.49964515; tolerance=0.00100000
+nsa_production_uniform_variance_reasonable,critical,True,variance=0.08338366; target=0.08333333; tolerance=0.00050000
+nsa_sampled_state_proportions_match_expected_probabilities,critical,True,maximum_absolute_difference=0.000256; tolerance=0.002000
+nsa_probability_sum_error_small,critical,True,maximum_error=4.441e-16
+nsa_minimum_raw_probability_within_roundoff,critical,True,minimum=7.586e-54
+production_component_stream_correlation_small,critical,True,correlation=-0.000086; tolerance=0.002237
+source_row_counts_match_cell3,critical,True,"observed={'INTERFACE': 3139600, 'SLAB': 1856500}; expected={'INTERFACE': 3139600, 'SLAB': 1856500}"
+design_level_row_counts_match_cell7,critical,True,"observed={'LowCode': 1307490, 'PreCode': 3688610}; expected_per_occurrence={'LowCode': 123, 'PreCode': 347}"
+final_damage_file_exists,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_nonstructural_damage\full_nonstructural_damage_states.csv.gz; bytes=795182875
+final_event_summary_exists,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_nonstructural_damage\nonstructural_damage_event_summary.csv.gz; bytes=2310956

@@ -1,0 +1,140 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "maximum_events_in_one_year": 3,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T19:46:39.243425+00:00",
+  "next_cell": "Cell 6: define and validate a transparent baseline occurrence excess-of-loss reinsurance layer applied to occurrence-level gross insured loss.",
+  "outputs": {
+    "aep_plot_pdf": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\plots\\baseline_insurance_aep_comparison.pdf",
+    "aep_plot_png": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\plots\\baseline_insurance_aep_comparison.png",
+    "annual_loss_series": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\baseline_insurance_annual_loss_series.csv.gz",
+      "rows": 2000000,
+      "sha256": "92e6aa6694433c4b4823d38854445fe1f83fea3ff63338a716b630fb55e544d4"
+    },
+    "exceedance_probability_curve": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\baseline_insurance_exceedance_probability_curve.csv.gz",
+      "rows": 55946,
+      "sha256": "301543df17ca0594254f5b368a3acdae4ee3d48de95174ab43766e3eb8882f29"
+    },
+    "oep_plot_pdf": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\plots\\baseline_insurance_oep_comparison.pdf",
+    "oep_plot_png": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\plots\\baseline_insurance_oep_comparison.png",
+    "pml_table": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\baseline_insurance_pml_table.csv",
+      "rows": 17,
+      "sha256": "c39f7263a7eb80be57677ed56cdad30a47b8b47e8722660f95614c42162c1ce1"
+    },
+    "recovery_by_return_period": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\baseline_insurance_recovery_by_return_period.csv",
+      "rows": 17,
+      "sha256": "ffa78a9d788b3ba9841d63cf13251097348a6a56bb4ec3b0805eaf3e932b72ee"
+    },
+    "recovery_plot_pdf": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\plots\\baseline_insurance_recovery_by_return_period.pdf",
+    "recovery_plot_png": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\plots\\baseline_insurance_recovery_by_return_period.png",
+    "risk_metrics": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\baseline_insurance_risk_metrics.csv",
+      "rows": 6,
+      "sha256": "7a80c85448fa1bf1fbbb3e640b40a98cbf7a4454ef00e2f8185368de6a5a4122"
+    },
+    "source_aal_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_risk\\baseline_insurance_source_aal_summary.csv",
+      "rows": 2,
+      "sha256": "094cb3192f36e49363133ab679a200ac994f4ab85b60eafe3fec0326046a9173"
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_5_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_5_validation.csv"
+  },
+  "pipeline_version": "notebook6_cell5_annual_insured_risk_metrics_v1",
+  "pml_method": {
+    "definition": "For return period R, sort all declared annual losses in descending order and select rank ceil(N/R), where N is the declared catalog duration.",
+    "return_periods_years": [
+      50,
+      100,
+      200,
+      250,
+      500,
+      1000,
+      2000,
+      2500,
+      5000,
+      10000,
+      20000,
+      50000,
+      100000,
+      200000,
+      500000,
+      1000000,
+      2000000
+    ],
+    "tail_support_warning_rank": 20,
+    "thin_tail_return_periods": [
+      200000,
+      500000,
+      1000000,
+      2000000
+    ]
+  },
+  "policy_scenario": {
+    "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+    "policy_scenario_name": "Full building coverage with 10% replacement-value deductible"
+  },
+  "portfolio": {
+    "buildings": 470,
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "risk_metrics": {
+    "aal_insurance_recovery_share": 0.6276950903192335,
+    "aal_uninsured_share": 0.372304909680766,
+    "gross_insured_aal_2022_usd": 122979.55996732853,
+    "gross_insured_positive_aep_years": 8171,
+    "gross_insured_positive_oep_years": 8171,
+    "ground_up_aal_2022_usd": 195922.4500302902,
+    "maximum_gross_insured_aep_2022_usd": 244325807.3326858,
+    "maximum_gross_insured_oep_2022_usd": 244325807.3326858,
+    "maximum_ground_up_aep_2022_usd": 282749467.80267936,
+    "maximum_ground_up_oep_2022_usd": 282749467.80267936,
+    "maximum_uninsured_aep_2022_usd": 62301773.02983487,
+    "maximum_uninsured_oep_2022_usd": 38423660.46999352,
+    "uninsured_aal_2022_usd": 72942.89006296158,
+    "uninsured_positive_aep_years": 9901,
+    "uninsured_positive_oep_years": 9901
+  },
+  "scope": {
+    "currency": "USD",
+    "deductible_application": "per building, per occurrence",
+    "dollar_year": 2022,
+    "gross_insured_loss_basis": "sampled building repair loss after building-level policy terms",
+    "ground_up_loss_basis": "sampled total building repair loss",
+    "uninsured_loss_definition": "ground-up loss minus gross insured loss; under the baseline it is entirely deductible-absorbed loss"
+  },
+  "source_files": {
+    "cell4_event_loss_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_baseline_insured_loss\\baseline_gross_insured_loss_event_summary.csv.gz",
+    "cell4_event_loss_sha256": "2d57f67f3e842efbc30283f8f09e038f3f1052c8040a323127ea9c52851b00e7",
+    "cell4_summary_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_4_summary.json",
+    "cell4_summary_sha256": "1f3f5b5c82effd566f370ad3a52aaaef1262c933f9c76e83eb03d0b6c19cfc6d",
+    "notebook5_annual_series_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_annual_loss_series.csv.gz",
+    "notebook5_annual_series_sha256": "9f4aef025c60ced9aea2c1e04e64dd5bc2928df2bd31c76880974df013b990d5",
+    "notebook5_pml_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_pml_table.csv",
+    "notebook5_pml_sha256": "359464b557d47a61c5cd5868223f879c4d1e03a6909e8dd60dab4ad8dfaf36b9",
+    "notebook6_input_handoff_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_input_handoff.json",
+    "notebook6_input_handoff_sha256": "3ef989f488c6624141f4fe8479aa997cda42f4384e7a60563a88310c0d198b98"
+  },
+  "validation": {
+    "critical_checks": 72,
+    "critical_failures": [],
+    "warnings": [
+      {
+        "check_id": "extreme_return_period_tail_support_documented",
+        "detail": "thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; threshold_rank=20",
+        "passed": false,
+        "severity": "warning"
+      }
+    ]
+  }
+}

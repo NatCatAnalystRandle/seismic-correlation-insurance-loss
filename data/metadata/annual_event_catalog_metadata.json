@@ -1,0 +1,42 @@
+{
+  "notebook": "03_generate_annual_event_catalog.ipynb",
+  "catalog_name": "baseline_mean_rate_catalog_2m_years",
+  "catalog_years": 2000000,
+  "master_seed": 20260729,
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.2.2",
+  "bit_generator": "PCG64DXSM",
+  "count_seed_spawn_key": [
+    0
+  ],
+  "year_seed_spawn_key": [
+    1
+  ],
+  "time_seed_spawn_key": [
+    2
+  ],
+  "occurrence_model": "Independent Poisson count for each rupture using weighted_annual_rate",
+  "event_time_model": "Conditional uniform event times over the two-million-year simulation interval",
+  "empty_year_storage": "Only nonempty years are written to annual_event_counts.csv",
+  "common_random_number_rule": "between_event_seed and within_event_seed must be reused for all later dependence cases",
+  "rupture_rows": 23416,
+  "catalog_event_rows": 10630,
+  "nonempty_years": 10593,
+  "empty_years": 1989407,
+  "multi_event_years": 36,
+  "maximum_events_in_one_year": 3,
+  "total_annual_rate": 0.0052232214574573325,
+  "expected_event_count": 10446.442914914665,
+  "realized_event_count": 10630,
+  "total_event_z_score": 1.7959197840881944,
+  "event_catalog": "data\\processed\\annual_event_catalog\\annual_event_catalog.csv",
+  "event_catalog_sha256": "e4725a57eab466348aa263d79b8f8bcc923f9542fb5507af279fece41c121f37",
+  "annual_event_counts": "data\\processed\\annual_event_catalog\\annual_event_counts.csv",
+  "annual_event_counts_sha256": "adc2b7a0e235230d5b998e6ae2e38c33417dc68b0b1228a7d3dac08211bb2dc4",
+  "rupture_occurrence_counts": "data\\processed\\annual_event_catalog\\rupture_occurrence_counts.csv",
+  "rupture_occurrence_counts_sha256": "a3a5afcdd8fb679707335748ea30b1b62888d6a394a13173a82d114ca42aaf80",
+  "summary": "data\\metadata\\annual_event_catalog_summary.csv",
+  "validation": "data\\metadata\\annual_event_catalog_validation.csv",
+  "validation_passed": true,
+  "created_at_utc": "2026-07-30T02:07:38.727274+00:00"
+}

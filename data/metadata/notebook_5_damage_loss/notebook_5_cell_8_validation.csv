@@ -1,0 +1,83 @@
+check_id,severity,passed,detail
+cell3_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell3_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+cell7_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell7_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+structural_stream_namespace_matches_cell3,critical,True,namespace=notebook5_structural_damage_v1
+three_damage_stream_namespaces_are_distinct,critical,True,"structural, drift-sensitive, and acceleration-sensitive streams are separate"
+cell3_control_columns_present,critical,True,missing=[]
+building_nonstructural_assignment_columns_present,critical,True,missing=[]
+building_assignment_rows_match_cell7,critical,True,rows=470; expected=470
+building_assignment_site_ids_unique,critical,True,duplicates=0
+all_building_assignments_are_w2,critical,True,types=['W2']
+all_building_periods_are_0p4_seconds,critical,True,periods=[0.4]
+nonstructural_parameters_complete_positive,critical,True,missing=0; nonpositive=0
+controlled_rows_match_cell3_summary,critical,True,rows=12; expected=12
+controlled_occurrence_site_keys_unique,critical,True,duplicates=0
+controlled_sites_all_mapped,critical,True,missing=0
+controlled_sa0p4_positive_finite,critical,True,minimum=0.00448735; maximum=1.53447
+controlled_design_levels_match_cell7,critical,True,"levels=['LowCode', 'PreCode']"
+controlled_source_types_are_interface_and_slab,critical,True,"source_types=['INTERFACE', 'SLAB']"
+controlled_intensity_levels_complete,critical,True,"levels=['high', 'low', 'medium']"
+nsd_controlled_exceedance_probabilities_ordered,critical,True,maximum_positive_difference=7.700e-14
+nsd_controlled_state_probabilities_nonnegative,critical,True,minimum=0.000e+00
+nsd_controlled_state_probabilities_sum_to_one,critical,True,maximum_error=2.220e-16
+nsd_controlled_uniforms_inside_unit_interval,critical,True,min=0.016282964307; max=0.917142447985
+nsd_controlled_sampled_states_valid,critical,True,"states=[0, 1, 2]"
+nsa_controlled_exceedance_probabilities_ordered,critical,True,maximum_positive_difference=-7.656e-16
+nsa_controlled_state_probabilities_nonnegative,critical,True,minimum=7.779e-20
+nsa_controlled_state_probabilities_sum_to_one,critical,True,maximum_error=2.220e-16
+nsa_controlled_uniforms_inside_unit_interval,critical,True,min=0.103916312249; max=0.922846948540
+nsa_controlled_sampled_states_valid,critical,True,"states=[0, 1, 2, 3, 4]"
+nonstructural_deterministic_repeat_is_exact,critical,True,both component uniforms and sampled states reproduce exactly
+nonstructural_streams_are_row_order_invariant,critical,True,shuffled rows reproduce identical component uniforms and states
+nonstructural_streams_are_chunk_size_invariant,critical,True,five-row chunks reproduce identical component uniforms and states
+LowCode_nsd_slight_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[0.5496057229976493]
+LowCode_nsd_moderate_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[1.1056022102162015]
+LowCode_nsd_extensive_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[3.4510126792875657]
+LowCode_nsd_complete_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[6.902025358575131]
+LowCode_nsd_slight_beta_ln_unique_within_design_level,critical,True,unique_values=[1.01]
+LowCode_nsd_moderate_beta_ln_unique_within_design_level,critical,True,unique_values=[0.97]
+LowCode_nsd_extensive_beta_ln_unique_within_design_level,critical,True,unique_values=[0.93]
+LowCode_nsd_complete_beta_ln_unique_within_design_level,critical,True,unique_values=[1.03]
+LowCode_nsa_slight_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[0.2]
+LowCode_nsa_moderate_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[0.4]
+LowCode_nsa_extensive_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[0.8]
+LowCode_nsa_complete_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[1.6]
+LowCode_nsa_slight_beta_ln_unique_within_design_level,critical,True,unique_values=[0.67]
+LowCode_nsa_moderate_beta_ln_unique_within_design_level,critical,True,unique_values=[0.67]
+LowCode_nsa_extensive_beta_ln_unique_within_design_level,critical,True,unique_values=[0.7]
+LowCode_nsa_complete_beta_ln_unique_within_design_level,critical,True,unique_values=[0.7]
+PreCode_nsd_slight_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[0.5496057229976493]
+PreCode_nsd_moderate_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[1.1056022102162015]
+PreCode_nsd_extensive_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[3.4510126792875657]
+PreCode_nsd_complete_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[6.902025358575131]
+PreCode_nsd_slight_beta_ln_unique_within_design_level,critical,True,unique_values=[1.06]
+PreCode_nsd_moderate_beta_ln_unique_within_design_level,critical,True,unique_values=[1.0]
+PreCode_nsd_extensive_beta_ln_unique_within_design_level,critical,True,unique_values=[0.93]
+PreCode_nsd_complete_beta_ln_unique_within_design_level,critical,True,unique_values=[1.01]
+PreCode_nsa_slight_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[0.2]
+PreCode_nsa_moderate_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[0.4]
+PreCode_nsa_extensive_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[0.8]
+PreCode_nsa_complete_median_sa0p4_g_unique_within_design_level,critical,True,unique_values=[1.6]
+PreCode_nsa_slight_beta_ln_unique_within_design_level,critical,True,unique_values=[0.66]
+PreCode_nsa_moderate_beta_ln_unique_within_design_level,critical,True,unique_values=[0.67]
+PreCode_nsa_extensive_beta_ln_unique_within_design_level,critical,True,unique_values=[0.65]
+PreCode_nsa_complete_beta_ln_unique_within_design_level,critical,True,unique_values=[0.65]
+nonstructural_expected_damage_monotonic_with_sa0p4,critical,True,"by_component_design={'nonstructural_drift_sensitive|LowCode': True, 'nonstructural_drift_sensitive|PreCode': True, 'nonstructural_acceleration_sensitive|LowCode': True, 'nonstructural_acceleration_sensitive|PreCode': True}"
+structural_stream_mean_reasonable,critical,True,mean=0.499335
+structural_stream_variance_reasonable,critical,True,variance=0.084248; target=0.083333
+structural_stream_ks_diagnostic,warning,True,statistic=0.005062; pvalue=0.541886
+nsd_stream_mean_reasonable,critical,True,mean=0.500960
+nsd_stream_variance_reasonable,critical,True,variance=0.083680; target=0.083333
+nsd_stream_ks_diagnostic,warning,True,statistic=0.004492; pvalue=0.692251
+nsa_stream_mean_reasonable,critical,True,mean=0.498456
+nsa_stream_variance_reasonable,critical,True,variance=0.083939; target=0.083333
+nsa_stream_ks_diagnostic,warning,True,statistic=0.006908; pvalue=0.182992
+structural_nsd_streams_are_distinct,critical,True,identical_uniform_count=0
+structural_nsd_stream_correlation_small,critical,True,correlation=0.001813; tolerance=0.020000
+structural_nsa_streams_are_distinct,critical,True,identical_uniform_count=0
+structural_nsa_stream_correlation_small,critical,True,correlation=-0.007044; tolerance=0.020000
+nsd_nsa_streams_are_distinct,critical,True,identical_uniform_count=0
+nsd_nsa_stream_correlation_small,critical,True,correlation=-0.000532; tolerance=0.020000
+nonstructural_categorical_sampling_matches_analytical_probabilities,critical,True,maximum_absolute_error=0.008116; tolerance=0.015000

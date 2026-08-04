@@ -1,0 +1,122 @@
+{
+  "pipeline_version": "notebook_7_baseline_results_validation_v2",
+  "completed_at_utc": "2026-08-04T00:39:14.323168+00:00",
+  "status": "complete",
+  "project": {
+    "name": "seismic-correlation-insurance-loss",
+    "phase": "phase_1_no_spatial_correlation_baseline",
+    "notebook": "07_baseline_results_and_validation.ipynb",
+    "scope": "validated baseline results, figures, tables, and reporting handoff",
+    "currency": "USD",
+    "dollar_year": 2022
+  },
+  "portfolio": {
+    "buildings": 470,
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "occurrences": 10630
+  },
+  "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+  "reinsurance_scenario_id": "baseline_occurrence_xol_500yr_to_2500yr_oep_v1",
+  "aal_2022_usd": {
+    "ground_up": 195922.4500302902,
+    "gross_insured": 122979.55996732852,
+    "uninsured": 72942.89006296158,
+    "ceded": 63676.597327266056,
+    "net_retained": 59302.96264006242
+  },
+  "aal_shares": {
+    "insurance_recovery_share_of_ground_up": 0.6276950903192335,
+    "ceded_share_of_gross_insured": 0.5177819577837386
+  },
+  "reinsurance_layer_2022_usd": {
+    "attachment": 18811083.54014544,
+    "limit": 61837983.31491815,
+    "exhaustion": 80649066.85506359
+  },
+  "headline_return_periods_years": [
+    100,
+    250,
+    500,
+    1000,
+    2500,
+    5000,
+    10000
+  ],
+  "thin_tail_diagnostic_return_periods_years": [
+    200000,
+    500000,
+    1000000,
+    2000000
+  ],
+  "largest_occurrence": {
+    "occurrence_id": "Y742164|EVT_00003999",
+    "catalog_year": 742164,
+    "source_type": "INTERFACE",
+    "magnitude": 9.34,
+    "ground_up_loss_2022_usd": 282749467.80267936,
+    "gross_insured_loss_2022_usd": 244325807.3326858,
+    "ceded_loss_2022_usd": 61837983.31491815,
+    "net_retained_loss_2022_usd": 182487824.01776767
+  },
+  "dominant_contributions": {
+    "ground_up_component": {
+      "component": "nonstructural_acceleration_sensitive",
+      "share_of_ground_up_aal": 0.7625265571040196
+    },
+    "ground_up_source": {
+      "source_type": "INTERFACE",
+      "share_of_ground_up_aal": 0.906038848696796
+    },
+    "ceded_source": {
+      "source_type": "INTERFACE",
+      "share_of_ceded_aal": 0.9548779139858994
+    }
+  },
+  "model_boundaries": [
+    "Phase 1 baseline uses conditionally independent within-event site residuals and does not include spatial correlation.",
+    "Structural and nonstructural damage use the documented direct-SA0P4 approximation rather than the full HAZUS capacity-spectrum procedure.",
+    "Policy and reinsurance terms are synthetic project assumptions, not observed Seaside contracts.",
+    "The baseline excludes contents loss, business interruption, annual aggregate reinsurance caps, and reinstatement constraints.",
+    "Headline reporting excludes thin-tail return periods above 100,000 years."
+  ],
+  "outputs": {
+    "executive_summary": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_executive_summary.csv",
+      "sha256": "3e719c48a1f5fc38d76b032ee4646302a195cd3a73976039df2c6abf93b5ed2c",
+      "rows": 18
+    },
+    "key_findings": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_key_findings.csv",
+      "sha256": "a86715651e711ec51cd3aa3c5beebe954e56a34c93b31e10f3b6692e388c1cb9",
+      "rows": 8
+    },
+    "headline_pml": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_headline_pml.csv",
+      "sha256": "fac6c22f7426768c460fb3b5ca8c156bb4a54d2b011690faab9e7b24209c50e7",
+      "rows": 7
+    },
+    "figure_manifest": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_figure_manifest.csv",
+      "sha256": "310af1fdbf708357d48520b2e52a3aa88561cbe925532aa4714353e448b39130",
+      "rows": 24
+    },
+    "output_manifest": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_output_manifest.csv",
+      "sha256": "c316e846d0a9742cede08678db0500439359131c5630f99ed168e8b29df993df",
+      "rows": 45
+    },
+    "results_digest": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_results_digest.md",
+      "sha256": "9958732600b2e6d3a1e47f0ae849e8603a70786966c5ccdf4bfc1e9b33a1cd72"
+    },
+    "validation_rollup": {
+      "path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_validation_rollup.csv",
+      "sha256": "c42de598338c3313443d7cc0ae3d8cd945cd4cbf5a21c5822e626423a3c027af",
+      "rows": 5
+    }
+  },
+  "next_stage": "Use the validated baseline handoff to prepare the GitHub README, technical project report or blog, and interview explanation. Phase 2 can then reuse the same event catalog and financial terms to add spatial correlation."
+}

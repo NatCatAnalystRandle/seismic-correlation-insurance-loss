@@ -1,0 +1,16 @@
+check,passes
+Three controlled ruptures were tested,True
+Every rupture was retrieved without error,True
+Retrieved tree IDs match the catalog,True
+Retrieved rupture-set IDs match the catalog,True
+Retrieved source IDs match the catalog,True
+Retrieved source names match the catalog,True
+Retrieved source types match the catalog,True
+Retrieved magnitudes match the catalog,True
+Retrieved raw rates match the catalog,True
+Retrieved top depths match the catalog,True
+Retrieved widths match the catalog,True
+Stored centroids match retrieved centroids where catalog centroids exist,True
+Every Rrup value is finite and nonnegative,True
+Every Rjb value is finite and nonnegative,True
+Rrup is not smaller than Rjb,True

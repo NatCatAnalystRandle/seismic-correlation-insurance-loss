@@ -1,0 +1,39 @@
+check_id,severity,passed,detail
+cell1_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+cell2_validation_has_no_critical_failures,critical,True,failed_critical_checks=0
+headline_pml_schema_complete,critical,True,"columns=['return_period_years', 'target_annual_exceedance_probability', 'ground_up_aep_pml_2022_usd', 'gross_insured_aep_pml_2022_usd', 'uninsured_aep_pml_2022_usd', 'ceded_aep_pml_2022_usd', 'net_retained_aep_pml_2022_usd', 'ground_up_oep_pml_2022_usd', 'gross_insured_oep_pml_2022_usd', 'uninsured_oep_pml_2022_usd', 'ceded_oep_pml_2022_usd', 'net_retained_oep_pml_2022_usd', 'insurance_recovery_share_aep', 'insurance_recovery_share_oep', 'ceded_share_of_gross_aep', 'ceded_share_of_gross_oep', 'layer_limit_utilization_aep', 'layer_limit_utilization_oep', 'minimum_supporting_descending_rank', 'tail_support_flag']"
+headline_metrics_schema_complete,critical,True,"columns=['metric_group', 'metric', 'value', 'unit', 'description']"
+headline_return_periods_exact,critical,True,"actual=[100, 250, 500, 1000, 2500, 5000, 10000]"
+headline_return_periods_unique,critical,True,duplicate_rows=0
+annual_exceedance_probabilities_match_return_periods,critical,True,maximum_absolute_error=0.000e+00
+headline_pml_values_finite,critical,True,nonfinite_values=0
+headline_pml_values_nonnegative,critical,True,minimum_value_2022_usd=0.000000
+ground_up_aep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=796210.455517
+ground_up_oep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=796210.455517
+gross_insured_aep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=9953.902420
+gross_insured_oep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=9953.902420
+uninsured_aep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=761990.976941
+uninsured_oep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=761828.102517
+ceded_aep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=0.000000
+ceded_oep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=0.000000
+net_retained_aep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=0.000000
+net_retained_oep_pml_nondecreasing,critical,True,minimum_increment_2022_usd=0.000000
+ground_up_aep_not_below_oep,critical,True,maximum_oep_minus_aep_2022_usd=0.000000
+gross_insured_aep_not_below_oep,critical,True,maximum_oep_minus_aep_2022_usd=0.000000
+uninsured_aep_not_below_oep,critical,True,maximum_oep_minus_aep_2022_usd=0.000000
+ceded_aep_not_below_oep,critical,True,maximum_oep_minus_aep_2022_usd=0.000000
+net_retained_aep_not_below_oep,critical,True,maximum_oep_minus_aep_2022_usd=0.000000
+aep_marginal_pml_hierarchy_bounded,critical,True,max_gross_minus_ground_up=0.000000; max_uninsured_minus_ground_up=0.000000; max_ceded_minus_gross=0.000000; max_retained_minus_gross=0.000000
+oep_marginal_pml_hierarchy_bounded,critical,True,max_gross_minus_ground_up=0.000000; max_uninsured_minus_ground_up=0.000000; max_ceded_minus_gross=0.000000; max_retained_minus_gross=0.000000
+risk_transfer_shares_bounded,critical,True,"range=(0.000000, 0.773062)"
+oep_layer_utilization_bounded_by_one,critical,True,"range=(0.000000, 1.000000)"
+aep_layer_utilization_nonnegative,critical,True,minimum=0.000000
+headline_return_periods_have_adequate_order_statistic_support,critical,True,minimum_supporting_rank=200
+headline_tail_support_flags_adequate,critical,True,flags=['adequate_order_statistic_support']
+required_reinsurance_metrics_present,critical,True,missing_metrics=[]
+xol_terms_reconcile,critical,True,difference_2022_usd=0.000000
+reporting_tables_written,critical,True,"AEP, OEP, and risk-transfer reporting tables exist."
+reporting_table_row_counts_expected,critical,True,aep_rows=7; oep_rows=7; transfer_rows=7
+all_figure_files_written,critical,True,missing_or_empty=0
+all_figure_files_have_minimum_size,critical,True,minimum_size_bytes=18182
+figure_hashes_unique_by_file,critical,True,files=6

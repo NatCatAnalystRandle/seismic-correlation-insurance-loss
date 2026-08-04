@@ -1,0 +1,9 @@
+metric,value
+Notebook 2 rupture rows,23416
+Unique Notebook 2 rupture IDs,23416
+Catalog event occurrences,10630
+Unique catalog event IDs,10630
+Unique catalog rupture IDs,3927
+Catalog rupture IDs missing from Notebook 2,0
+Catalog ruptures matched one-to-one,3927
+Maximum simulated occurrences of one rupture,638

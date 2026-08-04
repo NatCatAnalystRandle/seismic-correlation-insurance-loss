@@ -1,0 +1,36 @@
+{
+  "created_at_utc": "2026-08-03T04:41:36.265455+00:00",
+  "currency": "USD",
+  "dollar_year": 2022,
+  "future_cell_3_equations": {
+    "coinsurance_absorbed_loss": "limited_loss * (1 - coinsurance_share)",
+    "deductible_absorbed_loss": "min(eligible_loss, deductible_amount)",
+    "eligible_loss": "ground_up_loss * covered_loss_share if policy_covered else 0",
+    "gross_insured_loss": "limited_loss * coinsurance_share",
+    "limit_absorbed_loss": "max(loss_after_deductible - policy_limit_amount, 0)",
+    "limited_loss": "min(loss_after_deductible, policy_limit_amount)",
+    "loss_after_deductible": "max(eligible_loss - deductible_amount, 0)",
+    "uninsured_loss": "ground_up_loss - gross_insured_loss"
+  },
+  "important_scope_notes": [
+    "These terms are transparent synthetic project assumptions, not observed policy data.",
+    "The baseline assumes 100% take-up and full replacement-value limits.",
+    "The baseline includes building repair loss only and excludes contents, business interruption, additional living expense, demand surge, taxes, and claims adjustment expenses.",
+    "No annual aggregate deductible, franchise deductible, waiting period, or policy sublimit is applied.",
+    "Reinsurance terms are not introduced in Cell 2.",
+    "Because Notebook 5 caps building ground-up loss at replacement value and the baseline limit equals replacement value, the policy limit is not expected to bind in the baseline production run."
+  ],
+  "loss_basis": "sampled total building repair ground-up loss from Notebook 5, including structural, drift-sensitive nonstructural, and acceleration-sensitive nonstructural repair",
+  "pipeline_version": "notebook6_cell2_baseline_policy_terms_v1",
+  "policy_scenario_id": "baseline_full_coverage_10pct_deductible_v1",
+  "policy_scenario_name": "Full building coverage with 10% replacement-value deductible",
+  "terms": {
+    "coinsurance_share": 1.0,
+    "covered_loss_share": 1.0,
+    "deductible_application": "per building per occurrence",
+    "deductible_percent_of_replacement_value": 0.1,
+    "policy_limit_application": "per building per occurrence",
+    "policy_limit_percent_of_replacement_value": 1.0,
+    "policy_take_up_share": 1.0
+  }
+}

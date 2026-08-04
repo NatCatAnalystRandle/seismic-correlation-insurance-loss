@@ -1,0 +1,43 @@
+gmm_name,gmm_label,implementation_class,supported_imt_count,supports_pga,supports_pgv,constraints
+PSBAH_20_GLOBAL_INTERFACE,Parker et al. (2020) : Global : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterface,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..9.5]                      [20.0..1000.0]                                                  [0.0..40.0]                                     [150.0..2000.0]                                                 "
+PSBAH_20_GLOBAL_INTERFACE_NO_EPI,Parker et al. (2020) : Global : Interface (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceNoEpi,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..9.5]                      [20.0..1000.0]                                                  [0.0..40.0]                                     [150.0..2000.0]                                                 "
+PSBAH_20_GLOBAL_INTERFACE_AK_ADJUSTED,Parker et al. (2020) : Global : Interface (Alaska Adjusted),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalInterfaceAkAdjusted,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..9.5]                      [20.0..1000.0]                                                  [0.0..40.0]                                     [150.0..2000.0]                                                 "
+PSBAH_20_GLOBAL_SLAB,Parker et al. (2020) : Global : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlab,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..8.5]                      [35.0..1000.0]                                                  [0.0..200.0]                                    [150.0..2000.0]                                                 "
+PSBAH_20_GLOBAL_SLAB_NO_EPI,Parker et al. (2020) : Global : Slab (no epi),gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$GlobalSlabNoEpi,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..8.5]                      [35.0..1000.0]                                                  [0.0..200.0]                                    [150.0..2000.0]                                                 "
+PSBAH_20_CASCADIA_INTERFACE,Parker et al. (2020) : Cascadia : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterface,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..9.5]                      [20.0..1000.0]                                                  [0.0..40.0]                                     [150.0..2000.0]                                                 "
+PSBAH_20_CASCADIA_INTERFACE_BASIN,Parker et al. (2020) : Cascadia : Interface : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasin,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..9.5]                      [20.0..1000.0]                                                  [0.0..40.0]                                     [150.0..2000.0]                                                 "
+PSBAH_20_CASCADIA_INTERFACE_BASIN_M9,Parker et al. (2020) : Cascadia : Interface : Basin : M9,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaInterfaceBasinM9,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..9.5]                      [20.0..1000.0]                                                  [0.0..40.0]                                     [150.0..2000.0]                                                 "
+PSBAH_20_CASCADIA_SLAB,Parker et al. (2020) : Cascadia : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlab,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..8.5]                      [35.0..1000.0]                                                  [0.0..200.0]                                    [150.0..2000.0]                                                 "
+PSBAH_20_CASCADIA_SLAB_BASIN,Parker et al. (2020) : Cascadia : Slab : Basin,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$CascadiaSlabBasin,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..8.5]                      [35.0..1000.0]                                                  [0.0..200.0]                                    [150.0..2000.0]                                                 "
+PSBAH_20_ALASKA_INTERFACE,Parker et al. (2020) : Alaska : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaInterface,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..9.5]                      [20.0..1000.0]                                                  [0.0..40.0]                                     [150.0..2000.0]                                                 "
+PSBAH_20_ALASKA_SLAB,Parker et al. (2020) : Alaska : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$AlaskaSlab,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..8.5]                      [35.0..1000.0]                                                  [0.0..200.0]                                    [150.0..2000.0]                                                 "
+PSBAH_20_PRVI_INTERFACE,Parker et al. (2020) : PRVI : Interface,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviInterface,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..9.5]                      [20.0..1000.0]                                                  [0.0..40.0]                                     [150.0..2000.0]                                                 "
+PSBAH_20_PRVI_SLAB,Parker et al. (2020) : PRVI : Slab,gov.usgs.earthquake.nshmp.gmm.ParkerEtAl_2020$PrviSlab,23,true,true,"Constraints: 
+MW              RJB             RRUP            RX              DIP             WIDTH           ZTOR            ZHYP            RAKE            VS30            Z1P0            Z2P5            ZSED            
+[4.5..8.5]                      [35.0..1000.0]                                                  [0.0..200.0]                                    [150.0..2000.0]                                                 "

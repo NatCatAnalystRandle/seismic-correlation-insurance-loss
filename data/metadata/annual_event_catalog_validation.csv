@@ -1,0 +1,17 @@
+check,passes
+Catalog contains earthquake events,True
+Sampled event count matches catalog rows,True
+Annual event counts sum to catalog rows,True
+Per-rupture sampled counts match catalog,True
+All event identifiers are unique,True
+All event seeds are unique,True
+All between-event seeds are unique,True
+All within-event seeds are unique,True
+Simulation years are within the catalog,True
+"Within-year event times are in [0, 1)",True
+Catalog is ordered by event time,True
+All source rupture identifiers are recognized,True
+Total event count is within five standard deviations,True
+Nonempty-year count is within five standard deviations,True
+Multi-event-year count is within five standard deviations,True
+Source-group event counts are statistically reasonable,True

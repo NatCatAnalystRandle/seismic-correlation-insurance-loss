@@ -1,0 +1,2 @@
+jar_name,relative_path,size_bytes,size_mb,sha256,is_valid_zip,zip_integrity_passes,entry_count,class_count,contains_manifest
+nshmp-haz-thin.jar,tools/usgs_nshmp/nshmp-haz-2.6.5/nshmp-haz-2.6.5/build/libs/nshmp-haz-thin.jar,423433,0.40381717681884766,93822a39b8eb87f85e52d443de3bd60b8ec49b5fa42739a2edda683d6889b1b0,True,True,302,235,True

@@ -1,0 +1,56 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T04:37:45.313789+00:00",
+  "critical_checks": 57,
+  "critical_failures": [],
+  "ground_up_loss": {
+    "analytical_expected_aal_2022_usd": 196250.57616487282,
+    "analytical_expected_total_2022_usd": 392501152329.7456,
+    "building_rows": 4996100,
+    "maximum_sampled_aep_2022_usd": 282749467.80267936,
+    "maximum_sampled_oep_2022_usd": 282749467.80267936,
+    "sampled_aal_2022_usd": 195922.4500302901,
+    "sampled_total_2022_usd": 391844900060.58014
+  },
+  "next_cell": "Cell 2: define transparent baseline insurance coverage assumptions and create one validated policy-term record for each portfolio building.",
+  "outputs": {
+    "exposure_base": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_insurance_parameters\\seaside_w2_insurance_exposure_base.csv",
+      "rows": 470,
+      "sha256": "66a83a07f5ce9757605a71d77aa409b5e89d38d500ecf6f2ad488057eaf4a5e6"
+    },
+    "handoff": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_input_handoff.json",
+    "input_inventory": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_1_input_inventory.csv",
+      "rows": 7,
+      "sha256": "e45f661417d2da1c1542ea027b1c6afe71d27796f66109dfa94c5e6acb66ac6e"
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_1_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_1_validation.csv"
+  },
+  "pipeline_version": "notebook6_cell1_validate_inputs_v1",
+  "portfolio": {
+    "buildings": 470,
+    "design_levels": [
+      "LowCode",
+      "PreCode"
+    ],
+    "occupancy_classes": [
+      "COM1",
+      "COM4",
+      "COM5",
+      "COM6",
+      "COM7",
+      "IND6"
+    ],
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "warnings": []
+}

@@ -1,0 +1,41 @@
+check_id,severity,passed,detail
+cell1_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell1_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+cell5_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell5_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+cell9_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell9_has_no_unresolved_critical_checks,critical,True,unresolved_critical=0
+portfolio_has_470_buildings,critical,True,sites=470
+rows_match_occurrences_times_sites,critical,True,rows=4996100; occurrences=10630; sites=470
+catalog_duration_positive,critical,True,years=2000000
+cell9_final_damage_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_nonstructural_damage\full_nonstructural_damage_states.csv.gz
+cell9_final_damage_hash_matches_summary,critical,True,Final Cell 9 nonstructural damage file hash must match its accepted summary.
+cell5_building_value_table_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_damage_loss_parameters\seaside_w2_replacement_values_and_structural_ratios.csv
+cell5_building_value_hash_matches_summary,critical,True,Cell 5 building replacement-value table hash must match its accepted summary.
+cell5_building_value_columns_present,critical,True,missing=[]
+cell5_building_value_sites_unique_complete,critical,True,rows=470; duplicates=0
+replacement_values_positive_finite,critical,True,minimum=31994.11; maximum=20862701.50
+nsd_repair_ratio_hash_matches_cell1,critical,True,calculated=f234de52b4b86a352cf5476c415766eaef63d6e951f0cd4b5e9d788596c42219; recorded=f234de52b4b86a352cf5476c415766eaef63d6e951f0cd4b5e9d788596c42219
+nsa_repair_ratio_hash_matches_cell1,critical,True,calculated=cc7f4f76c6660c6c05e373e0c7b6f3aac657c6bda116c336084e29eb17442ce3; recorded=cc7f4f76c6660c6c05e373e0c7b6f3aac657c6bda116c336084e29eb17442ce3
+nsd_repair_ratios_assigned_to_every_building,critical,True,missing_sites=[]
+nsd_repair_ratios_finite_and_bounded,critical,True,minimum=0.000000; maximum=0.347000
+nsd_repair_ratios_nondecreasing_by_state,critical,True,None <= Slight <= Moderate <= Extensive <= Complete for every building.
+nsa_repair_ratios_assigned_to_every_building,critical,True,missing_sites=[]
+nsa_repair_ratios_finite_and_bounded,critical,True,minimum=0.000000; maximum=0.725000
+nsa_repair_ratios_nondecreasing_by_state,critical,True,None <= Slight <= Moderate <= Extensive <= Complete for every building.
+complete_component_ratios_sum_to_one,critical,True,minimum=1.000000000000; maximum=1.000000000000
+cell9_chunk_manifest_columns_present,critical,True,missing=[]
+cell9_chunk_manifest_rows_match_summary,critical,True,manifest=43; summary=43
+production_rows_match_expected,critical,True,processed=4996100; expected=4996100
+production_occurrences_match_expected,critical,True,processed=10630; expected=10630
+final_building_loss_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_nonstructural_loss\full_nonstructural_ground_up_loss.csv.gz
+event_summary_rows_match_occurrences,critical,True,rows=10630; expected=10630
+event_summary_buildings_complete,critical,True,minimum=470; maximum=470; expected=470
+sampled_loss_equations_exact,critical,True,maximum_error=0.000e+00
+expected_loss_equations_exact,critical,True,maximum_error=0.000e+00
+total_nonstructural_loss_equations_exact,critical,True,maximum_error=3.725e-09
+sampled_total_nonstructural_ratio_does_not_exceed_one,critical,True,maximum=0.862000
+expected_total_nonstructural_ratio_does_not_exceed_one,critical,True,maximum=0.835162
+component_totals_sum_to_total_sampled_loss,critical,True,total=357592965255.985046
+component_totals_sum_to_total_expected_loss,critical,True,total=358225057615.088562
+sampled_total_reasonably_close_to_analytical_expected_total,warning,True,relative_difference=0.176451%; warning_tolerance=5.00%

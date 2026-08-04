@@ -1,0 +1,18 @@
+check,blocking,passes
+Official rupture-set keys are unique,True,True
+CSV rupture-set keys are unique,True,True
+All rupture sets matched using stable keys,True,True
+Cascadia loaded rupture sets equal 21,True,True
+Oregon loaded rupture sets equal 2,True,True
+Official and CSV rupture counts match,True,True
+Official and CSV source counts match,True,True
+Independently enumerated raw rates match the CSV,True,True
+Independently enumerated weighted rates match the CSV,True,True
+Official branch and rupture-set weights match,True,True
+CSV branch and rupture-set weights match,True,True
+Official and CSV rupture-set weights match,True,True
+Official and exported source-family weight totals match,True,True
+Total weighted annual rates match,True,True
+Expected rupture-row count retained,True,True
+No duplicate rupture identifiers,True,True
+Deprecated totalMfd diagnostic matches direct iteration,False,True

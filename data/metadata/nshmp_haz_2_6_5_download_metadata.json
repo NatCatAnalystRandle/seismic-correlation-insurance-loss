@@ -1,0 +1,28 @@
+{
+  "software_name": "nshmp-haz",
+  "official_project_path": "ghsc/nshmp/nshmp-haz",
+  "requested_tag": "2.6.5",
+  "resolved_tag": "2.6.5",
+  "expected_commit_prefix": "8015c808",
+  "resolved_short_commit": "8015c808",
+  "resolved_full_commit": "8015c808f638fd8610fbf670227c621e6f804a43",
+  "tag_message": "- Updates lib to revert AM09 behavior for 50-state update runs\r\n- Adds polygons to feature service",
+  "tag_release": null,
+  "tag_api_url": "https://code.usgs.gov/api/v4/projects/ghsc%2Fnshmp%2Fnshmp-haz/repository/tags/2.6.5",
+  "archive_url": "https://code.usgs.gov/ghsc/nshmp/nshmp-haz/-/archive/2.6.5/nshmp-haz-2.6.5.zip",
+  "archive_path": "tools\\usgs_nshmp\\nshmp-haz-2.6.5.zip",
+  "archive_downloaded_this_run": false,
+  "archive_size_bytes": 10747391,
+  "archive_sha256": "8d53428484b6c7d1a438f25f071ae5cec9d17638de5d24e1f504a503f61b63ff",
+  "zip_member_count": 1055,
+  "zip_uncompressed_size_bytes": 12347677,
+  "zip_top_level_entries": [
+    "nshmp-haz-2.6.5"
+  ],
+  "source_directory": "tools\\usgs_nshmp\\nshmp-haz-2.6.5\\nshmp-haz-2.6.5",
+  "source_file_count": 790,
+  "source_size_bytes": 12347677,
+  "java_source_file_count": 44,
+  "gradle_distribution_url": "https\\://services.gradle.org/distributions/gradle-7.3.1-bin.zip",
+  "validated_at_utc": "2026-07-30T00:00:31.401244+00:00"
+}

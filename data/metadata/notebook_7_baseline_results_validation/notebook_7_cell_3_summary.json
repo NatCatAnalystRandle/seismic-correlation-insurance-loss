@@ -1,0 +1,29 @@
+{
+  "cell": 3,
+  "status": "complete",
+  "headline_return_periods": [
+    100,
+    250,
+    500,
+    1000,
+    2500,
+    5000,
+    10000
+  ],
+  "headline_pml_rows": 7,
+  "minimum_supporting_descending_rank": 200,
+  "xol_attachment_2022_usd": 18811083.54014544,
+  "xol_limit_2022_usd": 61837983.31491815,
+  "xol_exhaustion_2022_usd": 80649066.85506359,
+  "figure_files": 6,
+  "critical_validation_checks": 38,
+  "critical_failures": [],
+  "warnings_requiring_review": [],
+  "outputs": {
+    "aep_table": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_headline_aep_pml.csv",
+    "oep_table": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_headline_oep_pml.csv",
+    "risk_transfer_table": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_risk_transfer_by_return_period.csv",
+    "figure_manifest": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_cell_3_figure_manifest.csv",
+    "validation": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_cell_3_validation.csv"
+  }
+}

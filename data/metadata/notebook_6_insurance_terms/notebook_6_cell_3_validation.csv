@@ -1,0 +1,48 @@
+check_id,severity,passed,detail
+required_input_exists_notebook_6_cell_1_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_1_validation.csv
+required_input_exists_notebook_6_input_handoff,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_input_handoff.json
+required_input_exists_notebook_6_cell_2_validation,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_2_validation.csv
+required_input_exists_notebook_6_cell_2_summary,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_2_summary.json
+required_input_exists_notebook_6_cell_2_policy_formula_specification,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\metadata\notebook_6_insurance_terms\notebook_6_cell_2_policy_formula_specification.json
+required_input_exists_seaside_w2_baseline_policy_terms,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_6_insurance_parameters\seaside_w2_baseline_policy_terms.csv
+cell1_validation_schema_complete,critical,True,missing=[]
+cell1_critical_validation_passed,critical,True,critical_failures=0
+cell1_has_no_unresolved_warnings,critical,True,warnings=0
+cell2_validation_schema_complete,critical,True,missing=[]
+cell2_critical_validation_passed,critical,True,critical_failures=0
+cell2_has_no_unresolved_warnings,critical,True,warnings=0
+cell1_handoff_records_success,critical,True,success=True
+cell2_summary_records_success,critical,True,success=True
+full_ground_up_loss_input_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_total_ground_up_loss\full_total_ground_up_loss.csv.gz
+full_ground_up_loss_hash_matches_cell1_handoff,critical,True,recorded=afc451e7418b65f7836d0d6174602325afcc7b29a85ef8cf46b883222c256b64; actual=afc451e7418b65f7836d0d6174602325afcc7b29a85ef8cf46b883222c256b64
+policy_terms_schema_complete,critical,True,missing=[]
+policy_site_ordinals_unique,critical,True,duplicates=0
+policy_site_ids_unique,critical,True,duplicates=0
+all_baseline_policies_are_covered,critical,True,covered=470; rows=470
+one_policy_scenario_is_present,critical,True,scenario_ids=['baseline_full_coverage_10pct_deductible_v1']
+cell2_formula_specification_matches_policy_scenario,critical,True,formula_scenario=baseline_full_coverage_10pct_deductible_v1; policy_scenario=baseline_full_coverage_10pct_deductible_v1
+baseline_uses_full_coverage_and_coinsurance,critical,True,covered_loss_shares=[1.0]; coinsurance_shares=[1.0]
+deductibles_and_limits_are_valid,critical,True,minimum_replacement=31994.107316; minimum_deductible=3199.410732; minimum_limit=31994.107316
+stress_case_gross_equation_reproduced,critical,True,maximum_error=0.000e+00
+stress_case_uninsured_equation_reproduced,critical,True,maximum_error=0.000e+00
+stress_case_uninsured_decomposition_reproduced,critical,True,maximum_error=1.863e-09
+stress_case_loss_conservation_reproduced,critical,True,maximum_error=0.000e+00
+gross_insured_is_zero_at_or_below_deductible,critical,True,cases=15
+gross_insured_is_capped_by_policy_limit,critical,True,maximum_excess=0.000e+00
+policy_limit_absorbed_loss_activates_in_stress_cases,critical,True,above_limit_cases=3
+coinsurance_absorbed_loss_is_zero_for_baseline,critical,True,maximum=0.000e+00
+gross_insured_loss_is_monotonic_nondecreasing,critical,True,minimum_increment=0.000000
+uninsured_loss_is_monotonic_nondecreasing,critical,True,minimum_increment=-0.000000
+baseline_policy_limit_is_nonbinding_within_physical_loss_cap,critical,True,maximum_limit_absorbed=0.000e+00
+ground_up_loss_schema_complete_for_control_selection,critical,True,missing=[]
+control_selection_scanned_all_ground_up_rows,critical,True,scanned=4996100; expected=4996100
+production_ground_up_losses_respect_replacement_value_cap,critical,True,maximum_excess=4.657e-10
+actual_control_selection_covers_every_source_and_target,critical,True,"selected=14; sources=['INTERFACE', 'SLAB']; targets=[0.0, 0.025, 0.1, 0.25, 0.5, 0.75, 1.0]"
+actual_controls_join_to_policy_terms,critical,True,missing_policy_rows=0
+actual_control_gross_equation_reproduced,critical,True,maximum_error=0.000e+00
+actual_control_uninsured_equation_reproduced,critical,True,maximum_error=0.000e+00
+actual_control_uninsured_decomposition_reproduced,critical,True,maximum_error=2.910e-11
+actual_control_loss_conservation_reproduced,critical,True,maximum_error=0.000e+00
+actual_control_gross_insured_is_nonnegative_and_bounded,critical,True,minimum=0.000000; maximum=1676280.000000
+actual_control_policy_limit_is_nonbinding,critical,True,maximum=0.000e+00
+actual_controls_represent_all_source_types,critical,True,"actual=['INTERFACE', 'SLAB']; expected=['INTERFACE', 'SLAB']"

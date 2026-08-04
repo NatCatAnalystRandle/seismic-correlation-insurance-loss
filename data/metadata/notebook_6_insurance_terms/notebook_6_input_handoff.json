@@ -1,0 +1,117 @@
+{
+  "accepted_notebook5_warnings": [
+    {
+      "check_id": "extreme_return_period_tail_support_documented",
+      "detail": "thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; threshold_rank=20",
+      "passed": false,
+      "severity": "warning"
+    }
+  ],
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "created_at_utc": "2026-08-03T04:37:45.226975+00:00",
+  "ground_up_loss": {
+    "analytical_expected_aal_2022_usd": 196250.57616487282,
+    "analytical_expected_total_2022_usd": 392501152329.7456,
+    "building_rows": 4996100,
+    "maximum_sampled_aep_2022_usd": 282749467.80267936,
+    "maximum_sampled_oep_2022_usd": 282749467.80267936,
+    "sampled_aal_2022_usd": 195922.4500302901,
+    "sampled_total_2022_usd": 391844900060.58014
+  },
+  "inputs": {
+    "annual_ground_up_loss_series": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_annual_loss_series.csv.gz",
+      "recorded_rows": 2000000,
+      "sha256": "9f4aef025c60ced9aea2c1e04e64dd5bc2928df2bd31c76880974df013b990d5",
+      "size_bytes": 5608948
+    },
+    "component_aal_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_component_aal_summary.csv",
+      "recorded_rows": 3,
+      "sha256": "0e5ebf2a17fda9f7c99cebe51208fbc1b824c18f85642021475f3c72a855bd1d",
+      "size_bytes": 618
+    },
+    "full_building_ground_up_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_loss\\full_total_ground_up_loss.csv.gz",
+      "recorded_rows": 4996100,
+      "sha256": "afc451e7418b65f7836d0d6174602325afcc7b29a85ef8cf46b883222c256b64",
+      "size_bytes": 775582394
+    },
+    "ground_up_pml_table": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_pml_table.csv",
+      "recorded_rows": 17,
+      "sha256": "359464b557d47a61c5cd5868223f879c4d1e03a6909e8dd60dab4ad8dfaf36b9",
+      "size_bytes": 3127
+    },
+    "ground_up_risk_metrics": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_risk_metrics.csv",
+      "recorded_rows": 4,
+      "sha256": "19cd4a7a8227007b5629664c26c5dc85d36d26470fc6b7e2599533ecb2e4ef6f",
+      "size_bytes": 930
+    },
+    "occurrence_ground_up_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_loss\\total_ground_up_loss_event_summary.csv.gz",
+      "recorded_rows": 10630,
+      "sha256": "462b7aee012969d752f7d09f4b61587066f06a3206c0d8618839924482956538",
+      "size_bytes": 2145536
+    },
+    "source_aal_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_source_aal_summary.csv",
+      "recorded_rows": 2,
+      "sha256": "a103d8f318b3841e70a5c973454c2dd8539d04aad5bae5f35579d66c622e1efa",
+      "size_bytes": 722
+    }
+  },
+  "next_cell": "Cell 2: define transparent baseline insurance coverage assumptions and create one validated policy-term record for each portfolio building.",
+  "outputs": {
+    "exposure_base": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_6_insurance_parameters\\seaside_w2_insurance_exposure_base.csv",
+      "rows": 470,
+      "sha256": "66a83a07f5ce9757605a71d77aa409b5e89d38d500ecf6f2ad488057eaf4a5e6"
+    },
+    "handoff": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_input_handoff.json",
+    "input_inventory": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_1_input_inventory.csv",
+      "rows": 7,
+      "sha256": "e45f661417d2da1c1542ea027b1c6afe71d27796f66109dfa94c5e6acb66ac6e"
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_1_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_6_insurance_terms\\notebook_6_cell_1_validation.csv"
+  },
+  "pipeline_version": "notebook6_cell1_validate_inputs_v1",
+  "portfolio": {
+    "buildings": 470,
+    "design_levels": [
+      "LowCode",
+      "PreCode"
+    ],
+    "occupancy_classes": [
+      "COM1",
+      "COM4",
+      "COM5",
+      "COM6",
+      "COM7",
+      "IND6"
+    ],
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "scope": {
+    "currency": "USD",
+    "dollar_year": 2022,
+    "input_loss_basis": "sampled total ground-up building repair loss from Notebook 5, including structural, drift-sensitive nonstructural, and acceleration-sensitive nonstructural repair",
+    "not_yet_applied": [
+      "insurance take-up or coverage selection",
+      "policy deductibles",
+      "policy limits",
+      "coinsurance",
+      "reinsurance terms"
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "maximum_events_in_one_year": 3,
+    "multiple_event_years": 36,
+    "occupied_years": 10593,
+    "occurrences": 10630,
+    "zero_event_years": 1989407
+  },
+  "completed_at_utc": "2026-08-03T04:22:02.404342+00:00",
+  "critical_checks": 43,
+  "critical_failures": [],
+  "next_notebook": "Notebook 6: assign insurance policy terms and reinsurance layers, then calculate gross insured, retained, and ceded annual loss metrics.",
+  "outputs": {
+    "annual_loss_series": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_annual_loss_series.csv.gz",
+      "rows": 2000000,
+      "sha256": "9f4aef025c60ced9aea2c1e04e64dd5bc2928df2bd31c76880974df013b990d5"
+    },
+    "component_aal_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_component_aal_summary.csv",
+      "rows": 3,
+      "sha256": "0e5ebf2a17fda9f7c99cebe51208fbc1b824c18f85642021475f3c72a855bd1d"
+    },
+    "exceedance_probability_curve": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_exceedance_probability_curve.csv.gz",
+      "rows": 40988,
+      "sha256": "5503c483d8ba8ddc1c78b8bd62fedc3d0ff5b55bae86f35b9c9318992b25eeaf"
+    },
+    "plot_pdf": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\plots\\total_ground_up_aep_oep_curve.pdf",
+    "plot_png": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\plots\\total_ground_up_aep_oep_curve.png",
+    "pml_table": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_pml_table.csv",
+      "rows": 17,
+      "sha256": "359464b557d47a61c5cd5868223f879c4d1e03a6909e8dd60dab4ad8dfaf36b9"
+    },
+    "risk_metrics": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_risk_metrics.csv",
+      "rows": 4,
+      "sha256": "19cd4a7a8227007b5629664c26c5dc85d36d26470fc6b7e2599533ecb2e4ef6f"
+    },
+    "source_aal_summary": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_risk\\total_ground_up_source_aal_summary.csv",
+      "rows": 2,
+      "sha256": "a103d8f318b3841e70a5c973454c2dd8539d04aad5bae5f35579d66c622e1efa"
+    },
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_12_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_12_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell12_total_ground_up_risk_metrics_v1",
+  "pml_method": {
+    "definition": "For return period R, sort all declared annual losses in descending order and select rank ceil(N/R), where N is the declared catalog duration.",
+    "return_periods_years": [
+      50,
+      100,
+      200,
+      250,
+      500,
+      1000,
+      2000,
+      2500,
+      5000,
+      10000,
+      20000,
+      50000,
+      100000,
+      200000,
+      500000,
+      1000000,
+      2000000
+    ],
+    "tail_support_warning_rank": 20,
+    "thin_tail_return_periods": [
+      200000,
+      500000,
+      1000000,
+      2000000
+    ]
+  },
+  "portfolio": {
+    "replacement_value_2022_usd": 384236604.69993526
+  },
+  "risk_metrics": {
+    "analytical_expected_total_ground_up_aal_2022_usd": 196250.57616487285,
+    "maximum_sampled_aep_loss_ratio": 0.7358733247798944,
+    "maximum_sampled_annual_aggregate_loss_2022_usd": 282749467.80267936,
+    "maximum_sampled_annual_occurrence_loss_2022_usd": 282749467.80267936,
+    "maximum_sampled_oep_loss_ratio": 0.7358733247798944,
+    "sampled_positive_aep_years": 9901,
+    "sampled_positive_oep_years": 9901,
+    "sampled_total_ground_up_aal_2022_usd": 195922.4500302902
+  },
+  "scope": {
+    "analytical_expected_curves_use": "reconciliation diagnostic based on conditional expected component losses; not a replacement for the sampled annual loss distribution",
+    "currency": "USD",
+    "dollar_year": 2022,
+    "loss_basis": "total ground-up building repair loss",
+    "loss_components": [
+      "structural repair",
+      "drift-sensitive nonstructural repair",
+      "acceleration-sensitive nonstructural repair"
+    ],
+    "official_ep_basis": "sampled structural, NSD, and NSA damage states and sampled total ground-up losses"
+  },
+  "source_files": {
+    "cell11_event_loss_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_total_ground_up_loss\\total_ground_up_loss_event_summary.csv.gz",
+    "cell11_event_loss_sha256": "462b7aee012969d752f7d09f4b61587066f06a3206c0d8618839924482956538",
+    "cell11_summary_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_11_summary.json",
+    "cell11_summary_sha256": "2f224b7299ad73624d6f1319abd653c427fada1488406255450f57c383be1b60",
+    "notebook4_handoff_path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_4_final_handoff\\notebook_5_input_handoff.json",
+    "notebook4_handoff_sha256": "4279d11616dd3b9307a71d732946b5e5ec0d3cc4dc5b3461653fee49ba6f0b6b"
+  },
+  "warnings": [
+    {
+      "check_id": "extreme_return_period_tail_support_documented",
+      "detail": "thin_tail_return_periods=[200000, 500000, 1000000, 2000000]; threshold_rank=20",
+      "passed": false,
+      "severity": "warning"
+    }
+  ]
+}

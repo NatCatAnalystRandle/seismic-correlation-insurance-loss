@@ -1,0 +1,41 @@
+check_id,severity,passed,detail
+cell1_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell1_has_no_unresolved_checks,critical,True,unresolved=0
+cell4_critical_checks_passed,critical,True,all_critical_checks_passed=True
+cell4_has_no_unresolved_checks,critical,True,unresolved=0
+portfolio_has_470_buildings,critical,True,sites=470
+catalog_duration_positive,critical,True,years=2000000
+cell4_rows_match_occurrences_times_sites,critical,True,rows=4996100; occurrences=10630; sites=470
+cell4_final_damage_file_exists,critical,True,c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_damage\full_structural_damage_states.csv.gz
+cell4_final_damage_hash_matches_summary,critical,True,Final Cell 4 structural damage file hash must match its accepted summary.
+portfolio_exists,critical,True,C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\exposure_portfolio\seaside_w2_portfolio_gmm_ready.csv
+portfolio_hash_matches_cell1,critical,True,Portfolio hash must match Cell 1.
+portfolio_columns_present,critical,True,missing=[]
+structural_repair_ratios_hash_matches_cell1,critical,True,calculated=9c339e9042984892e8bc9a500efa970075649b4c95d1f408d6805f662f6a85dc; recorded=9c339e9042984892e8bc9a500efa970075649b4c95d1f408d6805f662f6a85dc
+general_replacement_costs_hash_matches_cell1,critical,True,calculated=a45ff8e93fcae96da82893c1afd5b41d20c27e82a33ffa15400241590b3bec4f; recorded=a45ff8e93fcae96da82893c1afd5b41d20c27e82a33ffa15400241590b3bec4f
+res1_replacement_costs_hash_matches_cell1,critical,True,calculated=7e186d3a8fb2e7b0d017b1c7e5cefa51c67132edddcfbbf2e81edb744e524e17; recorded=7e186d3a8fb2e7b0d017b1c7e5cefa51c67132edddcfbbf2e81edb744e524e17
+building_value_site_ids_unique,critical,True,duplicates=0
+all_buildings_are_w2,critical,True,types=['W2']
+floor_area_positive_complete,critical,True,missing=0; nonpositive=0
+replacement_cost_assigned_to_every_building,critical,True,missing_sites=[]
+structural_repair_ratios_assigned_to_every_building,critical,True,missing_sites=[]
+replacement_values_positive,critical,True,minimum=31994.11; maximum=20862701.50
+repair_ratios_finite_and_bounded,critical,True,minimum=0.000000; maximum=0.294000
+repair_ratios_nondecreasing_by_state,critical,True,None <= Slight <= Moderate <= Extensive <= Complete for every building.
+cell4_chunk_manifest_columns_present,critical,True,missing=[]
+cell4_chunk_manifest_rows_match_summary,critical,True,manifest=43; summary=43
+all_production_rows_processed,critical,True,processed=4996100; expected=4996100; unseen=0
+every_occurrence_has_470_buildings,critical,True,minimum=470; maximum=470
+every_building_has_all_occurrences,critical,True,minimum=10630; maximum=10630
+event_summary_has_one_row_per_occurrence,critical,True,rows=10630; unique=10630
+event_summary_building_counts_are_470,critical,True,minimum=470; maximum=470
+portfolio_replacement_value_constant_by_occurrence,critical,True,minimum=384236604.70; maximum=384236604.70; expected=384236604.70
+building_and_event_sampled_loss_totals_agree,critical,True,building=34251934804.595001; event=34251934804.595016
+building_and_event_expected_loss_totals_agree,critical,True,building=34276094714.657116; event=34276094714.657112
+sampled_loss_equation_error_small,critical,True,maximum_error=0.000e+00
+analytical_expected_loss_equation_error_small,critical,True,maximum_error=0.000e+00
+structural_loss_ratios_bounded,critical,True,sampled_max=0.294000; expected_max=0.275826
+sampled_total_reasonably_close_to_analytical_expected_total,warning,True,relative_difference=0.070486%; warning_tolerance=5.00%
+preliminary_aal_values_nonnegative,critical,True,sampled_aal=17125.967402; expected_aal=17138.047357
+final_building_loss_file_exists,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_loss\full_structural_ground_up_loss.csv.gz
+final_event_loss_file_exists,critical,True,path=c:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_5_structural_loss\structural_ground_up_loss_event_summary.csv.gz

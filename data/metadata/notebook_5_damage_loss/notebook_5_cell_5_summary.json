@@ -1,0 +1,102 @@
+{
+  "all_critical_checks_passed": true,
+  "annual_catalog": {
+    "declared_duration_years": 2000000,
+    "occurrences": 10630,
+    "rows": 4996100,
+    "sites": 470,
+    "zero_event_years_rule": "The preliminary AAL denominator uses all declared catalog years. Annual aggregation and AEP/OEP calculations are deferred to the next cell."
+  },
+  "completed_at_utc": "2026-08-03T01:49:14.187437+00:00",
+  "critical_checks": 39,
+  "critical_failures": [],
+  "loss_equations": {
+    "analytical_expected": "expected structural loss = building replacement value * sum_d[P(DS=d|SA0P4) * structural repair ratio_d]",
+    "sampled": "sampled structural loss = building replacement value * structural repair ratio for the sampled structural damage state"
+  },
+  "next_cell": "Cell 6: aggregate occurrence-level structural losses into the full 2,000,000-year annual loss series, explicitly insert zero-event years, and calculate structural AAL, OEP, AEP, and PML diagnostics.",
+  "outputs": {
+    "building_value_and_ratio_table": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_damage_loss_parameters\\seaside_w2_replacement_values_and_structural_ratios.csv",
+      "rows": 470,
+      "sha256": "7668b755563b70ed637e1c53d89cb015c07b651752f774e0ccffcc2db878817f"
+    },
+    "chunk_manifest": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_5_chunk_manifest.csv",
+    "event_structural_ground_up_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_loss\\structural_ground_up_loss_event_summary.csv.gz",
+      "rows": 10630,
+      "sha256": "5095c829ed9860bc659a579e54e960ddefa08f67ef5cea374c043200f6abaf53",
+      "size_bytes": 1179552
+    },
+    "full_structural_ground_up_loss": {
+      "path": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_5_structural_loss\\full_structural_ground_up_loss.csv.gz",
+      "rows": 4996100,
+      "sha256": "32d2cb3b74d31cd5787c0e3d1ba0821785454473cea3ed32d780a4d15980f093",
+      "size_bytes": 638173538
+    },
+    "loss_reconciliation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_5_loss_reconciliation.csv",
+    "replacement_summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_5_replacement_value_summary.csv",
+    "summary": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_5_summary.json",
+    "validation": "c:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_5_damage_loss\\notebook_5_cell_5_validation.csv"
+  },
+  "pipeline_version": "notebook5_cell5_structural_ground_up_loss_v1",
+  "portfolio_valuation": {
+    "buildings": 470,
+    "general_replacement_cost_column": "Structure Replacement Cost ($/ft\u00b2)",
+    "general_replacement_cost_sha256": "a45ff8e93fcae96da82893c1afd5b41d20c27e82a33ffa15400241590b3bec4f",
+    "occupancy_types": [
+      "COM1",
+      "COM4",
+      "COM5",
+      "COM6",
+      "COM7",
+      "IND6"
+    ],
+    "portfolio_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\exposure_portfolio\\seaside_w2_portfolio_gmm_ready.csv",
+    "portfolio_sha256": "686623ec6793546004533f6a188897100208863f2627b63644115c98f291eb71",
+    "res1_replacement_cost_sha256": "7e186d3a8fb2e7b0d017b1c7e5cefa51c67132edddcfbbf2e81edb744e524e17",
+    "total_floor_area_sqft": 2010565.761457,
+    "total_replacement_value_2022_usd": 384236604.6999352
+  },
+  "production": {
+    "analytical_expected_loss_total_2022_usd": 34276094714.657116,
+    "analytical_expected_preliminary_aal_2022_usd": 17138.047357328556,
+    "chunks": 43,
+    "maximum_analytical_expected_loss_ratio": 0.27582556669863934,
+    "maximum_sampled_loss_ratio": 0.294,
+    "occurrences": 10630,
+    "relative_sampled_expected_difference": 0.0007048618071353232,
+    "rows": 4996100,
+    "sampled_loss_total_2022_usd": 34251934804.595,
+    "sampled_preliminary_aal_2022_usd": 17125.96740229751,
+    "source_sampled_loss_totals_2022_usd": {
+      "INTERFACE": 31177838551.145817,
+      "SLAB": 3074096253.449204
+    }
+  },
+  "scope": {
+    "currency": "USD",
+    "dollar_year": 2022,
+    "loss_component": "structural repair only",
+    "not_included": [
+      "drift-sensitive nonstructural repair loss",
+      "acceleration-sensitive nonstructural repair loss",
+      "contents loss",
+      "business interruption",
+      "insurance policy terms",
+      "reinsurance terms"
+    ]
+  },
+  "structural_repair_ratios": {
+    "mapping": {
+      "Complete": "DS_3 / 100",
+      "Extensive": "DS_2 / 100",
+      "Moderate": "DS_1 / 100",
+      "None": 0.0,
+      "Slight": "DS_0 / 100"
+    },
+    "source_path": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\reference\\hazus\\repair_cost_ratios\\HAZUS_Structural_Repair_Cost_Ratios.xlsx",
+    "source_sha256": "9c339e9042984892e8bc9a500efa970075649b4c95d1f408d6805f662f6a85dc"
+  },
+  "warnings": []
+}

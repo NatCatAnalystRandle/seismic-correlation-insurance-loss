@@ -1,0 +1,6 @@
+check,passes,difference_ln
+PGA: changing zHyp while holding zTor fixed has no effect,True,0.0
+PGA: changing zTor changes the slab median,True,0.6279999999999992
+SA1P0: changing zHyp while holding zTor fixed has no effect,True,0.0
+SA1P0: changing zTor changes the slab median,True,0.46200000000000063
+Branch weights sum to one for every depth case,True,
