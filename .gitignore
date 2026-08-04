@@ -32,3 +32,13 @@ data/metadata/nshmp_haz_2_6_5_api/
 data/metadata/nshmp_haz_build_logs/
 data/metadata/*_api.txt
 data/metadata/*_inspection.txt
+
+# Keep generated catastrophe-model outputs local
+# The selected README PNGs are already tracked and will remain tracked
+data/processed/**
+
+# Java build and runtime artifacts
+**/*.class
+tools/**/classes/
+tools/**/*_classes/
+tools/**/*_arguments.txt
