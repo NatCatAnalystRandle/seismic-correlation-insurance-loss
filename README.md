@@ -6,6 +6,12 @@ The current release is the **Phase 1 no-spatial-correlation baseline**. It estab
 
 ---
 
+## Project documentation
+
+- [Read the concise project case study](docs/PROJECT_CASE_STUDY.md)
+- [Read the setup and reproducibility guide](SETUP.md)
+- [Review the repository validation checklist](docs/REPOSITORY_VALIDATION_CHECKLIST.md)
+
 ## Project objective
 
 Earthquake portfolio losses depend on more than the severity of individual buildings. They also depend on:
