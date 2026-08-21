@@ -112,7 +112,7 @@ The baseline loss flow is:
 The accounting identities reconcile:
 
 $$
-\text{Ground-up AAL} = \text{Gross insured AAL} + \text{Uninsured AAL}
+\text{Ground-up AAL} = \text{Gross insured AAL} + \text{Policyholder-retained AAL}
 $$
 
 $$
