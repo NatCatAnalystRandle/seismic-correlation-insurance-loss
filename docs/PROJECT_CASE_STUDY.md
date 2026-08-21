@@ -32,7 +32,7 @@ The project answers the following questions:
 4. What PGA and SA(0.4) values occur at each building site?
 5. What structural and nonstructural damage states result?
 6. How does damage convert into repair cost?
-7. How much loss is insured, uninsured, ceded, and retained?
+7. How much loss is insured, policyholder-retained, ceded, and retained?
 8. What do the AAL, AEP, OEP, and PML distributions look like?
 
 ## End-to-end workflow
@@ -45,7 +45,7 @@ flowchart LR
     D --> E[PGA and SA 0.4 ground-motion fields]
     E --> F[Structural and nonstructural damage]
     F --> G[Ground-up repair loss]
-    G --> H[Gross insured and uninsured loss]
+    G --> H[Gross insured and policyholder-retained loss]
     H --> I[Occurrence XoL ceded and retained loss]
     I --> J[AAL, AEP, OEP, and PML]
 ```
@@ -105,14 +105,14 @@ The baseline loss flow is:
 |---|---:|---:|
 | Ground-up | $195,922 | 100.00% of ground-up |
 | Gross insured | $122,980 | 62.77% of ground-up |
-| Uninsured | $72,943 | 37.23% of ground-up |
+| policyholder-retained | $72,943 | 37.23% of ground-up |
 | Ceded | $63,677 | 51.78% of gross insured |
 | Net retained | $59,303 | 48.22% of gross insured |
 
 The accounting identities reconcile:
 
 $$
-\text{Ground-up AAL} = \text{Gross insured AAL} + \text{Uninsured AAL}
+\text{Ground-up AAL} = \text{Gross insured AAL} + \text{policyholder-retained AAL}
 $$
 
 $$
