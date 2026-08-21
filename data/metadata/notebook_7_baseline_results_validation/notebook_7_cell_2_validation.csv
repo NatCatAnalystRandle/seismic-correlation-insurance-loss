@@ -14,10 +14,10 @@ catalog_counts_logically_ordered,critical,True,multiple_event_years=36; occupied
 headline_counts_positive,critical,True,portfolio_buildings=470; catalog_occurrences=10630; catalog_years=2000000
 headline_monetary_values_nonnegative,critical,True,All headline monetary values are nonnegative.
 loss_flow_matches_headline_metrics,critical,True,maximum_difference_2022_usd=0.000000
-overview_table_written,critical,True,rows=12; path=C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_overview_table.csv
-risk_transfer_table_written,critical,True,rows=5; path=C:\Users\USER\Documents\GitHub\seismic-correlation-insurance-loss\data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_risk_transfer_summary.csv
+overview_table_written,critical,True,rows=12; path=data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_overview_table.csv
+risk_transfer_table_written,critical,True,rows=5; path=data\processed\notebook_7_baseline_results_validation\notebook_7_baseline_risk_transfer_summary.csv
 all_figures_created,critical,True,missing=[]
-all_figures_nontrivial_size,critical,True,"sizes={'baseline_aal_loss_flow.png': 100036, 'baseline_aal_loss_flow.pdf': 16988, 'baseline_portfolio_catalog_overview.png': 166364, 'baseline_portfolio_catalog_overview.pdf': 27272, 'baseline_occurrence_xol_response.png': 175239, 'baseline_occurrence_xol_response.pdf': 15983}"
+all_figures_nontrivial_size,critical,True,"sizes={'baseline_aal_loss_flow.png': 104551, 'baseline_aal_loss_flow.pdf': 17906, 'baseline_portfolio_catalog_overview.png': 166364, 'baseline_portfolio_catalog_overview.pdf': 27272, 'baseline_occurrence_xol_response.png': 175239, 'baseline_occurrence_xol_response.pdf': 15983}"
 figure_manifest_complete,critical,True,rows=6
 xol_response_conserves_gross_loss,critical,True,maximum_difference_2022_usd=0.000000e+00
 xol_ceded_response_bounded_by_limit,critical,True,"ceded_range=(0.000000, 61837983.314918)"

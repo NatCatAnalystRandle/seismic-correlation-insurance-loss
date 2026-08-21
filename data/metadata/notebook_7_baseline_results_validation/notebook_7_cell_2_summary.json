@@ -18,16 +18,16 @@
   "xol_limit_2022_usd": 61837983.31491815,
   "xol_exhaustion_2022_usd": 80649066.85506359,
   "figures_created": [
-    "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_aal_loss_flow.png",
-    "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_aal_loss_flow.pdf",
-    "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_portfolio_catalog_overview.png",
-    "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_portfolio_catalog_overview.pdf",
-    "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_occurrence_xol_response.png",
-    "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_occurrence_xol_response.pdf"
+    "data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_aal_loss_flow.png",
+    "data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_aal_loss_flow.pdf",
+    "data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_portfolio_catalog_overview.png",
+    "data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_portfolio_catalog_overview.pdf",
+    "data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_occurrence_xol_response.png",
+    "data\\processed\\notebook_7_baseline_results_validation\\plots\\baseline_occurrence_xol_response.pdf"
   ],
-  "overview_table": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_overview_table.csv",
-  "risk_transfer_table": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_risk_transfer_summary.csv",
-  "figure_manifest": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_cell_2_figure_manifest.csv",
+  "overview_table": "data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_overview_table.csv",
+  "risk_transfer_table": "data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_risk_transfer_summary.csv",
+  "figure_manifest": "data\\processed\\notebook_7_baseline_results_validation\\notebook_7_cell_2_figure_manifest.csv",
   "critical_validation_checks": 23,
   "critical_failures": [],
   "warnings_requiring_review": []

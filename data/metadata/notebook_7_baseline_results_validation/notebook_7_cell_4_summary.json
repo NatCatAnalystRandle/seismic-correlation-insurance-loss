@@ -25,10 +25,10 @@
   "critical_failures": [],
   "warnings_requiring_review": [],
   "outputs": {
-    "component_contributions": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_ground_up_component_contributions.csv",
-    "source_contributions": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_source_contributions.csv",
-    "source_risk_transfer_shares": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_source_risk_transfer_shares.csv",
-    "figure_manifest": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\processed\\notebook_7_baseline_results_validation\\notebook_7_cell_4_figure_manifest.csv",
-    "validation": "C:\\Users\\USER\\Documents\\GitHub\\seismic-correlation-insurance-loss\\data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_cell_4_validation.csv"
+    "component_contributions": "data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_ground_up_component_contributions.csv",
+    "source_contributions": "data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_source_contributions.csv",
+    "source_risk_transfer_shares": "data\\processed\\notebook_7_baseline_results_validation\\notebook_7_baseline_source_risk_transfer_shares.csv",
+    "figure_manifest": "data\\processed\\notebook_7_baseline_results_validation\\notebook_7_cell_4_figure_manifest.csv",
+    "validation": "data\\metadata\\notebook_7_baseline_results_validation\\notebook_7_cell_4_validation.csv"
   }
 }
