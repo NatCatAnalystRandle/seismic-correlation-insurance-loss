@@ -163,9 +163,9 @@ For every matrix:
 
 If $L$ is the spectral square root and $P$ averages coordinates within each exact duplicate-row group, the projection is
 
-$
+$$
 L \leftarrow P L P.
-$
+$$
 
 For exact duplicate correlation rows, this projection is mathematically neutral. It preserves the target covariance apart from floating-point roundoff, keeps the factor symmetric, and makes every co-located residual numerically identical across supported platforms. The full 470-element frozen latent vectors remain in use, so the paired random-number design is unchanged.
 
