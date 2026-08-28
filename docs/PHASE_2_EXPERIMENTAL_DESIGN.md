@@ -65,7 +65,7 @@ The frozen site file contains:
 - median pair separation of 1.2415 km;
 - maximum pair separation of 6.4244 km.
 
-A zero-separation correlation of one creates 44 structural zero eigenmodes, equal to (470-426). This is expected and is not a numerical defect. Co-located buildings receive the same ground-motion residual but retain their separate structural and nonstructural damage uniforms.
+A zero-separation correlation of one creates 44 structural zero eigenmodes, equal to $470 - 426$. This is expected and is not a numerical defect. Co-located buildings receive the same ground-motion residual but retain their separate structural and nonstructural damage uniforms.
 
 Pre-simulation geometry diagnostics are:
 
@@ -79,40 +79,40 @@ The equal-weight linear effective-site-count diagnostics are 1.26, 1.40, and 1.3
 
 ## 5. Spatial-correlation mathematics
 
-Let (d_{st}) be the great-circle separation in km between sites (s) and (t). Let (ho_T=0.7321409900247263) be the frozen same-site cross-IMT correlation. Let (z_1) and (z_2) be the two independent standard-normal site vectors regenerated from the existing Phase 1 event/site seed.
+Let $d_{st}$ be the great-circle separation in km between sites $s$ and $t$. Let $\rho_T=0.7321409900247263$ be the frozen same-site cross-IMT correlation. Let $z_1$ and $z_2$ be the two independent standard-normal site vectors regenerated from the existing Phase 1 event/site seed.
 
 ### 5.1 Primary Aldea et al. case
 
-For intensity measure (j),
+For intensity measure $j$,
 
-[
-C_j(d)=expleft[-left(rac{d}{eta_j}ight)^{0.59}ight],
-]
+$$
+C_j(d)=\exp\left[-\left(\frac{d}{\beta_j}\right)^{0.59}\right],
+$$
 
 with:
 
-- (eta_{mathrm{PGA}}=14.40) km;
-- (eta_{mathrm{SA}(0.4)}=7.60) km.
+- $\beta_{\mathrm{PGA}}=14.40$ km;
+- $\beta_{\mathrm{SA}(0.4)}=7.60$ km.
 
 Define
 
-[
-V=rac{C_{mathrm{SA}(0.4)}-ho_T^2 C_{mathrm{PGA}}}{1-ho_T^2}.
-]
+$$
+V=\frac{C_{\mathrm{SA}(0.4)}-\rho_T^2 C_{\mathrm{PGA}}}{1-\rho_T^2}.
+$$
 
-For the frozen 470-site layout, (C_{mathrm{PGA}}), (C_{mathrm{SA}(0.4)}), and (V) are positive semidefinite to numerical precision. Their small negative eigenvalues are approximately (10^{-15}), with no eigenvalue below (-10^{-10}).
+For the frozen 470-site layout, $C_{\mathrm{PGA}}$, $C_{\mathrm{SA}(0.4)}$, and $V$ are positive semidefinite to numerical precision. Their small negative eigenvalues are approximately $10^{-15}$, with no eigenvalue below $-10^{-10}$.
 
 Generate
 
-[
-epsilon_{mathrm{PGA}}=C_{mathrm{PGA}}^{1/2}z_1,
-]
+$$
+\epsilon_{\mathrm{PGA}}=C_{\mathrm{PGA}}^{1/2}z_1,
+$$
 
-[
-epsilon_{mathrm{SA}(0.4)}
-=ho_Tepsilon_{mathrm{PGA}}
-+sqrt{1-ho_T^2},V^{1/2}z_2.
-]
+$$
+\epsilon_{\mathrm{SA}(0.4)}
+=\rho_T\epsilon_{\mathrm{PGA}}
++\sqrt{1-\rho_T^2}\,V^{1/2}z_2.
+$$
 
 This construction preserves:
 
@@ -122,29 +122,29 @@ This construction preserves:
 - the frozen same-site cross-IMT correlation;
 - the two frozen raw random vectors used for paired comparison.
 
-It implies a cross-site, cross-IMT covariance of (ho_T C_{mathrm{PGA}}). This assumption must be documented in all model metadata.
+It implies a cross-site, cross-IMT covariance of $\rho_T C_{\mathrm{PGA}}$. This assumption must be documented in all model metadata.
 
 ### 5.2 Goda and Atkinson benchmark
 
 Use
 
-[
-C(d)=maxleft[1.389expleft(-0.207d^{0.386}ight)-1.389+1, 0ight].
-]
+$$
+C(d)=\max\left[1.389\exp\left(-0.207d^{0.386}\right)-1.389+1,\ 0\right].
+$$
 
 Generate
 
-[
-epsilon_{mathrm{PGA}}=C^{1/2}z_1,
-]
+$$
+\epsilon_{\mathrm{PGA}}=C^{1/2}z_1,
+$$
 
-[
-epsilon_{mathrm{SA}(0.4)}
-=ho_Tepsilon_{mathrm{PGA}}
-+sqrt{1-ho_T^2},C^{1/2}z_2.
-]
+$$
+\epsilon_{\mathrm{SA}(0.4)}
+=\rho_T\epsilon_{\mathrm{PGA}}
++\sqrt{1-\rho_T^2}\,C^{1/2}z_2.
+$$
 
-This produces the same spatial kernel for both IMTs and cross-site, cross-IMT covariance (ho_T C).
+This produces the same spatial kernel for both IMTs and cross-site, cross-IMT covariance $\rho_T C$.
 
 ### 5.3 Numerical factorization
 
@@ -154,11 +154,11 @@ For every matrix:
 
 1. enforce numerical symmetry;
 2. compute all eigenvalues and eigenvectors;
-3. reject the case if the minimum eigenvalue is below (-10^{-10});
-4. clip eigenvalues in ([-10^{-10},0)) to zero;
+3. reject the case if the minimum eigenvalue is below $-10^{-10}$;
+4. clip eigenvalues in $[-10^{-10},0)$ to zero;
 5. record the minimum eigenvalue, clipped count, Frobenius correction, rank, and reconstruction error;
 6. verify unit diagonal after reconstruction;
-7. verify equality of residuals at co-located coordinates within (10^{-12}).
+7. verify equality of residuals at co-located coordinates within $10^{-12}$.
 
 The pre-simulation audit found no material negative eigenvalues for either selected model.
 
@@ -166,17 +166,17 @@ The pre-simulation audit found no material negative eigenvalues for either selec
 
 For every event occurrence and site,
 
-[
-ln(IM_{e,s})=mu_{e,s}+	au_{e,s}eta_e+phi_{e,s}epsilon_{e,s}.
-]
+$$
+\ln(IM_{e,s})=\mu_{e,s}+\tau_{e,s}\eta_e+\phi_{e,s}\epsilon_{e,s}.
+$$
 
-Only (epsilon_{e,s}) changes across `I0`, `C1`, and `C2`. The following remain identical:
+Only $\epsilon_{e,s}$ changes across I0, C1, and C2. The following remain identical:
 
 - event occurrence and event time;
 - rupture and source type;
 - median ground motion;
 - between-event residual;
-- (	au) and (phi);
+- $\tau$ and $\phi$;
 - marginal standard-normal distribution of each within-event residual;
 - damage-state uniforms;
 - replacement costs;
@@ -214,12 +214,12 @@ Evaluate both:
 1. a standalone annual aggregate stop-loss on gross insured annual aggregate loss; and
 2. a stacked annual aggregate stop-loss on annual net loss after the occurrence layer.
 
-For annual loss (N_y), attachment (A_{mathrm{agg}}), and limit (L_{mathrm{agg}}),
+For annual loss $N_y$, attachment $A_{\mathrm{agg}}$, and limit $L_{\mathrm{agg}}$,
 
-[
-C_{mathrm{agg},y}
-=minleft[max(N_y-A_{mathrm{agg}},0),L_{mathrm{agg}}ight].
-]
+$$
+C_{\mathrm{agg},y}
+=\min\left[\max(N_y-A_{\mathrm{agg}},0),L_{\mathrm{agg}}\right].
+$$
 
 All program comparisons must state the order in which occurrence and aggregate covers are applied.
 
@@ -236,8 +236,8 @@ All program comparisons must state the order in which occurrence and aggregate c
 | Required occurrence limit | Minimum limit, at a stated attachment, that satisfies a stated retained PML or capital target |
 | Attachment selection | Technical view: maximize capital relief per dollar of expected ceded loss subject to the risk appetite. Economic view: maximize RAROC after a ceded-price assumption is supplied |
 | Expected ceded loss | Mean annual ceded loss, separately for occurrence, aggregate, and stacked structures |
-| Diversification benefit | (1-mathrm{Risk}(mathrm{portfolio})/sum_imathrm{Risk}(i)), reported for AAL, VaR, and TVaR as applicable |
-| Risk-adjusted return | ((mathrm{earned premium}-mathrm{expenses}-mathrm{retained AAL}-mathrm{reinsurance premium})/mathrm{economic capital}) |
+| Diversification benefit | $1-\mathrm{Risk}(\mathrm{portfolio})/\sum_i\mathrm{Risk}(i)$, reported for AAL, VaR, and TVaR as applicable |
+| Risk-adjusted return | $\mathrm{RAROC}=(P-E-\mathrm{AAL}_{\mathrm{ret}}-RP)/EC$, where $P$ is earned premium, $E$ is expenses, $RP$ is reinsurance premium, and $EC$ is economic capital |
 
 Premium, expense, and reinsurance pricing assumptions are not present in Phase 1. Phase 2 must not invent them. Until approved inputs are supplied, report break-even required premium, capital efficiency, and RAROC over a transparent assumption grid.
 
@@ -295,12 +295,12 @@ For each case and IMT:
 - residual mean and standard deviation within documented tolerance;
 - quantile agreement with a standard normal;
 - marginal ground-motion quantiles consistent with Phase 1 sampling uncertainty;
-- unchanged event, rupture, median, (	au), and (phi) fields.
+- unchanged event, rupture, median, $\tau$, and $\phi$ fields.
 
 ### Dependence
 
 - empirical site-pair correlations reproduce target distance-bin correlations;
-- same-site PGA versus SA(0.4 s) correlation reproduces (ho_T);
+- same-site PGA versus SA(0.4 s) correlation reproduces $\rho_T$;
 - co-located residuals agree within tolerance;
 - matrix rank, eigenvalue, and reconstruction diagnostics pass.
 
