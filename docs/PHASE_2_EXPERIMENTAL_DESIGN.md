@@ -155,10 +155,19 @@ For every matrix:
 1. enforce numerical symmetry;
 2. compute all eigenvalues and eigenvectors;
 3. reject the case if the minimum eigenvalue is below $-10^{-10}$;
-4. clip eigenvalues in $[-10^{-10},0)$ to zero;
-5. record the minimum eigenvalue, clipped count, Frobenius correction, rank, and reconstruction error;
-6. verify unit diagonal after reconstruction;
-7. verify equality of residuals at co-located coordinates within $10^{-12}$.
+4. define the numerical-rank threshold as the larger of $10^{-10}$ and the matrix-size-scaled floating-point threshold, then set eigenvalues at or below that threshold to zero;
+5. construct the symmetric positive-semidefinite spectral square root from the retained modes;
+6. detect exact duplicate rows in the symmetrized target correlation matrix and project both axes of the square root onto each duplicate-row subspace;
+7. rebuild the covariance from the projected square root and record the minimum eigenvalue, zero-mode and negative-eigenvalue counts, Frobenius correction, rank, reconstruction error, duplicate-row diagnostics, and square-root symmetry error;
+8. verify the reconstructed unit diagonal and exact equality of simulated residuals at co-located coordinates.
+
+If $L$ is the spectral square root and $P$ averages coordinates within each exact duplicate-row group, the projection is
+
+$
+L \leftarrow P L P.
+$
+
+For exact duplicate correlation rows, this projection is mathematically neutral. It preserves the target covariance apart from floating-point roundoff, keeps the factor symmetric, and makes every co-located residual numerically identical across supported platforms. The full 470-element frozen latent vectors remain in use, so the paired random-number design is unchanged.
 
 The pre-simulation audit found no material negative eigenvalues for either selected model.
 

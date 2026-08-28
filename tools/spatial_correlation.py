@@ -63,6 +63,9 @@ class MatrixDiagnostics:
     correction_frobenius_norm: float
     reconstruction_error_max_abs: float
     reconstructed_diagonal_error_max_abs: float
+    duplicate_row_group_count: int
+    rows_in_duplicate_groups: int
+    square_root_symmetry_error_max_abs: float
 
     def to_dict(self) -> dict[str, int | float | str]:
         """Return JSON-serializable diagnostics."""
@@ -260,6 +263,39 @@ def spectral_square_root(
         eigenvectors * np.sqrt(clipped)[None, :]
     ) @ eigenvectors.T
     corrected = (eigenvectors * clipped[None, :]) @ eigenvectors.T
+
+    # A stationary kernel assigns identical correlation rows to co-located
+    # sites. Floating-point eigensolvers may nevertheless leave differences of
+    # a few parts in 1e12 between their square-root rows. Projecting both axes
+    # onto each exact duplicate-row subspace restores the mathematical
+    # constraint while retaining a symmetric square root and the frozen
+    # 470-element latent vectors.
+    _, duplicate_inverse, duplicate_counts = np.unique(
+        symmetric,
+        axis=0,
+        return_inverse=True,
+        return_counts=True,
+    )
+    duplicate_groups = [
+        np.flatnonzero(duplicate_inverse == group_index)
+        for group_index in np.flatnonzero(duplicate_counts > 1)
+    ]
+    for members in duplicate_groups:
+        square_root[members, :] = np.mean(
+            square_root[members, :], axis=0, keepdims=True
+        )
+        corrected[members, :] = np.mean(
+            corrected[members, :], axis=0, keepdims=True
+        )
+    for members in duplicate_groups:
+        square_root[:, members] = np.mean(
+            square_root[:, members], axis=1, keepdims=True
+        )
+        corrected[:, members] = np.mean(
+            corrected[:, members], axis=1, keepdims=True
+        )
+    square_root = 0.5 * (square_root + square_root.T)
+    corrected = 0.5 * (corrected + corrected.T)
     reconstructed = square_root @ square_root.T
     maximum_eigenvalue = float(clipped[-1])
     numerical_rank = int(np.count_nonzero(clipped > rank_threshold))
@@ -283,6 +319,13 @@ def spectral_square_root(
         reconstruction_error_max_abs=float(np.max(np.abs(reconstructed - corrected))),
         reconstructed_diagonal_error_max_abs=float(
             np.max(np.abs(np.diag(reconstructed) - 1.0))
+        ),
+        duplicate_row_group_count=int(len(duplicate_groups)),
+        rows_in_duplicate_groups=int(
+            sum(len(members) for members in duplicate_groups)
+        ),
+        square_root_symmetry_error_max_abs=float(
+            np.max(np.abs(square_root - square_root.T))
         ),
     )
     return square_root, diagnostics

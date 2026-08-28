@@ -127,9 +127,24 @@ class SpatialCorrelationTest(unittest.TestCase):
     def test_expected_matrix_ranks(self) -> None:
         independent_ranks = [item.numerical_rank for item in self.cases[CASE_I0].diagnostics]
         self.assertEqual(independent_ranks, [470, 470, 470])
+        independent_duplicate_groups = [
+            item.duplicate_row_group_count
+            for item in self.cases[CASE_I0].diagnostics
+        ]
+        self.assertEqual(independent_duplicate_groups, [0, 0, 0])
         for name in (CASE_C1, CASE_C2):
             ranks = [item.numerical_rank for item in self.cases[name].diagnostics]
             self.assertEqual(ranks, [426, 426, 426])
+            duplicate_groups = [
+                item.duplicate_row_group_count
+                for item in self.cases[name].diagnostics
+            ]
+            rows_in_duplicate_groups = [
+                item.rows_in_duplicate_groups
+                for item in self.cases[name].diagnostics
+            ]
+            self.assertEqual(duplicate_groups, [25, 25, 25])
+            self.assertEqual(rows_in_duplicate_groups, [69, 69, 69])
 
     def test_aldea_conditional_construction_recovers_sa_covariance(self) -> None:
         case = self.cases[CASE_C1]
@@ -184,12 +199,8 @@ class SpatialCorrelationTest(unittest.TestCase):
             pga, sa = transform_site_latents(self.cases[name], z1, z2)
             for group in np.flatnonzero(counts > 1):
                 members = np.flatnonzero(inverse == group)
-                np.testing.assert_allclose(
-                    pga[members], pga[members[0]], atol=2.0e-12, rtol=0.0
-                )
-                np.testing.assert_allclose(
-                    sa[members], sa[members[0]], atol=2.0e-12, rtol=0.0
-                )
+                np.testing.assert_array_equal(pga[members], pga[members[0]])
+                np.testing.assert_array_equal(sa[members], sa[members[0]])
 
     def test_input_validation(self) -> None:
         with self.assertRaises(ValueError):
