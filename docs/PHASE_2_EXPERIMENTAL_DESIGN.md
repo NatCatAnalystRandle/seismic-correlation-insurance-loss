@@ -296,6 +296,8 @@ A production run is accepted only if all gates pass.
 - exact site order hash;
 - exact random-stream specifications;
 - deterministic rerun hashes for every new artifact.
+- repository-relative POSIX paths in all public metadata and handoff files;
+- exclusion of run-time timestamps from hash-tracked artifacts.
 
 ### Marginals
 
