@@ -1,0 +1,11 @@
+check_id,severity,passed,detail
+geometry_site_count,critical,True,Sites: 470
+geometry_unique_coordinate_count,critical,True,Unique coordinates: 426
+all_matrices_positive_semidefinite,critical,True,Minimum eigenvalue across all matrices: -1.427246e-15
+all_factor_reconstructions_accurate,critical,True,Maximum reconstruction error: 1.221245e-15
+correlated_case_zero_modes_match_duplicate_coordinates,critical,True,All C1 and C2 matrices must have 44 structural zero modes.
+independent_case_identity_matrices,critical,True,I0 matrices and factors reproduce exact identity transforms.
+aldea_joint_construction_recovers_sa0p4_covariance,critical,True,Maximum covariance identity error: 0.000000e+00
+goda_common_kernel_preserved,critical,True,Maximum common-kernel error: 1.110223e-16
+colocated_residuals_identical,critical,True,Maximum co-located residual difference: 0.000000e+00
+independent_case_phase1_transform_exact,critical,True,I0 reproduces the Phase 1 normalized latent transform exactly.

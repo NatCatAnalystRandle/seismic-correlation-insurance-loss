@@ -1,0 +1,13 @@
+{
+  "critical_checks": 7,
+  "critical_failures": 0,
+  "notebook4_handoff": "data/metadata/notebook_4_final_handoff/notebook_5_input_handoff.json",
+  "notebook4_handoff_sha256": "4279d11616dd3b9307a71d732946b5e5ec0d3cc4dc5b3461653fee49ba6f0b6b",
+  "phase1_random_specification": "data/metadata/notebook_4_cell_19_random_stream_specification.json",
+  "phase1_random_specification_sha256": "909a0e03f48c01ea546d7ca396d6332696637331e3c96e224ce9dbfbe3b752c6",
+  "pipeline_version": "notebook8_spatial_correlation_model_validation_v2",
+  "project_root": ".",
+  "site_count": 470,
+  "site_order_canonical_crlf_sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100",
+  "site_order_raw_sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100"
+}

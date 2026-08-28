@@ -1,0 +1,266 @@
+{
+  "cases": {
+    "C1_ALDEA22_SUBDUCTION": {
+      "case_name": "C1_ALDEA22_SUBDUCTION",
+      "cross_imt_rho": 0.7321409900247263,
+      "diagnostics": [
+        {
+          "clipped_negative_eigenvalue_count": 24,
+          "clipped_numerical_zero_eigenvalue_count": 44,
+          "correction_frobenius_norm": 4.980665484481013e-12,
+          "duplicate_row_group_count": 25,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "C1_ALDEA22_SUBDUCTION.pga_correlation",
+          "maximum_eigenvalue": 372.5831645397682,
+          "minimum_eigenvalue": -1.3588426319200347e-15,
+          "numerical_rank": 426,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 2.1671553440683056e-13,
+          "reconstruction_error_max_abs": 8.881784197001252e-16,
+          "rows_in_duplicate_groups": 69,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 44
+        },
+        {
+          "clipped_negative_eigenvalue_count": 24,
+          "clipped_numerical_zero_eigenvalue_count": 44,
+          "correction_frobenius_norm": 4.404545459476948e-12,
+          "duplicate_row_group_count": 25,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "C1_ALDEA22_SUBDUCTION.sa0p4_correlation",
+          "maximum_eigenvalue": 336.53266913612975,
+          "minimum_eigenvalue": -1.2491778594267116e-15,
+          "numerical_rank": 426,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 1.0624834345662748e-13,
+          "reconstruction_error_max_abs": 1.2212453270876722e-15,
+          "rows_in_duplicate_groups": 69,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 44
+        },
+        {
+          "clipped_negative_eigenvalue_count": 26,
+          "clipped_numerical_zero_eigenvalue_count": 44,
+          "correction_frobenius_norm": 2.8889509788131183e-12,
+          "duplicate_row_group_count": 25,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "C1_ALDEA22_SUBDUCTION.conditional_correlation",
+          "maximum_eigenvalue": 295.3771348094746,
+          "minimum_eigenvalue": -1.4272461740419213e-15,
+          "numerical_rank": 426,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 6.17284001691587e-14,
+          "reconstruction_error_max_abs": 1.2212453270876722e-15,
+          "rows_in_duplicate_groups": 69,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 44
+        }
+      ],
+      "site_count": 470
+    },
+    "C2_GODA_ATKINSON09": {
+      "case_name": "C2_GODA_ATKINSON09",
+      "cross_imt_rho": 0.7321409900247263,
+      "diagnostics": [
+        {
+          "clipped_negative_eigenvalue_count": 23,
+          "clipped_numerical_zero_eigenvalue_count": 44,
+          "correction_frobenius_norm": 4.8718920984183945e-12,
+          "duplicate_row_group_count": 25,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "C2_GODA_ATKINSON09.pga_correlation",
+          "maximum_eigenvalue": 341.58766365649376,
+          "minimum_eigenvalue": -1.1838371085988732e-15,
+          "numerical_rank": 426,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 1.2922996006636822e-13,
+          "reconstruction_error_max_abs": 1.1102230246251565e-15,
+          "rows_in_duplicate_groups": 69,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 44
+        },
+        {
+          "clipped_negative_eigenvalue_count": 23,
+          "clipped_numerical_zero_eigenvalue_count": 44,
+          "correction_frobenius_norm": 4.8718920984183945e-12,
+          "duplicate_row_group_count": 25,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "C2_GODA_ATKINSON09.sa0p4_correlation",
+          "maximum_eigenvalue": 341.58766365649376,
+          "minimum_eigenvalue": -1.1838371085988732e-15,
+          "numerical_rank": 426,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 1.2922996006636822e-13,
+          "reconstruction_error_max_abs": 1.1102230246251565e-15,
+          "rows_in_duplicate_groups": 69,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 44
+        },
+        {
+          "clipped_negative_eigenvalue_count": 22,
+          "clipped_numerical_zero_eigenvalue_count": 44,
+          "correction_frobenius_norm": 4.639853426166383e-12,
+          "duplicate_row_group_count": 25,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "C2_GODA_ATKINSON09.conditional_correlation",
+          "maximum_eigenvalue": 341.58766365649376,
+          "minimum_eigenvalue": -1.2500244524581164e-15,
+          "numerical_rank": 426,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 1.290079154614432e-13,
+          "reconstruction_error_max_abs": 1.1102230246251565e-15,
+          "rows_in_duplicate_groups": 69,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 44
+        }
+      ],
+      "site_count": 470
+    },
+    "I0_PHASE1_INDEPENDENT": {
+      "case_name": "I0_PHASE1_INDEPENDENT",
+      "cross_imt_rho": 0.7321409900247263,
+      "diagnostics": [
+        {
+          "clipped_negative_eigenvalue_count": 0,
+          "clipped_numerical_zero_eigenvalue_count": 0,
+          "correction_frobenius_norm": 0.0,
+          "duplicate_row_group_count": 0,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "I0_PHASE1_INDEPENDENT.pga_correlation",
+          "maximum_eigenvalue": 1.0,
+          "minimum_eigenvalue": 1.0,
+          "numerical_rank": 470,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 0.0,
+          "reconstruction_error_max_abs": 0.0,
+          "rows_in_duplicate_groups": 0,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 0
+        },
+        {
+          "clipped_negative_eigenvalue_count": 0,
+          "clipped_numerical_zero_eigenvalue_count": 0,
+          "correction_frobenius_norm": 0.0,
+          "duplicate_row_group_count": 0,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "I0_PHASE1_INDEPENDENT.sa0p4_correlation",
+          "maximum_eigenvalue": 1.0,
+          "minimum_eigenvalue": 1.0,
+          "numerical_rank": 470,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 0.0,
+          "reconstruction_error_max_abs": 0.0,
+          "rows_in_duplicate_groups": 0,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 0
+        },
+        {
+          "clipped_negative_eigenvalue_count": 0,
+          "clipped_numerical_zero_eigenvalue_count": 0,
+          "correction_frobenius_norm": 0.0,
+          "duplicate_row_group_count": 0,
+          "input_diagonal_error_max_abs": 0.0,
+          "material_negative_eigenvalue_count": 0,
+          "matrix_name": "I0_PHASE1_INDEPENDENT.conditional_correlation",
+          "maximum_eigenvalue": 1.0,
+          "minimum_eigenvalue": 1.0,
+          "numerical_rank": 470,
+          "rank_threshold": 1e-10,
+          "reconstructed_diagonal_error_max_abs": 0.0,
+          "reconstruction_error_max_abs": 0.0,
+          "rows_in_duplicate_groups": 0,
+          "size": 470,
+          "square_root_symmetry_error_max_abs": 0.0,
+          "symmetry_error_max_abs": 0.0,
+          "zero_mode_count": 0
+        }
+      ],
+      "site_count": 470
+    }
+  },
+  "factorization": {
+    "factor_path": "data/processed/phase_2/notebook_8_spatial_correlation/spatial_correlation_factors.npz",
+    "factor_sha256": "f052cae24c6c89660ffa540cfe6a9d08dca0c944c46dd7c88056a669b2370aee",
+    "material_negative_eigenvalue_threshold": -1e-10,
+    "method": "unique symmetric positive-semidefinite spectral square root with exact duplicate-row subspace projection",
+    "numerical_rank_threshold": 1e-10
+  },
+  "frozen_phase1_controls": {
+    "cross_imt_rho": 0.7321409900247263,
+    "latent_transform": {
+      "pga": "z1",
+      "sa0p4": "rho*z1 + sqrt(1-rho^2)*z2"
+    },
+    "random_generator": "numpy.random.PCG64DXSM",
+    "site_order_canonical_crlf_sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100"
+  },
+  "geometry": {
+    "duplicate_coordinate_group_count": 25,
+    "largest_duplicate_coordinate_group": 17,
+    "maximum_pair_distance_km": 6.424394048363715,
+    "median_pair_distance_km": 1.241546911367865,
+    "minimum_pair_distance_km": 0.0,
+    "pair_count": 110215,
+    "pair_distance_quantiles_km": {
+      "p00": 0.0,
+      "p01": 0.06095255326959543,
+      "p05": 0.20735425231609572,
+      "p100": 6.424394048363715,
+      "p25": 0.7116192117027506,
+      "p50": 1.241546911367865,
+      "p75": 1.9186814979007802,
+      "p95": 3.1777828204328515,
+      "p99": 4.071959165068846
+    },
+    "site_count": 470,
+    "sites_in_duplicate_coordinate_groups": 69,
+    "unique_coordinate_count": 426
+  },
+  "parameters": {
+    "aldea_alpha": 0.59,
+    "aldea_pga_beta_km": 14.4,
+    "aldea_sa0p4_beta_km": 7.6,
+    "goda_alpha": 0.207,
+    "goda_beta": 0.386,
+    "goda_gamma": 1.389
+  },
+  "pipeline_version": "notebook8_spatial_correlation_model_validation_v2",
+  "references": [
+    {
+      "citation": "Aldea, Heresi, and Pasten (2022)",
+      "doi": "10.1002/eqe.3674"
+    },
+    {
+      "citation": "Goda and Atkinson (2009)",
+      "doi": "10.1785/0120090007"
+    },
+    {
+      "citation": "Baker and Jayaram (2008)",
+      "doi": "10.1193/1.2857544"
+    }
+  ]
+}
