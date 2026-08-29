@@ -1,0 +1,10 @@
+check_id,severity,passed,detail
+partition_validations_passed,critical,True,Checks: 144.
+final_row_count,critical,True,"Observed: 4,996,100; expected: 4,996,100."
+final_occurrence_count,critical,True,"Observed: 10,630; expected: 10,630."
+output_schema,critical,True,Columns: 38.
+residual_means,critical,True,Maximum absolute mean: 0.001036.
+residual_standard_deviations,critical,True,Range: 0.999963 to 1.003710.
+same_site_cross_imt_correlation,critical,True,Maximum error: 0.002069.
+selected_pair_correlations,critical,True,Maximum error: 0.019973.
+metadata_paths_portable,critical,True,All public paths are repository-relative.

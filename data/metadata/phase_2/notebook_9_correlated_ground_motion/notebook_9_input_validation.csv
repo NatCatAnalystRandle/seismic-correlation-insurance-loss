@@ -1,0 +1,21 @@
+check_id,severity,passed,detail
+phase1_handoff_complete,critical,True,Notebook 04 handoff is complete.
+phase1_catalog_hash_frozen,critical,True,e4725a57eab466348aa263d79b8f8bcc923f9542fb5507af279fece41c121f37
+phase1_occurrence_count_frozen,critical,True,"Occurrences: 10,630."
+phase1_field_rows_frozen,critical,True,"Rows: 4,996,100."
+phase1_field_hash_contract,critical,True,5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b
+phase1_baseline_file_exists,critical,True,data/processed/notebook_4_full_baseline_fields/full_baseline_ground_motion_fields.csv.gz
+phase1_random_seed_frozen,critical,True,Seed: 20260731.
+phase1_generator_frozen,critical,True,numpy.random.PCG64DXSM
+phase1_site_seed_contract,critical,True,base_random_seed | cell19 | occurrence_id | rupture_id | site
+cross_imt_rho_frozen,critical,True,rho: 0.7321409900247263.
+site_order_rows,critical,True,Sites: 470.
+site_order_hash_frozen,critical,True,fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100
+notebook8_complete,critical,True,notebook8_spatial_correlation_handoff_v2
+notebook8_cases_complete,critical,True,"['I0_PHASE1_INDEPENDENT', 'C1_ALDEA22_SUBDUCTION', 'C2_GODA_ATKINSON09']"
+notebook8_factor_exists,critical,True,data/processed/phase_2/notebook_8_spatial_correlation/spatial_correlation_factors.npz
+notebook8_factor_hash,critical,True,f052cae24c6c89660ffa540cfe6a9d08dca0c944c46dd7c88056a669b2370aee
+phase1_partition_count,critical,True,Partitions: 16.
+phase1_partition_occurrences,critical,True,"Occurrences: 10,630."
+phase1_partition_rows,critical,True,"Rows: 4,996,100."
+phase1_final_file_hash,critical,True,5d202929c997c262abfd068e47ba7c7fdba91873af8135d28dfec35b78193e5b

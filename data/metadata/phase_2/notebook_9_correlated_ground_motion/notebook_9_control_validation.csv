@@ -1,0 +1,9 @@
+check_id,severity,passed,detail
+control_rows,critical,True,Rows: 470.
+control_i0_epsilon_pga,critical,True,Error: 4.440892e-16.
+control_i0_epsilon_sa0p4,critical,True,Error: 4.440892e-16.
+control_i0_pga_ln,critical,True,Error: 4.440892e-16.
+control_i0_sa0p4_ln,critical,True,Error: 4.440892e-16.
+control_outputs_finite,critical,True,Nonfinite values: 0.
+control_c1_differs_from_i0,critical,True,C1 changes within-event dependence.
+control_c2_differs_from_i0,critical,True,C2 changes within-event dependence.

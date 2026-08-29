@@ -1,0 +1,145 @@
+chunk_id,check_id,severity,passed,detail
+0000,row_count,critical,True,"Observed: 2,543,640; expected: 2,543,640."
+0000,occurrence_count,critical,True,"Observed: 5,412; expected: 5,412."
+0000,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0000,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0000,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0000,i0_sa0p4_ln,critical,True,Error: 3.552714e-15.
+0000,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0000,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0000,outputs_finite,critical,True,Nonfinite values: 0.
+0001,row_count,critical,True,"Observed: 315,370; expected: 315,370."
+0001,occurrence_count,critical,True,Observed: 671; expected: 671.
+0001,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0001,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0001,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0001,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0001,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0001,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0001,outputs_finite,critical,True,Nonfinite values: 0.
+0002,row_count,critical,True,"Observed: 195,520; expected: 195,520."
+0002,occurrence_count,critical,True,Observed: 416; expected: 416.
+0002,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0002,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0002,i0_pga_ln,critical,True,Error: 2.664535e-15.
+0002,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0002,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0002,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0002,outputs_finite,critical,True,Nonfinite values: 0.
+0003,row_count,critical,True,"Observed: 190,350; expected: 190,350."
+0003,occurrence_count,critical,True,Observed: 405; expected: 405.
+0003,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0003,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0003,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0003,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0003,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0003,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0003,outputs_finite,critical,True,Nonfinite values: 0.
+0004,row_count,critical,True,"Observed: 174,840; expected: 174,840."
+0004,occurrence_count,critical,True,Observed: 372; expected: 372.
+0004,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0004,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0004,i0_pga_ln,critical,True,Error: 2.664535e-15.
+0004,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0004,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0004,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0004,outputs_finite,critical,True,Nonfinite values: 0.
+0005,row_count,critical,True,"Observed: 181,890; expected: 181,890."
+0005,occurrence_count,critical,True,Observed: 387; expected: 387.
+0005,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0005,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0005,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0005,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0005,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0005,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0005,outputs_finite,critical,True,Nonfinite values: 0.
+0006,row_count,critical,True,"Observed: 171,550; expected: 171,550."
+0006,occurrence_count,critical,True,Observed: 365; expected: 365.
+0006,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0006,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0006,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0006,i0_sa0p4_ln,critical,True,Error: 3.552714e-15.
+0006,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0006,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0006,outputs_finite,critical,True,Nonfinite values: 0.
+0007,row_count,critical,True,"Observed: 156,980; expected: 156,980."
+0007,occurrence_count,critical,True,Observed: 334; expected: 334.
+0007,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0007,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0007,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0007,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0007,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0007,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0007,outputs_finite,critical,True,Nonfinite values: 0.
+0008,row_count,critical,True,"Observed: 152,280; expected: 152,280."
+0008,occurrence_count,critical,True,Observed: 324; expected: 324.
+0008,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0008,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0008,i0_pga_ln,critical,True,Error: 2.664535e-15.
+0008,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0008,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0008,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0008,outputs_finite,critical,True,Nonfinite values: 0.
+0009,row_count,critical,True,"Observed: 150,870; expected: 150,870."
+0009,occurrence_count,critical,True,Observed: 321; expected: 321.
+0009,i0_epsilon_pga,critical,True,Error: 4.440892e-16.
+0009,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0009,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0009,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0009,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0009,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0009,outputs_finite,critical,True,Nonfinite values: 0.
+0010,row_count,critical,True,"Observed: 146,640; expected: 146,640."
+0010,occurrence_count,critical,True,Observed: 312; expected: 312.
+0010,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0010,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0010,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0010,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0010,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0010,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0010,outputs_finite,critical,True,Nonfinite values: 0.
+0011,row_count,critical,True,"Observed: 140,530; expected: 140,530."
+0011,occurrence_count,critical,True,Observed: 299; expected: 299.
+0011,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0011,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0011,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0011,i0_sa0p4_ln,critical,True,Error: 3.552714e-15.
+0011,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0011,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0011,outputs_finite,critical,True,Nonfinite values: 0.
+0012,row_count,critical,True,"Observed: 138,180; expected: 138,180."
+0012,occurrence_count,critical,True,Observed: 294; expected: 294.
+0012,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0012,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0012,i0_pga_ln,critical,True,Error: 2.664535e-15.
+0012,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0012,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0012,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0012,outputs_finite,critical,True,Nonfinite values: 0.
+0013,row_count,critical,True,"Observed: 128,310; expected: 128,310."
+0013,occurrence_count,critical,True,Observed: 273; expected: 273.
+0013,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0013,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0013,i0_pga_ln,critical,True,Error: 3.552714e-15.
+0013,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0013,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0013,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0013,outputs_finite,critical,True,Nonfinite values: 0.
+0014,row_count,critical,True,"Observed: 124,550; expected: 124,550."
+0014,occurrence_count,critical,True,Observed: 265; expected: 265.
+0014,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0014,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0014,i0_pga_ln,critical,True,Error: 2.664535e-15.
+0014,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0014,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0014,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0014,outputs_finite,critical,True,Nonfinite values: 0.
+0015,row_count,critical,True,"Observed: 84,600; expected: 84,600."
+0015,occurrence_count,critical,True,Observed: 180; expected: 180.
+0015,i0_epsilon_pga,critical,True,Error: 8.881784e-16.
+0015,i0_epsilon_sa0p4,critical,True,Error: 8.881784e-16.
+0015,i0_pga_ln,critical,True,Error: 2.664535e-15.
+0015,i0_sa0p4_ln,critical,True,Error: 2.664535e-15.
+0015,eta_pga_repeated,critical,True,Error: 0.000000e+00.
+0015,eta_sa0p4_repeated,critical,True,Error: 0.000000e+00.
+0015,outputs_finite,critical,True,Nonfinite values: 0.
