@@ -55,14 +55,24 @@ class Notebook11ReproducibilityTest(unittest.TestCase):
             "EXHAUSTION_RETURN_PERIODS = [1_000, 2_500, 5_000, 10_000]",
             "STANDALONE_ANNUAL_AGGREGATE",
             "STACKED_AFTER_FROZEN_OCCURRENCE",
-            'aggregate_layer["retained_loss_2022_usd"]',
-            "total_ceded = gross_aep - final_retained",
-            "stacked_total_ceded = gross_aep - stacked_final_retained",
+            "reconcile_annual_waterfall",
+            "stacked_total_ceded_unreconciled",
+            "total_ceded_unreconciled = prior_ceded + aggregate_ceded",
             "notebook_11_occurrence_design_grid.csv",
             "notebook_11_aggregate_design_grid.csv",
         ]
         for value in required:
             self.assertIn(value, self.full_source)
+        self.assertGreaterEqual(
+            self.full_source.count("reconcile_annual_waterfall("), 5
+        )
+        self.assertNotIn(
+            "stacked_total_ceded = gross_aep - stacked_final_retained",
+            self.full_source,
+        )
+        self.assertNotIn(
+            "total_ceded = gross_aep - final_retained", self.full_source
+        )
 
     def test_tail_risk_and_sparse_var_boundary_are_explicit(self) -> None:
         required = [

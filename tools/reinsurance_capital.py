@@ -165,6 +165,48 @@ def apply_aggregate_stop_loss(
     )
 
 
+def reconcile_annual_waterfall(
+    gross_aep: ArrayLike,
+    ceded_aep: ArrayLike,
+    retained_aep: ArrayLike,
+    *,
+    tolerance: float = 1.0e-6,
+) -> dict[str, FloatArray]:
+    """Canonicalize numerical boundary noise in an annual loss waterfall.
+
+    The supplied gross, ceded, and retained arrays must already reconcile and
+    respect the accounting bounds within ``tolerance``.  Ceded loss is then
+    projected onto ``[0, gross]`` and retained loss is recalculated as its
+    exact complement.  Material negative losses, over-cession, or
+    reconciliation errors are rejected rather than clipped.
+    """
+
+    gross = _float_array(gross_aep, name="gross_aep")
+    ceded = _float_array(ceded_aep, name="ceded_aep")
+    retained = _float_array(retained_aep, name="retained_aep")
+    if not (len(gross) == len(ceded) == len(retained)) or len(gross) == 0:
+        raise ValueError("Annual waterfall arrays must have equal positive length.")
+
+    tolerance = float(tolerance)
+    if not np.isfinite(tolerance) or tolerance < 0.0:
+        raise ValueError("tolerance must be finite and nonnegative.")
+    if np.any(gross < 0.0):
+        raise ValueError("Gross annual loss must be nonnegative.")
+    if np.any(ceded < -tolerance) or np.any(retained < -tolerance):
+        raise ValueError("Annual waterfall contains a material negative loss.")
+    if np.any(ceded - gross > tolerance) or np.any(retained - gross > tolerance):
+        raise ValueError("Annual waterfall exceeds gross loss beyond tolerance.")
+    if np.max(np.abs(gross - ceded - retained), initial=0.0) > tolerance:
+        raise ValueError("Annual waterfall does not reconcile within tolerance.")
+
+    reconciled_ceded = np.minimum(np.maximum(ceded, 0.0), gross)
+    reconciled_retained = gross - reconciled_ceded
+    return {
+        "ceded_aep_2022_usd": reconciled_ceded,
+        "retained_aep_2022_usd": reconciled_retained,
+    }
+
+
 def annualize_occurrence_program(
     catalog_year: ArrayLike,
     gross_occurrence_loss: ArrayLike,

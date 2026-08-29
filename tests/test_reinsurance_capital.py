@@ -17,6 +17,7 @@ from tools.reinsurance_capital import (
     empirical_var_tvar,
     minimum_occurrence_limit_for_target,
     paired_bootstrap_differences,
+    reconcile_annual_waterfall,
     sparse_var_tvar,
 )
 
@@ -80,6 +81,34 @@ class ReinsuranceCapitalTest(unittest.TestCase):
             exact["retained_loss_2022_usd"],
             tolerant["retained_loss_2022_usd"],
         )
+
+    def test_annual_waterfall_reconciles_only_boundary_level_noise(self) -> None:
+        epsilon = 1.0e-8
+        reconciled = reconcile_annual_waterfall(
+            gross_aep=[100.0, 100.0, 100.0],
+            ceded_aep=[100.0 + epsilon, -epsilon, 40.0],
+            retained_aep=[-epsilon, 100.0 + epsilon, 60.0 + epsilon],
+            tolerance=1.0e-6,
+        )
+        np.testing.assert_array_equal(
+            reconciled["ceded_aep_2022_usd"], [100.0, 0.0, 40.0]
+        )
+        np.testing.assert_array_equal(
+            reconciled["retained_aep_2022_usd"], [0.0, 100.0, 60.0]
+        )
+        np.testing.assert_array_equal(
+            reconciled["ceded_aep_2022_usd"]
+            + reconciled["retained_aep_2022_usd"],
+            [100.0, 100.0, 100.0],
+        )
+
+        with self.assertRaises(ValueError):
+            reconcile_annual_waterfall(
+                gross_aep=[100.0],
+                ceded_aep=[100.01],
+                retained_aep=[-0.01],
+                tolerance=1.0e-6,
+            )
 
     def test_invalid_layer_terms_are_rejected(self) -> None:
         with self.assertRaises(ValueError):
