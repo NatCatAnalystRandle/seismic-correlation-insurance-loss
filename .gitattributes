@@ -1,6 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Keep hashed Phase 2 metadata byte-stable across platforms
-data/metadata/phase_2/**/*.csv text eol=lf
-data/metadata/phase_2/**/*.json text eol=lf
+# Keep hashed metadata byte-stable across platforms
+data/metadata/**/*.csv text eol=lf
+data/metadata/**/*.json text eol=lf

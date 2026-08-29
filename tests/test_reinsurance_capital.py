@@ -60,6 +60,27 @@ class ReinsuranceCapitalTest(unittest.TestCase):
             result["retained_loss_2022_usd"], [80.0, 140.0, 400.0]
         )
 
+    def test_exhaustion_classification_accepts_explicit_numeric_tolerance(self) -> None:
+        boundary = 300.0 - 1.0e-8
+        exact = apply_occurrence_xol(
+            [boundary], attachment=100.0, limit=200.0
+        )
+        tolerant = apply_occurrence_xol(
+            [boundary],
+            attachment=100.0,
+            limit=200.0,
+            classification_tolerance=2.0e-6,
+        )
+        self.assertFalse(bool(exact["exhausted"][0]))
+        self.assertTrue(bool(tolerant["exhausted"][0]))
+        np.testing.assert_array_equal(
+            exact["ceded_loss_2022_usd"], tolerant["ceded_loss_2022_usd"]
+        )
+        np.testing.assert_array_equal(
+            exact["retained_loss_2022_usd"],
+            tolerant["retained_loss_2022_usd"],
+        )
+
     def test_invalid_layer_terms_are_rejected(self) -> None:
         with self.assertRaises(ValueError):
             apply_occurrence_xol([1.0], -1.0, 2.0)
@@ -69,6 +90,10 @@ class ReinsuranceCapitalTest(unittest.TestCase):
             apply_occurrence_xol([1.0], 0.0, 2.0, 1.1)
         with self.assertRaises(ValueError):
             apply_occurrence_xol([-1.0], 0.0, 2.0)
+        with self.assertRaises(ValueError):
+            apply_occurrence_xol(
+                [1.0], 0.0, 2.0, classification_tolerance=-1.0
+            )
 
     def test_occurrence_program_annualization_preserves_multiple_events(self) -> None:
         annual = annualize_occurrence_program(

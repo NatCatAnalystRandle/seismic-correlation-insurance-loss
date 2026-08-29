@@ -103,6 +103,8 @@ def apply_occurrence_xol(
     attachment: float,
     limit: float,
     participation: float = 1.0,
+    *,
+    classification_tolerance: float = 0.0,
 ) -> dict[str, FloatArray | NDArray[np.bool_]]:
     """Apply an occurrence excess-of-loss layer elementwise.
 
@@ -115,6 +117,14 @@ def apply_occurrence_xol(
     attachment, limit, participation = _validate_layer_terms(
         attachment, limit, participation
     )
+    classification_tolerance = float(classification_tolerance)
+    if (
+        not np.isfinite(classification_tolerance)
+        or classification_tolerance < 0.0
+    ):
+        raise ValueError(
+            "classification_tolerance must be finite and nonnegative."
+        )
     if np.any(subject < 0.0):
         raise ValueError("Subject losses must be nonnegative.")
 
@@ -124,7 +134,9 @@ def apply_occurrence_xol(
     ceded = participation * layer_before_participation
     retained = subject - ceded
     triggered = subject > attachment
-    exhausted = (limit > 0.0) & (subject >= attachment + limit)
+    exhausted = (limit > 0.0) & (
+        subject >= attachment + limit - classification_tolerance
+    )
     return {
         "layer_loss_before_participation_2022_usd": layer_before_participation,
         "ceded_loss_2022_usd": ceded,
@@ -139,6 +151,8 @@ def apply_aggregate_stop_loss(
     attachment: float,
     limit: float,
     participation: float = 1.0,
+    *,
+    classification_tolerance: float = 0.0,
 ) -> dict[str, FloatArray | NDArray[np.bool_]]:
     """Apply an annual aggregate stop-loss to one loss value per year."""
 
@@ -147,6 +161,7 @@ def apply_aggregate_stop_loss(
         attachment,
         limit,
         participation,
+        classification_tolerance=classification_tolerance,
     )
 
 

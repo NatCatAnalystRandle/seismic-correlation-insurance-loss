@@ -78,6 +78,7 @@ class Notebook11ReproducibilityTest(unittest.TestCase):
     def test_capital_limit_and_diversification_contracts_are_explicit(self) -> None:
         required = [
             "minimum_occurrence_limit_for_target",
+            "classification_tolerance=ROW_TOLERANCE_USD",
             '("aep_pml", 2_500.0, target_pml_2500)',
             '("aep_tvar", 0.995, target_tvar_99_5)',
             "notebook_11_required_limit_summary.csv",
@@ -116,6 +117,7 @@ class Notebook11ReproducibilityTest(unittest.TestCase):
     def test_deterministic_and_portable_output_contracts_are_explicit(self) -> None:
         required = [
             "project_relative_path",
+            "sha256_lf_normalized_text",
             "mtime=0",
             'float_format="%.17g"',
             "write_bytes",
