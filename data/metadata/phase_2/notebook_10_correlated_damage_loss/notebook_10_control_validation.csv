@@ -1,0 +1,18 @@
+check_id,severity,passed,detail
+one_complete_control_occurrence,critical,True,rows=470; occurrences=1
+control_keys_match_phase1,critical,True,matched=470; expected=470
+i0_structural_damage_states_exact,critical,True,mismatches=0
+i0_nsd_damage_states_exact,critical,True,mismatches=0
+i0_nsa_damage_states_exact,critical,True,mismatches=0
+control_i0_structural_ground_up_loss_2022_usd,critical,True,maximum_error=3.128662e-10
+control_i0_nsd_ground_up_loss_2022_usd,critical,True,maximum_error=1.353328e-09
+control_i0_nsa_ground_up_loss_2022_usd,critical,True,maximum_error=2.328306e-10
+control_i0_total_ground_up_loss_2022_usd,critical,True,maximum_error=1.280569e-09
+control_i0_deductible_absorbed_loss_2022_usd,critical,True,maximum_error=1.280569e-09
+control_i0_policy_limit_absorbed_loss_2022_usd,critical,True,maximum_error=0.000000e+00
+control_i0_coinsurance_absorbed_loss_2022_usd,critical,True,maximum_error=0.000000e+00
+control_i0_gross_insured_loss_2022_usd,critical,True,maximum_error=3.492460e-10
+control_i0_uninsured_loss_2022_usd,critical,True,maximum_error=1.280569e-09
+control_component_reconciliation,critical,True,maximum_error=2.328306e-10
+control_policy_reconciliation,critical,True,maximum_error=0.000000e+00
+correlated_control_demands_change_results,critical,True,C1 and C2 change at least one controlled building loss.
