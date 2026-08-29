@@ -1,6 +1,6 @@
 # Phase 2 experimental design
 
-**Status:** Version 0.2, Notebooks 08 and 09 validated; Notebook 10 implementation ready for production validation
+**Status:** Version 0.3, Notebooks 08 through 10 validated; Notebook 11 implementation ready for production validation
 
 **Branch:** `phase-2-correlation-extension`
 

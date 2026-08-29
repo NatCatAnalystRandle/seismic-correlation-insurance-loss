@@ -2,7 +2,7 @@
 
 A reproducible earthquake catastrophe-risk modeling project that connects seismic hazard, stochastic event simulation, ground-motion fields, building damage, ground-up loss, insurance recovery, and reinsurance loss.
 
-The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: the spatial-correlation models and full paired ground-motion fields are validated, and Notebook 10 is ready to propagate the three dependence cases through damage and insured loss.
+The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: the spatial-correlation models, paired ground-motion fields, and correlated damage and policy losses are validated. Notebook 11 is ready to evaluate reinsurance sensitivity, tail capital, diversification, and risk-adjusted-return assumption grids.
 
 ---
 
@@ -55,7 +55,8 @@ The completed workflow includes:
 
 - Notebook 08: complete and validated
 - Notebook 09: complete and validated
-- Notebook 10: implementation and reproducibility tests complete; full local production run pending
+- Notebook 10: complete and validated
+- Notebook 11: implementation and reproducibility tests complete; full local production run pending
 
 ---
 
@@ -316,6 +317,7 @@ Return periods of 200,000 years and longer are retained only as thin-tail diagno
 | [`08_spatial_correlation_model_and_validation.ipynb`](08_spatial_correlation_model_and_validation.ipynb) | Define and validate the I0, C1 Aldea et al., and C2 Goda and Atkinson dependence cases |
 | [`09_generate_correlated_ground_motion_fields.ipynb`](09_generate_correlated_ground_motion_fields.ipynb) | Generate paired full-catalog PGA and SA(0.4 s) fields for I0, C1, and C2 |
 | [`10_correlated_damage_and_loss.ipynb`](10_correlated_damage_and_loss.ipynb) | Reuse the frozen damage streams and policy terms to calculate paired damage, ground-up loss, and gross insured loss |
+| [`11_reinsurance_sensitivity_and_capital.ipynb`](11_reinsurance_sensitivity_and_capital.ipynb) | Apply common occurrence and aggregate programs and compare retained loss, tail capital, required limits, diversification, and RAROC assumption grids |
 
 ---
 
@@ -464,6 +466,7 @@ seismic-correlation-insurance-loss/
 ├── 08_spatial_correlation_model_and_validation.ipynb
 ├── 09_generate_correlated_ground_motion_fields.ipynb
 ├── 10_correlated_damage_and_loss.ipynb
+├── 11_reinsurance_sensitivity_and_capital.ipynb
 ├── data/
 │   ├── metadata/
 │   ├── processed/
@@ -514,7 +517,7 @@ Run Phase 1 in numerical order:
 After the Phase 1 local artifacts are available, run the current Phase 2 sequence:
 
 ```text
-08 → 09 → 10
+08 → 09 → 10 → 11
 ```
 
 Each notebook validates the handoff from the previous stage before beginning its main calculations.
@@ -557,7 +560,7 @@ The current modeling phase preserves:
 - the same damage and repair-cost framework;
 - as much of the same random-number structure as practical.
 
-Notebook 08 defines the dependence models, Notebook 09 generates the paired full-catalog fields, and Notebook 10 propagates them through the frozen damage and policy models. Reinsurance, capital, TVaR, diversification, and risk-adjusted-return analyses remain in the planned Notebook 11.
+Notebook 08 defines the dependence models, Notebook 09 generates the paired full-catalog fields, and Notebook 10 propagates them through the frozen damage and policy models. Notebook 11 applies common occurrence and aggregate programs and evaluates retained and ceded loss, TVaR tail capital, required limits, diversification, paired uncertainty, break-even premium, and RAROC over transparent assumption grids.
 
 The comparison will focus on changes in:
 

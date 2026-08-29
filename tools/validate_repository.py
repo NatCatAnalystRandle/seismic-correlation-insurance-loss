@@ -51,6 +51,7 @@ EXPECTED_NOTEBOOKS = [
     "08_spatial_correlation_model_and_validation.ipynb",
     "09_generate_correlated_ground_motion_fields.ipynb",
     "10_correlated_damage_and_loss.ipynb",
+    "11_reinsurance_sensitivity_and_capital.ipynb",
 ]
 
 REQUIRED_ROOT_FILES = [
