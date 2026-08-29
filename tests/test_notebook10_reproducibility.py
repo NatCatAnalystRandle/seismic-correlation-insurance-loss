@@ -7,6 +7,8 @@ import json
 from pathlib import Path
 import unittest
 
+import numpy as np
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 NOTEBOOK_PATH = PROJECT_ROOT / "10_correlated_damage_and_loss.ipynb"
@@ -108,9 +110,16 @@ class Notebook10ReproducibilityTest(unittest.TestCase):
             "empirical_pml",
             "tail_support_sufficient",
             "order_statistic_rank",
+            "np.count_nonzero(aep > ROW_TOLERANCE_USD)",
+            "np.count_nonzero(oep > ROW_TOLERANCE_USD)",
         ]
         for value in required:
             self.assertIn(value, self.full_source)
+
+    def test_positive_year_threshold_rejects_numerical_zero(self) -> None:
+        tolerance = 2.0e-6
+        annual_losses = np.array([0.0, 1.455192e-11, tolerance, 2.1e-6])
+        self.assertEqual(int(np.count_nonzero(annual_losses > tolerance)), 1)
 
     def test_public_metadata_is_portable_and_time_independent(self) -> None:
         self.assertIn("project_relative_path", self.full_source)
