@@ -2,7 +2,7 @@
 
 A reproducible earthquake catastrophe-risk modeling project that connects seismic hazard, stochastic event simulation, ground-motion fields, building damage, ground-up loss, insurance recovery, and reinsurance loss.
 
-The current release is the **Phase 1 no-spatial-correlation baseline**. It establishes a fully validated end-to-end workflow that will later be reused to measure how spatial correlation changes portfolio loss, tail risk, and reinsurance performance.
+The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: the spatial-correlation models and full paired ground-motion fields are validated, and Notebook 10 is ready to propagate the three dependence cases through damage and insured loss.
 
 ---
 
@@ -51,7 +51,11 @@ The completed workflow includes:
 9. AAL, AEP, OEP, and PML calculation
 10. final validation, reporting tables, and figures
 
-The spatial-correlation comparison remains a planned Phase 2 extension.
+**Phase 2 correlation extension: in progress**
+
+- Notebook 08: complete and validated
+- Notebook 09: complete and validated
+- Notebook 10: implementation and reproducibility tests complete; full local production run pending
 
 ---
 
@@ -309,6 +313,9 @@ Return periods of 200,000 years and longer are retained only as thin-tail diagno
 | [`05_calculate_ground_up_losses.ipynb`](05_calculate_ground_up_losses.ipynb) | Simulate damage states and calculate structural, nonstructural, and total ground-up losses |
 | [`06_apply_insurance_terms.ipynb`](06_apply_insurance_terms.ipynb) | Apply insurance terms, reinsurance terms, and calculate insured risk metrics |
 | [`07_baseline_results_and_validation.ipynb`](07_baseline_results_and_validation.ipynb) | Validate all handoffs and produce final tables, exceedance curves, and project figures |
+| [`08_spatial_correlation_model_and_validation.ipynb`](08_spatial_correlation_model_and_validation.ipynb) | Define and validate the I0, C1 Aldea et al., and C2 Goda and Atkinson dependence cases |
+| [`09_generate_correlated_ground_motion_fields.ipynb`](09_generate_correlated_ground_motion_fields.ipynb) | Generate paired full-catalog PGA and SA(0.4 s) fields for I0, C1, and C2 |
+| [`10_correlated_damage_and_loss.ipynb`](10_correlated_damage_and_loss.ipynb) | Reuse the frozen damage streams and policy terms to calculate paired damage, ground-up loss, and gross insured loss |
 
 ---
 
@@ -454,6 +461,9 @@ seismic-correlation-insurance-loss/
 ├── 05_calculate_ground_up_losses.ipynb
 ├── 06_apply_insurance_terms.ipynb
 ├── 07_baseline_results_and_validation.ipynb
+├── 08_spatial_correlation_model_and_validation.ipynb
+├── 09_generate_correlated_ground_motion_fields.ipynb
+├── 10_correlated_damage_and_loss.ipynb
 ├── data/
 │   ├── metadata/
 │   ├── processed/
@@ -495,10 +505,16 @@ python tools\validate_repository.py --profile runtime
 
 ### Execution order
 
-Run the notebooks in numerical order:
+Run Phase 1 in numerical order:
 
 ```text
 01 → 02 → 03 → 04 → 05 → 06 → 07
+```
+
+After the Phase 1 local artifacts are available, run the current Phase 2 sequence:
+
+```text
+08 → 09 → 10
 ```
 
 Each notebook validates the handoff from the previous stage before beginning its main calculations.
@@ -513,7 +529,7 @@ This project is a portfolio modeling demonstration, not a production catastrophe
 
 Current limitations include:
 
-1. no spatial correlation among within-event site residuals;
+1. the Phase 1 headline results use no spatial correlation among within-event site residuals; Phase 2 evaluates two model-conditioned spatial-correlation cases;
 2. one demonstration portfolio in Seaside, Oregon;
 3. synthetic insurance and reinsurance terms;
 4. direct-$SA(0.4)$ fragility approximations;
@@ -531,7 +547,7 @@ The results should therefore be interpreted as transparent baseline estimates fo
 
 ## Phase 2: spatial-correlation extension
 
-The next modeling phase will preserve:
+The current modeling phase preserves:
 
 - the same buildings;
 - the same rupture set;
@@ -541,7 +557,7 @@ The next modeling phase will preserve:
 - the same damage and repair-cost framework;
 - as much of the same random-number structure as practical.
 
-Phase 2 will replace the conditionally independent within-event residuals with source-appropriate spatially correlated residual fields.
+Notebook 08 defines the dependence models, Notebook 09 generates the paired full-catalog fields, and Notebook 10 propagates them through the frozen damage and policy models. Reinsurance, capital, TVaR, diversification, and risk-adjusted-return analyses remain in the planned Notebook 11.
 
 The comparison will focus on changes in:
 

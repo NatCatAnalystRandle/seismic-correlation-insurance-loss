@@ -1,7 +1,9 @@
 # Phase 2 experimental design
 
-**Status:** Version 0.1, design freeze before production simulation  
-**Branch:** `phase-2-correlation-extension`  
+**Status:** Version 0.2, Notebooks 08 and 09 validated; Notebook 10 implementation ready for production validation
+
+**Branch:** `phase-2-correlation-extension`
+
 **Frozen reference:** Phase 1 release `v1.0.0`, commit `be93474ce2ab78d8002d49ae861adb641ae2741d`
 
 ## 1. Purpose

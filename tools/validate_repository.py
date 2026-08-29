@@ -48,6 +48,9 @@ EXPECTED_NOTEBOOKS = [
     "05_calculate_ground_up_losses.ipynb",
     "06_apply_insurance_terms.ipynb",
     "07_baseline_results_and_validation.ipynb",
+    "08_spatial_correlation_model_and_validation.ipynb",
+    "09_generate_correlated_ground_motion_fields.ipynb",
+    "10_correlated_damage_and_loss.ipynb",
 ]
 
 REQUIRED_ROOT_FILES = [
@@ -59,6 +62,7 @@ REQUIRED_ROOT_FILES = [
 ]
 
 REQUIRED_DOCUMENTATION = [
+    "docs/PHASE_2_EXPERIMENTAL_DESIGN.md",
     "docs/REPOSITORY_AUDIT_FINDINGS.md",
     "docs/REPOSITORY_VALIDATION_CHECKLIST.md",
 ]
@@ -79,6 +83,10 @@ REQUIRED_METADATA_HANDOFFS = [
     "data/metadata/notebook_7_baseline_results_validation/notebook_7_final_handoff.json",
     "data/metadata/notebook_7_baseline_results_validation/notebook_7_cell_6_summary.json",
     "data/metadata/notebook_7_baseline_results_validation/notebook_7_cell_6_validation.csv",
+    "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_final_handoff.json",
+    "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_final_validation.csv",
+    "data/metadata/phase_2/notebook_9_correlated_ground_motion/notebook_9_final_handoff.json",
+    "data/metadata/phase_2/notebook_9_correlated_ground_motion/notebook_9_final_validation.csv",
 ]
 
 REQUIRED_JAVA_SOURCES = [
@@ -365,7 +373,7 @@ class RepositoryValidator:
                 numbered.append(int(match.group(1)))
         self.add(
             "notebook_numbering_continuous",
-            numbered == list(range(1, 8)),
+            numbered == list(range(1, len(EXPECTED_NOTEBOOKS) + 1)),
             f"numbers={numbered}",
         )
 
@@ -411,11 +419,21 @@ class RepositoryValidator:
             if isinstance(version, str):
                 recorded_versions[name] = version
 
-        unique_versions = sorted(set(recorded_versions.values()))
+        major_minor_versions: dict[str, tuple[int, int] | None] = {}
+        for name, version in recorded_versions.items():
+            try:
+                major, minor, *_ = version.split(".")
+                major_minor_versions[name] = (int(major), int(minor))
+            except (TypeError, ValueError):
+                major_minor_versions[name] = None
         self.add(
             "notebook_python_metadata_consistent",
-            unique_versions == ["3.12.3"],
-            f"versions={recorded_versions}",
+            len(recorded_versions) == len(EXPECTED_NOTEBOOKS)
+            and all(
+                version == TESTED_PYTHON[:2]
+                for version in major_minor_versions.values()
+            ),
+            f"versions={recorded_versions}; expected_major_minor={TESTED_PYTHON[:2]}",
         )
 
     def check_required_project_artifacts(self) -> None:
