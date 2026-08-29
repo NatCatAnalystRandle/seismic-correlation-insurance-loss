@@ -55,6 +55,9 @@ class Notebook11ReproducibilityTest(unittest.TestCase):
             "EXHAUSTION_RETURN_PERIODS = [1_000, 2_500, 5_000, 10_000]",
             "STANDALONE_ANNUAL_AGGREGATE",
             "STACKED_AFTER_FROZEN_OCCURRENCE",
+            'aggregate_layer["retained_loss_2022_usd"]',
+            "total_ceded = gross_aep - final_retained",
+            "stacked_total_ceded = gross_aep - stacked_final_retained",
             "notebook_11_occurrence_design_grid.csv",
             "notebook_11_aggregate_design_grid.csv",
         ]
