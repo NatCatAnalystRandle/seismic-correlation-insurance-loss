@@ -1,0 +1,23 @@
+check_id,severity,passed,detail
+required_input:data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_final_handoff.json,critical,True,path=data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_final_handoff.json; exists=True
+required_input:data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_final_validation.csv,critical,True,path=data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_final_validation.csv; exists=True
+required_input:data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_pml_table.csv,critical,True,path=data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_pml_table.csv; exists=True
+required_input:data/processed/phase_2/notebook_10_correlated_damage_loss/paired_damage_and_policy_loss.csv.gz,critical,True,path=data/processed/phase_2/notebook_10_correlated_damage_loss/paired_damage_and_policy_loss.csv.gz; exists=True
+required_input:data/processed/phase_2/notebook_10_correlated_damage_loss/paired_event_loss_summary.csv.gz,critical,True,path=data/processed/phase_2/notebook_10_correlated_damage_loss/paired_event_loss_summary.csv.gz; exists=True
+required_input:data/processed/phase_2/notebook_10_correlated_damage_loss/paired_annual_loss_series.csv.gz,critical,True,path=data/processed/phase_2/notebook_10_correlated_damage_loss/paired_annual_loss_series.csv.gz; exists=True
+required_input:data/metadata/notebook_6_insurance_terms/notebook_6_cell_6_reinsurance_formula_specification.json,critical,True,path=data/metadata/notebook_6_insurance_terms/notebook_6_cell_6_reinsurance_formula_specification.json; exists=True
+required_input:data/metadata/notebook_6_insurance_terms/notebook_6_cell_7_summary.json,critical,True,path=data/metadata/notebook_6_insurance_terms/notebook_6_cell_7_summary.json; exists=True
+required_input:tools/reinsurance_capital.py,critical,True,path=tools/reinsurance_capital.py; exists=True
+notebook10_handoff_hash,critical,True,sha256=f9bb75c8e596ebdd21b2e4d5ca39c472074d4e79e189c5959c836f3c386f1fc4
+notebook10_validation_hash,critical,True,sha256=2a2ad99a4d2eb8dfa4de639ac730ab5041683ab5698032ccf958292fe13158de
+phase1_reinsurance_formula_hash,critical,True,lf_normalized_sha256=f347b96e186abd3a098e8597fbd5cb0ad318a7a58f56e567e3cbc28b17d7aea8; raw_sha256=f347b96e186abd3a098e8597fbd5cb0ad318a7a58f56e567e3cbc28b17d7aea8
+notebook10_complete,critical,True,complete=True; schema=notebook10_correlated_damage_loss_handoff_v1
+notebook10_dimensions,critical,True,annual_rows=2000000; occurrences=10630; sites=470
+notebook10_validation_passed,critical,True,checks=18; critical_failures=0
+notebook10_artifact_inventory,critical,True,artifacts=11; failures=[]
+phase1_occurrence_layer_terms_frozen,critical,True,"errors={'attachment_2022_usd': 0.0, 'limit_2022_usd': 0.0, 'exhaustion_2022_usd': 0.0, 'participation': 0.0}"
+phase1_exclusions_preserved,critical,True,The Phase 1 occurrence benchmark remains unchanged; aggregate and pricing are sensitivities.
+event_loss_schema,critical,True,required=10; actual=46
+annual_loss_schema,critical,True,required=8; actual=20
+event_dimensions,critical,True,rows=10630; occurrences=10630
+annual_dimensions_and_zero_years,critical,True,rows=2000000; occupied=10593; zero_event=1989407

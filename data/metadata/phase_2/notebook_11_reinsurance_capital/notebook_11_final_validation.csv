@@ -1,0 +1,19 @@
+check_id,severity,passed,detail
+input_and_control_validation_passed,critical,True,input_checks=22; control_checks=12
+fixed_program_dimensions,critical,True,rows=12; cases=3; programs=4
+event_and_annual_output_dimensions,critical,True,events=10630; annual=2000000; occupied=10593
+gross_ceded_retained_reconciliation,critical,True,maximum_event_error=0.000000e+00; maximum_annual_error=0.000000e+00
+frozen_occurrence_layer_limit_obeyed,critical,True,maximum_limit_excess=0.000000e+00
+i0_frozen_program_reproduces_phase1,critical,True,"errors_2022_usd={'ceded_aal_2022_usd': -1.4551915228366852e-11, 'retained_aal_2022_usd': -1.4551915228366852e-11, 'maximum_ceded_aep_2022_usd': -2.9802322387695312e-08}"
+common_fixed_terms_across_cases,critical,True,"The same frozen occurrence attachment and limit are applied to I0, C1, and C2."
+occurrence_design_grid_complete_and_common,critical,True,rows=45; designs=15
+aggregate_design_grid_complete_and_ordered,critical,True,"rows=90; structures=['STACKED_AFTER_FROZEN_OCCURRENCE', 'STANDALONE_ANNUAL_AGGREGATE']"
+required_limit_targets_evaluated,critical,True,rows=6; feasible=6
+pml_tables_nondecreasing,critical,True,rows=918
+var_sparsity_explicitly_flagged,critical,True,Gross insured AEP VaR is zero at 99.0% and 99.5% because the annual catalog has a dominant zero-loss mass.
+diversification_metrics_complete,critical,True,rows=15; units=[np.int64(470)]
+paired_uncertainty_complete,critical,True,rows=56; replicates=300
+raroc_is_assumption_grid_only,critical,True,raroc_rows=585; break_even_rows=117
+public_paths_are_repository_relative,critical,True,All public Notebook 11 paths are repository-relative POSIX paths.
+extreme_return_period_tail_support_documented,warning,False,"Return periods with order-statistic rank below 20 are diagnostics, not headline estimates."
+var_based_capital_noninformative_at_selected_confidence,warning,False,The specified 99.5% VaR economic-capital measure is non-informative because gross annual VaR is zero; use the reported TVaR tail capital and PML metrics for substantive decisions.
