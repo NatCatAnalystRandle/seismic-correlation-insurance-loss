@@ -1,6 +1,6 @@
 # Phase 2 experimental design
 
-**Status:** Version 0.4, Notebooks 08 through 11 validated; Notebook 12 implemented with synthetic integration validation, full production validation pending
+**Status:** Version 0.5, Notebooks 08 through 12 production-validated; Notebook 13 final synthesis and release validation pending
 
 **Branch:** `phase-2-correlation-extension`
 
@@ -328,6 +328,28 @@ These intervals exclude calibration and model uncertainty. All annual series
 include zero-event years. Tail estimators retain Notebook 11 conventions;
 support below 20 observations is diagnostic. No bond premium, discounting,
 default, or market-pricing assumptions are introduced.
+
+### Notebook 12 production validation
+
+Public artifacts are recorded at commit `e886a20`. The production run includes
+10,630 events, 2,000,000 annual rows, 576 trigger candidates, 18 basis-risk
+summary rows, and 28 paired uncertainty comparisons with 300 bootstrap
+replicates. All 20 critical checks passed. The three warnings retain the
+limitations on extreme-tail support, sparse-loss VaR, and uncertainty
+conditional on the frozen calibration.
+
+| Source | Training occurrences | Attachment index | Distance decay | Tier spacing |
+|---|---:|---:|---:|---:|
+| INTERFACE | 3,364 | 7.75 | 2.0 | 0.50 |
+| SLAB | 1,988 | 6.25 | 2.0 | 0.25 |
+
+Both selected distance-decay values lie at the upper boundary of the declared
+candidate grid. They minimize the training objective within that grid;
+unrestricted optimality is not established. Any wider-grid experiment must be
+labeled as a separate sensitivity analysis and must not silently replace the
+frozen evaluation results. One event payment was reduced by annual collateral
+depletion. The saved trigger SHA-256 is
+`3d69329f9e61d9423b27da231c2135abd24dee63736388a03b2eadacb0b8f6db`.
 
 ## 10. Validation gates
 

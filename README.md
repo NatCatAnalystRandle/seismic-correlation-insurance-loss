@@ -2,7 +2,7 @@
 
 A reproducible earthquake catastrophe-risk modeling project that connects seismic hazard, stochastic event simulation, ground-motion fields, building damage, ground-up loss, insurance recovery, and reinsurance loss.
 
-The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: spatial-correlation models, paired ground-motion fields, correlated damage and policy losses, and reinsurance sensitivity and capital are validated. Notebook 12 implements a frozen magnitude-distance parametric trigger and out-of-sample basis-risk analysis; its full local production run is pending.
+The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: spatial-correlation models, paired ground-motion fields, correlated damage and policy losses, reinsurance sensitivity and capital, and parametric basis risk have completed their production validation. Notebook 12's frozen magnitude-distance trigger and out-of-sample basis-risk artifacts are published. Notebook 13 will consolidate final results, figures, limitations, and release validation.
 
 ---
 
@@ -57,7 +57,7 @@ The completed workflow includes:
 - Notebook 09: complete and validated
 - Notebook 10: complete and validated
 - Notebook 11: complete and validated; public metadata committed at `9174419`
-- Notebook 12: implementation and synthetic integration tests complete; full local production run pending
+- Notebook 12: production run complete; 20 critical checks passed, three documented limitations; public metadata committed at `e886a20`
 - Notebook 13: planned final results, figures, validation, and release handoff
 
 The agreed sequence contains **13 notebooks in total**: seven Phase 1 notebooks and six Phase 2 notebooks.
