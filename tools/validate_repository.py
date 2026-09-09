@@ -52,6 +52,7 @@ EXPECTED_NOTEBOOKS = [
     "09_generate_correlated_ground_motion_fields.ipynb",
     "10_correlated_damage_and_loss.ipynb",
     "11_reinsurance_sensitivity_and_capital.ipynb",
+    "12_parametric_cat_bond_basis_risk.ipynb",
 ]
 
 REQUIRED_ROOT_FILES = [
