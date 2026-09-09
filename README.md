@@ -2,7 +2,7 @@
 
 A reproducible earthquake catastrophe-risk modeling project that connects seismic hazard, stochastic event simulation, ground-motion fields, building damage, ground-up loss, insurance recovery, and reinsurance loss.
 
-The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: the spatial-correlation models, paired ground-motion fields, and correlated damage and policy losses are validated. Notebook 11 is ready to evaluate reinsurance sensitivity, tail capital, diversification, and risk-adjusted-return assumption grids.
+The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: spatial-correlation models, paired ground-motion fields, correlated damage and policy losses, reinsurance sensitivity and capital, and parametric basis risk have completed their production validation. Notebook 12's frozen magnitude-distance trigger and out-of-sample basis-risk artifacts are published. Notebook 13 will consolidate final results, figures, limitations, and release validation.
 
 ---
 
@@ -56,7 +56,11 @@ The completed workflow includes:
 - Notebook 08: complete and validated
 - Notebook 09: complete and validated
 - Notebook 10: complete and validated
-- Notebook 11: implementation and reproducibility tests complete; full local production run pending
+- Notebook 11: complete and validated; public metadata committed at `9174419`
+- Notebook 12: production run complete; 20 critical checks passed, three documented limitations; public metadata committed at `e886a20`
+- Notebook 13: planned final results, figures, validation, and release handoff
+
+The agreed sequence contains **13 notebooks in total**: seven Phase 1 notebooks and six Phase 2 notebooks.
 
 ---
 
@@ -318,6 +322,7 @@ Return periods of 200,000 years and longer are retained only as thin-tail diagno
 | [`09_generate_correlated_ground_motion_fields.ipynb`](09_generate_correlated_ground_motion_fields.ipynb) | Generate paired full-catalog PGA and SA(0.4 s) fields for I0, C1, and C2 |
 | [`10_correlated_damage_and_loss.ipynb`](10_correlated_damage_and_loss.ipynb) | Reuse the frozen damage streams and policy terms to calculate paired damage, ground-up loss, and gross insured loss |
 | [`11_reinsurance_sensitivity_and_capital.ipynb`](11_reinsurance_sensitivity_and_capital.ipynb) | Apply common occurrence and aggregate programs and compare retained loss, tail capital, required limits, diversification, and RAROC assumption grids |
+| [`12_parametric_cat_bond_basis_risk.ipynb`](12_parametric_cat_bond_basis_risk.ipynb) | Fit an I0 training trigger, freeze common collateralized payouts, and evaluate out-of-sample basis risk and residual tails |
 
 ---
 
@@ -467,6 +472,7 @@ seismic-correlation-insurance-loss/
 ├── 09_generate_correlated_ground_motion_fields.ipynb
 ├── 10_correlated_damage_and_loss.ipynb
 ├── 11_reinsurance_sensitivity_and_capital.ipynb
+├── 12_parametric_cat_bond_basis_risk.ipynb
 ├── data/
 │   ├── metadata/
 │   ├── processed/
@@ -517,7 +523,7 @@ Run Phase 1 in numerical order:
 After the Phase 1 local artifacts are available, run the current Phase 2 sequence:
 
 ```text
-08 → 09 → 10 → 11
+08 → 09 → 10 → 11 → 12
 ```
 
 Each notebook validates the handoff from the previous stage before beginning its main calculations.
@@ -560,7 +566,9 @@ The current modeling phase preserves:
 - the same damage and repair-cost framework;
 - as much of the same random-number structure as practical.
 
-Notebook 08 defines the dependence models, Notebook 09 generates the paired full-catalog fields, and Notebook 10 propagates them through the frozen damage and policy models. Notebook 11 applies common occurrence and aggregate programs and evaluates retained and ceded loss, TVaR tail capital, required limits, diversification, paired uncertainty, break-even premium, and RAROC over transparent assumption grids.
+Notebook 08 defines the dependence models, Notebook 09 generates the paired full-catalog fields, and Notebook 10 propagates them through the frozen damage and policy models. Notebook 11 applies common occurrence and aggregate programs and evaluates retained and ceded loss, TVaR tail capital, required limits, diversification, paired uncertainty, break-even premium, and RAROC over transparent assumption grids. Notebook 12 fits a source-specific magnitude-distance trigger on I0 years 1 through 1,000,000 and evaluates it on years 1,000,001 through 2,000,000 without refitting across cases. It uses minimum authoritative rupture distance over the frozen portfolio, fixed payout tiers, and one-year collateral with annual reset and no reinstatement. Nominal trigger error, collateral depletion, signed cash net loss, unfunded loss, and surplus remain separately visible.
+
+Notebook 12 requires the validated Notebook 11 artifacts, the original annual event catalog, and the authoritative Notebook 04 rupture/site distance file. It does not regenerate ground motions or damage. Start with its setup and frozen-input cell, then run subsequent cells in order. Outputs are deterministic gzip CSV files under `data/processed/phase_2/notebook_12_parametric_basis_risk/` and portable metadata under `data/metadata/phase_2/notebook_12_parametric_basis_risk/`. After a kernel restart, rerun in order; each stage is deterministic. The large production outputs remain local and ignored by Git. Notebook 13 will consolidate final results and release validation.
 
 The comparison will focus on changes in:
 

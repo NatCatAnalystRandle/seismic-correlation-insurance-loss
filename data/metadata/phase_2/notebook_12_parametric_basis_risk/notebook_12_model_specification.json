@@ -1,0 +1,118 @@
+{
+  "basis_sign": "target indemnity recovery minus payout",
+  "bootstrap": {
+    "replicates": 300,
+    "scope": "paired evaluation-year sampling conditional on frozen trigger; no refitting",
+    "seed": 122026
+  },
+  "calibration": "I0 training nominal event squared basis error; annual collateral cap is applied after fitting",
+  "candidate_grid": {
+    "attachment_index": [
+      5.0,
+      5.25,
+      5.5,
+      5.75,
+      6.0,
+      6.25,
+      6.5,
+      6.75,
+      7.0,
+      7.25,
+      7.5,
+      7.75,
+      8.0,
+      8.25,
+      8.5,
+      8.75,
+      9.0,
+      9.25
+    ],
+    "distance_decay": [
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "tier_step": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  "cash_net": "gross annual loss minus actual payout; surplus retained explicitly",
+  "classification_tolerance_2022_usd": 2e-06,
+  "collateral": "one-year issuance; annual reset; no reinstatement; allocate by time_within_year then occurrence_id",
+  "dependence_cases": [
+    "I0_PHASE1_INDEPENDENT",
+    "C1_ALDEA22_SUBDUCTION",
+    "C2_GODA_ATKINSON09"
+  ],
+  "evaluation_years": [
+    1000001,
+    2000000
+  ],
+  "headline_period": "EVALUATION",
+  "input_provenance": {
+    "catalog": {
+      "path": "data/processed/annual_event_catalog/annual_event_catalog.csv",
+      "sha256": "e4725a57eab466348aa263d79b8f8bcc923f9542fb5507af279fece41c121f37"
+    },
+    "distances": {
+      "path": "data/processed/notebook_4_authoritative_usgs_distances/usgs_rupture_site_distances.csv.gz",
+      "sha256": "dbc5c000adb368b1f2e85ea353073bb00f84ae815ee61311844d10162ae9d719"
+    },
+    "notebook11_handoff": {
+      "path": "data/metadata/phase_2/notebook_11_reinsurance_capital/notebook_11_final_handoff.json",
+      "sha256": "c9a9ad70a7eb01d679e227442a2f11667a39900d2246550d71e0bb247d316b1e"
+    },
+    "parametric_module": {
+      "hash_mode": "lf",
+      "path": "tools/parametric_basis_risk.py",
+      "sha256": "e3796b2566d807222f103e6ed2e81399832d62ca3f95efb88e1b7156d658a476"
+    },
+    "reinsurance_module": {
+      "hash_mode": "lf",
+      "path": "tools/reinsurance_capital.py",
+      "sha256": "6364939c42f8700d1f9d8f2c25d2c8eee7c2facc38cb23cf0bed5da57417353c"
+    },
+    "sites": {
+      "hash_mode": "canonical_crlf",
+      "path": "data/metadata/notebook_4_cell_18_site_order.csv",
+      "sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100"
+    }
+  },
+  "monetary_values_clipped_for_classification": false,
+  "payout_fractions": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "principal_2022_usd": 61837983.314918146,
+  "return_periods_years": [
+    100,
+    250,
+    500,
+    1000,
+    2500,
+    5000,
+    10000,
+    50000,
+    100000,
+    1000000
+  ],
+  "schema_version": "notebook12_parametric_model_v1",
+  "tail_estimator": "PML: ceil(N/R); VaR and TVaR: ceil(N*(1-q)) largest annual observations, including zero years",
+  "target": "frozen occurrence XoL ceded recovery; no annual recovery cap",
+  "training_years": [
+    1,
+    1000000
+  ],
+  "trigger": {
+    "bytes": 1129,
+    "path": "data/metadata/phase_2/notebook_12_parametric_basis_risk/notebook_12_frozen_trigger.json",
+    "sha256": "3d69329f9e61d9423b27da231c2135abd24dee63736388a03b2eadacb0b8f6db"
+  }
+}

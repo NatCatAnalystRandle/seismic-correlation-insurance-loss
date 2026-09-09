@@ -1,0 +1,24 @@
+check_id,severity,passed,detail
+input_validation_passed,critical,True,checks=38
+event_annual_dimensions,critical,True,events=10630; years=2000000
+all_zero_event_years_preserved,critical,True,Zero-event years have zero losses and payouts.
+train_evaluation_partition,critical,True,split=1000000; disjoint catalog-year sets
+complete_common_candidate_grid,critical,True,candidates=576
+trigger_file_unchanged,critical,True,3d69329f9e61d9423b27da231c2135abd24dee63736388a03b2eadacb0b8f6db
+calibration_uses_training_only,critical,True,Training-only replay yields exactly the saved specification.
+prediction_independent_of_losses_and_case,critical,True,"One source-only payout vector is shared across I0, C1, C2."
+payout_and_collateral_bounds,critical,True,maximum annual payout=61837983.31491815
+collateral_independent_of_row_order,critical,True,Frozen event time controls depletion.
+i0_cash_accounting,critical,True,maximum_error_2022_usd=0.000000e+00
+i0_event_annual_upstream_reconciliation,critical,True,event_error=0.000000e+00; total_error=3.051758e-05; upstream_aal_error=0.000000e+00
+c1_cash_accounting,critical,True,maximum_error_2022_usd=0.000000e+00
+c1_event_annual_upstream_reconciliation,critical,True,event_error=0.000000e+00; total_error=1.525879e-05; upstream_aal_error=0.000000e+00
+c2_cash_accounting,critical,True,maximum_error_2022_usd=0.000000e+00
+c2_event_annual_upstream_reconciliation,critical,True,event_error=0.000000e+00; total_error=3.051758e-05; upstream_aal_error=0.000000e+00
+basis_summary_complete,critical,True,"Three periods, two payout bases, three cases; identical payout AAL across cases."
+pml_monotonicity_and_tail_support,critical,True,rows=576
+paired_evaluation_uncertainty,critical,True,rows=28; replicates=300
+public_paths_are_repository_relative,critical,True,POSIX paths relative to the repository.
+extreme_return_period_tail_support,warning,False,"Order-statistic support below 20 is diagnostic, not a headline estimate."
+var_capital_informative,warning,False,A zero VaR under sparse losses is non-informative; report TVaR and PML alongside it.
+calibration_uncertainty_included,warning,False,Paired bootstrap conditions on the frozen trigger; calibration and model uncertainty are outside these intervals.

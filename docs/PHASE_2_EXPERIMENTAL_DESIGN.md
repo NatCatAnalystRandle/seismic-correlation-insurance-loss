@@ -1,6 +1,6 @@
 # Phase 2 experimental design
 
-**Status:** Version 0.3, Notebooks 08 through 10 validated; Notebook 11 implementation ready for production validation
+**Status:** Version 0.5, Notebooks 08 through 12 production-validated; Notebook 13 final synthesis and release validation pending
 
 **Branch:** `phase-2-correlation-extension`
 
@@ -286,6 +286,70 @@ Basis-risk outputs must include:
 - conditional shortfall for events above the target indemnity attachment.
 
 A positive basis value will be defined as indemnity recovery minus parametric payout, so positive values represent protection shortfall.
+
+### Notebook 12 implementation assumptions
+
+The following numerical choices complete the previously unspecified trigger grid.
+They are declared experimental assumptions, not parameters from an external
+calibration. The indemnity target is the frozen Notebook 11 occurrence XoL
+recovery. Principal equals its $61,837,983.314918146 limit.
+
+For each source type, use the index
+$I=M-b\log_{10}(1+R_{\min}/50)$, where $R_{\min}$ is the minimum authoritative
+rupture distance in kilometres across the frozen 470 portfolio sites.
+Search attachment indices $a=5.00,5.25,\ldots,9.25$, distance decays
+$b\in\{0.5,1,1.5,2\}$ and tier spacings $s\in\{0.25,0.5,0.75,1\}$.
+The thresholds $a,a+s,a+2s,a+3s$ pay 25%, 50%, 75%, and 100% of principal;
+equality enters the higher tier, and below attachment payout is zero.
+Select minimum I0 training-event squared nominal basis error separately for
+INTERFACE and SLAB, breaking exact ties by the declared grid order. There are
+288 candidates per source. Store the complete grid and selected terms before
+evaluation. Evaluation losses never select terms or revise the grid.
+
+Each catalog year represents a separate one-year issuance. The actual payout
+cannot exceed remaining principal; process events using frozen within-year
+times, break time ties by occurrence ID, and reset principal annually without
+reinstatement. Calibration fits nominal event payouts before this depletion
+rule. Report nominal and collateralized basis risk separately because the
+occurrence indemnity benchmark has no annual recovery cap.
+
+Preserve signed annual cash net loss (gross minus actual payout). Report its
+positive part as unfunded loss and its negative part as surplus. Do not clip
+legitimate excess payouts into a standard indemnity waterfall. Sum event
+shortfall before annual aggregation. Report false-positive and false-negative
+probabilities per occurrence, conditional on positive target or payout, and
+per year, with annual occurrence rates labeled separately. A $0.000002
+classification tolerance does not round monetary values away.
+
+Headline performance and paired uncertainty use only the evaluation half;
+training and full-catalog tables are diagnostic. Use 300 paired catalog-year
+bootstrap replicates with seed 122026, conditional on the frozen trigger.
+These intervals exclude calibration and model uncertainty. All annual series
+include zero-event years. Tail estimators retain Notebook 11 conventions;
+support below 20 observations is diagnostic. No bond premium, discounting,
+default, or market-pricing assumptions are introduced.
+
+### Notebook 12 production validation
+
+Public artifacts are recorded at commit `e886a20`. The production run includes
+10,630 events, 2,000,000 annual rows, 576 trigger candidates, 18 basis-risk
+summary rows, and 28 paired uncertainty comparisons with 300 bootstrap
+replicates. All 20 critical checks passed. The three warnings retain the
+limitations on extreme-tail support, sparse-loss VaR, and uncertainty
+conditional on the frozen calibration.
+
+| Source | Training occurrences | Attachment index | Distance decay | Tier spacing |
+|---|---:|---:|---:|---:|
+| INTERFACE | 3,364 | 7.75 | 2.0 | 0.50 |
+| SLAB | 1,988 | 6.25 | 2.0 | 0.25 |
+
+Both selected distance-decay values lie at the upper boundary of the declared
+candidate grid. They minimize the training objective within that grid;
+unrestricted optimality is not established. Any wider-grid experiment must be
+labeled as a separate sensitivity analysis and must not silently replace the
+frozen evaluation results. One event payment was reduced by annual collateral
+depletion. The saved trigger SHA-256 is
+`3d69329f9e61d9423b27da231c2135abd24dee63736388a03b2eadacb0b8f6db`.
 
 ## 10. Validation gates
 
