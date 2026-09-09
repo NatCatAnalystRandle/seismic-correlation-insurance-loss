@@ -1,0 +1,38 @@
+{
+  "declared_years": 2000000,
+  "distance_definition": "minimum authoritative r_rup_km over frozen portfolio sites",
+  "distance_scale_km": 50.0,
+  "index_formula": "magnitude - distance_decay * log10(1 + distance_km / 50)",
+  "objective": "I0 training-event mean squared nominal basis error / principal^2",
+  "payout_fractions": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "principal_2022_usd": 61837983.314918146,
+  "schema_version": "notebook12_frozen_trigger_v1",
+  "selected_by_source": {
+    "INTERFACE": {
+      "attachment_index": 7.75,
+      "candidate_id": 190,
+      "distance_decay": 2.0,
+      "normalized_training_mse": 0.09436382862631569,
+      "source_type": "INTERFACE",
+      "tier_step": 0.5,
+      "training_occurrences": 3364
+    },
+    "SLAB": {
+      "attachment_index": 6.25,
+      "candidate_id": 93,
+      "distance_decay": 2.0,
+      "normalized_training_mse": 0.010139107511139672,
+      "source_type": "SLAB",
+      "tier_step": 0.25,
+      "training_occurrences": 1988
+    }
+  },
+  "tie_break": "first candidate in declared attachment, decay, step grid order",
+  "train_end": 1000000
+}
