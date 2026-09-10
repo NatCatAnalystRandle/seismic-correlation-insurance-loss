@@ -27,10 +27,15 @@ class Notebook13ReproducibilityTest(unittest.TestCase):
         cls.nb = json.loads(NOTEBOOK.read_text(encoding="utf-8"))
         cls.sources = {c["id"]: "".join(c["source"]) for c in cls.nb["cells"] if c["cell_type"] == "code"}
 
-    def fixture(self, root):
+    def fixture(self, root, *, windows_legacy=False):
         for directory in DIRECTORIES.values():
             relative = Path("data/metadata/phase_2") / directory
             shutil.copytree(ROOT / relative, root / relative)
+        if windows_legacy:
+            for number in (8, 9):
+                path = root / "data/metadata/phase_2" / DIRECTORIES[number] / f"notebook_{number}_final_handoff.json"
+                # Idempotent on Windows: never turn existing CRLF into CRCRLF.
+                path.write_bytes(path.read_bytes().replace(b"\r\n", b"\n").replace(b"\n", b"\r\n"))
         shutil.copyfile(NOTEBOOK, root / NOTEBOOK.name)
         (root / "tools").mkdir()
         shutil.copyfile(ROOT / "tools/phase2_results.py", root / "tools/phase2_results.py")
@@ -62,7 +67,7 @@ class Notebook13ReproducibilityTest(unittest.TestCase):
     def test_all_preview_cells_and_deterministic_hashed_outputs(self):
         with tempfile.TemporaryDirectory() as d, redirect_stdout(io.StringIO()):
             root = Path(d)
-            n = self.fixture(root)
+            n = self.fixture(root, windows_legacy=True)
             n["VERIFY_PROCESSED_ARTIFACTS"] = False
             for name, source in self.sources.items():
                 if name != "nb13-setup":
@@ -101,11 +106,12 @@ class Notebook13ReproducibilityTest(unittest.TestCase):
     def test_legacy_windows_handoff_uses_only_the_exact_pinned_LF_view(self):
         with tempfile.TemporaryDirectory() as d, redirect_stdout(io.StringIO()):
             root = Path(d)
-            self.fixture(root)
+            self.fixture(root, windows_legacy=True)
             path = root / "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_final_handoff.json"
-            path.write_bytes(path.read_bytes().replace(b"\n", b"\r\n"))
             audit, _, _ = audit_upstream(root, verify_processed=False)
-            self.assertEqual(audit.iloc[0].hash_mode, "legacy_lf_handoff_view")
+            legacy = audit.loc[audit.path.str.endswith("final_handoff.json") & audit.notebook.isin([8, 9])]
+            self.assertEqual(len(legacy), 2)
+            self.assertTrue(legacy.hash_mode.eq("legacy_lf_handoff_view").all())
             path.write_bytes(path.read_bytes().replace(b"2000000", b"2000001"))
             with self.assertRaisesRegex(RuntimeError, "handoff hash mismatch"):
                 audit_upstream(root, verify_processed=False)

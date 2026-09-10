@@ -412,7 +412,8 @@ New outputs will be stored under Phase 2-specific paths. Phase 1 artifacts will 
 Notebook 13 implements a read-only synthesis of the validated handoffs. Its
 default production audit verifies all upstream inventory hashes and sizes.
 Notebook 08 public text metadata alone permits exact reconstruction of its
-original CRLF bytes, with the hash mode exposed in the audit. A metadata-only
+original CRLF bytes. Notebook 08 and 09 handoffs permit an LF byte view matching
+their pinned published hashes. Every hash mode is exposed in the audit. A metadata-only
 preview skips private artifacts explicitly, writes to a separate directory,
 and cannot produce a completed production handoff.
 

@@ -104,13 +104,14 @@ def audit_upstream(root, *, verify_processed=True):
         actual = sha256_file(p) if p.is_file() else None
         mode = "raw"
         matches = actual == digest
-        if number == 8 and p.is_file() and not matches:
+        if number in (8, 9) and p.is_file() and not matches:
             # A Windows file may retain CRLF after Git attributes change. The
             # pinned published handoff is LF; verify exactly that byte view.
             matches = hashlib.sha256(p.read_bytes().replace(b"\r\n", b"\n")).hexdigest() == digest
             mode = "legacy_lf_handoff_view"
         if not matches:
-            raise RuntimeError(f"Frozen Notebook {number} handoff hash mismatch or missing file.")
+            raise RuntimeError(f"Frozen Notebook {number} handoff hash mismatch or missing file. "
+                               f"Expected={digest}; actual_raw={actual}; path={relative}")
         h = json.loads(p.read_text(encoding="utf-8"))
         handoffs[number] = h
         if not h.get(f"notebook{number}_complete") or h["validation"]["critical_failures"] != 0:
@@ -294,7 +295,7 @@ LIMITATIONS = [
     ("parametric_cash", "A source-only payout is identical across cases. Excess payouts and unfunded losses are separate; signed cash-net losses may be negative."),
     ("comparison_period", "Insurance/reinsurance results use all two million years. Parametric headline results use only the held-out final million years."),
     ("model_scope", "Results are conditional on the frozen catalog, portfolio, vulnerability, policy terms, and dependence models. They are a research comparison, not a calibrated capital or placement recommendation."),
-    ("legacy_bytes", "Notebook 08 inventory text uses explicit CRLF reconstruction for its original Windows-byte hashes. Its handoff is pinned to the published LF byte view. Both modes are exposed in the audit; no frozen input is rewritten."),
+    ("legacy_bytes", "Notebook 08 inventory text uses explicit CRLF reconstruction for its original Windows-byte hashes. Notebook 08 and 09 handoffs are pinned to their published LF byte views. Both modes are exposed in the audit; no frozen input is rewritten."),
 ]
 
 
