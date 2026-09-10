@@ -1,6 +1,6 @@
 # Phase 2 experimental design
 
-**Status:** Version 0.5, Notebooks 08 through 12 production-validated; Notebook 13 final synthesis and release validation pending
+**Status:** Version 0.6, Notebooks 08 through 12 production-validated; Notebook 13 synthesis source available, with production audit and release publication pending
 
 **Branch:** `phase-2-correlation-extension`
 
@@ -408,6 +408,22 @@ For each case and IMT:
 | `13_phase_2_results_and_validation.ipynb` | Final validation, executive tables, figures, and release handoff |
 
 New outputs will be stored under Phase 2-specific paths. Phase 1 artifacts will remain unchanged.
+
+Notebook 13 implements a read-only synthesis of the validated handoffs. Its
+default production audit verifies all upstream inventory hashes and sizes.
+Notebook 08 public text metadata alone permits exact reconstruction of its
+original CRLF bytes, with the hash mode exposed in the audit. A metadata-only
+preview skips private artifacts explicitly, writes to a separate directory,
+and cannot produce a completed production handoff.
+
+The synthesis reports the tested attachment criterion as non-identifying when
+several designs tie, including the numerical tie tolerance and attachment range.
+It does not invent a new optimization objective. Diversification ratios remain
+undefined when the underlying VaR is zero. RAROC comparisons retain common
+assumption keys and actual earned premiums, since a common premium multiple is
+not a common absolute premium. Full-catalog and held-out parametric comparisons
+retain separate periods and uncertainty scopes. Release publication remains a
+separate reviewed action after the production run.
 
 ## 12. Phase 2 release acceptance criteria
 

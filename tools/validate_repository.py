@@ -53,6 +53,7 @@ EXPECTED_NOTEBOOKS = [
     "10_correlated_damage_and_loss.ipynb",
     "11_reinsurance_sensitivity_and_capital.ipynb",
     "12_parametric_cat_bond_basis_risk.ipynb",
+    "13_phase_2_results_and_validation.ipynb",
 ]
 
 REQUIRED_ROOT_FILES = [

@@ -2,7 +2,7 @@
 
 A reproducible earthquake catastrophe-risk modeling project that connects seismic hazard, stochastic event simulation, ground-motion fields, building damage, ground-up loss, insurance recovery, and reinsurance loss.
 
-The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: spatial-correlation models, paired ground-motion fields, correlated damage and policy losses, reinsurance sensitivity and capital, and parametric basis risk have completed their production validation. Notebook 12's frozen magnitude-distance trigger and out-of-sample basis-risk artifacts are published. Notebook 13 will consolidate final results, figures, limitations, and release validation.
+The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: spatial-correlation models, paired ground-motion fields, correlated damage and policy losses, reinsurance sensitivity and capital, and parametric basis risk have completed their production validation. Notebook 12's frozen magnitude-distance trigger and out-of-sample basis-risk artifacts are published. Notebook 13 provides the final synthesis, figures, limitations, and release audit; its production run and release publication remain pending.
 
 ---
 
@@ -58,7 +58,7 @@ The completed workflow includes:
 - Notebook 10: complete and validated
 - Notebook 11: complete and validated; public metadata committed at `9174419`
 - Notebook 12: production run complete; 20 critical checks passed, three documented limitations; public metadata committed at `e886a20`
-- Notebook 13: planned final results, figures, validation, and release handoff
+- Notebook 13: final synthesis source available; production artifact audit and release publication pending
 
 The agreed sequence contains **13 notebooks in total**: seven Phase 1 notebooks and six Phase 2 notebooks.
 
@@ -323,6 +323,7 @@ Return periods of 200,000 years and longer are retained only as thin-tail diagno
 | [`10_correlated_damage_and_loss.ipynb`](10_correlated_damage_and_loss.ipynb) | Reuse the frozen damage streams and policy terms to calculate paired damage, ground-up loss, and gross insured loss |
 | [`11_reinsurance_sensitivity_and_capital.ipynb`](11_reinsurance_sensitivity_and_capital.ipynb) | Apply common occurrence and aggregate programs and compare retained loss, tail capital, required limits, diversification, and RAROC assumption grids |
 | [`12_parametric_cat_bond_basis_risk.ipynb`](12_parametric_cat_bond_basis_risk.ipynb) | Fit an I0 training trigger, freeze common collateralized payouts, and evaluate out-of-sample basis risk and residual tails |
+| [`13_phase_2_results_and_validation.ipynb`](13_phase_2_results_and_validation.ipynb) | Audit the five frozen upstream handoffs, synthesize paired results and limitations, and produce the Phase 2 report and figures |
 
 ---
 
@@ -473,6 +474,7 @@ seismic-correlation-insurance-loss/
 ├── 10_correlated_damage_and_loss.ipynb
 ├── 11_reinsurance_sensitivity_and_capital.ipynb
 ├── 12_parametric_cat_bond_basis_risk.ipynb
+├── 13_phase_2_results_and_validation.ipynb
 ├── data/
 │   ├── metadata/
 │   ├── processed/
@@ -568,7 +570,13 @@ The current modeling phase preserves:
 
 Notebook 08 defines the dependence models, Notebook 09 generates the paired full-catalog fields, and Notebook 10 propagates them through the frozen damage and policy models. Notebook 11 applies common occurrence and aggregate programs and evaluates retained and ceded loss, TVaR tail capital, required limits, diversification, paired uncertainty, break-even premium, and RAROC over transparent assumption grids. Notebook 12 fits a source-specific magnitude-distance trigger on I0 years 1 through 1,000,000 and evaluates it on years 1,000,001 through 2,000,000 without refitting across cases. It uses minimum authoritative rupture distance over the frozen portfolio, fixed payout tiers, and one-year collateral with annual reset and no reinstatement. Nominal trigger error, collateral depletion, signed cash net loss, unfunded loss, and surplus remain separately visible.
 
-Notebook 12 requires the validated Notebook 11 artifacts, the original annual event catalog, and the authoritative Notebook 04 rupture/site distance file. It does not regenerate ground motions or damage. Start with its setup and frozen-input cell, then run subsequent cells in order. Outputs are deterministic gzip CSV files under `data/processed/phase_2/notebook_12_parametric_basis_risk/` and portable metadata under `data/metadata/phase_2/notebook_12_parametric_basis_risk/`. After a kernel restart, rerun in order; each stage is deterministic. The large production outputs remain local and ignored by Git. Notebook 13 will consolidate final results and release validation.
+Notebook 12 requires the validated Notebook 11 artifacts, the original annual event catalog, and the authoritative Notebook 04 rupture/site distance file. It does not regenerate ground motions or damage. Start with its setup and frozen-input cell, then run subsequent cells in order. Outputs are deterministic gzip CSV files under `data/processed/phase_2/notebook_12_parametric_basis_risk/` and portable metadata under `data/metadata/phase_2/notebook_12_parametric_basis_risk/`. After a kernel restart, rerun in order; each stage is deterministic. The large production outputs remain local and ignored by Git.
+
+Notebook 13 audits the five frozen upstream handoffs and their 60 inventory entries, then writes paired executive and scenario comparisons, attachment and diversification diagnostics, 84 existing uncertainty rows, five PNG/SVG figures, and a results report. Its default production mode streams all 10 private inventory files through SHA-256, including Notebook 08's factor/plot and Notebook 09's large paired field. Keep those files locally. Notebook 08's original CRLF metadata byte hashes are reconstructed explicitly where required; no upstream file is changed.
+
+Run `13_phase_2_results_and_validation.ipynb` from the repository root, starting with setup and the input audit. Production metadata and the report go under `data/metadata/phase_2/notebook_13_phase_2_results/`; figures go under `data/processed/phase_2/notebook_13_phase_2_results/plots/`. Setting `VERIFY_PROCESSED_ARTIFACTS = False` produces a clearly marked metadata preview in a separate ignored directory and cannot mark Notebook 13 complete. This allows public-checkout inspection without implying that missing private outputs were verified. Image bytes are reproducible within the same recorded plotting environment.
+
+The synthesis distinguishes full-catalog reinsurance from held-out parametric evaluation. It reports attachment-score ties without choosing an arbitrary optimum, preserves undefined sparse-loss VaR measures, and treats RAROC as an assumption grid. Completing the notebook does not merge a branch, create a tag, or publish a release.
 
 The comparison will focus on changes in:
 
