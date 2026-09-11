@@ -1,0 +1,250 @@
+{
+  "artifact_inventory": [
+    {
+      "bytes": 76092,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_aggregate_design_comparison.csv",
+      "sha256": "5f937aee36973f80d15961fd4204a55995fa591ae326e088a0974dbb60212731"
+    },
+    {
+      "bytes": 667,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_attachment_selection_diagnostics.csv",
+      "sha256": "912ee0b77e26d260e3e9910171c78e14f7b9137b579c789af38d1b83dbbc76ed"
+    },
+    {
+      "bytes": 3878,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_basis_risk_comparison.csv",
+      "sha256": "28fec5f35918db392a78313e7e1fb177879f60ee3b32e04bf1bba5fb8293bd2e"
+    },
+    {
+      "bytes": 37165,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_break_even_comparison.csv",
+      "sha256": "5813d182a55da3e4a08108f9c51e9ba87732463d9b80797024e76bc6f35b70d3"
+    },
+    {
+      "bytes": 7325,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_damage_state_summary.csv",
+      "sha256": "021fe9a8296f02c263a2750ac23c27e7f88734bea7f288323ba99e12310a331a"
+    },
+    {
+      "bytes": 3946,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_diversification_comparison.csv",
+      "sha256": "e3a4b1739a2c4719d515237895b8f061bc630d46200e5b4a0f607c3dc869ffc9"
+    },
+    {
+      "bytes": 2278,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_diversification_diagnostics.csv",
+      "sha256": "48a38963e94717fc8e610ab482581ebd9b5f65fb6e8ed5775fda26a553b4c085"
+    },
+    {
+      "bytes": 27793,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_executive_comparison.csv",
+      "sha256": "63957881a30c436df2c4f59007baee15521c08926109828ca405435d31b668a5"
+    },
+    {
+      "bytes": 1531,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_final_validation.csv",
+      "sha256": "82e0c09154464419c7fc210b3dd491ba57b7df07cc3ea9e50e07b002890ed059"
+    },
+    {
+      "bytes": 2276,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_gross_loss_comparison.csv",
+      "sha256": "e6f10f9274e105eea74d4e85fad5c28eafa51d6caa28414336800f01abe10dfd"
+    },
+    {
+      "bytes": 76614,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_gross_pml_comparison.csv",
+      "sha256": "464a60b56ac2dbc0968aa76c09ec318f2b8cad84482ff280e8487dc2d34fb117"
+    },
+    {
+      "bytes": 15163,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_input_audit.csv",
+      "sha256": "0c26caa2ae38d275e6c6fae4a73e6e9b73bb1107ade7bc4de558c762e8e9fbbf"
+    },
+    {
+      "bytes": 1899,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_limitations.csv",
+      "sha256": "d2149df008f98bf9f31114da55e8b72444601ef93ec2873dc61251a70c45ea67"
+    },
+    {
+      "bytes": 2543,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_model_specification.json",
+      "sha256": "1f2a4a311de14071fbd904d06c9b226173e22891e2a304982f4442b02ef36c46"
+    },
+    {
+      "bytes": 34324,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_occurrence_design_comparison.csv",
+      "sha256": "bc1374a6e3828cc6dd4efaa907f640bba815dcddc836533e30c4fe0f7b4f4d1e"
+    },
+    {
+      "bytes": 33737,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_paired_uncertainty.csv",
+      "sha256": "caff8617e7dd2d3c08357934a7bb414c8b850fb24ddb3d526d019dec00be9340"
+    },
+    {
+      "bytes": 52162,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_parametric_tail_comparison.csv",
+      "sha256": "21f588c77948e5b65fb9fd50c3188ce48d18b146be8b838d11047ffca0cb3b83"
+    },
+    {
+      "bytes": 16010,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_program_comparison.csv",
+      "sha256": "1ecc1f5a77abbee6c8b679be740e1b167a5d041c0615bb103fc1be48e39ad509"
+    },
+    {
+      "bytes": 535153,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_raroc_scenario_comparison.csv",
+      "sha256": "d11cabcf0fe9eb20252b84144f7f2c5bebf17cc23e8b925032f5e4e2e115e3ed"
+    },
+    {
+      "bytes": 1704,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_required_limit_comparison.csv",
+      "sha256": "2343d142848f2515cc27683602584aa0319d4a2f67ea30bb76dd2bfcbb4a04a4"
+    },
+    {
+      "bytes": 17558,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md",
+      "sha256": "9ebdf1705914afdea2db9443795b8f2d9f8eac06108a149a118f5012c791420f"
+    },
+    {
+      "bytes": 10759,
+      "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_upstream_validation.csv",
+      "sha256": "020158ab50176d31e168c5bcc1111971ccbe8f41178f6186945843e41ef08b6c"
+    },
+    {
+      "bytes": 43856,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/evaluation_basis_risk.png",
+      "sha256": "2bb5c05d33ba45966b3393d94066fb31664256f36e2a8cac378285dce4f8550e"
+    },
+    {
+      "bytes": 38319,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/evaluation_basis_risk.svg",
+      "pre_publication_bytes": 40453,
+      "pre_publication_sha256": "91c58d0689637fd8d983570addd880e697dad2ece3d4402df4fb79e163e5e8c7",
+      "sha256": "4fb04168e0a4aee533e0abb6a19f58e615ee92e11eaa5458e6a78ce5852d214d"
+    },
+    {
+      "bytes": 71325,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/fixed_program_tail_comparison.png",
+      "sha256": "a3c0a93b6760e3a37b8ccb808ff1c3e289c632f4079f40a28d4beddf603bcf75"
+    },
+    {
+      "bytes": 60536,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/fixed_program_tail_comparison.svg",
+      "pre_publication_bytes": 63699,
+      "pre_publication_sha256": "9b46a8b94786fe9700f56f485120a816957f6a2750f0fb7a7545a2c5e60aa0a1",
+      "sha256": "e84ab70a8e84b1017dd652f38285f9990b711f108202182c28c95daea51146ac"
+    },
+    {
+      "bytes": 100852,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/gross_insured_tail_curves.png",
+      "sha256": "f4a9fdab84e800041224131c9c323ead2ce6ce3c6c5390892515a7a7c6d3e7f0"
+    },
+    {
+      "bytes": 72682,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/gross_insured_tail_curves.svg",
+      "pre_publication_bytes": 75946,
+      "pre_publication_sha256": "955819735156e638dbe6eb0718ee9821caa844d5383a08686b6c0e98da731572",
+      "sha256": "0b8dd3b2b6dbcd1898bb131cca9354499193550ae1ee81075fe2b84b01a4d172"
+    },
+    {
+      "bytes": 40764,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/paired_sampling_uncertainty.png",
+      "sha256": "584c21565c72c58ebb9f394e178bdc564d382872442b9cc107f55d5782321657"
+    },
+    {
+      "bytes": 38179,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/paired_sampling_uncertainty.svg",
+      "pre_publication_bytes": 40289,
+      "pre_publication_sha256": "92efaf6a80236546606ef381d8869ff434379165543aa4c9e67faa1a56271896",
+      "sha256": "99c723bd4ca1680a66b93054baef310b98368c4b83411ea838168551b31a176f"
+    },
+    {
+      "bytes": 67439,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/required_limit_comparison.png",
+      "sha256": "4952ece1aa5916df2e523e4acbb098705efce6e3b41689265af0f5d35f1e3842"
+    },
+    {
+      "bytes": 58255,
+      "path": "data/processed/phase_2/notebook_13_phase_2_results/plots/required_limit_comparison.svg",
+      "pre_publication_bytes": 61278,
+      "pre_publication_sha256": "f530f30ff42cb561eabf086fe95bdea8940e5a4ed1e100b95b8e0bb89c9c97d8",
+      "sha256": "8754540b7a1ac1d005f1b0dcdd5e4e4b1909c197852038408c872d9c149ada2c"
+    }
+  ],
+  "dependence_cases": [
+    "I0_PHASE1_INDEPENDENT",
+    "C1_ALDEA22_SUBDUCTION",
+    "C2_GODA_ATKINSON09"
+  ],
+  "frozen_controls": {
+    "catalog_years": 2000000,
+    "occurrences": 10630,
+    "phase1_commit": "be93474ce2ab78d8002d49ae861adb641ae2741d",
+    "phase1_release": "v1.0.0",
+    "sites": 470
+  },
+  "mode": "production",
+  "next_step": "Review production metadata and figures for Phase 2 release; then project walkthrough and interview preparation.",
+  "notebook13_complete": true,
+  "production_artifact_audit_complete": true,
+  "publication_formatting": {
+    "formatter_canonical_lf_sha256": "4f431b143f4d4ed00cc123d7e1c81e4bdde2ac203b60b73b8d83393219819551",
+    "formatter_path": "tools/phase2_results.py",
+    "operation": "SVG CRLF to LF and removal of trailing spaces/tabs",
+    "original_run_source_identity_preserved": true,
+    "scope": [
+      "data/processed/phase_2/notebook_13_phase_2_results/plots/evaluation_basis_risk.svg",
+      "data/processed/phase_2/notebook_13_phase_2_results/plots/fixed_program_tail_comparison.svg",
+      "data/processed/phase_2/notebook_13_phase_2_results/plots/gross_insured_tail_curves.svg",
+      "data/processed/phase_2/notebook_13_phase_2_results/plots/paired_sampling_uncertainty.svg",
+      "data/processed/phase_2/notebook_13_phase_2_results/plots/required_limit_comparison.svg"
+    ]
+  },
+  "release_published": false,
+  "runtime": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "python": "3.12.10"
+  },
+  "source": {
+    "helper_canonical_lf_sha256": "27e4158c82b67db27fc1cff01603cae0a957a9ec254d7383e9a7e14a8179adaf",
+    "helper_path": "tools/phase2_results.py",
+    "notebook_cell_sources_sha256": "c58c996f16cf516e9a427be3d188e0792cc234b3e3f1567fd297d061cd916ba1"
+  },
+  "upstream": [
+    {
+      "notebook": 8,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_final_handoff.json",
+      "sha256": "b9c68b1ac75e16f2db0f3f005ca017778068a79e117c6e8c3dd2a685eee13fa8"
+    },
+    {
+      "notebook": 9,
+      "path": "data/metadata/phase_2/notebook_9_correlated_ground_motion/notebook_9_final_handoff.json",
+      "sha256": "c9c8798ea2d6828353a0462297ce7874a35f6ced7a5dabae744c57fbe4adadd5"
+    },
+    {
+      "notebook": 10,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_final_handoff.json",
+      "sha256": "f9bb75c8e596ebdd21b2e4d5ca39c472074d4e79e189c5959c836f3c386f1fc4"
+    },
+    {
+      "notebook": 11,
+      "path": "data/metadata/phase_2/notebook_11_reinsurance_capital/notebook_11_final_handoff.json",
+      "sha256": "c9a9ad70a7eb01d679e227442a2f11667a39900d2246550d71e0bb247d316b1e"
+    },
+    {
+      "notebook": 12,
+      "path": "data/metadata/phase_2/notebook_12_parametric_basis_risk/notebook_12_final_handoff.json",
+      "sha256": "cbd134f3f5c91b79607e2ee457f75d791203319230d985cd627660e1c6d4a655"
+    }
+  ],
+  "validation": {
+    "checks": 14,
+    "critical_failures": 0,
+    "path": "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_final_validation.csv",
+    "sha256": "82e0c09154464419c7fc210b3dd491ba57b7df07cc3ea9e50e07b002890ed059",
+    "upstream_warning_count": 6,
+    "warnings": 0
+  }
+}

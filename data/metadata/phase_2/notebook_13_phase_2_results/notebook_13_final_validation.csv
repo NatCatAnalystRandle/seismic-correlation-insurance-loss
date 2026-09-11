@@ -1,0 +1,15 @@
+check_id,severity,passed,detail
+all_available_input_hashes_match,critical,True,artifacts=65
+all_production_artifacts_verified,critical,True,skipped=0
+upstream_critical_checks_pass,critical,True,checks=99
+frozen_table_dimensions,critical,True,"{'nb10_case_summary': 3, 'nb10_pml_table': 306, 'nb11_program_summary': 12, 'nb11_occurrence_design_grid': 45, 'nb11_aggregate_design_grid': 90, 'nb11_required_limit_summary': 6, 'nb11_diversification_summary': 15, 'nb11_raroc_assumption_grid': 585, 'nb11_break_even_premium_grid': 117, 'nb11_pml_table': 918, 'nb11_uncertainty_summary': 56, 'nb12_basis_risk_summary': 18, 'nb12_tail_risk_table': 576, 'nb12_uncertainty_summary': 28}"
+program_AAL_reconciliation,critical,True,gross = ceded + retained; tolerance $0.01
+insurance_reinsurance_AAL_match,critical,True,Notebook 10 to 11 gross insured AAL
+held_out_basis_comparison,critical,True,Held-out years only
+common_parametric_payout,critical,True,Source-only common payout AAL
+basis_shortfall_excess_identity,critical,True,payout - target = excess - shortfall
+attachment_ties_explicit,critical,True,No arbitrary selection among tied scores
+paired_uncertainty_preserved,critical,True,"56 full-catalog + 28 evaluation rows, 300 paired replicates"
+baseline_comparison_zero,critical,True,All I0 comparisons reconcile to their source baseline
+required_limit_feasibility,critical,True,All six stored target solutions feasible; numerical limit tolerance retained upstream
+limitations_documented,critical,True,11 explicit interpretation limits
