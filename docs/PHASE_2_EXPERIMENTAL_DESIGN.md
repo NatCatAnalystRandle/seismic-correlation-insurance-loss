@@ -1,6 +1,6 @@
 # Phase 2 experimental design
 
-**Status:** Version 0.6, Notebooks 08 through 12 production-validated; Notebook 13 synthesis source available, with production audit and release publication pending
+**Status:** Version 0.7, Notebooks 08 through 13 production-validated; final results and figures published on the Notebook 13 branch, with integration and a tagged Phase 2 release pending
 
 **Branch:** `phase-2-correlation-extension`
 
