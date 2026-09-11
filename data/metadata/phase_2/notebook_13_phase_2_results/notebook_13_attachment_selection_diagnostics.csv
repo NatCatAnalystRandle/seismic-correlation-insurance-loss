@@ -1,0 +1,4 @@
+case_name,criterion,best_score,tied_designs,tested_designs,minimum_tied_attachment_2022_usd,maximum_tied_attachment_2022_usd,selected_attachment_2022_usd,selection_status,tie_relative_tolerance,tie_absolute_tolerance
+I0_PHASE1_INDEPENDENT,tvar99_5_capital_relief_per_expected_ceded_dollar,198.98000199980021,15,15,0,47812543.505373098,,no_unique_selection,1e-10,1e-10
+C1_ALDEA22_SUBDUCTION,tvar99_5_capital_relief_per_expected_ceded_dollar,198.98000199980024,15,15,0,47812543.505373098,,no_unique_selection,1e-10,1e-10
+C2_GODA_ATKINSON09,tvar99_5_capital_relief_per_expected_ceded_dollar,198.98000199980009,15,15,0,47812543.505373098,,no_unique_selection,1e-10,1e-10

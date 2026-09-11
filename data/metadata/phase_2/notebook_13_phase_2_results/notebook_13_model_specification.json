@@ -1,0 +1,26 @@
+{
+  "comparison_baseline": "I0_PHASE1_INDEPENDENT",
+  "full_catalog_years": 2000000,
+  "legacy_hash_policy": "Notebook 08 inventory text: exact raw or CRLF-reconstructed size/hash; Notebook 08 and 09 handoffs: pinned published LF byte views; all modes explicitly recorded",
+  "limitations": {
+    "attachment_identification": "The TVaR capital-relief-per-ceded-dollar score ties across the tested attachment grid. No unique best attachment is identified.",
+    "comparison_period": "Insurance/reinsurance results use all two million years. Parametric headline results use only the held-out final million years.",
+    "diversification": "AAL is additive. At the selected TVaR confidence levels the sparse annual loss support also produces additivity; this does not establish absence of diversification at other quantiles.",
+    "legacy_bytes": "Notebook 08 inventory text uses explicit CRLF reconstruction for its original Windows-byte hashes. Notebook 08 and 09 handoffs are pinned to their published LF byte views. Both modes are exposed in the audit; no frozen input is rewritten.",
+    "model_scope": "Results are conditional on the frozen catalog, portfolio, vulnerability, policy terms, and dependence models. They are a research comparison, not a calibrated capital or placement recommendation.",
+    "parametric_cash": "A source-only payout is identical across cases. Excess payouts and unfunded losses are separate; signed cash-net losses may be negative.",
+    "pricing": "RAROC and break-even premiums are assumption grids, not market quotes or central estimates. Matching premium multiples implies different absolute earned premiums across cases.",
+    "sparse_VaR": "Gross annual VaR at 99% and 99.5% is zero. The corresponding VaR capital and diversification ratios are non-informative.",
+    "tail_support": "Return-period estimates with order-statistic rank below 20 are diagnostics, not headline estimates.",
+    "trigger_grid": "Both selected distance-decay parameters lie at the candidate grid's upper boundary. Optimality outside that grid is not established.",
+    "uncertainty": "Paired bootstrap intervals quantify catalog sampling variation under frozen models. Notebook 12 intervals condition on the fitted trigger and omit calibration uncertainty."
+  },
+  "minimum_headline_order_statistic_rank": 20,
+  "money_unit": "2022_USD",
+  "parametric_evaluation_years": [
+    1000001,
+    2000000
+  ],
+  "purpose": "read-only synthesis; no recalibration",
+  "undefined_percentage_policy": "NaN for zero or missing baseline"
+}

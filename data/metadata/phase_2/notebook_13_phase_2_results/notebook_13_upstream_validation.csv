@@ -1,0 +1,100 @@
+notebook,check_id,severity,passed,detail
+8,site_order_columns_complete,critical,True,"Columns: ['site_id', 'site_latitude', 'site_longitude', 'site_ordinal']"
+8,site_order_row_count,critical,True,Rows: 470; expected: 470
+8,site_ordinals_frozen,critical,True,Required site_ordinal sequence: 0 through 469.
+8,site_order_canonical_hash_frozen,critical,True,Canonical CRLF SHA-256: fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100; raw checkout SHA-256: fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100.
+8,phase1_random_generator_frozen,critical,True,Generator: numpy.random.PCG64DXSM
+8,phase1_site_latent_transform_frozen,critical,True,"Transform: {'pga': 'z1', 'sa0p4': 'rho*z1 + sqrt(1-rho^2)*z2'}"
+8,cross_imt_rho_frozen,critical,True,Frozen rho: 0.7321409900247263
+8,geometry_site_count,critical,True,Sites: 470
+8,geometry_unique_coordinate_count,critical,True,Unique coordinates: 426
+8,all_matrices_positive_semidefinite,critical,True,Minimum eigenvalue across all matrices: -1.427246e-15
+8,all_factor_reconstructions_accurate,critical,True,Maximum reconstruction error: 1.221245e-15
+8,correlated_case_zero_modes_match_duplicate_coordinates,critical,True,All C1 and C2 matrices must have 44 structural zero modes.
+8,independent_case_identity_matrices,critical,True,I0 matrices and factors reproduce exact identity transforms.
+8,aldea_joint_construction_recovers_sa0p4_covariance,critical,True,Maximum covariance identity error: 0.000000e+00
+8,goda_common_kernel_preserved,critical,True,Maximum common-kernel error: 1.110223e-16
+8,colocated_residuals_identical,critical,True,Maximum co-located residual difference: 0.000000e+00
+8,independent_case_phase1_transform_exact,critical,True,I0 reproduces the Phase 1 normalized latent transform exactly.
+8,i0_phase1_independent_empirical_site_means,critical,True,Maximum absolute site mean: 0.055024
+8,i0_phase1_independent_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.043092
+8,i0_phase1_independent_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.037699
+8,i0_phase1_independent_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.731848; target: 0.732141
+8,c1_aldea22_subduction_empirical_site_means,critical,True,Maximum absolute site mean: 0.031317
+8,c1_aldea22_subduction_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.022722
+8,c1_aldea22_subduction_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.014100
+8,c1_aldea22_subduction_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.726627; target: 0.732141
+8,c2_goda_atkinson09_empirical_site_means,critical,True,Maximum absolute site mean: 0.034130
+8,c2_goda_atkinson09_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.025556
+8,c2_goda_atkinson09_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.016023
+8,c2_goda_atkinson09_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.727170; target: 0.732141
+8,artifact_paths_are_repository_relative,critical,True,Portable paths validated: 12.
+8,metadata_excludes_runtime_timestamps,critical,True,Runtime timestamps are excluded from hash-tracked JSON artifacts.
+9,partition_validations_passed,critical,True,Checks: 144.
+9,final_row_count,critical,True,"Observed: 4,996,100; expected: 4,996,100."
+9,final_occurrence_count,critical,True,"Observed: 10,630; expected: 10,630."
+9,output_schema,critical,True,Columns: 38.
+9,residual_means,critical,True,Maximum absolute mean: 0.001036.
+9,residual_standard_deviations,critical,True,Range: 0.999963 to 1.003710.
+9,same_site_cross_imt_correlation,critical,True,Maximum error: 0.002069.
+9,selected_pair_correlations,critical,True,Maximum error: 0.019973.
+9,metadata_paths_portable,critical,True,All public paths are repository-relative.
+10,input_and_control_validation_passed,critical,True,input_checks=30; control_checks=17
+10,full_catalog_dimensions,critical,True,rows=4996100; events=10630; site_range=470-470
+10,building_output_schema,critical,True,columns=53
+10,i0_damage_state_counts_reproduce_phase1_exactly,critical,True,mismatches={}
+10,i0_financial_totals_reproduce_phase1,critical,True,"errors_2022_usd={'i0_structural_ground_up_loss_2022_usd': -2.288818359375e-05, 'i0_nsd_ground_up_loss_2022_usd': -2.288818359375e-05, 'i0_nsa_ground_up_loss_2022_usd': 6.103515625e-05, 'i0_total_ground_up_loss_2022_usd': -0.0001220703125, 'i0_deductible_absorbed_loss_2022_usd': -3.0517578125e-05, 'i0_policy_limit_absorbed_loss_2022_usd': 0.0, 'i0_coinsurance_absorbed_loss_2022_usd': 0.0, 'i0_gross_insured_loss_2022_usd': -6.103515625e-05, 'i0_uninsured_loss_2022_usd': -3.0517578125e-05}"
+10,row_level_component_and_policy_reconciliation,critical,True,"maximum_errors_2022_usd={'component': 1.862645149230957e-09, 'policy': 0.0, 'uninsured': 1.3969838619232178e-09}"
+10,i0_aggregate_loss_reconciliation,critical,True,component_error=1.220703e-04; policy_error=-9.155273e-05
+10,i0_baseline_limit_and_coinsurance_nonbinding,critical,True,limit_absorbed=0.000000; coinsurance_absorbed=0.000000
+10,c1_aggregate_loss_reconciliation,critical,True,component_error=6.103516e-05; policy_error=-1.831055e-04
+10,c1_baseline_limit_and_coinsurance_nonbinding,critical,True,limit_absorbed=0.000000; coinsurance_absorbed=0.000000
+10,c2_aggregate_loss_reconciliation,critical,True,component_error=-6.103516e-05; policy_error=0.000000e+00
+10,c2_baseline_limit_and_coinsurance_nonbinding,critical,True,limit_absorbed=0.000000; coinsurance_absorbed=0.000000
+10,annual_series_includes_all_zero_event_years,critical,True,years=2000000; occupied=10593; zero_event=1989407
+10,i0_annual_metrics_reproduce_phase1,critical,True,maximum_numeric_error_2022_usd=5.960464e-08; count_mismatches={}
+10,building_event_annual_totals_reconcile,critical,True,maximum_event_error=6.103516e-05; maximum_annual_error=6.103516e-05
+10,pml_tables_nondecreasing_by_return_period,critical,True,rows=306
+10,public_paths_are_repository_relative,critical,True,Notebook 10 public metadata contains only repository-relative paths.
+10,extreme_return_period_tail_support_documented,warning,False,"Return periods with order-statistic rank below 20 are diagnostics, not headline estimates."
+11,input_and_control_validation_passed,critical,True,input_checks=22; control_checks=12
+11,fixed_program_dimensions,critical,True,rows=12; cases=3; programs=4
+11,event_and_annual_output_dimensions,critical,True,events=10630; annual=2000000; occupied=10593
+11,gross_ceded_retained_reconciliation,critical,True,maximum_event_error=0.000000e+00; maximum_annual_error=0.000000e+00
+11,frozen_occurrence_layer_limit_obeyed,critical,True,maximum_limit_excess=0.000000e+00
+11,i0_frozen_program_reproduces_phase1,critical,True,"errors_2022_usd={'ceded_aal_2022_usd': -1.4551915228366852e-11, 'retained_aal_2022_usd': -1.4551915228366852e-11, 'maximum_ceded_aep_2022_usd': -2.9802322387695312e-08}"
+11,common_fixed_terms_across_cases,critical,True,"The same frozen occurrence attachment and limit are applied to I0, C1, and C2."
+11,occurrence_design_grid_complete_and_common,critical,True,rows=45; designs=15
+11,aggregate_design_grid_complete_and_ordered,critical,True,"rows=90; structures=['STACKED_AFTER_FROZEN_OCCURRENCE', 'STANDALONE_ANNUAL_AGGREGATE']"
+11,required_limit_targets_evaluated,critical,True,rows=6; feasible=6
+11,pml_tables_nondecreasing,critical,True,rows=918
+11,var_sparsity_explicitly_flagged,critical,True,Gross insured AEP VaR is zero at 99.0% and 99.5% because the annual catalog has a dominant zero-loss mass.
+11,diversification_metrics_complete,critical,True,rows=15; units=[np.int64(470)]
+11,paired_uncertainty_complete,critical,True,rows=56; replicates=300
+11,raroc_is_assumption_grid_only,critical,True,raroc_rows=585; break_even_rows=117
+11,public_paths_are_repository_relative,critical,True,All public Notebook 11 paths are repository-relative POSIX paths.
+11,extreme_return_period_tail_support_documented,warning,False,"Return periods with order-statistic rank below 20 are diagnostics, not headline estimates."
+11,var_based_capital_noninformative_at_selected_confidence,warning,False,The specified 99.5% VaR economic-capital measure is non-informative because gross annual VaR is zero; use the reported TVaR tail capital and PML metrics for substantive decisions.
+12,input_validation_passed,critical,True,checks=38
+12,event_annual_dimensions,critical,True,events=10630; years=2000000
+12,all_zero_event_years_preserved,critical,True,Zero-event years have zero losses and payouts.
+12,train_evaluation_partition,critical,True,split=1000000; disjoint catalog-year sets
+12,complete_common_candidate_grid,critical,True,candidates=576
+12,trigger_file_unchanged,critical,True,3d69329f9e61d9423b27da231c2135abd24dee63736388a03b2eadacb0b8f6db
+12,calibration_uses_training_only,critical,True,Training-only replay yields exactly the saved specification.
+12,prediction_independent_of_losses_and_case,critical,True,"One source-only payout vector is shared across I0, C1, C2."
+12,payout_and_collateral_bounds,critical,True,maximum annual payout=61837983.31491815
+12,collateral_independent_of_row_order,critical,True,Frozen event time controls depletion.
+12,i0_cash_accounting,critical,True,maximum_error_2022_usd=0.000000e+00
+12,i0_event_annual_upstream_reconciliation,critical,True,event_error=0.000000e+00; total_error=3.051758e-05; upstream_aal_error=0.000000e+00
+12,c1_cash_accounting,critical,True,maximum_error_2022_usd=0.000000e+00
+12,c1_event_annual_upstream_reconciliation,critical,True,event_error=0.000000e+00; total_error=1.525879e-05; upstream_aal_error=0.000000e+00
+12,c2_cash_accounting,critical,True,maximum_error_2022_usd=0.000000e+00
+12,c2_event_annual_upstream_reconciliation,critical,True,event_error=0.000000e+00; total_error=3.051758e-05; upstream_aal_error=0.000000e+00
+12,basis_summary_complete,critical,True,"Three periods, two payout bases, three cases; identical payout AAL across cases."
+12,pml_monotonicity_and_tail_support,critical,True,rows=576
+12,paired_evaluation_uncertainty,critical,True,rows=28; replicates=300
+12,public_paths_are_repository_relative,critical,True,POSIX paths relative to the repository.
+12,extreme_return_period_tail_support,warning,False,"Order-statistic support below 20 is diagnostic, not a headline estimate."
+12,var_capital_informative,warning,False,A zero VaR under sparse losses is non-informative; report TVaR and PML alongside it.
+12,calibration_uncertainty_included,warning,False,Paired bootstrap conditions on the frozen trigger; calibration and model uncertainty are outside these intervals.

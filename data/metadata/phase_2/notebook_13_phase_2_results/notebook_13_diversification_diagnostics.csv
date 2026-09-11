@@ -1,0 +1,16 @@
+case_name,case_prefix,loss_basis,risk_measure,confidence,portfolio_risk_2022_usd,sum_standalone_risk_2022_usd,diversification_benefit,units,interpretation
+I0_PHASE1_INDEPENDENT,i0,gross_insured,aal,,122979.55996732846,122979.55996732845,-2.2204460492503131e-16,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence
+I0_PHASE1_INDEPENDENT,i0,gross_insured,var,0.98999999999999999,0,0,,470,undefined_ratio_zero_VaR
+I0_PHASE1_INDEPENDENT,i0,gross_insured,tvar,0.98999999999999999,12297341.129676362,12297341.129676361,-2.2204460492503131e-16,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence
+I0_PHASE1_INDEPENDENT,i0,gross_insured,var,0.995,0,0,,470,undefined_ratio_zero_VaR
+I0_PHASE1_INDEPENDENT,i0,gross_insured,tvar,0.995,24593452.648200873,24593452.64820087,-2.2204460492503131e-16,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence
+C1_ALDEA22_SUBDUCTION,c1,gross_insured,aal,,123443.42922816567,123443.42922816565,-2.2204460492503131e-16,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence
+C1_ALDEA22_SUBDUCTION,c1,gross_insured,var,0.98999999999999999,0,0,,470,undefined_ratio_zero_VaR
+C1_ALDEA22_SUBDUCTION,c1,gross_insured,tvar,0.98999999999999999,12343725.736529741,12343725.736529741,0,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence
+C1_ALDEA22_SUBDUCTION,c1,gross_insured,var,0.995,0,0,,470,undefined_ratio_zero_VaR
+C1_ALDEA22_SUBDUCTION,c1,gross_insured,tvar,0.995,24686217.223910745,24686217.223910742,-2.2204460492503131e-16,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence
+C2_GODA_ATKINSON09,c2,gross_insured,aal,,123335.6774168985,123335.67741689848,-2.2204460492503131e-16,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence
+C2_GODA_ATKINSON09,c2,gross_insured,var,0.98999999999999999,0,0,,470,undefined_ratio_zero_VaR
+C2_GODA_ATKINSON09,c2,gross_insured,tvar,0.98999999999999999,12332951.094135143,12332951.094135141,-2.2204460492503131e-16,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence
+C2_GODA_ATKINSON09,c2,gross_insured,var,0.995,0,0,,470,undefined_ratio_zero_VaR
+C2_GODA_ATKINSON09,c2,gross_insured,tvar,0.995,24664669.016478051,24664669.016478051,0,470,AAL_additivity_or_sparse_tail_additivity_at_selected_confidence

@@ -2,7 +2,7 @@
 
 A reproducible earthquake catastrophe-risk modeling project that connects seismic hazard, stochastic event simulation, ground-motion fields, building damage, ground-up loss, insurance recovery, and reinsurance loss.
 
-The **Phase 1 no-spatial-correlation baseline** is complete. Phase 2 is now in progress: spatial-correlation models, paired ground-motion fields, correlated damage and policy losses, reinsurance sensitivity and capital, and parametric basis risk have completed their production validation. Notebook 12's frozen magnitude-distance trigger and out-of-sample basis-risk artifacts are published. Notebook 13 will consolidate final results, figures, limitations, and release validation.
+The **Phase 1 no-spatial-correlation baseline** is complete. All six Phase 2 notebooks have also completed their production validation: spatial-correlation models, paired ground-motion fields, correlated damage and policy losses, reinsurance sensitivity and capital, parametric basis risk, and the final synthesis. Notebook 13's validated results, report, and five figures are published on the Notebook 13 branch. Integration into the Phase 2 branch and a tagged Phase 2 release remain pending.
 
 ---
 
@@ -58,7 +58,7 @@ The completed workflow includes:
 - Notebook 10: complete and validated
 - Notebook 11: complete and validated; public metadata committed at `9174419`
 - Notebook 12: production run complete; 20 critical checks passed, three documented limitations; public metadata committed at `e886a20`
-- Notebook 13: planned final results, figures, validation, and release handoff
+- Notebook 13: production-validated; 65 upstream artifact checks and 14 critical synthesis checks passed; results and figures committed at `ebfcbd2`
 
 The agreed sequence contains **13 notebooks in total**: seven Phase 1 notebooks and six Phase 2 notebooks.
 
@@ -323,6 +323,7 @@ Return periods of 200,000 years and longer are retained only as thin-tail diagno
 | [`10_correlated_damage_and_loss.ipynb`](10_correlated_damage_and_loss.ipynb) | Reuse the frozen damage streams and policy terms to calculate paired damage, ground-up loss, and gross insured loss |
 | [`11_reinsurance_sensitivity_and_capital.ipynb`](11_reinsurance_sensitivity_and_capital.ipynb) | Apply common occurrence and aggregate programs and compare retained loss, tail capital, required limits, diversification, and RAROC assumption grids |
 | [`12_parametric_cat_bond_basis_risk.ipynb`](12_parametric_cat_bond_basis_risk.ipynb) | Fit an I0 training trigger, freeze common collateralized payouts, and evaluate out-of-sample basis risk and residual tails |
+| [`13_phase_2_results_and_validation.ipynb`](13_phase_2_results_and_validation.ipynb) | Audit the five frozen upstream handoffs, synthesize paired results and limitations, and produce the Phase 2 report and figures |
 
 ---
 
@@ -473,6 +474,7 @@ seismic-correlation-insurance-loss/
 ├── 10_correlated_damage_and_loss.ipynb
 ├── 11_reinsurance_sensitivity_and_capital.ipynb
 ├── 12_parametric_cat_bond_basis_risk.ipynb
+├── 13_phase_2_results_and_validation.ipynb
 ├── data/
 │   ├── metadata/
 │   ├── processed/
@@ -568,7 +570,31 @@ The current modeling phase preserves:
 
 Notebook 08 defines the dependence models, Notebook 09 generates the paired full-catalog fields, and Notebook 10 propagates them through the frozen damage and policy models. Notebook 11 applies common occurrence and aggregate programs and evaluates retained and ceded loss, TVaR tail capital, required limits, diversification, paired uncertainty, break-even premium, and RAROC over transparent assumption grids. Notebook 12 fits a source-specific magnitude-distance trigger on I0 years 1 through 1,000,000 and evaluates it on years 1,000,001 through 2,000,000 without refitting across cases. It uses minimum authoritative rupture distance over the frozen portfolio, fixed payout tiers, and one-year collateral with annual reset and no reinstatement. Nominal trigger error, collateral depletion, signed cash net loss, unfunded loss, and surplus remain separately visible.
 
-Notebook 12 requires the validated Notebook 11 artifacts, the original annual event catalog, and the authoritative Notebook 04 rupture/site distance file. It does not regenerate ground motions or damage. Start with its setup and frozen-input cell, then run subsequent cells in order. Outputs are deterministic gzip CSV files under `data/processed/phase_2/notebook_12_parametric_basis_risk/` and portable metadata under `data/metadata/phase_2/notebook_12_parametric_basis_risk/`. After a kernel restart, rerun in order; each stage is deterministic. The large production outputs remain local and ignored by Git. Notebook 13 will consolidate final results and release validation.
+Notebook 12 requires the validated Notebook 11 artifacts, the original annual event catalog, and the authoritative Notebook 04 rupture/site distance file. It does not regenerate ground motions or damage. Start with its setup and frozen-input cell, then run subsequent cells in order. Outputs are deterministic gzip CSV files under `data/processed/phase_2/notebook_12_parametric_basis_risk/` and portable metadata under `data/metadata/phase_2/notebook_12_parametric_basis_risk/`. After a kernel restart, rerun in order; each stage is deterministic. The large production outputs remain local and ignored by Git.
+
+Notebook 13 audits the five frozen upstream handoffs and their 60 inventory entries, then writes paired executive and scenario comparisons, attachment and diversification diagnostics, 84 existing uncertainty rows, five PNG/SVG figures, and a results report. Its default production mode streams all 10 private inventory files through SHA-256, including Notebook 08's factor/plot and Notebook 09's large paired field. Keep those files locally. Notebook 08's original CRLF metadata byte hashes are reconstructed explicitly where required; no upstream file is changed.
+
+Run `13_phase_2_results_and_validation.ipynb` from the repository root, starting with setup and the input audit. Production metadata and the report go under `data/metadata/phase_2/notebook_13_phase_2_results/`; figures go under `data/processed/phase_2/notebook_13_phase_2_results/plots/`. Setting `VERIFY_PROCESSED_ARTIFACTS = False` produces a clearly marked metadata preview in a separate ignored directory and cannot mark Notebook 13 complete. This allows public-checkout inspection without implying that missing private outputs were verified. Image bytes are reproducible within the same recorded plotting environment.
+
+The synthesis distinguishes full-catalog reinsurance from held-out parametric evaluation. It reports attachment-score ties without choosing an arbitrary optimum, preserves undefined sparse-loss VaR measures, and treats RAROC as an assumption grid. Completing the notebook does not merge a branch, create a tag, or publish a release.
+
+### Validated Phase 2 results
+
+The [final results report](data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md), [executive comparison table](data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_executive_comparison.csv), and [production handoff](data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_final_handoff.json) provide the numerical results and audit trail. All 32 inventoried publication artifacts have verified hashes and sizes. SVG whitespace normalization is recorded separately while preserving the original production source identity and pre-normalization hashes.
+
+The following values use the full two-million-year catalog and the common frozen occurrence XoL program. Amounts are constant 2022 USD.
+
+| Case | Gross insured AAL | Ceded AAL | Retained 2,500-year AEP PML | Required limit to restore I0's retained 2,500-year PML |
+|---|---:|---:|---:|---:|
+| I0: independent | $122,979.56 | $63,676.60 | $19.36 million | $61.84 million |
+| C1: Aldea | $123,443.43 | $58,654.69 | $33.27 million | $75.90 million |
+| C2: Goda–Atkinson | $123,335.68 | $58,604.14 | $34.08 million | $76.67 million |
+
+The paired bootstrap intervals for the gross insured AAL differences include zero, so the small point-estimate changes do not establish a resolved AAL effect. In contrast, the stored paired intervals for the retained 2,500-year PML differences under the frozen occurrence layer exclude zero. Required limits use the same attachment and a $1,000 numerical search tolerance; they are conditional model results rather than placement recommendations.
+
+![Gross insured AEP and OEP comparison](data/processed/phase_2/notebook_13_phase_2_results/plots/gross_insured_tail_curves.png)
+
+The remaining figures show [fixed-program retained tails](data/processed/phase_2/notebook_13_phase_2_results/plots/fixed_program_tail_comparison.png), [required limits](data/processed/phase_2/notebook_13_phase_2_results/plots/required_limit_comparison.png), [paired sampling uncertainty](data/processed/phase_2/notebook_13_phase_2_results/plots/paired_sampling_uncertainty.png), and [held-out parametric basis risk](data/processed/phase_2/notebook_13_phase_2_results/plots/evaluation_basis_risk.png). Each PNG has a matching SVG in the same directory. Parametric results use evaluation years 1,000,001 through 2,000,000 and must not be mixed with the full-catalog reinsurance comparison above.
 
 The comparison will focus on changes in:
 
