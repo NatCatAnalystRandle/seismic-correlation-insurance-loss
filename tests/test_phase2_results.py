@@ -1,5 +1,6 @@
 """Behavioral checks for frozen-artifact audits and paired synthesis."""
 import hashlib
+import json
 from pathlib import Path
 import tempfile
 import unittest
@@ -10,10 +11,51 @@ import pandas as pd
 from tools.phase2_results import (
     BASELINE, CASE_PREFIXES, attachment_diagnostics, check_artifact,
     paired_comparison, safe_path,
+    normalize_svg_bytes, normalize_publication_svgs, inventory_item, write_json,
 )
 
 
 class Phase2ResultsTest(unittest.TestCase):
+    def test_svg_whitespace_has_identical_LF_and_CRLF_results(self):
+        original = b'<svg><path d="M 0 0 \nL 1 1 \t\n"/></svg>\n'
+        expected = b'<svg><path d="M 0 0\nL 1 1\n"/></svg>\n'
+        self.assertEqual(normalize_svg_bytes(original), expected)
+        self.assertEqual(normalize_svg_bytes(original.replace(b"\n", b"\r\n")), expected)
+        self.assertEqual(normalize_svg_bytes(expected), expected)
+
+    def test_publication_repair_verifies_originals_and_preserves_provenance(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            prefix = root / "data/processed/phase_2/notebook_13_phase_2_results/plots"
+            prefix.mkdir(parents=True)
+            paths = []
+            for i in range(5):
+                path = prefix / f"fixture_{i}.svg"
+                path.write_bytes(b'<svg><path d="M 0 0 \r\nL 1 1 \r\n"/></svg>\r\n')
+                paths.append(path)
+            csv_path = root / "result.csv"
+            csv_path.write_bytes(b"loss\n1\n")
+            hpath = root / "data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_final_handoff.json"
+            original_h = dict(notebook13_complete=True, mode="production", source={"original": "preserved"},
+                              artifact_inventory=[inventory_item(root, p) for p in [*paths, csv_path]])
+            write_json(hpath, original_h)
+            original_svgs = [p.read_bytes() for p in paths]
+            csv_path.write_bytes(b"loss\n2\n")
+            with self.assertRaisesRegex(RuntimeError, "Original artifact"):
+                normalize_publication_svgs(root)
+            self.assertEqual(original_svgs, [p.read_bytes() for p in paths])
+            csv_path.write_bytes(b"loss\n1\n")
+            self.assertEqual(normalize_publication_svgs(root), 5)
+            h = json.loads(hpath.read_text())
+            self.assertEqual(h["source"], original_h["source"])
+            for old, new in zip(original_h["artifact_inventory"][:5], h["artifact_inventory"][:5]):
+                self.assertEqual(new["pre_publication_sha256"], old["sha256"])
+                self.assertEqual(check_artifact(root, new)[0], "PASS")
+            self.assertEqual(csv_path.read_bytes(), b"loss\n1\n")
+            before = hpath.read_bytes()
+            self.assertEqual(normalize_publication_svgs(root), 0)
+            self.assertEqual(hpath.read_bytes(), before)
+
     def test_byte_audit_detects_tampering_and_requires_explicit_legacy_mode(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

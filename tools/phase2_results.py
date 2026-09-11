@@ -77,6 +77,60 @@ def inventory_item(root, path):
                 bytes=Path(path).stat().st_size, sha256=sha256_file(path))
 
 
+def normalize_svg_bytes(data):
+    """Give Matplotlib SVG output LF endings without trailing horizontal space."""
+    return b"\n".join(line.rstrip(b" \t") for line in data.replace(b"\r\n", b"\n").split(b"\n"))
+
+
+def normalize_publication_svgs(root):
+    """Repair existing Notebook 13 SVG serialization after verifying ALL inputs.
+
+    Scientific outputs and original run source identity remain unchanged. The
+    handoff retains pre-normalization SVG hashes and identifies this formatter.
+    """
+    from xml.etree import ElementTree
+
+    root = Path(root).resolve()
+    handoff_path = root / f"data/metadata/phase_2/{OUTPUT_NAME}/notebook_13_final_handoff.json"
+    h = json.loads(handoff_path.read_text(encoding="utf-8"))
+    if h.get("notebook13_complete") is not True or h.get("mode") != "production":
+        raise ValueError("A completed production handoff is required.")
+    inventory = h["artifact_inventory"]
+    if len({a["path"] for a in inventory}) != len(inventory):
+        raise ValueError("Duplicate artifact inventory entry.")
+    for item in inventory:
+        if check_artifact(root, item)[0] != "PASS":
+            raise RuntimeError(f"Original artifact does not match its handoff: {item['path']}")
+    prefix = f"data/processed/phase_2/{OUTPUT_NAME}/plots/"
+    svg_items = [a for a in inventory if a["path"].startswith(prefix) and a["path"].endswith(".svg")]
+    if len(svg_items) != 5:
+        raise ValueError("Expected exactly five inventoried Notebook 13 SVG figures.")
+    updates = []
+    for item in svg_items:
+        path = safe_path(root, item["path"])
+        original = path.read_bytes()
+        normalized = normalize_svg_bytes(original)
+        ElementTree.fromstring(normalized)
+        if normalized != original:
+            updates.append((item, path, normalized))
+    # All hashes and proposed XML files are checked before the first write.
+    for item, path, normalized in updates:
+        item.setdefault("pre_publication_sha256", item["sha256"])
+        item.setdefault("pre_publication_bytes", item["bytes"])
+        path.write_bytes(normalized)
+        item.update(inventory_item(root, path))
+    if updates:
+        h["publication_formatting"] = {
+            "operation": "SVG CRLF to LF and removal of trailing spaces/tabs",
+            "scope": [item["path"] for item, _, _ in updates],
+            "original_run_source_identity_preserved": True,
+            "formatter_path": "tools/phase2_results.py",
+            "formatter_canonical_lf_sha256": hashlib.sha256(Path(__file__).read_bytes().replace(b"\r\n", b"\n")).hexdigest(),
+        }
+        write_json(handoff_path, h)
+    return len(updates)
+
+
 def check_artifact(root, item, *, legacy_crlf=False):
     """Exact raw match, or an explicitly authorized legacy text-byte match.
 
@@ -348,6 +402,8 @@ def make_figures(t, results, directory):
         for suffix in ("png", "svg"):
             path = directory / f"{name}.{suffix}"
             fig.savefig(path, dpi=160, metadata={"Date": None} if suffix == "svg" else {"Software": "seismic-correlation-insurance-loss"})
+            if suffix == "svg":
+                path.write_bytes(normalize_svg_bytes(path.read_bytes()))
             paths.append(path)
         plt.close(fig)
     with plt.rc_context({"svg.hashsalt": "phase2-notebook13", "font.size": 10, "axes.spines.top": False, "axes.spines.right": False}):
