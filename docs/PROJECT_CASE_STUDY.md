@@ -41,16 +41,16 @@ The project asks:
 
 ## End-to-end workflow
 
-```mermaid
-flowchart LR
-    A[USGS NSHM] --> B[Annual event catalog]
-    B --> C[Paired ground-motion fields]
-    C --> D[Building damage]
-    D --> E[Ground-up and insured loss]
-    E --> F[Reinsurance and capital]
-    F --> G[Parametric basis risk]
-    G --> H[Validated synthesis]
-```
+| Stage | Model output |
+|---:|---|
+| 1 | USGS NSHM seismic-source information |
+| 2 | Annual stochastic event catalog |
+| 3 | Paired ground-motion fields for all dependence cases |
+| 4 | Structural and nonstructural building damage |
+| 5 | Ground-up and insured portfolio loss |
+| 6 | Reinsurance recovery and retained tail capital |
+| 7 | Parametric catastrophe-bond payout and basis risk |
+| 8 | Validated Phase 2 synthesis and figures |
 
 ## Technical approach
 
