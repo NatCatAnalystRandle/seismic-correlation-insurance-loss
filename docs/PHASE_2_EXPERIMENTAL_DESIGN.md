@@ -1,18 +1,20 @@
 # Phase 2 experimental design
 
-**Status:** Version 0.7, Notebooks 08 through 13 production-validated; final results and figures published on the Notebook 13 branch, with integration and a tagged Phase 2 release pending
+**Status:** Version 1.0, implemented and production-validated in Notebooks 08 through 13; integrated and published as release `v2.0.0` at commit `97a190d94d965f4287386dcfa41376b1ae60e8c8`
 
 **Branch:** `phase-2-correlation-extension`
 
 **Frozen reference:** Phase 1 release `v1.0.0`, commit `be93474ce2ab78d8002d49ae861adb641ae2741d`
 
+**Implementation evidence:** [final results report](../data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md), [production handoff](../data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_final_handoff.json), and [Phase 2 release](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0)
+
 ## 1. Purpose
 
-Phase 2 will quantify how within-event spatial correlation changes earthquake portfolio loss, reinsurance performance, capital, diversification, risk-adjusted return, and parametric basis risk.
+Phase 2 quantifies how within-event spatial correlation changes earthquake portfolio loss, reinsurance performance, capital, diversification, risk-adjusted return, and parametric basis risk.
 
-The central requirement is a paired experiment. Phase 2 must change the within-event spatial dependence while holding the Phase 1 hazard, exposure, marginal ground-motion distributions, damage model, financial terms, and random-number controls fixed. This permits differences in results to be attributed to spatial correlation rather than model drift.
+The central requirement is a paired experiment. Phase 2 changes the within-event spatial dependence while holding the Phase 1 hazard, exposure, marginal ground-motion distributions, damage model, financial terms, and random-number controls fixed. This permits differences in results to be attributed to spatial correlation rather than model drift.
 
-Phase 2 will not overwrite the Phase 1 release or its artifacts.
+Phase 2 preserves the Phase 1 release and its artifacts under `v1.0.0`.
 
 ## 2. Frozen Phase 1 controls
 
@@ -256,9 +258,9 @@ Every executive comparison must give the independent value, correlated value, ab
 
 ## 9. Parametric catastrophe-bond extension
 
-The first extension will be a fully collateralized, event-level magnitude-distance trigger based only on source parameters available before indemnity loss is known.
+The parametric extension is a fully collateralized, event-level magnitude-distance trigger based only on source parameters available before indemnity loss is known.
 
-The trigger index will use:
+The trigger index uses:
 
 - source type;
 - moment magnitude;
@@ -285,7 +287,7 @@ Basis-risk outputs must include:
 - residual retained VaR and TVaR;
 - conditional shortfall for events above the target indemnity attachment.
 
-A positive basis value will be defined as indemnity recovery minus parametric payout, so positive values represent protection shortfall.
+A positive basis value is defined as indemnity recovery minus parametric payout, so positive values represent protection shortfall.
 
 ### Notebook 12 implementation assumptions
 
@@ -396,7 +398,7 @@ For each case and IMT:
 - quantify Monte Carlo uncertainty for AAL, PML, and TVaR comparisons;
 - use paired differences wherever common random numbers permit.
 
-## 11. Planned Phase 2 notebooks
+## 11. Implemented Phase 2 notebooks
 
 | Notebook | Purpose |
 |---|---|
@@ -407,7 +409,7 @@ For each case and IMT:
 | `12_parametric_cat_bond_basis_risk.ipynb` | Trigger calibration, out-of-sample payout, and basis-risk analysis |
 | `13_phase_2_results_and_validation.ipynb` | Final validation, executive tables, figures, and release handoff |
 
-New outputs will be stored under Phase 2-specific paths. Phase 1 artifacts will remain unchanged.
+New outputs are stored under Phase 2-specific paths. Phase 1 artifacts remain unchanged.
 
 Notebook 13 implements a read-only synthesis of the validated handoffs. Its
 default production audit verifies all upstream inventory hashes and sizes.
@@ -423,12 +425,12 @@ It does not invent a new optimization objective. Diversification ratios remain
 undefined when the underlying VaR is zero. RAROC comparisons retain common
 assumption keys and actual earned premiums, since a common premium multiple is
 not a common absolute premium. Full-catalog and held-out parametric comparisons
-retain separate periods and uncertainty scopes. Release publication remains a
-separate reviewed action after the production run.
+retain separate periods and uncertainty scopes. Release publication was
+reviewed separately after the production run and completed as `v2.0.0`.
 
-## 12. Phase 2 release acceptance criteria
+## 12. Phase 2 release acceptance evidence
 
-The Phase 2 release must demonstrate:
+The Phase 2 release demonstrates:
 
 - the full stochastic annual earthquake event catalog;
 - structural and nonstructural damage;
@@ -443,7 +445,7 @@ The Phase 2 release must demonstrate:
 - out-of-sample basis-risk analysis;
 - clear executive interpretation.
 
-The final executive table must quantify how correlation changes:
+The final executive table quantifies how correlation changes:
 
 - required reinsurance limits;
 - selected attachments;

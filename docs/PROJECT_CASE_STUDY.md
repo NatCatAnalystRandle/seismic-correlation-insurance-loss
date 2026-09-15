@@ -1,212 +1,215 @@
-# Project Case Study: Seismic Catastrophe Risk Modeling for an Oregon Building Portfolio
+# Project Case Study: Seismic Correlation and Insurance Loss
 
-## From USGS NSHM 2018 ruptures to insurance and reinsurance loss metrics
+## From USGS seismic sources to correlated portfolio loss and risk transfer
 
-This project builds an end-to-end earthquake catastrophe-risk workflow for a 470-building demonstration portfolio in Seaside, Oregon. It connects official U.S. Geological Survey seismic-source information to rupture occurrence rates, a long annual stochastic event catalog, site-level ground motions, structural and nonstructural damage, ground-up repair loss, insured loss, reinsurance recovery, and standard portfolio risk metrics.
+This project is a reproducible, 13-notebook earthquake catastrophe-risk workflow for a 470-building demonstration portfolio in Seaside, Oregon. It connects official U.S. Geological Survey seismic-source information to rupture occurrence rates, a long annual event catalog, site-level ground motions, structural and nonstructural damage, ground-up repair loss, insurance, reinsurance, capital metrics, and parametric catastrophe-bond basis risk.
 
-Phase 1 is the controlled baseline without spatial correlation among within-event site residuals. Phase 2 will reuse the same event catalog, exposure, financial terms, and random-stream structure to isolate the effect of spatial dependence on portfolio and reinsurance tail risk.
+Phase 1 establishes a controlled baseline with conditionally independent within-event residuals between sites. Phase 2 compares that baseline with two spatial-correlation models while preserving the same event catalog, exposure, financial terms, marginal ground-motion distributions, and paired random-number streams.
+
+The complete workflow is published as [release `v2.0.0`](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0).
 
 ## Project at a glance
 
-| Item | Phase 1 value |
+| Item | Validated value |
 |---|---:|
 | Portfolio location | Seaside, Oregon |
 | Buildings | 470 |
-| Replacement value | $384.24 million, 2022 USD |
+| Replacement value | $384.24 million, constant 2022 USD |
 | Catalog duration | 2,000,000 years |
 | Simulated earthquake occurrences | 10,630 |
-| Ground-up AAL | $195,922 |
-| Gross insured AAL | $122,980 |
-| Ceded AAL | $63,677 |
-| Net retained AAL | $59,303 |
+| Occupied catalog years | 10,593 |
+| Dependence cases | 3 |
+| Modeling notebooks | 13 |
+| Automated tests | 92 passing |
+| Final critical validation failures | 0 |
 
 ## Why I built it
 
-Many engineering projects stop at hazard or physical damage, while insurance projects often begin with financial loss tables. I wanted to build the full chain between the two.
+Engineering analyses often stop at hazard or physical damage, while insurance analyses often begin with financial loss tables. I wanted to build and audit the chain between the two.
 
-The project answers the following questions:
+The project asks:
 
-1. Which Cascadia interface and Oregon intraslab ruptures can affect the portfolio?
+1. Which Cascadia interface and Oregon intraslab ruptures affect the portfolio?
 2. How often does each rupture occur?
 3. Which events occur in each simulated year, including zero-event and multiple-event years?
-4. What PGA and SA(0.4) values occur at each building site?
-5. What structural and nonstructural damage states result?
-6. How does damage convert into repair cost?
-7. How much loss is insured, policyholder-retained, ceded, and retained?
-8. What do the AAL, AEP, OEP, and PML distributions look like?
+4. How do PGA and SA(0.4 s) vary across the portfolio?
+5. How does spatial dependence change structural and nonstructural damage?
+6. How does damage convert into ground-up and insured repair loss?
+7. How do occurrence and aggregate reinsurance programs reshape retained tail risk?
+8. How much additional limit is required when spatial correlation changes the loss distribution?
+9. How does a common parametric trigger perform out of sample against different dependence cases?
 
 ## End-to-end workflow
 
 ```mermaid
 flowchart LR
-    A[USGS NSHM 2018 sources] --> B[Rupture-level annual rates]
-    B --> C[Two-million-year annual event catalog]
-    C --> D[Rupture-to-site distances]
-    D --> E[PGA and SA 0.4 ground-motion fields]
-    E --> F[Structural and nonstructural damage]
-    F --> G[Ground-up repair loss]
-    G --> H[Gross insured and policyholder-retained loss]
-    H --> I[Occurrence XoL ceded and retained loss]
-    I --> J[AAL, AEP, OEP, and PML]
+    A[USGS NSHM] --> B[Annual event catalog]
+    B --> C[Paired ground-motion fields]
+    C --> D[Building damage]
+    D --> E[Ground-up and insured loss]
+    E --> F[Reinsurance and capital]
+    F --> G[Parametric basis risk]
+    G --> H[Validated synthesis]
 ```
-
-The implementation is organized into seven restartable notebooks. Each notebook validates the accepted handoff from the previous stage before performing its own calculations.
 
 ## Technical approach
 
-### Hazard and rupture rates
+### Hazard and annual event catalog
 
-The project uses the official USGS 2018 Conterminous United States National Seismic Hazard Model, `nshm-conus` release `5.2.4`. Rupture-level annual occurrence rates are expanded using the official `nshmp-haz 2.6.5` software stack with JDK 11 and the pinned Gradle wrapper.
+The project uses the official USGS 2018 Conterminous United States National Seismic Hazard Model, `nshm-conus` release `5.2.4`. Rupture-level annual occurrence rates are expanded using the official `nshmp-haz 2.6.5` software stack with JDK 11 and its pinned Gradle wrapper.
 
-Logic-tree weights, source-scale factors, rupture families, and magnitude-frequency definitions are kept separate so that epistemic alternatives are not incorrectly combined as additive physical sources.
+Logic-tree weights, source-scale factors, rupture families, and magnitude-frequency definitions remain separate so that epistemic alternatives are not incorrectly combined as additive physical sources.
 
-### Annual event catalog
+The 2,000,000-year catalog contains:
 
-A two-million-year catalog is generated from rupture-level annual rates. It contains:
+- 10,630 earthquake occurrences;
+- 6,680 interface occurrences;
+- 3,950 slab occurrences;
+- 10,593 occupied years;
+- 1,989,407 zero-event years;
+- 36 multiple-event years.
 
-- 10,630 total occurrences
-- 6,680 interface occurrences
-- 3,950 slab occurrences
-- 10,593 occupied years
-- 1,989,407 zero-event years
-- 36 multiple-event years
+Zero-event years are retained explicitly because annual loss distributions, AAL, AEP, VaR, and TVaR must be calculated over the declared catalog duration.
 
-Retaining zero-event years is essential for unbiased annual risk metrics.
+### Ground motion and paired dependence cases
 
-### Ground motion and dependence
+The model simulates PGA and SA(0.4 s) for all 470 buildings. Every occurrence has a shared between-event residual across the portfolio, and PGA and SA(0.4 s) residuals are correlated at the same site.
 
-The baseline simulates PGA and SA(0.4) using a source-appropriate subduction ground-motion model. Each occurrence has a shared between-event residual across the portfolio. Within-event residuals are conditionally independent across sites in Phase 1, while PGA and SA(0.4) residuals are correlated at the same site.
+Phase 2 compares three cases:
 
-This creates a clean reference case for the future spatial-correlation comparison.
+| Case | Role | Within-event spatial dependence |
+|---|---|---|
+| `I0_PHASE1_INDEPENDENT` | Frozen control | Independent between distinct sites |
+| `C1_ALDEA22_SUBDUCTION` | Primary correlated case | Aldea, Heresi, and Pastén (2022) |
+| `C2_GODA_ATKINSON09` | Sensitivity case | Goda and Atkinson (2009) |
 
-### Damage and ground-up loss
+The same catalog, between-event residuals, marginal within-event distributions, damage uniforms, exposure, and policy terms are used across the three cases. This paired design isolates the dependence assumption from unrelated simulation variation.
 
-HAZUS-style fragility relationships are used to sample structural, nonstructural drift-sensitive, and nonstructural acceleration-sensitive damage states. Damage states are converted into component repair-cost ratios and building-level repair losses.
+The two spatial-correlation models are analog models rather than Cascadia-specific calibrations. Their results are therefore model-conditioned estimates.
 
-### Insurance and reinsurance
+### Damage and policy loss
 
-The demonstration policy uses:
+HAZUS-style fragility relationships sample:
 
-- 100% take-up
-- 100% covered repair share
-- 10% building replacement-value deductible
-- 100% replacement-value limit
-- 100% coinsurance
+- structural damage;
+- nonstructural drift-sensitive damage;
+- nonstructural acceleration-sensitive damage.
 
-The occurrence excess-of-loss layer attaches at approximately $18.81 million and has a limit of approximately $61.84 million, with no annual aggregate cap or reinstatement restriction.
+Damage states are converted into component repair-cost ratios and building-level ground-up losses. The demonstration insurance policy uses:
 
-## Key results
+- 100% take-up;
+- 100% covered repair-cost share;
+- a 10% building replacement-value deductible per occurrence;
+- a 100% replacement-value policy limit;
+- 100% coinsurance.
 
-![Average annual loss flow](../data/processed/notebook_7_baseline_results_validation/plots/baseline_aal_loss_flow.png)
+The model reconciles structural and nonstructural components to ground-up loss, ground-up loss to insured plus uninsured loss, and gross insured loss to ceded plus retained loss.
 
-The baseline loss flow is:
+### Reinsurance and capital
 
-| Loss view | AAL | Share |
-|---|---:|---:|
-| Ground-up | $195,922 | 100.00% of ground-up |
-| Gross insured | $122,980 | 62.77% of ground-up |
-| Policyholder retained | $72,943 | 37.23% of ground-up |
-| Ceded | $63,677 | 51.78% of gross insured |
-| Net retained | $59,303 | 48.22% of gross insured |
+The frozen occurrence excess-of-loss program attaches at $18.81 million and has a $61.84 million occurrence limit with 100% participation.
 
-The accounting identities reconcile:
+Notebook 11 applies the same terms to all dependence cases and evaluates:
 
-$$
-\text{Ground-up AAL} = \text{Gross insured AAL} + \text{Policyholder-retained AAL}
-$$
+- the frozen occurrence program;
+- alternative occurrence attachment and limit designs;
+- standalone annual aggregate protection;
+- annual aggregate protection stacked after the occurrence layer;
+- retained and ceded AAL, AEP, OEP, PML, VaR, and TVaR;
+- required occurrence limits;
+- diversification diagnostics;
+- break-even premium and RAROC assumption grids.
 
-$$
-\text{Gross insured AAL} = \text{Ceded AAL} + \text{Net retained AAL}
-$$
+RAROC values use transparent illustrative assumptions. They are not market price estimates.
 
-### Damage components
+### Parametric catastrophe-bond basis risk
 
-- Structural damage: 8.74% of ground-up AAL
-- Nonstructural drift-sensitive damage: 15.01%
-- Nonstructural acceleration-sensitive damage: 76.25%
+Notebook 12 calibrates a source-based magnitude-distance trigger using catalog years 1 through 1,000,000. The trigger is frozen before evaluation on years 1,000,001 through 2,000,000.
 
-The result shows that expected repair loss can be dominated by nonstructural damage even when structural damage receives more attention in engineering discussions.
+The same collateralized payout vector is applied to all three dependence cases. Evaluation records protection shortfall, excess payout, false positives, false negatives, collateral depletion, cash net loss, unfunded loss, surplus, and residual tail metrics.
 
-### Source contributions
+This train/evaluation split prevents the evaluation losses from selecting or refitting the trigger.
 
-![Source contributions](../data/processed/notebook_7_baseline_results_validation/plots/baseline_source_aal_contributions.png)
+## Key findings
 
-Cascadia interface earthquakes contribute approximately:
+### 1. Spatial correlation changes retained tail risk more clearly than expected loss
 
-- 90.60% of ground-up AAL
-- 95.49% of ceded AAL
+The small gross insured AAL differences have paired bootstrap intervals that include zero. The results do not establish a resolved AAL effect.
 
-The ceded portfolio is therefore more concentrated in the interface source than the underlying ground-up portfolio.
+Under the common frozen occurrence program:
 
-### Tail risk
+| Case | Gross insured AAL | Ceded AAL | Retained 2,500-year AEP PML |
+|---|---:|---:|---:|
+| I0: independent | $122,979.56 | $63,676.60 | $19.36 million |
+| C1: Aldea | $123,443.43 | $58,654.69 | $33.27 million |
+| C2: Goda and Atkinson | $123,335.68 | $58,604.14 | $34.08 million |
 
-![Aggregate exceedance curves](../data/processed/notebook_7_baseline_results_validation/plots/baseline_full_aep_exceedance_curves.png)
+The stored paired bootstrap intervals for the retained 2,500-year PML differences exclude zero.
 
-![Occurrence exceedance curves](../data/processed/notebook_7_baseline_results_validation/plots/baseline_full_oep_exceedance_curves.png)
+![Gross insured AEP and OEP curves](../data/processed/phase_2/notebook_13_phase_2_results/plots/gross_insured_tail_curves.png)
 
-The largest modeled occurrence is a magnitude 9.34 Cascadia interface event with:
+### 2. Fixed reinsurance terms do not provide equivalent tail protection
 
-- $282.75 million ground-up loss
-- $244.33 million gross insured loss
-- $61.84 million ceded loss, equal to the occurrence layer limit
+Using the same $18.81 million attachment, the modeled occurrence limit required to restore the independent case's retained 2,500-year PML is:
 
-The largest annual aggregate ceded loss is $90.41 million. It exceeds the single-occurrence layer limit because separate events can each generate recovery when there is no annual aggregate cap.
+| Case | Required occurrence limit |
+|---|---:|
+| I0: independent | $61.84 million |
+| C1: Aldea | $75.90 million |
+| C2: Goda and Atkinson | $76.67 million |
+
+The estimates use a $1,000 numerical search tolerance. They are conditional model results rather than placement recommendations.
+
+![Required occurrence limits](../data/processed/phase_2/notebook_13_phase_2_results/plots/required_limit_comparison.png)
+
+### 3. The parametric trigger has visible basis risk
+
+During the held-out evaluation period, the common collateralized payout AAL is $67,001.45. The corresponding target indemnity-recovery AALs are $63,881.84 for I0, $59,634.33 for C1, and $59,660.69 for C2.
+
+Expected protection shortfall is approximately $23,099 for I0 and $25,900 for the two correlated cases. Expected excess payout is approximately $26,218 for I0 and $33,300 for the correlated cases.
+
+These results show why an average payout close to an average indemnity recovery does not eliminate event-level basis risk.
+
+![Held-out parametric basis risk](../data/processed/phase_2/notebook_13_phase_2_results/plots/evaluation_basis_risk.png)
 
 ## Validation and reproducibility
 
-Validation is embedded throughout the workflow. The project includes:
+The workflow is deterministic, restartable, and designed for audit. It includes:
 
-- archive and artifact SHA-256 checks
-- rupture-rate reconciliation
-- unique rupture and occurrence keys
-- annual-rate and catalog checks
-- complete occurrence-site grid checks
-- distance and ground-motion diagnostics
-- damage-probability and repair-ratio bounds
-- sampled-versus-analytical loss comparisons
-- insurance and reinsurance accounting reconciliations
-- chunk manifests and restart markers
-- deterministic random-number namespaces
-- portable repository paths
-- a repository validation script
+- frozen configuration and model-specification records;
+- common event catalogs and paired random streams;
+- chunked processing and restart markers;
+- row-count, uniqueness, schema, and numerical-bound checks;
+- building, event, and annual accounting reconciliation;
+- SHA-256 hashes and artifact inventories;
+- explicit zero-event years;
+- paired bootstrap uncertainty;
+- repository-level tests and validation.
 
-The final reporting notebook completed 87 critical checks with no failures or unresolved warnings. The separate repository-hardening validator completed 54 checks with zero critical failures.
+The final Phase 2 synthesis passed:
 
-## Why this matters for catastrophe risk and reinsurance
+- 92 automated tests;
+- 65 upstream artifact checks with no skipped checks;
+- 14 final synthesis checks;
+- zero critical failures.
 
-This project demonstrates how engineering assumptions propagate into insurance outcomes. It shows how:
-
-- deductibles change expected insured loss
-- occurrence reinsurance reshapes the retained tail
-- source concentration changes between ground-up and ceded views
-- AEP and OEP answer different annual and occurrence questions
-- dependence assumptions can affect portfolio concentration and layer performance
-
-The workflow is designed to support roles in catastrophe modeling, natural-hazard analytics, insurance, reinsurance, risk engineering, and insurance-linked securities.
+The [final Phase 2 results report](../data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md) and [production handoff](../data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_final_handoff.json) provide the numerical results and audit trail.
 
 ## Scope and limitations
 
-This is a transparent portfolio demonstration, not a production catastrophe model, insurance price quote, or regulatory capital estimate. Important limitations include:
+This is a transparent research and portfolio demonstration, not a production catastrophe model, insurance quotation, or regulatory capital estimate.
 
-- one Seaside demonstration portfolio
-- W2 building focus
-- repair-cost loss only
-- synthetic policy and reinsurance terms
-- no demand surge or post-event inflation
-- no business interruption, contents, or casualty loss
-- no spatial correlation among within-event site residuals in Phase 1
+The results are conditional on:
 
-## Phase 2
+- one synthetic W2 portfolio in Seaside, Oregon;
+- the selected USGS release and ground-motion implementation;
+- HAZUS-style fragility and repair-cost approximations;
+- synthetic insurance, reinsurance, and parametric terms;
+- building repair loss only;
+- no contents, business interruption, demand surge, claims inflation, or reinstatement pricing;
+- limited empirical support at the most extreme return periods.
 
-Phase 2 will add source-appropriate spatial correlation while preserving the same:
-
-- buildings and site order
-- rupture set and annual event catalog
-- marginal ground-motion distributions
-- policy and reinsurance terms
-- damage uniforms and random-stream structure where practical
-
-This paired design will isolate the effect of spatial dependence on ground-up, insured, retained, and ceded loss.
+Sparse annual losses make selected VaR measures non-informative, so supported PML and TVaR measures carry the substantive tail interpretation. The paired bootstrap is conditional on the implemented model and, for Notebook 12, on the frozen trigger.
 
 ## Repository map
 
@@ -214,10 +217,18 @@ This paired design will isolate the effect of spatial dependence on ground-up, i
 |---|---|
 | `01_download_and_inspect_usgs_nshm2018.ipynb` | Download, verify, inventory, and inspect the USGS model |
 | `02_extract_usgs_rupture_rates.ipynb` | Expand source definitions into rupture-level annual rates |
-| `03_generate_annual_event_catalog.ipynb` | Generate the two-million-year annual event catalog |
-| `04_generate_ground_motion_fields.ipynb` | Calculate distances and simulate ground-motion fields |
+| `03_generate_annual_event_catalog.ipynb` | Generate the 2-million-year annual event catalog |
+| `04_generate_ground_motion_fields.ipynb` | Calculate distances and simulate baseline ground motions |
 | `05_calculate_ground_up_losses.ipynb` | Model damage and calculate ground-up loss |
-| `06_apply_insurance_terms.ipynb` | Apply policy and reinsurance terms |
-| `07_baseline_results_and_validation.ipynb` | Produce final results, figures, and validation |
+| `06_apply_insurance_terms.ipynb` | Apply policy and baseline reinsurance terms |
+| `07_baseline_results_and_validation.ipynb` | Validate and report the Phase 1 baseline |
+| `08_spatial_correlation_model_and_validation.ipynb` | Define and validate the three dependence cases |
+| `09_generate_correlated_ground_motion_fields.ipynb` | Generate paired full-catalog ground-motion fields |
+| `10_correlated_damage_and_loss.ipynb` | Propagate paired fields through damage and policy loss |
+| `11_reinsurance_sensitivity_and_capital.ipynb` | Evaluate reinsurance structures, capital, and required limits |
+| `12_parametric_cat_bond_basis_risk.ipynb` | Calibrate and evaluate the parametric trigger |
+| `13_phase_2_results_and_validation.ipynb` | Audit artifacts and synthesize final results |
 
 **Repository:** [NatCatAnalystRandle/seismic-correlation-insurance-loss](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss)
+
+**Release:** [Phase 2: Correlated Earthquake Loss and Risk Transfer](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0)
