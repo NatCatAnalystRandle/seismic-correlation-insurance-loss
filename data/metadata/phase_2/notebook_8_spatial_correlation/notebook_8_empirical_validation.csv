@@ -1,0 +1,13 @@
+check_id,severity,passed,detail
+i0_phase1_independent_empirical_site_means,critical,True,Maximum absolute site mean: 0.055024
+i0_phase1_independent_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.043092
+i0_phase1_independent_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.037699
+i0_phase1_independent_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.731848; target: 0.732141
+c1_aldea22_subduction_empirical_site_means,critical,True,Maximum absolute site mean: 0.031317
+c1_aldea22_subduction_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.022722
+c1_aldea22_subduction_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.014100
+c1_aldea22_subduction_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.726627; target: 0.732141
+c2_goda_atkinson09_empirical_site_means,critical,True,Maximum absolute site mean: 0.034130
+c2_goda_atkinson09_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.025556
+c2_goda_atkinson09_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.016023
+c2_goda_atkinson09_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.727170; target: 0.732141

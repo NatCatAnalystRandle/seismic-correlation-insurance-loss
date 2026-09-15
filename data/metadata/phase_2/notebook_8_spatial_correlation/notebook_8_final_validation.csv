@@ -1,0 +1,32 @@
+check_id,severity,passed,detail
+site_order_columns_complete,critical,True,"Columns: ['site_id', 'site_latitude', 'site_longitude', 'site_ordinal']"
+site_order_row_count,critical,True,Rows: 470; expected: 470
+site_ordinals_frozen,critical,True,Required site_ordinal sequence: 0 through 469.
+site_order_canonical_hash_frozen,critical,True,Canonical CRLF SHA-256: fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100; raw checkout SHA-256: fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100.
+phase1_random_generator_frozen,critical,True,Generator: numpy.random.PCG64DXSM
+phase1_site_latent_transform_frozen,critical,True,"Transform: {'pga': 'z1', 'sa0p4': 'rho*z1 + sqrt(1-rho^2)*z2'}"
+cross_imt_rho_frozen,critical,True,Frozen rho: 0.7321409900247263
+geometry_site_count,critical,True,Sites: 470
+geometry_unique_coordinate_count,critical,True,Unique coordinates: 426
+all_matrices_positive_semidefinite,critical,True,Minimum eigenvalue across all matrices: -1.427246e-15
+all_factor_reconstructions_accurate,critical,True,Maximum reconstruction error: 1.221245e-15
+correlated_case_zero_modes_match_duplicate_coordinates,critical,True,All C1 and C2 matrices must have 44 structural zero modes.
+independent_case_identity_matrices,critical,True,I0 matrices and factors reproduce exact identity transforms.
+aldea_joint_construction_recovers_sa0p4_covariance,critical,True,Maximum covariance identity error: 0.000000e+00
+goda_common_kernel_preserved,critical,True,Maximum common-kernel error: 1.110223e-16
+colocated_residuals_identical,critical,True,Maximum co-located residual difference: 0.000000e+00
+independent_case_phase1_transform_exact,critical,True,I0 reproduces the Phase 1 normalized latent transform exactly.
+i0_phase1_independent_empirical_site_means,critical,True,Maximum absolute site mean: 0.055024
+i0_phase1_independent_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.043092
+i0_phase1_independent_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.037699
+i0_phase1_independent_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.731848; target: 0.732141
+c1_aldea22_subduction_empirical_site_means,critical,True,Maximum absolute site mean: 0.031317
+c1_aldea22_subduction_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.022722
+c1_aldea22_subduction_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.014100
+c1_aldea22_subduction_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.726627; target: 0.732141
+c2_goda_atkinson09_empirical_site_means,critical,True,Maximum absolute site mean: 0.034130
+c2_goda_atkinson09_empirical_site_standard_deviations,critical,True,Maximum absolute site standard-deviation error: 0.025556
+c2_goda_atkinson09_empirical_selected_pair_correlations,critical,True,Maximum selected-pair correlation error: 0.016023
+c2_goda_atkinson09_empirical_cross_imt_correlation,critical,True,Mean same-site rho: 0.727170; target: 0.732141
+artifact_paths_are_repository_relative,critical,True,Portable paths validated: 12.
+metadata_excludes_runtime_timestamps,critical,True,Runtime timestamps are excluded from hash-tracked JSON artifacts.

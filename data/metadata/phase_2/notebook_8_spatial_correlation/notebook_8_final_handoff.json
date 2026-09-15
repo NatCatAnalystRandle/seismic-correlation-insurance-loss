@@ -1,0 +1,130 @@
+{
+  "artifact_inventory": [
+    {
+      "bytes": 783,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_cell_1_validation.csv",
+      "sha256": "f33091c8367617170f543d429be22c8e8aeee7fcd8934b4cd08921d8f1664176"
+    },
+    {
+      "bytes": 789,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_cell_1_summary.json",
+      "sha256": "e9868632422f2038c674f484130cd91593e3bad9f03197ea7be606e91a6006fc"
+    },
+    {
+      "bytes": 670,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_geometry_summary.json",
+      "sha256": "21dac2baf68d925dbc2812c6866245d62d09affcced55c312683037fff757803"
+    },
+    {
+      "bytes": 2107,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_matrix_diagnostics.csv",
+      "sha256": "bf8223a27a57049e6fd1ce54e6f14c64f6d000f07aa70bc216654c796884d7c4"
+    },
+    {
+      "bytes": 531,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_case_summary.csv",
+      "sha256": "5b803e434eea548ba1cb0719c74f01ea951de820292f6cbb162e819ede64499e"
+    },
+    {
+      "bytes": 10739,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_model_specification.json",
+      "sha256": "a97bb90c48730230afbda95c774902135300e47522e85a401ff7539607fc15cf"
+    },
+    {
+      "bytes": 1005,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_analytic_validation.csv",
+      "sha256": "2c852e706fd970b7c8fc21d0c8809a2b8c534498305122785bf19ca6bfd1c5cd"
+    },
+    {
+      "bytes": 4404,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_empirical_pair_correlations.csv",
+      "sha256": "b8f8bdf5eaa36aea9bdac3637903a368cb9ec2c3e5b4b18d890ae62c9ab2dc64"
+    },
+    {
+      "bytes": 1413,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_empirical_validation.csv",
+      "sha256": "0051dfe2fdeeb1271da72e085ba8abdc1b317eb9bf23786c00beb8849d115110"
+    },
+    {
+      "bytes": 560,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_empirical_summary.json",
+      "sha256": "96a9f51e10a909580ad06d7be2b54d46ab597667fea8684acc5033251bd217e2"
+    },
+    {
+      "bytes": 3337,
+      "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_final_validation.csv",
+      "sha256": "e9a4af853ff7887a2ee58a0b3e5e49c0aa8a06075869d0cf40309b0166cb4ba0"
+    },
+    {
+      "bytes": 16132347,
+      "path": "data/processed/phase_2/notebook_8_spatial_correlation/spatial_correlation_factors.npz",
+      "sha256": "f052cae24c6c89660ffa540cfe6a9d08dca0c944c46dd7c88056a669b2370aee"
+    },
+    {
+      "bytes": 127720,
+      "path": "data/processed/phase_2/notebook_8_spatial_correlation/plots/spatial_correlation_models_and_pair_distances.png",
+      "sha256": "fb99911cb0cccafa36571ba761ec00052cd316445a1278d81c12acf96bd90456"
+    }
+  ],
+  "cases": [
+    "I0_PHASE1_INDEPENDENT",
+    "C1_ALDEA22_SUBDUCTION",
+    "C2_GODA_ATKINSON09"
+  ],
+  "factor_artifact": {
+    "path": "data/processed/phase_2/notebook_8_spatial_correlation/spatial_correlation_factors.npz",
+    "sha256": "f052cae24c6c89660ffa540cfe6a9d08dca0c944c46dd7c88056a669b2370aee"
+  },
+  "frozen_controls": {
+    "catalog_years": 2000000,
+    "cross_imt_rho": 0.7321409900247263,
+    "event_catalog_sha256": "e4725a57eab466348aa263d79b8f8bcc923f9542fb5507af279fece41c121f37",
+    "latent_transform": {
+      "pga": "z1",
+      "sa0p4": "rho*z1 + sqrt(1-rho^2)*z2"
+    },
+    "occurrences": 10630,
+    "phase1_commit": "be93474ce2ab78d8002d49ae861adb641ae2741d",
+    "phase1_release": "v1.0.0",
+    "random_generator": "numpy.random.PCG64DXSM",
+    "site_order_canonical_crlf_sha256": "fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100"
+  },
+  "geometry": {
+    "duplicate_coordinate_group_count": 25,
+    "largest_duplicate_coordinate_group": 17,
+    "maximum_pair_distance_km": 6.424394048363715,
+    "median_pair_distance_km": 1.241546911367865,
+    "minimum_pair_distance_km": 0.0,
+    "pair_count": 110215,
+    "pair_distance_quantiles_km": {
+      "p00": 0.0,
+      "p01": 0.06095255326959543,
+      "p05": 0.20735425231609572,
+      "p100": 6.424394048363715,
+      "p25": 0.7116192117027506,
+      "p50": 1.241546911367865,
+      "p75": 1.9186814979007802,
+      "p95": 3.1777828204328515,
+      "p99": 4.071959165068846
+    },
+    "site_count": 470,
+    "sites_in_duplicate_coordinate_groups": 69,
+    "unique_coordinate_count": 426
+  },
+  "model_specification": {
+    "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_model_specification.json",
+    "sha256": "a97bb90c48730230afbda95c774902135300e47522e85a401ff7539607fc15cf"
+  },
+  "next_notebook": "09_generate_correlated_ground_motion_fields.ipynb",
+  "next_task": "Regenerate the two frozen site-level latent vectors for each of the 10,630 catalog occurrences, apply the validated I0, C1, and C2 transforms, and rebuild PGA and SA0P4 without changing medians, between-event residuals, tau, or phi.",
+  "notebook8_complete": true,
+  "pipeline_version": "notebook8_spatial_correlation_model_validation_v2",
+  "schema_version": "notebook8_spatial_correlation_handoff_v2",
+  "validation": {
+    "checks": 31,
+    "critical_checks": 31,
+    "critical_failures": 0,
+    "path": "data/metadata/phase_2/notebook_8_spatial_correlation/notebook_8_final_validation.csv",
+    "sha256": "e9a4af853ff7887a2ee58a0b3e5e49c0aa8a06075869d0cf40309b0166cb4ba0"
+  }
+}

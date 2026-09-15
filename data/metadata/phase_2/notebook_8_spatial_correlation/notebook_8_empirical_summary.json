@@ -1,0 +1,39 @@
+{
+  "checks": 12,
+  "failures": 0,
+  "generator": "numpy.random.PCG64DXSM",
+  "maximum_pair_correlation_error": 0.03769887155298449,
+  "pipeline_version": "notebook8_spatial_correlation_model_validation_v2",
+  "realizations": 4000,
+  "selected_pairs": [
+    [
+      24,
+      65
+    ],
+    [
+      67,
+      198
+    ],
+    [
+      219,
+      303
+    ],
+    [
+      92,
+      375
+    ],
+    [
+      35,
+      98
+    ],
+    [
+      226,
+      393
+    ],
+    [
+      27,
+      394
+    ]
+  ],
+  "validation_seed": 20260828
+}

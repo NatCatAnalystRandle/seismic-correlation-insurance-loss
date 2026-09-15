@@ -1,0 +1,19 @@
+check_id,severity,passed,detail
+input_and_control_validation_passed,critical,True,input_checks=30; control_checks=17
+full_catalog_dimensions,critical,True,rows=4996100; events=10630; site_range=470-470
+building_output_schema,critical,True,columns=53
+i0_damage_state_counts_reproduce_phase1_exactly,critical,True,mismatches={}
+i0_financial_totals_reproduce_phase1,critical,True,"errors_2022_usd={'i0_structural_ground_up_loss_2022_usd': -2.288818359375e-05, 'i0_nsd_ground_up_loss_2022_usd': -2.288818359375e-05, 'i0_nsa_ground_up_loss_2022_usd': 6.103515625e-05, 'i0_total_ground_up_loss_2022_usd': -0.0001220703125, 'i0_deductible_absorbed_loss_2022_usd': -3.0517578125e-05, 'i0_policy_limit_absorbed_loss_2022_usd': 0.0, 'i0_coinsurance_absorbed_loss_2022_usd': 0.0, 'i0_gross_insured_loss_2022_usd': -6.103515625e-05, 'i0_uninsured_loss_2022_usd': -3.0517578125e-05}"
+row_level_component_and_policy_reconciliation,critical,True,"maximum_errors_2022_usd={'component': 1.862645149230957e-09, 'policy': 0.0, 'uninsured': 1.3969838619232178e-09}"
+i0_aggregate_loss_reconciliation,critical,True,component_error=1.220703e-04; policy_error=-9.155273e-05
+i0_baseline_limit_and_coinsurance_nonbinding,critical,True,limit_absorbed=0.000000; coinsurance_absorbed=0.000000
+c1_aggregate_loss_reconciliation,critical,True,component_error=6.103516e-05; policy_error=-1.831055e-04
+c1_baseline_limit_and_coinsurance_nonbinding,critical,True,limit_absorbed=0.000000; coinsurance_absorbed=0.000000
+c2_aggregate_loss_reconciliation,critical,True,component_error=-6.103516e-05; policy_error=0.000000e+00
+c2_baseline_limit_and_coinsurance_nonbinding,critical,True,limit_absorbed=0.000000; coinsurance_absorbed=0.000000
+annual_series_includes_all_zero_event_years,critical,True,years=2000000; occupied=10593; zero_event=1989407
+i0_annual_metrics_reproduce_phase1,critical,True,maximum_numeric_error_2022_usd=5.960464e-08; count_mismatches={}
+building_event_annual_totals_reconcile,critical,True,maximum_event_error=6.103516e-05; maximum_annual_error=6.103516e-05
+pml_tables_nondecreasing_by_return_period,critical,True,rows=306
+public_paths_are_repository_relative,critical,True,Notebook 10 public metadata contains only repository-relative paths.
+extreme_return_period_tail_support_documented,warning,False,"Return periods with order-statistic rank below 20 are diagnostics, not headline estimates."

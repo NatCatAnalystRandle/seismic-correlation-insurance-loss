@@ -1,0 +1,8 @@
+check_id,severity,passed,detail
+site_order_columns_complete,critical,True,"Columns: ['site_id', 'site_latitude', 'site_longitude', 'site_ordinal']"
+site_order_row_count,critical,True,Rows: 470; expected: 470
+site_ordinals_frozen,critical,True,Required site_ordinal sequence: 0 through 469.
+site_order_canonical_hash_frozen,critical,True,Canonical CRLF SHA-256: fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100; raw checkout SHA-256: fc64d53410fdadab5379f82c73c1d74ce3393911fbdd73a0dbc483f056f3d100.
+phase1_random_generator_frozen,critical,True,Generator: numpy.random.PCG64DXSM
+phase1_site_latent_transform_frozen,critical,True,"Transform: {'pga': 'z1', 'sa0p4': 'rho*z1 + sqrt(1-rho^2)*z2'}"
+cross_imt_rho_frozen,critical,True,Frozen rho: 0.7321409900247263

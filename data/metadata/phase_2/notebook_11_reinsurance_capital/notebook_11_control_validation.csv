@@ -1,0 +1,13 @@
+check_id,severity,passed,detail
+phase1_control:triggering_occurrences,critical,True,observed=4005; expected=4005; tolerance=0
+phase1_control:exhausting_occurrences,critical,True,observed=800; expected=800; tolerance=0
+phase1_control:ceded_loss_total_2022_usd,critical,True,observed=127353194654.5321; expected=127353194654.53214; tolerance=0.01
+phase1_control:retained_loss_total_2022_usd,critical,True,observed=118605925280.12479; expected=118605925280.12482; tolerance=0.01
+phase1_control:ceded_aal_2022_usd,critical,True,observed=63676.597327266056; expected=63676.59732726607; tolerance=0.01
+phase1_control:retained_aal_2022_usd,critical,True,observed=59302.9626400624; expected=59302.96264006241; tolerance=0.01
+phase1_control:maximum_ceded_occurrence_loss_2022_usd,critical,True,observed=61837983.314918146; expected=61837983.314918146; tolerance=0.01
+phase1_control:maximum_retained_occurrence_loss_2022_usd,critical,True,observed=182487824.01776767; expected=182487824.01776767; tolerance=0.01
+phase1_control:maximum_ceded_aep_2022_usd,critical,True,observed=90413665.12193379; expected=90413665.12193382; tolerance=0.01
+i0_annual_gross_reconstruction,critical,True,maximum_aep_error=2.980232e-08; maximum_oep_error=2.980232e-08
+i0_occurrence_conservation,critical,True,maximum_error=0.000000e+00
+frozen_layer_bounds,critical,True,ceded_range=0.000000-61837983.314918

@@ -180,11 +180,11 @@ Costs vary by:
 
 This workbook is only required when RES1 occupancies are present in the modeled portfolio. The Seaside W2 commercial portfolio should be checked before use rather than assuming that RES1 records are absent.
 
-## Intended Use in Notebook 5
+## Use in Notebook 5
 
-Notebook 5 will use these files to develop a HAZUS-informed damage and ground-up loss model.
+Notebook 5 uses these files in the HAZUS-informed damage and ground-up loss model.
 
-The current planned structural workflow is:
+The implemented structural workflow is:
 
 ```text
 simulated SA(0.4)
@@ -196,7 +196,7 @@ simulated SA(0.4)
 
 The source structural fragility workbook is displacement-based. A separate validated table must therefore be created before the project applies a direct `SA(0.4)` structural fragility model.
 
-The full building-repair-loss model may later include:
+The full building-repair-loss model includes:
 
 ```text
 structural repair loss
@@ -223,7 +223,7 @@ Contents loss is not included in the current reference-data package and must rem
 
 ## Generated Project-Specific Tables
 
-Notebook 5 is expected to generate validated files such as:
+Notebook 5 generates validated files such as:
 
 ```text
 data/processed/notebook_5_damage_loss_parameters/
@@ -269,4 +269,4 @@ Before production use, Notebook 5 must verify:
 
 ## Project Scope
 
-These tables support the Phase 1 no-spatial-correlation baseline. The same exposure, annual event catalog, consequence parameters, and deterministic damage random streams should be reused in the later spatial-correlation extension so that changes in portfolio loss can be attributed to the dependence model rather than unrelated input changes.
+These tables support the Phase 1 no-spatial-correlation baseline and the completed Phase 2 comparison. Phase 2 reuses the same exposure, annual event catalog, consequence parameters, and deterministic damage random streams so that changes in portfolio loss can be attributed to the dependence model rather than unrelated input changes.

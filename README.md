@@ -1,8 +1,8 @@
 # Seismic Correlation and Insurance Loss
 
-A reproducible earthquake catastrophe-risk modeling project that connects seismic hazard, stochastic event simulation, ground-motion fields, building damage, ground-up loss, insurance recovery, and reinsurance loss.
+A reproducible earthquake catastrophe-risk modeling project that connects seismic sources, stochastic event simulation, spatially correlated ground-motion fields, building damage, insurance loss, reinsurance and capital analysis, and parametric risk transfer.
 
-The current release is the **Phase 1 no-spatial-correlation baseline**. It establishes a fully validated end-to-end workflow that will later be reused to measure how spatial correlation changes portfolio loss, tail risk, and reinsurance performance.
+The complete 13-notebook workflow is validated and published as [`v2.0.0`](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0). Phase 1 provides the no-spatial-correlation baseline. Phase 2 adds two model-conditioned spatial-correlation cases, paired ground-motion and damage simulations, reinsurance sensitivity and capital analysis, parametric catastrophe-bond basis risk, and a final synthesis with five published figures.
 
 ---
 
@@ -26,7 +26,7 @@ Earthquake portfolio losses depend on more than the severity of individual build
 
 This project brings those steps together in one transparent workflow.
 
-The main long-term research question is:
+The central research question is:
 
 > How does spatial dependence in earthquake ground motion and damage change ground-up, insured, retained, and ceded portfolio losses?
 
@@ -51,7 +51,18 @@ The completed workflow includes:
 9. AAL, AEP, OEP, and PML calculation
 10. final validation, reporting tables, and figures
 
-The spatial-correlation comparison remains a planned Phase 2 extension.
+**Phase 2 correlation extension: complete and released**
+
+- Notebook 08: spatial-correlation models and matrix validation complete
+- Notebook 09: paired full-catalog ground-motion fields complete
+- Notebook 10: correlated damage and policy-loss propagation complete
+- Notebook 11: reinsurance sensitivity and capital analysis complete
+- Notebook 12: parametric catastrophe-bond basis-risk analysis complete
+- Notebook 13: final artifact audit, synthesis, report, and figures complete
+
+The Phase 2 release passed 92 automated tests, 65 upstream artifact checks, and 14 final synthesis checks with zero critical failures.
+
+The agreed sequence contains **13 notebooks in total**: seven Phase 1 notebooks and six Phase 2 notebooks.
 
 ---
 
@@ -61,13 +72,13 @@ The spatial-correlation comparison remains a planned Phase 2 extension.
 flowchart LR
     A[USGS NSHM 2018] --> B[Rupture-level annual rates]
     B --> C[2,000,000-year event catalog]
-    C --> D[Ground-motion fields]
-    D --> E[Building damage states]
-    E --> F[Ground-up loss]
-    F --> G[Gross insured and uninsured loss]
-    G --> H[Ceded and net retained loss]
-    H --> I[AAL, AEP, OEP, and PML]
-    I --> J[Validated figures and handoff files]
+    C --> D[Paired dependence cases]
+    D --> E[Ground-motion fields]
+    E --> F[Building damage states]
+    F --> G[Ground-up and insured loss]
+    G --> H[Reinsurance and capital]
+    H --> I[Parametric basis risk]
+    I --> J[Validated synthesis]
 ```
 
 ### Baseline dependence structure
@@ -309,6 +320,12 @@ Return periods of 200,000 years and longer are retained only as thin-tail diagno
 | [`05_calculate_ground_up_losses.ipynb`](05_calculate_ground_up_losses.ipynb) | Simulate damage states and calculate structural, nonstructural, and total ground-up losses |
 | [`06_apply_insurance_terms.ipynb`](06_apply_insurance_terms.ipynb) | Apply insurance terms, reinsurance terms, and calculate insured risk metrics |
 | [`07_baseline_results_and_validation.ipynb`](07_baseline_results_and_validation.ipynb) | Validate all handoffs and produce final tables, exceedance curves, and project figures |
+| [`08_spatial_correlation_model_and_validation.ipynb`](08_spatial_correlation_model_and_validation.ipynb) | Define and validate the I0, C1 Aldea et al., and C2 Goda and Atkinson dependence cases |
+| [`09_generate_correlated_ground_motion_fields.ipynb`](09_generate_correlated_ground_motion_fields.ipynb) | Generate paired full-catalog PGA and SA(0.4 s) fields for I0, C1, and C2 |
+| [`10_correlated_damage_and_loss.ipynb`](10_correlated_damage_and_loss.ipynb) | Reuse the frozen damage streams and policy terms to calculate paired damage, ground-up loss, and gross insured loss |
+| [`11_reinsurance_sensitivity_and_capital.ipynb`](11_reinsurance_sensitivity_and_capital.ipynb) | Apply common occurrence and aggregate programs and compare retained loss, tail capital, required limits, diversification, and RAROC assumption grids |
+| [`12_parametric_cat_bond_basis_risk.ipynb`](12_parametric_cat_bond_basis_risk.ipynb) | Fit an I0 training trigger, freeze common collateralized payouts, and evaluate out-of-sample basis risk and residual tails |
+| [`13_phase_2_results_and_validation.ipynb`](13_phase_2_results_and_validation.ipynb) | Audit the five frozen upstream handoffs, synthesize paired results and limitations, and produce the Phase 2 report and figures |
 
 ---
 
@@ -329,15 +346,15 @@ Key features include:
 - analytical-versus-simulated AAL comparisons;
 - validation tables for every major notebook cell.
 
-The same annual event catalog will be reused in Phase 2 so that differences between independent and spatially correlated cases can be attributed to the dependence model rather than to different earthquake samples.
+Phase 2 reuses the same annual event catalog and paired random-number streams so that differences between independent and spatially correlated cases can be attributed to the dependence model rather than to different earthquake samples.
 
 ---
 
 ## Validation summary
 
-The final baseline passed all critical validation checks.
+Both phases passed their critical validation checks.
 
-Notebook 7 final status:
+Phase 1 Notebook 7 final status:
 
 | Validation item | Result |
 |---|---:|
@@ -346,6 +363,15 @@ Notebook 7 final status:
 | Final Cell 6 critical checks | 87 |
 | Critical failures | 0 |
 | Unresolved warnings | 0 |
+
+Phase 2 final status:
+
+| Validation item | Result |
+|---|---:|
+| Automated tests | 92 passed |
+| Notebook 13 upstream artifact checks | 65 passed; 0 skipped |
+| Notebook 13 final synthesis checks | 14 passed |
+| Critical failures | 0 |
 
 Across the workflow, validations covered:
 
@@ -380,7 +406,7 @@ The current audit findings are recorded in [`docs/REPOSITORY_AUDIT_FINDINGS.md`]
 
 ## Selected outputs
 
-Four compact PNG figures are retained in the public repository so the principal Phase 1 results render directly on GitHub.
+Four compact PNG figures are retained in the public repository so the principal Phase 1 results render directly on GitHub. Five additional Phase 2 figures are published in both PNG and SVG formats and linked in the validated-results section below.
 
 ### Annual average loss flow
 
@@ -454,6 +480,12 @@ seismic-correlation-insurance-loss/
 ├── 05_calculate_ground_up_losses.ipynb
 ├── 06_apply_insurance_terms.ipynb
 ├── 07_baseline_results_and_validation.ipynb
+├── 08_spatial_correlation_model_and_validation.ipynb
+├── 09_generate_correlated_ground_motion_fields.ipynb
+├── 10_correlated_damage_and_loss.ipynb
+├── 11_reinsurance_sensitivity_and_capital.ipynb
+├── 12_parametric_cat_bond_basis_risk.ipynb
+├── 13_phase_2_results_and_validation.ipynb
 ├── data/
 │   ├── metadata/
 │   ├── processed/
@@ -481,7 +513,7 @@ Large raw inputs, generated datasets, downloaded USGS Java source, compiled clas
 
 ### Requirements
 
-The tested notebook runtime is Python 3.12.3. Notebook 2 requires JDK 11 and uses the Gradle 7.3.1 wrapper from the pinned `nshmp-haz 2.6.5` source archive.
+The primary validated notebook runtime is Python 3.12.3, with Phase 2 notebooks also recording compatible Python 3.12.x environments. Notebook 2 requires JDK 11 and uses the Gradle 7.3.1 wrapper from the pinned `nshmp-haz 2.6.5` source archive.
 
 Install the Python environment from [`requirements.txt`](requirements.txt) and follow the complete instructions in [`SETUP.md`](SETUP.md).
 
@@ -495,10 +527,16 @@ python tools\validate_repository.py --profile runtime
 
 ### Execution order
 
-Run the notebooks in numerical order:
+Run Phase 1 in numerical order:
 
 ```text
 01 → 02 → 03 → 04 → 05 → 06 → 07
+```
+
+After the Phase 1 local artifacts are available, run the Phase 2 sequence:
+
+```text
+08 → 09 → 10 → 11 → 12 → 13
 ```
 
 Each notebook validates the handoff from the previous stage before beginning its main calculations.
@@ -513,7 +551,7 @@ This project is a portfolio modeling demonstration, not a production catastrophe
 
 Current limitations include:
 
-1. no spatial correlation among within-event site residuals;
+1. the Phase 1 headline results use no spatial correlation among within-event site residuals; Phase 2 evaluates two model-conditioned spatial-correlation cases;
 2. one demonstration portfolio in Seaside, Oregon;
 3. synthetic insurance and reinsurance terms;
 4. direct-$SA(0.4)$ fragility approximations;
@@ -521,17 +559,17 @@ Current limitations include:
 6. no contents or business-interruption loss;
 7. no demand surge or claims inflation;
 8. no secondary uncertainty in repair-cost ratios;
-9. no annual aggregate reinsurance cap;
-10. no reinstatement pricing or reinstatement limits;
+9. the frozen baseline occurrence program has no annual aggregate cap or reinstatement restriction;
+10. the Phase 2 aggregate and RAROC analyses use synthetic terms and pricing assumptions;
 11. limited empirical support at the most extreme return periods.
 
-The results should therefore be interpreted as transparent baseline estimates for model development and comparison, not as quoted insurance prices or regulatory capital estimates.
+The results should therefore be interpreted as transparent, model-conditioned estimates for development and comparison, not as quoted insurance prices, placement recommendations, or regulatory capital estimates.
 
 ---
 
-## Phase 2: spatial-correlation extension
+## Phase 2: completed spatial-correlation extension
 
-The next modeling phase will preserve:
+The completed Phase 2 experiment preserves:
 
 - the same buildings;
 - the same rupture set;
@@ -541,9 +579,37 @@ The next modeling phase will preserve:
 - the same damage and repair-cost framework;
 - as much of the same random-number structure as practical.
 
-Phase 2 will replace the conditionally independent within-event residuals with source-appropriate spatially correlated residual fields.
+Notebook 08 defines the dependence models, Notebook 09 generates the paired full-catalog fields, and Notebook 10 propagates them through the frozen damage and policy models. Notebook 11 applies common occurrence and aggregate programs and evaluates retained and ceded loss, TVaR tail capital, required limits, diversification, paired uncertainty, break-even premium, and RAROC over transparent assumption grids. Notebook 12 fits a source-specific magnitude-distance trigger on I0 years 1 through 1,000,000 and evaluates it on years 1,000,001 through 2,000,000 without refitting across cases. It uses minimum authoritative rupture distance over the frozen portfolio, fixed payout tiers, and one-year collateral with annual reset and no reinstatement. Nominal trigger error, collateral depletion, signed cash net loss, unfunded loss, and surplus remain separately visible.
 
-The comparison will focus on changes in:
+Notebook 12 requires the validated Notebook 11 artifacts, the original annual event catalog, and the authoritative Notebook 04 rupture/site distance file. It does not regenerate ground motions or damage. Start with its setup and frozen-input cell, then run subsequent cells in order. Outputs are deterministic gzip CSV files under `data/processed/phase_2/notebook_12_parametric_basis_risk/` and portable metadata under `data/metadata/phase_2/notebook_12_parametric_basis_risk/`. After a kernel restart, rerun in order; each stage is deterministic. The large production outputs remain local and ignored by Git.
+
+Notebook 13 audits the five frozen upstream handoffs and their 60 inventory entries, then writes paired executive and scenario comparisons, attachment and diversification diagnostics, 84 existing uncertainty rows, five PNG/SVG figures, and a results report. Its default production mode streams all 10 private inventory files through SHA-256, including Notebook 08's factor/plot and Notebook 09's large paired field. Keep those files locally. Notebook 08's original CRLF metadata byte hashes are reconstructed explicitly where required; no upstream file is changed.
+
+Run `13_phase_2_results_and_validation.ipynb` from the repository root, starting with setup and the input audit. Production metadata and the report go under `data/metadata/phase_2/notebook_13_phase_2_results/`; figures go under `data/processed/phase_2/notebook_13_phase_2_results/plots/`. Setting `VERIFY_PROCESSED_ARTIFACTS = False` produces a clearly marked metadata preview in a separate ignored directory and cannot mark Notebook 13 complete. This allows public-checkout inspection without implying that missing private outputs were verified. Image bytes are reproducible within the same recorded plotting environment.
+
+The synthesis distinguishes full-catalog reinsurance from held-out parametric evaluation. It reports attachment-score ties without choosing an arbitrary optimum, preserves undefined sparse-loss VaR measures, and treats RAROC as an assumption grid. Notebook completion and release publication are separate governance steps; both are complete for `v2.0.0`.
+
+### Validated Phase 2 results
+
+The [final results report](data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md), [executive comparison table](data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_executive_comparison.csv), and [production handoff](data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_final_handoff.json) provide the numerical results and audit trail. All 32 inventoried publication artifacts have verified hashes and sizes. SVG whitespace normalization is recorded separately while preserving the original production source identity and pre-normalization hashes.
+
+The production handoff records `release_published: false` because it was generated and hashed before the reviewed GitHub release action. That historical field is preserved for byte-level reproducibility; the [`v2.0.0` release page](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0) is the authoritative publication record.
+
+The following values use the full two-million-year catalog and the common frozen occurrence XoL program. Amounts are constant 2022 USD.
+
+| Case | Gross insured AAL | Ceded AAL | Retained 2,500-year AEP PML | Required limit to restore I0's retained 2,500-year PML |
+|---|---:|---:|---:|---:|
+| I0: independent | $122,979.56 | $63,676.60 | $19.36 million | $61.84 million |
+| C1: Aldea | $123,443.43 | $58,654.69 | $33.27 million | $75.90 million |
+| C2: Goda–Atkinson | $123,335.68 | $58,604.14 | $34.08 million | $76.67 million |
+
+The paired bootstrap intervals for the gross insured AAL differences include zero, so the small point-estimate changes do not establish a resolved AAL effect. In contrast, the stored paired intervals for the retained 2,500-year PML differences under the frozen occurrence layer exclude zero. Required limits use the same attachment and a $1,000 numerical search tolerance; they are conditional model results rather than placement recommendations.
+
+![Gross insured AEP and OEP comparison](data/processed/phase_2/notebook_13_phase_2_results/plots/gross_insured_tail_curves.png)
+
+The remaining figures show [fixed-program retained tails](data/processed/phase_2/notebook_13_phase_2_results/plots/fixed_program_tail_comparison.png), [required limits](data/processed/phase_2/notebook_13_phase_2_results/plots/required_limit_comparison.png), [paired sampling uncertainty](data/processed/phase_2/notebook_13_phase_2_results/plots/paired_sampling_uncertainty.png), and [held-out parametric basis risk](data/processed/phase_2/notebook_13_phase_2_results/plots/evaluation_basis_risk.png). Each PNG has a matching SVG in the same directory. Parametric results use evaluation years 1,000,001 through 2,000,000 and must not be mixed with the full-catalog reinsurance comparison above.
+
+The comparison reports changes in:
 
 - AAL;
 - AEP and OEP curves;
@@ -568,7 +634,10 @@ This project demonstrates practical experience in:
 - portfolio loss simulation;
 - insurance deductible and limit calculations;
 - occurrence excess-of-loss reinsurance;
-- AAL, AEP, OEP, and PML;
+- occurrence and annual aggregate reinsurance;
+- AAL, AEP, OEP, PML, VaR, and TVaR;
+- parametric catastrophe-bond basis-risk analysis;
+- paired bootstrap uncertainty;
 - large-table processing;
 - numerical validation;
 - reproducible scientific computing;

@@ -1,0 +1,22 @@
+{
+  "duplicate_coordinate_group_count": 25,
+  "largest_duplicate_coordinate_group": 17,
+  "maximum_pair_distance_km": 6.424394048363715,
+  "median_pair_distance_km": 1.241546911367865,
+  "minimum_pair_distance_km": 0.0,
+  "pair_count": 110215,
+  "pair_distance_quantiles_km": {
+    "p00": 0.0,
+    "p01": 0.06095255326959543,
+    "p05": 0.20735425231609572,
+    "p100": 6.424394048363715,
+    "p25": 0.7116192117027506,
+    "p50": 1.241546911367865,
+    "p75": 1.9186814979007802,
+    "p95": 3.1777828204328515,
+    "p99": 4.071959165068846
+  },
+  "site_count": 470,
+  "sites_in_duplicate_coordinate_groups": 69,
+  "unique_coordinate_count": 426
+}

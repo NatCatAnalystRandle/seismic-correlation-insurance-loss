@@ -1,0 +1,62 @@
+{
+  "damage_equation": "P(DS>=k|Sa)=Phi((ln(Sa)-ln(theta_k))/beta_k)",
+  "damage_states": [
+    "None",
+    "Slight",
+    "Moderate",
+    "Extensive",
+    "Complete"
+  ],
+  "damage_stream_namespaces": {
+    "nsa": "notebook5_nonstructural_acceleration_damage_v1",
+    "nsd": "notebook5_nonstructural_drift_damage_v1",
+    "structural": "notebook5_structural_damage_v1"
+  },
+  "dependence_cases": [
+    "I0_PHASE1_INDEPENDENT",
+    "C1_ALDEA22_SUBDUCTION",
+    "C2_GODA_ATKINSON09"
+  ],
+  "ground_up_equation": "structural loss + NSD loss + NSA loss",
+  "input_hashes": {
+    "module": "a954709df9adad5bb3a7e1a23f09a231ee02a2d0a5648dfa9305bf8415439459",
+    "nonstructural_fragility": "0504fa837e7d447485b30954d30063ad798d1cca7674842840f0d1b99a9d08d3",
+    "nonstructural_values": "15b274cd59c3bfac96ccec10f4187341e3df11399e0e557ba56ee0aa3c5a79de",
+    "notebook9_manifest": "d0e9307c0d6a1a5b2da03609d3d4dff77532bc776ecd401a7de6a7c2cd72576b",
+    "notebook9_validation": "066c2180ae7a380c971f670f3cbaf478146450c12ca26540abf1e379050f36aa",
+    "phase1_insured_loss": "2081e04955efb56fa3743dcb217cf351de186ef49315e60a318dc6400afee86a",
+    "phase1_total_ground_up": "afc451e7418b65f7836d0d6174602325afcc7b29a85ef8cf46b883222c256b64",
+    "policy_terms": "1af92add99ba6b326f282f4a0e333b9825aeb3d7ec9ed507994b6e0691232f54",
+    "structural_fragility": "6fa57de96d941af5d89995f530690187f0e657f83b38d31225b4ffd94fb15fc5",
+    "structural_values": "7668b755563b70ed637e1c53d89cb015c07b651752f774e0ccffcc2db878817f"
+  },
+  "paired_reuse_rule": "Reuse each component's occurrence-site uniform across I0, C1, and C2; recompute damage states from each case's SA(0.4 s).",
+  "phase1_commit": "be93474ce2ab78d8002d49ae861adb641ae2741d",
+  "phase1_release": "v1.0.0",
+  "pipeline_version": "notebook10_correlated_damage_loss_v1",
+  "policy": {
+    "coinsurance_share": 1.0,
+    "coverage_share": 1.0,
+    "deductible_application": "per building per occurrence",
+    "deductible_share_of_replacement": 0.1,
+    "eligible_loss": "ground_up_loss * covered_loss_share if covered, else 0",
+    "gross_insured_loss": "min(max(eligible_loss - deductible, 0), policy_limit) * coinsurance_share",
+    "limit_share_of_replacement": 1.0,
+    "scenario_id": "baseline_full_coverage_10pct_deductible_v1"
+  },
+  "production_im": "SA(0.4 s) in g",
+  "sample_rule": "inverse categorical CDF using one deterministic occurrence-site uniform",
+  "scope": {
+    "excluded": [
+      "contents",
+      "business interruption",
+      "demand surge",
+      "claims inflation"
+    ],
+    "included": [
+      "structural repair",
+      "drift-sensitive nonstructural repair",
+      "acceleration-sensitive nonstructural repair"
+    ]
+  }
+}

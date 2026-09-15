@@ -1,0 +1,258 @@
+{
+  "artifact_inventory": [
+    {
+      "bytes": 4224,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_input_validation.csv",
+      "sha256": "05f10296ac590a2fd9716d0a0355d73344c628cd544de001f7468a08dbbf132f"
+    },
+    {
+      "bytes": 1340,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_control_validation.csv",
+      "sha256": "5b0d6e721529e1ebd591b78dbe6b4270329d0473b921db1eda048aaf95351a06"
+    },
+    {
+      "bytes": 2699,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_model_specification.json",
+      "sha256": "e1b1330c899be1d15775e8bcc48346db171aff8293e182a849cb540f3c839020"
+    },
+    {
+      "bytes": 15227,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_chunk_manifest.csv",
+      "sha256": "8506873f231ab094413737c06a91f330cfebf2faeb8812912f23259be04ad6c0"
+    },
+    {
+      "bytes": 2617,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_case_summary.csv",
+      "sha256": "f8dd1117e5ed5bfa8be374c8e34d15fcc206410d6e47c15eb5e7fc88a651293e"
+    },
+    {
+      "bytes": 3108,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_damage_state_summary.csv",
+      "sha256": "43f8a5c34b9cc8f7ae6dfde1642cec4a0c59a8914b22213fef351a5d4bc5f2a1"
+    },
+    {
+      "bytes": 21468,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_pml_table.csv",
+      "sha256": "ad8df0cbe8b10725dca36d0cbc7c24ed842eafc27ba9188c8fa27c65df908537"
+    },
+    {
+      "bytes": 2381,
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_final_validation.csv",
+      "sha256": "2a2ad99a4d2eb8dfa4de639ac730ab5041683ab5698032ccf958292fe13158de"
+    },
+    {
+      "bytes": 305982704,
+      "path": "data/processed/phase_2/notebook_10_correlated_damage_loss/paired_damage_and_policy_loss.csv.gz",
+      "sha256": "3cb8935c3240927d45c2ddb724c9e7efaf21d1b0ac908c3048eba133f0a6c228"
+    },
+    {
+      "bytes": 2333867,
+      "path": "data/processed/phase_2/notebook_10_correlated_damage_loss/paired_event_loss_summary.csv.gz",
+      "sha256": "456c029660cfeb8d505706ba5796879d68a55deee235e30c927ceb47450b309d"
+    },
+    {
+      "bytes": 7181189,
+      "path": "data/processed/phase_2/notebook_10_correlated_damage_loss/paired_annual_loss_series.csv.gz",
+      "sha256": "5f8c70473a4cb251cc9f39a48ad0277c44bed7c98c1eb6aab40e15b5b985827d"
+    }
+  ],
+  "case_results": [
+    {
+      "case_name": "I0_PHASE1_INDEPENDENT",
+      "case_prefix": "i0",
+      "catalog_years": 2000000,
+      "gross_insured_1000yr_oep_pml_2022_usd": 47812543.5053731,
+      "gross_insured_1000yr_oep_pml_change_vs_i0_percent": 0.0,
+      "gross_insured_250yr_oep_pml_2022_usd": 9953.902420044236,
+      "gross_insured_250yr_oep_pml_change_vs_i0_percent": 0.0,
+      "gross_insured_500yr_oep_pml_2022_usd": 18811083.540145434,
+      "gross_insured_500yr_oep_pml_change_vs_i0_percent": 0.0,
+      "gross_insured_aal_2022_usd": 122979.55996732845,
+      "gross_insured_aal_change_vs_i0_percent": 0.0,
+      "gross_insured_annual_standard_deviation_2022_usd": 2931863.5174367586,
+      "gross_insured_loss_total_2022_usd": 245959119934.6569,
+      "ground_up_aal_2022_usd": 195922.45003028997,
+      "ground_up_aal_change_vs_i0_percent": 0.0,
+      "ground_up_annual_standard_deviation_2022_usd": 4190230.4657683033,
+      "ground_up_loss_total_2022_usd": 391844900060.57996,
+      "insurance_recovery_share_of_ground_up": 0.627695090319234,
+      "maximum_gross_insured_aep_2022_usd": 244325807.3326858,
+      "maximum_gross_insured_oep_2022_usd": 244325807.3326858,
+      "maximum_ground_up_aep_2022_usd": 282749467.8026793,
+      "maximum_ground_up_oep_2022_usd": 282749467.8026793,
+      "maximum_uninsured_aep_2022_usd": 62301773.02983486,
+      "maximum_uninsured_oep_2022_usd": 38423660.46999352,
+      "occurrences": 10630,
+      "portfolio_replacement_value_2022_usd": 384236604.69993526,
+      "positive_gross_insured_aep_years": 8171,
+      "positive_gross_insured_oep_years": 8171,
+      "positive_ground_up_aep_years": 9901,
+      "positive_ground_up_oep_years": 9901,
+      "positive_uninsured_aep_years": 9901,
+      "positive_uninsured_oep_years": 9901,
+      "uninsured_aal_2022_usd": 72942.89006296158,
+      "uninsured_annual_standard_deviation_2022_usd": 1345988.8779621557,
+      "uninsured_loss_total_2022_usd": 145885780125.92316
+    },
+    {
+      "case_name": "C1_ALDEA22_SUBDUCTION",
+      "case_prefix": "c1",
+      "catalog_years": 2000000,
+      "gross_insured_1000yr_oep_pml_2022_usd": 42620231.05059524,
+      "gross_insured_1000yr_oep_pml_change_vs_i0_percent": -10.859728586065199,
+      "gross_insured_250yr_oep_pml_2022_usd": 0.0,
+      "gross_insured_250yr_oep_pml_change_vs_i0_percent": -100.0,
+      "gross_insured_500yr_oep_pml_2022_usd": 9574709.384464605,
+      "gross_insured_500yr_oep_pml_change_vs_i0_percent": -49.10070244475359,
+      "gross_insured_aal_2022_usd": 123443.42922816568,
+      "gross_insured_aal_change_vs_i0_percent": 0.377192161819795,
+      "gross_insured_annual_standard_deviation_2022_usd": 3463423.9535431596,
+      "gross_insured_loss_total_2022_usd": 246886858456.33136,
+      "ground_up_aal_2022_usd": 196624.70476008757,
+      "ground_up_aal_change_vs_i0_percent": 0.358435049015071,
+      "ground_up_annual_standard_deviation_2022_usd": 4714469.553452016,
+      "ground_up_loss_total_2022_usd": 393249409520.1751,
+      "insurance_recovery_share_of_ground_up": 0.627812407290252,
+      "maximum_gross_insured_aep_2022_usd": 288445783.43630344,
+      "maximum_gross_insured_oep_2022_usd": 288445783.43630344,
+      "maximum_ground_up_aep_2022_usd": 326869443.90629697,
+      "maximum_ground_up_oep_2022_usd": 326869443.90629697,
+      "maximum_uninsured_aep_2022_usd": 74803193.52464768,
+      "maximum_uninsured_oep_2022_usd": 38423660.46999352,
+      "occurrences": 10630,
+      "portfolio_replacement_value_2022_usd": 384236604.69993526,
+      "positive_gross_insured_aep_years": 7348,
+      "positive_gross_insured_oep_years": 7348,
+      "positive_ground_up_aep_years": 9432,
+      "positive_ground_up_oep_years": 9432,
+      "positive_uninsured_aep_years": 9432,
+      "positive_uninsured_oep_years": 9432,
+      "uninsured_aal_2022_usd": 73181.27553192197,
+      "uninsured_annual_standard_deviation_2022_usd": 1413065.9951133984,
+      "uninsured_loss_total_2022_usd": 146362551063.84393
+    },
+    {
+      "case_name": "C2_GODA_ATKINSON09",
+      "case_prefix": "c2",
+      "catalog_years": 2000000,
+      "gross_insured_1000yr_oep_pml_2022_usd": 42644656.401946254,
+      "gross_insured_1000yr_oep_pml_change_vs_i0_percent": -10.808642930376811,
+      "gross_insured_250yr_oep_pml_2022_usd": 0.0,
+      "gross_insured_250yr_oep_pml_change_vs_i0_percent": -100.0,
+      "gross_insured_500yr_oep_pml_2022_usd": 9516466.390586872,
+      "gross_insured_500yr_oep_pml_change_vs_i0_percent": -49.410323066837556,
+      "gross_insured_aal_2022_usd": 123335.67741689847,
+      "gross_insured_aal_change_vs_i0_percent": 0.289574503002488,
+      "gross_insured_annual_standard_deviation_2022_usd": 3464107.252358269,
+      "gross_insured_loss_total_2022_usd": 246671354833.79694,
+      "ground_up_aal_2022_usd": 196518.41734283743,
+      "ground_up_aal_change_vs_i0_percent": 0.304185310287486,
+      "ground_up_annual_standard_deviation_2022_usd": 4715564.513710913,
+      "ground_up_loss_total_2022_usd": 393036834685.67487,
+      "insurance_recovery_share_of_ground_up": 0.627603657125594,
+      "maximum_gross_insured_aep_2022_usd": 287606602.9156662,
+      "maximum_gross_insured_oep_2022_usd": 287606602.9156662,
+      "maximum_ground_up_aep_2022_usd": 326030263.3856597,
+      "maximum_ground_up_oep_2022_usd": 326030263.3856597,
+      "maximum_uninsured_aep_2022_usd": 74928362.04932778,
+      "maximum_uninsured_oep_2022_usd": 38423660.46999352,
+      "occurrences": 10630,
+      "portfolio_replacement_value_2022_usd": 384236604.69993526,
+      "positive_gross_insured_aep_years": 7343,
+      "positive_gross_insured_oep_years": 7343,
+      "positive_ground_up_aep_years": 9453,
+      "positive_ground_up_oep_years": 9453,
+      "positive_uninsured_aep_years": 9453,
+      "positive_uninsured_oep_years": 9453,
+      "uninsured_aal_2022_usd": 73182.73992593896,
+      "uninsured_annual_standard_deviation_2022_usd": 1413710.402807409,
+      "uninsured_loss_total_2022_usd": 146365479851.87793
+    }
+  ],
+  "catalog": {
+    "annual_rows": 2000000,
+    "occupied_years": 10593,
+    "rows": 4996100,
+    "zero_event_years": 1989407
+  },
+  "damage_model": {
+    "components": [
+      "structural",
+      "nsd",
+      "nsa"
+    ],
+    "equation": "P(DS>=k|Sa)=Phi((ln(Sa)-ln(theta_k))/beta_k)",
+    "paired_uniform_rule": "The same component-specific occurrence-site uniform is reused across I0, C1, and C2.",
+    "production_im": "SA(0.4 s) in g",
+    "states": [
+      "None",
+      "Slight",
+      "Moderate",
+      "Extensive",
+      "Complete"
+    ]
+  },
+  "dependence_cases": [
+    "I0_PHASE1_INDEPENDENT",
+    "C1_ALDEA22_SUBDUCTION",
+    "C2_GODA_ATKINSON09"
+  ],
+  "frozen_controls": {
+    "catalog_years": 2000000,
+    "damage_stream_namespaces": {
+      "nsa": "notebook5_nonstructural_acceleration_damage_v1",
+      "nsd": "notebook5_nonstructural_drift_damage_v1",
+      "structural": "notebook5_structural_damage_v1"
+    },
+    "occurrences": 10630,
+    "paired_ground_motion_sha256": "9640e9b524d5f0ee0d5d447c95867b867305a996646122b9fc778d2168d278ac",
+    "phase1_commit": "be93474ce2ab78d8002d49ae861adb641ae2741d",
+    "phase1_release": "v1.0.0",
+    "portfolio_replacement_value_2022_usd": 384236604.69993526,
+    "sites": 470
+  },
+  "next_notebook": "11_reinsurance_sensitivity_and_capital.ipynb",
+  "next_task": "Apply the frozen occurrence XoL and occurrence-plus-aggregate reinsurance designs to all three gross-insured event and annual loss distributions, then quantify retained, ceded, capital, TVaR, diversification, and risk-adjusted-return effects.",
+  "notebook10_complete": true,
+  "output_contract": {
+    "annual_loss": {
+      "path": "data/processed/phase_2/notebook_10_correlated_damage_loss/paired_annual_loss_series.csv.gz",
+      "row_granularity": "one catalog year including zero-event years",
+      "rows": 2000000
+    },
+    "building_loss": {
+      "path": "data/processed/phase_2/notebook_10_correlated_damage_loss/paired_damage_and_policy_loss.csv.gz",
+      "row_granularity": "one catalog occurrence and one building",
+      "rows": 4996100
+    },
+    "event_loss": {
+      "path": "data/processed/phase_2/notebook_10_correlated_damage_loss/paired_event_loss_summary.csv.gz",
+      "row_granularity": "one catalog occurrence",
+      "rows": 10630
+    },
+    "pml_table": {
+      "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_pml_table.csv",
+      "rows": 306
+    }
+  },
+  "pipeline_version": "notebook10_correlated_damage_loss_v1",
+  "policy": {
+    "application": "per building per occurrence",
+    "coinsurance_share": 1.0,
+    "coverage_share": 1.0,
+    "deductible_share_of_replacement": 0.1,
+    "limit_share_of_replacement": 1.0,
+    "scenario_id": "baseline_full_coverage_10pct_deductible_v1"
+  },
+  "schema_version": "notebook10_correlated_damage_loss_handoff_v1",
+  "validation": {
+    "checks": 18,
+    "critical_failures": 0,
+    "i0_damage_state_counts_exact": true,
+    "i0_financial_total_tolerance_2022_usd": 0.01,
+    "path": "data/metadata/phase_2/notebook_10_correlated_damage_loss/notebook_10_final_validation.csv",
+    "row_reconciliation_tolerance_2022_usd": 2e-06,
+    "sha256": "2a2ad99a4d2eb8dfa4de639ac730ab5041683ab5698032ccf958292fe13158de",
+    "warnings": 1
+  }
+}

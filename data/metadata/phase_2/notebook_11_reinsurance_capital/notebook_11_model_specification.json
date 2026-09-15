@@ -1,0 +1,97 @@
+{
+  "aggregate_benchmark_terms": "The benchmark aggregate layer uses the same dollar attachment, limit, and participation as the frozen occurrence layer.",
+  "aggregate_grid": {
+    "attachment_return_periods_years": [
+      100,
+      250,
+      500,
+      1000
+    ],
+    "calibration_case": "I0_PHASE1_INDEPENDENT",
+    "calibration_curve": "gross insured AEP PML",
+    "exhaustion_return_periods_years": [
+      1000,
+      2500,
+      5000,
+      10000
+    ]
+  },
+  "bootstrap": {
+    "method": "paired multinomial resampling of catalog years",
+    "replicates": 300,
+    "seed": 112026
+  },
+  "currency": "USD",
+  "declared_catalog_years": 2000000,
+  "dependence_cases": [
+    "I0_PHASE1_INDEPENDENT",
+    "C1_ALDEA22_SUBDUCTION",
+    "C2_GODA_ATKINSON09"
+  ],
+  "dollar_year": 2022,
+  "economic_capital": {
+    "floored_diagnostic": "max(specified primary, 0)",
+    "sparse_catalog_note": "VaR-based capital is flagged non-informative when VaR is zero.",
+    "specified_primary": "retained AEP VaR(99.5%) minus retained AAL",
+    "supplemental_tail": "retained AEP TVaR(99.5%) minus retained AAL"
+  },
+  "fixed_programs": [
+    "NO_REINSURANCE",
+    "FROZEN_OCCURRENCE_XOL",
+    "STANDALONE_AGGREGATE",
+    "STACKED_OCCURRENCE_PLUS_AGGREGATE"
+  ],
+  "frozen_occurrence_layer": {
+    "attachment_2022_usd": 18811083.54014544,
+    "attachment_return_period_years": 500,
+    "exhaustion_2022_usd": 80649066.85506359,
+    "exhaustion_return_period_years": 2500,
+    "layer_scenario_id": "baseline_occurrence_xol_500yr_to_2500yr_oep_v1",
+    "limit_2022_usd": 61837983.314918146,
+    "participation": 1.0
+  },
+  "module_sha256": "0364886d1c87c2213b6411a17357b47849c11c722dbf0127818218d4996dc470",
+  "notebook10_handoff_sha256": "f9bb75c8e596ebdd21b2e4d5ca39c472074d4e79e189c5959c836f3c386f1fc4",
+  "occurrence_grid": {
+    "attachment_return_periods_years": [
+      100,
+      250,
+      500,
+      1000
+    ],
+    "calibration_case": "I0_PHASE1_INDEPENDENT",
+    "calibration_curve": "gross insured OEP PML",
+    "exhaustion_return_periods_years": [
+      1000,
+      2500,
+      5000,
+      10000
+    ]
+  },
+  "phase1_reinsurance_formula_sha256": "f347b96e186abd3a098e8597fbd5cb0ad318a7a58f56e567e3cbc28b17d7aea8",
+  "pipeline_version": "notebook11_reinsurance_capital_v1",
+  "raroc": {
+    "ceded_price_multipliers": [
+      1.0,
+      1.25,
+      1.5,
+      2.0
+    ],
+    "equation": "(earned premium - expenses - retained AAL - reinsurance premium) / economic capital",
+    "expense_ratios": [
+      0.2,
+      0.3,
+      0.4
+    ],
+    "interpretation": "scenario grid only; no central price or recommended quote",
+    "premium_multiples_of_gross_aal": [
+      1.25,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ]
+  },
+  "stacking_order": "Apply the frozen occurrence XoL to each event, sum occurrence-retained loss by year, then apply the annual aggregate stop-loss.",
+  "tail_estimator": "For q, select exactly ceil(N*(1-q)) largest annual losses; VaR is the smallest selected loss and TVaR is their mean."
+}
