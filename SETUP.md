@@ -1,6 +1,6 @@
 # Setup and Reproducibility Guide
 
-This guide describes the validated Phase 1 environment for the `seismic-correlation-insurance-loss` project and the steps a fresh clone should follow before running the notebooks.
+This guide describes the validated environment for the complete 13-notebook `seismic-correlation-insurance-loss` project and the steps a fresh clone should follow before running the workflow.
 
 ## 1. Supported environment
 
@@ -9,11 +9,11 @@ The completed notebooks record the following tested environment:
 | Component | Validated value |
 |---|---|
 | Operating system | Windows 10 or Windows 11 |
-| Python | Python 3.12.3 |
+| Python | Python 3.12.x; primary validated environment Python 3.12.3 |
 | Java | JDK 11, including both `java` and `javac` |
 | USGS calculation source | `nshmp-haz 2.6.5` |
 | Gradle | Gradle 7.3.1 wrapper included in the pinned USGS source archive |
-| Notebook order | 01 through 07 |
+| Notebook order | 01 through 13 |
 
 The current Notebook 2 build procedure is Windows-specific because it invokes `cmd.exe` and `gradlew.bat`. The Python calculations are generally portable, but the full repository has only been validated end to end on Windows.
 
@@ -46,7 +46,7 @@ git clone https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-l
 cd seismic-correlation-insurance-loss
 ```
 
-Confirm that the seven notebooks are present:
+Confirm that all 13 notebooks are present:
 
 ```powershell
 Get-ChildItem -Filter "*.ipynb" | Select-Object Name
@@ -114,8 +114,14 @@ Select the **Seismic Insurance Loss** kernel and run the notebooks in this order
 5. `05_calculate_ground_up_losses.ipynb`
 6. `06_apply_insurance_terms.ipynb`
 7. `07_baseline_results_and_validation.ipynb`
+8. `08_spatial_correlation_model_and_validation.ipynb`
+9. `09_generate_correlated_ground_motion_fields.ipynb`
+10. `10_correlated_damage_and_loss.ipynb`
+11. `11_reinsurance_sensitivity_and_capital.ipynb`
+12. `12_parametric_cat_bond_basis_risk.ipynb`
+13. `13_phase_2_results_and_validation.ipynb`
 
-Do not generate separate event catalogs for the independent and spatially correlated cases. Phase 2 must reuse the validated Phase 1 catalog.
+Notebooks 08 through 13 reuse the validated Phase 1 event catalog. Do not generate separate catalogs for the independent and spatially correlated cases.
 
 ## 7. Inputs downloaded or generated locally
 
@@ -159,7 +165,7 @@ Each notebook writes validation records and a handoff for the next stage. When r
 2. Confirm the expected handoff file exists.
 3. Do not manually edit generated numerical outputs.
 4. Preserve the declared two-million-year catalog duration, including zero-event years.
-5. Preserve seeds and random-stream specifications needed for the Phase 2 paired comparison.
+5. Preserve the seeds and random-stream specifications used by the Phase 2 paired comparison.
 
 ## 9. Repository cleanliness
 

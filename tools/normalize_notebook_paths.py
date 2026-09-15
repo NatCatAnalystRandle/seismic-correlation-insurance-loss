@@ -23,6 +23,12 @@ EXPECTED_NOTEBOOKS = [
     "05_calculate_ground_up_losses.ipynb",
     "06_apply_insurance_terms.ipynb",
     "07_baseline_results_and_validation.ipynb",
+    "08_spatial_correlation_model_and_validation.ipynb",
+    "09_generate_correlated_ground_motion_fields.ipynb",
+    "10_correlated_damage_and_loss.ipynb",
+    "11_reinsurance_sensitivity_and_capital.ipynb",
+    "12_parametric_cat_bond_basis_risk.ipynb",
+    "13_phase_2_results_and_validation.ipynb",
 ]
 
 WINDOWS_PROJECT_RE = re.compile(
@@ -42,7 +48,7 @@ def find_root(start: Path) -> Path:
         if all((candidate / name).is_file() for name in EXPECTED_NOTEBOOKS):
             return candidate
     raise FileNotFoundError(
-        "Could not find the repository root containing notebooks 01 through 07."
+        "Could not find the repository root containing notebooks 01 through 13."
     )
 
 

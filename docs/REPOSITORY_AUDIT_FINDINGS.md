@@ -1,112 +1,88 @@
-﻿# Repository Audit Findings
+# Repository Audit Findings
 
-Audit date: 2026-08-03
-Repository: `NatCatAnalystRandle/seismic-correlation-insurance-loss`
-Milestone: Phase 1 repository hardening and reproducibility validation
+Audit milestone: Phase 2 release and reproducibility validation
 
-## Audit status
+Validated release: `v2.0.0`
 
-**Current status: not yet ready for final sign-off.**
+Validated commit: `97a190d94d965f4287386dcfa41376b1ae60e8c8`
 
-The scientific and computational validation inside Notebooks 01 through 07 is complete. The repository-level milestone remains open until the hardening files in this package are committed, machine-specific paths are removed or converted to portable path resolution, the automated validator passes on the local repository, and the GitHub manual checks are completed.
+## Current status
 
-## Confirmed strengths
+**Phase 1 and Phase 2 are complete, validated, integrated, and released.**
 
-The public repository currently contains:
+The repository contains all 13 notebooks, the supporting Python and Java source, portable validation metadata, the final Phase 2 report, and selected publication figures. The Phase 1 baseline remains frozen under `v1.0.0`, and the completed correlation and risk-transfer extension is published under `v2.0.0`.
 
-- the seven intended Phase 1 notebooks with continuous numbering from 01 through 07;
-- the committed Java and Gradle source tools used for USGS rupture-rate extraction and Parker GMM support;
-- extensive notebook validation metadata and handoff records;
-- the four selected PNG figures intended for public display;
-- a substantive project README;
-- a public GitHub profile README with a working link to the project;
-- the intended repository description.
+The final validation evidence includes:
 
-The notebook metadata consistently records Python 3.12.3. The validated Notebook 2 build used JDK 11, the pinned `nshmp-haz 2.6.5` source, and its Gradle 7.3.1 wrapper.
+- 92 passing automated tests;
+- 62 repository checks with zero critical failures;
+- 65 Notebook 13 upstream artifact checks with no skipped production checks;
+- 14 passing final synthesis checks;
+- verified SHA-256 hashes and byte sizes for all 32 Notebook 13 publication artifacts.
 
-## Blocking findings
+## Resolved repository-hardening findings
 
-### 1. Environment files are not yet committed
+The earlier Phase 1 audit identified missing setup files, incomplete repository validation, machine-specific paths, limited Git exclusions, and README rendering issues. Those items were addressed before the Phase 1 release and carried forward into Phase 2.
 
-The current public repository does not contain `requirements.txt` or `SETUP.md`. The files supplied in this hardening package address that gap.
+The current repository includes:
 
-### 2. Repository-level validation is not yet automated in the public repository
+- `requirements.txt` and `SETUP.md`;
+- `tools/validate_repository.py`;
+- continuous notebook numbering from 01 through 13;
+- portable public paths in Phase 2 handoffs and metadata;
+- expanded environment, cache, log, build, and generated-data exclusions;
+- tracked, readable project figures;
+- linked setup, validation, case-study, and final-results documentation;
+- deterministic random streams, chunk manifests, restart markers, and artifact hashes.
 
-The current public repository does not contain `tools/validate_repository.py` or the final manual checklist. The supplied validator checks structure, notebook integrity, handoffs, Java source files, figures, README links, dependencies, Git exclusions, tracked file size, generated artifacts, machine-specific paths, obvious credentials, and Git status.
+## Supported environment
 
-### 3. Machine-specific paths remain in tracked notebook and metadata text
+The complete workflow was validated end to end on Windows with Python 3.12.3. Notebook 2 uses JDK 11, the pinned `nshmp-haz 2.6.5` source, and its Gradle 7.3.1 wrapper.
 
-Several notebooks and metadata records contain absolute Windows paths beginning with a user home directory, including paths of the form:
+Notebook 2 currently invokes `cmd.exe` and `gradlew.bat`, so its controlled Java build path is Windows-specific. The Python stages are generally portable, but a complete macOS or Linux production run has not been certified.
 
-```text
-<user-home>/Documents/GitHub/seismic-correlation-insurance-loss/...
-```
+## Reproducibility boundaries
 
-These are not credentials, but they are machine-specific and prevent an unqualified claim that a fresh clone is portable. Source cells should derive the repository root from `Path.cwd()` and its parents. Metadata intended for public Git should record repository-relative paths whenever possible.
+The public repository intentionally excludes several large or local inputs:
 
-### 4. Notebook 2 is currently Windows-specific
+- the enriched Seaside exposure workbook;
+- downloaded USGS model and Java source archives;
+- compiled Java classes and build caches;
+- full generated ground-motion, damage, loss, reinsurance, and annual simulation tables.
 
-The validated Notebook 2 workflow invokes `cmd.exe` and `gradlew.bat`. The setup guide therefore documents Windows 10 or Windows 11 as the supported end-to-end environment. Cross-platform support would require a separate implementation using `gradlew` on macOS and Linux.
-
-### 5. Full reproduction requires a local exposure workbook
-
-The public repository excludes the enriched Seaside exposure workbook expected at:
+The expected local exposure path is:
 
 ```text
 data/raw/exposure/seaside_nsi/gdf_NSI_Map_with_period_seaside.xlsx
 ```
 
-This is a legitimate data-management boundary, but it must be stated clearly. A clean clone can construct the environment, validate public files, and begin the workflow. Notebook 4 cannot complete the production portfolio calculations until the local workbook is supplied.
+A public clone can install the environment, validate tracked files, inspect all notebooks and public metadata, and begin the workflow. Full production reproduction additionally requires the local exposure workbook and regeneration of excluded artifacts.
 
-### 6. README rendering needs revision
+Notebook 13 records hashes and sizes for the private upstream artifacts used in the production synthesis. Its public preview mode reports skipped private checks explicitly and cannot create a completed production handoff.
 
-The current README contains a Mermaid source block, but visual rendering must still be confirmed manually in a browser. The current display equations use backslash-bracket delimiters that do not render reliably in the GitHub page parser. The supplied revised README uses `$$` display delimiters.
+The Notebook 13 production handoff retains `release_published: false` and its pre-release next step because the file was generated and hashed before publication. Those historical fields are preserved rather than rewritten after the fact. The GitHub `v2.0.0` release page records the later reviewed publication action.
 
-The four selected PNGs are present in the repository but are not embedded in the current README. The revised README embeds all four and makes the seven notebook names clickable.
+## Scientific interpretation limits
 
-### 7. `.gitignore` needs broader repository-hygiene exclusions
+The project is a transparent research and portfolio demonstration. It is not a production catastrophe model, insurance quotation, reinsurance placement recommendation, market price, or regulatory capital estimate.
 
-The current `.gitignore` covers major generated datasets and several Java artifacts, but it does not comprehensively exclude project virtual environments, generic environment files, all logs and temporary files, Gradle build folders, IDE settings, or operating-system artifacts. The supplied replacement expands those protections while preserving the four selected PNG exceptions.
+Key limits include:
 
-## Checks that require Emmanuel's local repository
+- one synthetic 470-building W2 portfolio in Seaside, Oregon;
+- model-conditioned spatial-correlation estimates using two analog models;
+- HAZUS-style fragility and repair-cost approximations;
+- building repair loss only;
+- synthetic insurance, reinsurance, and parametric terms;
+- no contents, business interruption, demand surge, claims inflation, or reinstatement pricing;
+- sparse annual losses that make selected VaR measures non-informative;
+- limited order-statistic support at the most extreme return periods;
+- bootstrap intervals conditional on the implemented models and frozen trigger.
 
-The following cannot be certified from the public web view alone:
+These limitations are retained in the README, project case study, Phase 2 design, final results report, and release notes.
 
-- the current local `git status` is clean;
-- no uncommitted generated files are present;
-- the complete tracked-file size audit passes;
-- the secret and credential scan passes across all tracked text;
-- no machine-specific path remains after cleanup;
-- the runtime validator passes with Python 3.12 and JDK 11;
-- a separate fresh clone installs successfully and begins Notebook 1;
-- the full Git history has never contained a real secret or private data file.
+## Release references
 
-## GitHub checks still requiring manual confirmation
-
-Use a signed-out or private browser window to confirm:
-
-- the Mermaid diagram renders fully rather than remaining on a loading placeholder;
-- all four README figures display;
-- all seven notebooks open;
-- the repository topics are present;
-- the repository is pinned to the profile;
-- the profile README, repository link, description, and public tree are correct;
-- unnecessary generated data are not exposed.
-
-## Required next action
-
-Copy the supplied files into the repository, replace the current README and `.gitignore`, then run:
-
-```powershell
-python tools\validate_repository.py --allow-dirty
-```
-
-Resolve every critical failure, especially all reported absolute home paths. After committing, run:
-
-```powershell
-python tools\validate_repository.py --profile runtime
-git status --short
-git diff --check
-```
-
-The repository-level milestone should be signed off only when the runtime validator reports zero critical failures, the worktree is clean, the fresh-clone smoke test passes, and every manual GitHub check is complete.
+- [Phase 1 release `v1.0.0`](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v1.0.0)
+- [Phase 2 release `v2.0.0`](https://github.com/NatCatAnalystRandle/seismic-correlation-insurance-loss/releases/tag/v2.0.0)
+- [Final Phase 2 results report](../data/metadata/phase_2/notebook_13_phase_2_results/notebook_13_results_report.md)
+- [Repository validation checklist](REPOSITORY_VALIDATION_CHECKLIST.md)

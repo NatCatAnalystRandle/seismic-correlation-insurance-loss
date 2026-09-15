@@ -1,6 +1,6 @@
 # Final Repository Validation Checklist
 
-This milestone is separate from the scientific and numerical validation performed inside Notebooks 01 through 07.
+This milestone is separate from the scientific and numerical validation performed inside Notebooks 01 through 13. The checklist applies to the complete Phase 2 release.
 
 ## Milestone definition
 
@@ -27,14 +27,14 @@ python tools\validate_repository.py --profile runtime
 Confirm each item below:
 
 - [ ] `README.md`, `SETUP.md`, `requirements.txt`, `.gitignore`, and `.gitattributes` exist and are tracked.
-- [ ] Notebooks 01 through 07 have the exact intended names.
+- [ ] Notebooks 01 through 13 have the exact intended names.
 - [ ] Notebook numbering is continuous.
 - [ ] Every notebook parses as valid version 4 notebook JSON.
-- [ ] Notebook metadata consistently records Python 3.12.3.
+- [ ] Notebook metadata consistently records Python 3.12.x.
 - [ ] No duplicated `.ipynb.ipynb` extension exists.
-- [ ] All required Notebook 2 through Notebook 7 handoff and final-validation files exist.
+- [ ] All required Notebook 2 through Notebook 13 handoff and final-validation files exist.
 - [ ] All required Java and Gradle source files exist and are tracked.
-- [ ] The four selected PNG figures exist, are tracked, and are linked from the README.
+- [ ] The four selected Phase 1 PNG figures and five Phase 2 PNG/SVG figure pairs exist, are tracked, and are linked from the documentation.
 - [ ] Every local README link resolves to an existing repository path.
 - [ ] Every notebook is linked from the README.
 - [ ] The README contains a basic valid Mermaid workflow block.
@@ -67,7 +67,7 @@ python tools\validate_repository.py `
 - [ ] Confirm compiled Java classes, JAR files, Gradle caches, downloaded source archives, and build folders are not tracked.
 - [ ] Confirm validation metadata retained in Git are small, interpretable, and needed for auditability.
 - [ ] Open each selected PNG locally and confirm that it is readable, correctly labeled, and not cropped.
-- [ ] Open all seven notebooks in Jupyter and confirm that the notebook kernel metadata is valid.
+- [ ] Open all 13 notebooks in Jupyter and confirm that the notebook kernel metadata is valid.
 - [ ] Search the repository for personal directories, email credentials, keys, and private source data names.
 
 Suggested searches:
@@ -103,9 +103,9 @@ Open the public repository in a signed-out or private browser window.
 - [ ] The README loads from the default branch.
 - [ ] The Mermaid workflow renders as a diagram rather than raw code or an indefinite loading placeholder.
 - [ ] All display equations render correctly.
-- [ ] The four selected PNG figures display in the README.
+- [ ] The four selected Phase 1 PNG figures display in the README, and the five Phase 2 figure pairs resolve from the final results documentation.
 - [ ] Each figure is sharp enough to read at normal browser width.
-- [ ] All seven notebook links open the intended notebook.
+- [ ] All 13 notebook links open the intended notebook.
 - [ ] Each notebook preview loads, or GitHub provides a valid raw/download view when the preview is too large.
 - [ ] `SETUP.md` opens from the README.
 - [ ] The repository validation checklist opens from the README.
@@ -118,7 +118,7 @@ Open the public repository in a signed-out or private browser window.
 Recommended repository description:
 
 ```text
-End-to-end earthquake catastrophe risk model using the USGS NSHM 2018 to simulate event catalogs, ground motions, building damage, insurance losses, reinsurance recoveries, AAL, AEP, OEP, and PML.
+End-to-end earthquake catastrophe-risk model connecting USGS seismic sources, spatially correlated ground motion, building damage, insurance, reinsurance, capital, and parametric basis risk.
 ```
 
 Recommended topics:
@@ -129,6 +129,10 @@ earthquake-risk
 seismic-risk
 insurance
 reinsurance
+spatial-correlation
+parametric-insurance
+catastrophe-bonds
+insurance-linked-securities
 stochastic-simulation
 usgs-nshm
 python
@@ -150,7 +154,7 @@ Confirm:
 Open `https://github.com/NatCatAnalystRandle` in a signed-out or private browser window.
 
 - [ ] The profile README appears on the Overview tab.
-- [ ] The project section accurately describes the completed Phase 1 baseline.
+- [ ] The project section accurately describes the completed 13-notebook Phase 2 release.
 - [ ] The project repository link opens the correct public repository.
 - [ ] The repository is visible in the pinned or popular repositories section.
 - [ ] The profile bio, LinkedIn link, and contact information are current.
@@ -182,6 +186,17 @@ When a real secret has ever been committed, rotate or revoke it immediately. Rem
 | GitHub profile validation | `PASS` |
 | Reviewer | `Emmanuel Randle` |
 
-Final milestone status:
+Validated Phase 2 release record:
 
-- [ ] **REPOSITORY-LEVEL AND REPRODUCIBILITY VALIDATION COMPLETE**
+| Item | Value |
+|---|---|
+| Release | `v2.0.0` |
+| Release commit | `97a190d94d965f4287386dcfa41376b1ae60e8c8` |
+| Automated tests | `92 passed` |
+| Repository checks | `62; 0 critical failures` |
+| Notebook 13 upstream artifact checks | `65 passed; 0 skipped` |
+| Notebook 13 final synthesis checks | `14 passed; 0 critical failures` |
+
+Validated release status:
+
+- [x] **REPOSITORY-LEVEL AND REPRODUCIBILITY VALIDATION COMPLETE FOR `v2.0.0`**
